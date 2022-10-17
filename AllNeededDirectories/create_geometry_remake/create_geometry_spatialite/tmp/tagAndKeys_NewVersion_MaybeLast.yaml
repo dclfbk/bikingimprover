@@ -1,0 +1,359 @@
+key_count: 2
+way-keys:
+    key1:
+        name: highway
+        values: 
+            value1: 
+        values_not_to_have:
+            value1: 
+        tags: 
+            tag0:
+                name: bicycle
+                value: "yes"
+                question: E' vero che posso andare in bicicletta per questa strada?
+                score: 1.0            
+                validating: "yes"
+            tag1:
+                name: surface
+                value: None
+                question: Di che superficie è fatta questa strada?
+                score: 3.0
+                validating: "no"
+            tag2: 
+                name: segregated
+                value: None
+                question: La strada delle biciclette è separata da quella dei pedoni?
+                score: 2.0
+                validating: "no"
+            tag3:
+                name: oneway
+                value: None
+                question: E' una strada a senso unico?
+                score: 2.0
+                validating: "no"
+            tag5:
+                name: maxspeed
+                value: None
+                question: Quale è la velocità massima?
+                score: 2.0
+                validating: "no"
+            tag6:
+                name: bicycle
+                value: None
+                question: Posso andare in bicicletta per questa strada?
+                score: 1.0
+                validating: "no"
+            tag7:
+                name: bicycle
+                value: designated
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0
+                validating: "yes"
+            tag8: 
+                name: bicycle
+                value: use_sidepath
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0
+                validating: "yes"
+            tag9: 
+                name: bicycle
+                value: permissive
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0 
+                validating: "yes"
+            tag10: 
+                name: bicycle
+                value: dismount
+                question: Devo smontare dalla bici per proseguire?
+                score: 3.0
+                validating: "yes"
+        questions:
+            question1: 
+                question: Quante panchine sono presenti in questa strada?
+                score: 5.0
+                tagAnswer: None
+        must_have_tag:
+            tag1:
+                name: bicycle
+                values_to_discard:
+                    value1: "no"
+                values_to_have:
+                    value1: 
+        must_not_have_tag:
+            tag1: 
+
+    key2:
+        name: cycleway
+        values:
+            value1:
+        values_not_to_have:
+            value1:
+        tags:
+            tag0:
+                name: bicycle
+                value: "yes"
+                question: E' vero che posso andare in bicicletta per questa strada?            
+                score: 1.0
+                validating: "yes"
+            tag1:
+                name: surface
+                value: None
+                question: Di che superficie è fatta questa strada?
+                score: 3.0
+                validating: "no"
+            tag2: 
+                name: segregated
+                value: None
+                question: La strada delle biciclette è separata da quella dei pedoni?
+                score: 2.0
+                validating: "no"
+            tag3:
+                name: oneway
+                value: None
+                question: E' una strada a senso unico?
+                score: 2.0
+                validating: "no"
+            tag5:
+                name: maxspeed
+                value: None
+                question: Quale è la velocità massima?
+                score: 2.0
+                validating: "no"
+            tag6:
+                name: bicycle
+                value: None
+                question: Posso andare in bicicletta per questa strada?
+                score: 2.0
+                validating: "no"
+            tag7:
+                name: bicycle
+                value: designated
+                question: E' vero che posso andare in bicicletta per questa strada? 
+                score: 1.0   
+                validating: "yes"
+            tag8: 
+                name: bicycle
+                value: use_sidepath
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0 
+                validating: "yes"
+            tag9: 
+                name: bicycle
+                value: permissive
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0 
+                validating: "yes"
+            tag10: 
+                name: bicycle
+                value: dismount
+                question: Devo smontare dalla bici per proseguire?
+                score: 2.0
+                validating: "yes"
+            tag11:
+                name: crossing
+                value: marked
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+            tag12:
+                name: crossing
+                value: uncontrolled
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+            tag13:
+                name: crossing
+                value: unmarked
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+        must_have_tag:
+            tag1:
+                name:
+                values_to_discard:
+                    value1:
+                values_to_have:
+                    value1:
+        must_not_have_tag:
+            tag1: 
+        questions:
+            question1: 
+                question: Quante panchine sono presenti in questa ciclebile?
+                score: 3.0
+                tagAnswer: None
+            question2:
+                question: La ciclabile passa per un ponte?
+                score: 1.0
+                tagAnswer: bridge
+
+
+    key3:
+        name: highway
+        values: 
+            value1: 
+        values_not_to_have:
+            value1: motorway
+            value2: motorway_link
+            value3: motorway_junction
+            value4: primary
+            value5: trunk      
+            value6: trunk_link
+                
+        tags: 
+            tag0:
+                name:
+                value:
+                question:
+                score:
+                validating:
+        questions:
+            question1: 
+                question: Posso andare in bicicletta per questa strada?
+                score: 1.0
+                tagAnswer: bicycle
+                validating: "no"
+        must_have_tag:
+            tag1:
+                name:
+                values_to_discard:
+                    value1:
+                values_to_have:
+                    value1: 
+        must_not_have_tag:
+            tag1: bicycle
+
+node-keys:
+    key1:
+        name: amenity
+        values:
+            value1: 
+                name: bicycle_parking
+                question: Quanti posti per bicicletta ci sono in questo parcheggio?
+                score: 4.0
+                tagAnswers: capacity
+                validating: "no"
+            value2: 
+                name: bicycle_repair_station
+                question: C'è una stazione di riparazioni bici qui? 
+                score: 2.0
+                tagAnswers: service:bicycle:repair
+                validating: "yes"
+            value3:
+                name: bicycle_repair_station
+                question: è presente anche una pompa per gonfiare le ruote?
+                score: 3.0
+                tagAnswers: pump
+                validating: "no"
+            value4:
+                name: bicycle_rental
+                question: Posso noleggiare anche bici elettriche?
+                score: 2.0
+                tagAnswers: bicycle_rental
+                validating: "yes"
+            value5: 
+                name: drinking_water
+                question: C'è una sorgente d'acqua qui?
+                score: 1.0
+                tagAnswers: water_point 
+                validating: "no"
+            value6: 
+                name: water_point
+                question: C'è una sorgente d'acqua qui?
+                score: 1.0
+                tagAnswers: water_point
+                validating: "yes"
+            value7: 
+                name: water_point
+                question: è Potabile l'acqua?
+                score: 1.0
+                tagAnswers: drinking_water
+                validating: "no"
+            value8: 
+                name: drinking_water
+                question: Si può bere gratuitamente qui?
+                score: 1.0
+                tagAnswers: fee
+                validating: "no"
+            value9:
+                name: bicycle_repair_station
+                question: Posso ricaricare la bici elettrica?
+                score: 3.0
+                tagAnswers: charging
+                validating: "no"
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+                validating:
+        questions:
+            question1: 
+                question:
+                score:
+
+
+    key2:
+        name: shop
+        values:
+            value1:
+                name: bicycle
+                question: Il negozio vende anche bici elettriche?
+                score: 2.0
+                tagAnswers: bicycle
+                validating: "no"
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+                validating:
+        questions:
+            question1:
+                question:
+                score:
+    
+    key3:
+        name: service:bicycle:repair
+        values:
+            value1:
+                name: "yes"
+                question: C'è una stazione di riparazione bici qui?
+                score: 1.0
+                tagAnswers: service:bicycle:repair
+                validating: "yes"
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+                validating: 
+        questions:
+            question1:
+                question:
+                score:
+
+    key4:
+        name: service:bicycle:pump
+        values:
+            value1: 
+                name: "yes"
+                question: C'è un servizio gratuito per gonfiare le ruote della bicicletta?
+                score: 1.0
+                tagAnswers: fee
+                validating: "no"
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+                validating:
+        questions:
+            question1:
+                question:
+                score:
+    
+    

@@ -1,0 +1,92 @@
+package eu.trentorise.game.model
+import eu.trentorise.game.notification.BadgeNotification;
+import eu.trentorise.game.core.Utility;
+import java.util.Map
+import java.util.ArrayList
+import java.util.List;
+
+declare AlreadyLevelUp
+end
+
+rule "create-image-data"
+when 
+  Action(id=="CreateImage")
+  $customData : CustomData(this["myImages"] == null)
+  not AlreadyLevelUp()
+then 
+  List<String> list = new ArrayList<String>();
+
+  $customData.put("myImages", list);
+  update($customData);
+  insert(new AlreadyLevelUp());
+end
+
+rule "add-image-data"
+when 
+  Action(id=="AddImage")
+   InputData(
+    $solution:data['solution'];
+  )
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("imageName"));
+  System.out.println("is it working?");
+  ArrayList actualList = (ArrayList)$customData.get("myImages");  
+  actualList.add(myData);
+
+  $customData.put("myImages", actualList);
+  update($customData);
+  insert(new AlreadyLevelUp());
+end
+
+rule "remove-image-data"
+when 
+  Action(id=="RemoveImage")
+   InputData(
+    $solution:data['solution'];
+  )
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("imageName"));
+
+  ArrayList actualList = (ArrayList)$customData.get("myImages");  
+  actualList.remove(myData);
+
+  $customData.put("myImages", actualList);
+  update($customData);
+  insert(new AlreadyLevelUp());
+end
+
+rule "buy-image-data"
+when 
+  Action(id=="BuyImage")
+   InputData(
+    $solution:data['solution'];
+  )
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("imageName"));
+  String priceString = ((String)solutionMap.get("price"));
+
+  Integer price = Integer.parseInt(priceString);
+
+  ArrayList actualList = (ArrayList)$customData.get("myImages");  
+  actualList.add(myData);
+
+  Integer moneySpent = Integer.parseInt(priceString);
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() - moneySpent);}
+
+  $customData.put("myImages", actualList);
+  update($customData);
+  insert(new AlreadyLevelUp());
+end

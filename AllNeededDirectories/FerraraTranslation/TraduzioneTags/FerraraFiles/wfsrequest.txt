@@ -1,0 +1,1 @@
+https://sit.comune.fe.it/geoservernext/Ferrara_AirBreak_int_edit/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Ferrara_AirBreak_int_edit:Ciclabili_2021&outputFormat=shape-zip

@@ -1,0 +1,72 @@
+# TO BUILD DOCKER docker build -t ubuntu-bicycle .
+# per usare docker docker image ls
+# docker run -it <dockerid>
+# sudo docker run -dp 8080:8080 ubuntu-bicycle
+# if nothing works anymore use sudo rm -r /var/lib/docker/overlay2
+
+#sudo docker container ls -a
+#sudo docker image ls
+#sudo docker ps -a
+#sudo docker rm <containerId>
+#sudo docker rmi <imageId>
+#docker container stop <<container_id>>
+#sudo docker save -o my_first_working_image.tar ubuntu-bicycle:latest
+
+#sudo docker system prune -a -f
+#sudo docker system prune -a --volumes --force
+# EVERY TIME YOU REBUILD FIRST DO docker system prune so that is frees spaceù
+#Or do docker image prune ...
+# invece che utilizzare workdir potrei fare chain di comandi e usare quindi cd. Per es.:RUN cd opt; \ls; \cd firefox; \ls
+
+FROM franz99/ubuntu_image_web:ubuntu_ready_packages
+#MAINTAINER franz99
+
+ENV DEBIAN_FRONTEND=nonintercative
+
+
+WORKDIR "/"
+
+#Install git, nodejs, npm and python...
+RUN apt-get update
+
+#copy all the directories that are needed to create missions etc...
+COPY AllNeededDirectories/create_geometry_remake/create_geometry_spatialite create_geometry_spatialite
+COPY AllNeededDirectories/FerraraTranslation FerraraTranslation
+COPY AllNeededDirectories/tippecanoe tippecanoeData
+COPY AllNeededDirectories/CreateOtherTables CreateMedalTable
+
+#Create Trento data...
+WORKDIR "/create_geometry_spatialite"
+RUN ipython --TerminalIPythonApp.file_to_run=FBKIterateQuestions.ipynb
+RUN mv database_prova/withvalidation.db /FerraraTranslation/TraduzioneTags/FerraraFiles/database/applicationValid.db
+#Muovere tutte le cartelle qui in tippecanoe... Ora vedo come fare
+RUN mv tmp/GeojsonFiles/singleNodesFiles/* /tippecanoeData/tippecanoe_funzionante/NewSystem/SingleNodesFiles/
+RUN mv tmp/GeojsonFiles/singleWaysFiles/* /tippecanoeData/tippecanoe_funzionante/NewSystem/SingleWaysFiles/
+RUN mv tmp/GeojsonFiles/centerWayPoints/* /tippecanoeData/tippecanoe_funzionante/NewSystem/CenterGeojsonCittà/
+#Create Ferrara data...
+WORKDIR "/FerraraTranslation/TraduzioneTags"
+RUN echo $(ls -1 /FerraraTranslation/TraduzioneTags)
+RUN ipython --TerminalIPythonApp.file_to_run=new_createMissions.ipynb
+RUN mv ferraraWays.geojson /tippecanoeData/tippecanoe_funzionante/NewSystem/WayGeojsonCittà/Ferrara.geojson
+RUN mv ferraraCenteredPoints.geojson /tippecanoeData/tippecanoe_funzionante/NewSystem/CenterGeojsonCittà/Ferrara.geojson
+RUN mv FerraraFiles/database/applicationValid.db /CreateMedalTable
+#Create Pbf and files for webapp
+WORKDIR "/tippecanoeData/tippecanoe_funzionante/NewSystem"
+#RUN file="$(ls -1 /tippecanoeData/tippecanoe_funzionante/NewSystem/CenterGeojsonCittà)" && echo $file
+#RUN echo $(ls -1 /tippecanoeData/tippecanoe_funzionante/NewSystem)
+RUN ipython --TerminalIPythonApp.file_to_run=newSystemPbfCreation.ipynb
+#create table for medals
+WORKDIR "/CreateMedalTable"
+RUN ipython --TerminalIPythonApp.file_to_run=otherTables.ipynb
+
+VOLUME /datavolume
+WORKDIR "/datavolume"
+#RUN mv ../FerraraTranslation/TraduzioneTags/FerraraFiles/database/applicationValid.db /datavolume/applicationValid.db
+RUN mv ../CreateMedalTable/applicationValid.db /datavolume/applicationValid.db
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/CenterGeojsonCittà /datavolume/
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/allNodesGeojson.geojson /datavolume/allNodesGeojson.geojson
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/allNodesPbf /datavolume/allNodesPbf
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/allWaysPbf /datavolume/allWaysPbf
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/wayLayers.txt /datavolume/wayLayers.txt
+RUN mv ../tippecanoeData/tippecanoe_funzionante/NewSystem/nodeLayers.txt /datavolume/nodeLayers.txt
+

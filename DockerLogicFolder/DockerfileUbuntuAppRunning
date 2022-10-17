@@ -1,0 +1,109 @@
+#PROBLEMA STA IN TIPPECANOE QUANDO DEVE CREARE IL LAYER DELLE VIE, CERCA PERCHè CI STA
+#ERRORE! PROVA A TOGLIERE I COLORI E VEDI SE CAMBIA QUALCOSA...
+
+
+FROM ubuntu:20.04
+#HAVE TO DELETE THE OVERLAY2 FOLDER AGAIN....
+
+# TO BUILD DOCKER docker build -t ubuntu-bicycle .
+# per usare docker docker image ls
+# docker run -it <dockerid>
+# if nothing works anymore use sudo rm -r /var/lib/docker/overlay2
+
+#sudo docker container ls -a
+#sudo docker image ls
+#sudo docker ps -a
+#sudo docker rm <containerId>
+#sudo docker rmi <imageId>
+#docker container stop <<container_id>>
+
+#sudo docker system prune -a -f
+#sudo docker system prune -a --volumes --force
+# EVERY TIME YOU REBUILD FIRST DO docker system prune so that is frees spaceù
+#Or do docker image prune ...
+# invece che utilizzare workdir potrei fare chain di comandi e usare quindi cd. Per es.:RUN cd opt; \ls; \cd firefox; \ls
+
+ENV DEBIAN_FRONTEND=nonintercative
+
+#Install git, nodejs, npm and python...
+RUN apt-get update \
+    && apt-get -y install git
+
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - 
+
+RUN apt-get install unzip
+
+RUN apt-get install -y nodejs
+RUN apt-get -y install npm
+
+RUN npm install --save @mapbox/geojson-merge
+RUN npm install -g @mapbox/geojson-merge
+
+RUN apt-get -y install python2.7
+RUN apt-get -y install python3.8
+RUN apt-get -y install python3-pip
+
+RUN apt-get install sqlite3
+RUN apt-get install -y libsqlite3-mod-spatialite
+
+RUN pip install ipython
+RUN pip install nbformat
+RUN pip install geopandas==0.9.0
+
+RUN apt-get -y install build-essential
+RUN apt-get install make
+
+RUN apt-get install libsqlite3-dev
+RUN apt-get install zlib1g-dev
+
+RUN apt-get -y install vim
+
+RUN apt-get update
+#Add my applications, so I have to copy(?) and specify the images
+COPY AllNeededDirectories.zip AllFiles.zip
+
+RUN unzip AllFiles.zip
+
+#WORKDIR "AllNeededDirectories/tippecanoe-master"
+#RUN apt-get -y install build-essential libsqlite3-dev zlib1g-dev
+#RUN make -j
+#RUN make install
+RUN git clone https://github.com/mapbox/tippecanoe.git
+WORKDIR "tippecanoe"
+RUN make -j
+RUN make install
+
+#Volendo posso evitare di runnare i programmi e semplicemente inserirli.
+#Poi in futuro si potrà fare a mano(?) tanto il docker mi serve solo per mantenere la versione
+
+#Create Trento data...
+WORKDIR "/AllNeededDirectories/create_geometry_spatialite"
+RUN ipython --TerminalIPythonApp.file_to_run=FBKIterateQuestions.ipynb
+RUN mv database_prova/withvalidation.db /AllNeededDirectories/FerraraTranslation/TraduzioneTags/FerraraFiles/database/applicationValid.db
+RUN mv tmp/GeojsonFiles/singleNodesFiles /AllNeededDirectories/tippecanoe/tippecanoe_funzionante/
+RUN mv tmp/GeojsonFiles/singleWaysFiles /AllNeededDirectories/tippecanoe/tippecanoe_funzionante/
+RUN mv tmp/GeojsonFiles/centerWayPoints/centerCombined.geojson /AllNeededDirectories/tippecanoe/tippecanoe_funzionante/
+#Create Ferrara data...
+WORKDIR "/AllNeededDirectories/FerraraTranslation/TraduzioneTags"
+RUN echo $(ls -1 /AllNeededDirectories/FerraraTranslation/TraduzioneTags)
+RUN ipython --TerminalIPythonApp.file_to_run=new_createMissions.ipynb
+RUN mv ferraraWays.geojson /AllNeededDirectories/tippecanoe/tippecanoe_funzionante/FerraraGeojson
+RUN mv ferraraCenteredPoints.geojson /AllNeededDirectories/tippecanoe/tippecanoe_funzionante/FerraraGeojson
+RUN mv FerraraFiles/database/applicationValid.db /AllNeededDirectories/bicycle-osm-app/databases/applicationValid.db
+#TODO Copy Results and move them to tippecanoe...
+WORKDIR "/AllNeededDirectories/tippecanoe/tippecanoe_funzionante"
+RUN ipython --TerminalIPythonApp.file_to_run=createPbfs.ipynb
+RUN mv FerraraGeojson/ferraraCenteredPoints.geojson /AllNeededDirectories/bicycle-osm-app/pbfFiles/ferraraCenteredPoints.geojson
+RUN mv centerCombined.geojson /AllNeededDirectories/bicycle-osm-app/pbfFiles/centerCombined.geojson
+RUN mv allNodes /AllNeededDirectories/bicycle-osm-app/pbfFiles/
+RUN mv trento_ferrara /AllNeededDirectories/bicycle-osm-app/pbfFiles/
+WORKDIR "/AllNeededDirectories/bicycle-osm-app"
+RUN npm install -g http-server
+RUN npm install request --save
+RUN npm install dotenv
+RUN npm install --save connect-history-api-fallback
+RUN npm run build
+RUN cd pbfFiles
+#RUN npm install --production
+EXPOSE 8080
+CMD ["npm", "start"]

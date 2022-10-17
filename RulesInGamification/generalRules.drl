@@ -1,0 +1,589 @@
+package eu.trentorise.game.model
+import eu.trentorise.game.notification.BadgeNotification;
+import eu.trentorise.game.core.Utility;
+import java.util.Map
+import java.util.ArrayList
+
+declare AlreadyLevelUp
+end
+
+//PROBLEMA è CHE FUNZIONA SOLO SE INIZIO CON UNA MISSIONE DI RISPOSTA E NON VALIDAZIONE
+
+rule "first-answer"
+when
+  Action(id == 'PinAnswerCompleted')
+  InputData(
+    $solution: data["solution"]
+  )
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $PointsScore : PointConcept(name == "AccumulatedPoints")
+  $bc : BadgeCollectionConcept(name ==  'first steps', badgeEarned not contains '1-point-green')
+  $customData : CustomData(this["level"] == null) 
+  not AlreadyLevelUp()
+then
+  Map solutionMap = ((Map)$solution);
+  String  punti = (String)solutionMap.get("points"); 
+
+  Double puntiDouble = Double.parseDouble(punti);
+  // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + puntiDouble);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + puntiDouble);} 
+ 
+  $customData.put("level_up_points", punti);
+  $customData.put("level", "1");
+  $customData.put("answer_completed","1");
+  $customData.put("validation_completed", "0");
+  $customData.put("full_negative_validation","0");
+  $customData.put("full_positive_validation","0");
+
+
+
+  $bc.getBadgeEarned().add('1-point-green');
+  update( $bc );
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+end
+
+//ALL THE OTHER LEVELS
+rule "answer-x"
+when
+	Action( id == 'PinAnswerCompleted')
+  	InputData(
+        $solution : data["solution"];
+ )
+ $GoldCoinsScore : PointConcept(name == "GoldCoins");
+ $PointsScore : PointConcept(name == "AccumulatedPoints");
+ $customData : CustomData(this["level"] >= 0); 
+ not AlreadyLevelUp()
+then 
+
+  Map solutionMap = ((Map)$solution);
+  String myPoints = (String)solutionMap.get("points"); 
+  Double punti = Double.parseDouble(myPoints); 
+
+
+ // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + punti);}  
+  
+  String actualLevel = (String)$customData.get("level");  
+  String actualPoints = (String)$customData.get("level_up_points");
+  Double levelPoints = Double.parseDouble(actualPoints); 
+  Double myLevel = Double.parseDouble(actualLevel);
+  Integer i = Integer.parseInt(actualLevel);
+
+  Double pointThreshold = myLevel*10;
+  levelPoints = levelPoints + punti;
+
+  //LEVEL UP
+  if(levelPoints >= pointThreshold){
+    Integer newLevel = i + 1;
+    String newLevelString = String.valueOf(newLevel);
+    levelPoints = levelPoints - pointThreshold;
+    //levelPoints = Double.parseDouble(levelPoints);
+    $customData.put("level", newLevelString);
+    update($customData);
+    actualLevel = (String)$customData.get("level");
+    i=newLevel;
+  }
+  //i = Integer.parseInt(actualLevel);
+  String actualAnswers = (String)$customData.get("answer_completed");
+  Integer ac = Integer.parseInt(actualAnswers);
+  ac = ac +1;
+  String newAnswers = String.valueOf(ac);
+  $customData.put("answer_completed", newAnswers);
+
+  String newLevelPoints = String.valueOf(levelPoints);
+  $customData.put("level_up_points", newLevelPoints);
+
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+
+end
+
+
+//ALL THE VALIDATIONS WITH ALREADY OBTAINED BADGE
+rule "validation-answer-until-level-x"
+when
+  Action(id == 'ValidatePoint')
+  $bc : BadgeCollectionConcept(name == "validator badge", badgeEarned contains '1-badge-earned')
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $PointsScore : PointConcept(name == "AccumulatedPoints")
+  $customData : CustomData(this["level"] >=0)
+ 
+  not AlreadyLevelUp()
+then
+
+  Double  punti = 1.0;
+  // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
+
+  String actualLevel = (String)$customData.get("level");  
+  String actualPoints = (String)$customData.get("level_up_points");
+  Double levelPoints = Double.parseDouble(actualPoints);
+  Double myLevel = Double.parseDouble(actualLevel);
+  Integer i = Integer.parseInt(actualLevel);
+
+
+  Double pointThreshold = myLevel*10.0;
+  levelPoints = levelPoints + punti;
+
+  utils.log("threshold: "+pointThreshold);
+  utils.log("punti di livello: "+levelPoints );
+
+  //LEVEL UP
+  if(levelPoints >= pointThreshold){
+   utils.log("apply \' threshold superato\'");
+    Integer newLevel = i + 1;
+    String newLevelString = String.valueOf(newLevel);
+    levelPoints = levelPoints - pointThreshold;
+    $customData.put("level", newLevelString);
+    utils.log("Nuovo Livello: "+newLevelString);
+    update($customData);
+  }
+  String actualValidations = (String)$customData.get("validation_completed");
+  Integer ac = Integer.parseInt(actualValidations);
+  ac = ac +1;
+  String newValidations = String.valueOf(ac);
+  $customData.put("validation_completed", newValidations);
+ 
+  String newLevelPoints = String.valueOf(levelPoints);
+  $customData.put("level_up_points", newLevelPoints);
+  utils.log("punti di livello: "+newLevelPoints);
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+ 
+end
+
+
+//ALL THE OTHER VALIDATIONS WITH NO BADGE
+rule "validation-answer-until-level-x-no-badge"
+when
+  Action(id == 'ValidatePoint')
+  $bc : BadgeCollectionConcept(name == "validator badge", badgeEarned not contains '1-badge-earned')
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $PointsScore : PointConcept(name == "AccumulatedPoints")
+  $customData : CustomData(this["level"] >=0)
+ 
+  not AlreadyLevelUp()
+then
+
+  Double  punti = 1.0;
+  // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
+
+  String actualLevel = (String)$customData.get("level");  
+  String actualPoints = (String)$customData.get("level_up_points");
+  Double levelPoints = Double.parseDouble(actualPoints);
+  Double myLevel = Double.parseDouble(actualLevel);
+  Integer i = Integer.parseInt(actualLevel);
+
+
+  Double pointThreshold = myLevel*10.0;
+  levelPoints = levelPoints + punti;
+
+  utils.log("threshold: "+pointThreshold);
+  utils.log("punti di livello: "+levelPoints );
+
+  //LEVEL UP
+  if(levelPoints >= pointThreshold){
+   utils.log("apply \' threshold superato\'");
+    Integer newLevel = i + 1;
+    String newLevelString = String.valueOf(newLevel);
+    levelPoints = levelPoints - pointThreshold;
+    $customData.put("level", newLevelString);
+    utils.log("Nuovo Livello: "+newLevelString);
+    update($customData);
+  }
+  String actualValidations = (String)$customData.get("validation_completed");
+  Integer ac = Integer.parseInt(actualValidations);
+  ac = ac +1;
+  String newValidations = String.valueOf(ac);
+  $customData.put("validation_completed", newValidations);
+ 
+  String newLevelPoints = String.valueOf(levelPoints);
+  $customData.put("level_up_points", newLevelPoints);
+  utils.log("punti di livello: "+newLevelPoints);
+  
+  $bc.getBadgeEarned().add('1-badge-earned');
+  update($bc);
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+ 
+ 
+end
+
+
+//ALL THE INSERTIONS WITH ALREADY OBTAINED BADGE
+rule "insert-answer-until-level-x"
+when
+  Action(id == 'PointInserted')
+  $bc : BadgeCollectionConcept(name == "contributor", badgeEarned contains '1-badge-earned')
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $PointsScore : PointConcept(name == "AccumulatedPoints")
+  $customData : CustomData(this["level"] >=5)
+ 
+  not AlreadyLevelUp()
+then
+
+Double  punti = 3.0;
+
+
+
+  // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
+
+  String actualLevel = (String)$customData.get("level");  
+  String actualPoints = (String)$customData.get("level_up_points");
+  Double levelPoints = Double.parseDouble(actualPoints);
+  Double myLevel = Double.parseDouble(actualLevel);
+  Integer i = Integer.parseInt(actualLevel);
+
+
+  Double pointThreshold = myLevel*10.0;
+  levelPoints = levelPoints + punti;
+
+  utils.log("threshold: "+pointThreshold);
+  utils.log("punti di livello: "+levelPoints );
+
+  //LEVEL UP
+  if(levelPoints >= pointThreshold){
+   utils.log("apply \' threshold superato\'");
+    Integer newLevel = i + 1;
+    String newLevelString = String.valueOf(newLevel);
+    levelPoints = levelPoints - pointThreshold;
+    $customData.put("level", newLevelString);
+    utils.log("Nuovo Livello: "+newLevelString);
+    update($customData);
+  }
+ 
+  String newLevelPoints = String.valueOf(levelPoints);
+  $customData.put("level_up_points", newLevelPoints);
+  utils.log("punti di livello: "+newLevelPoints);
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+ 
+ 
+end
+
+
+//ALL THE OTHER INSERTIONS WITHOUT OBRAINED BADGE
+rule "insert-point-until-level-x-no-badge"
+when
+  Action(id == 'PointInserted')
+  $bc : BadgeCollectionConcept(name == "contributor", badgeEarned not contains '1-badge-earned')
+  $GoldCoinsScore : PointConcept(name == "GoldCoins")
+  $PointsScore : PointConcept(name == "AccumulatedPoints")
+  $customData : CustomData(this["level"] >=5)
+ 
+  not AlreadyLevelUp()
+then
+
+Double  punti = 3.0;
+
+
+
+  // update the counter
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
+  modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
+
+  String actualLevel = (String)$customData.get("level");  
+  String actualPoints = (String)$customData.get("level_up_points");
+  Double levelPoints = Double.parseDouble(actualPoints);
+  Double myLevel = Double.parseDouble(actualLevel);
+  Integer i = Integer.parseInt(actualLevel);
+
+
+  Double pointThreshold = myLevel*10.0;
+  levelPoints = levelPoints + punti;
+
+  utils.log("threshold: "+pointThreshold);
+  utils.log("punti di livello: "+levelPoints );
+
+  //LEVEL UP
+  if(levelPoints >= pointThreshold){
+   utils.log("apply \' threshold superato\'");
+    Integer newLevel = i + 1;
+    String newLevelString = String.valueOf(newLevel);
+    levelPoints = levelPoints - pointThreshold;
+    $customData.put("level", newLevelString);
+    utils.log("Nuovo Livello: "+newLevelString);
+    update($customData);
+  }
+ 
+  String newLevelPoints = String.valueOf(levelPoints);
+  $customData.put("level_up_points", newLevelPoints);
+  utils.log("punti di livello: "+newLevelPoints);
+
+  $bc.getBadgeEarned().add('1-badge-earned');
+  update($bc);
+
+  update($customData);
+  insert(new AlreadyLevelUp());
+ 
+ 
+end
+
+//Remove points from user if he receives too many negative validations without badge
+rule "remove-points-from-user-no-badge"
+when 
+  Action(id == "RemovePoints")
+  InputData(
+    $solution:data['solution'];
+  )
+  $GoldCoinsScore: PointConcept(name == "GoldCoins")
+  $PointsScore: PointConcept(name == "AccumulatedPoints");
+  $bc : BadgeCollectionConcept(name == "wrong answer", badgeEarned not contains '1-badge-earned')
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+  Map solutionMap = ((Map)$solution);
+  String myPoints = ((String)solutionMap.get("points"));
+  Double punti = Double.parseDouble(myPoints);
+
+  String actualFullNegative = (String)$customData.get("full_negative_validation");  
+  Integer actualIntNegative = Integer.parseInt(actualFullNegative);
+
+  Integer newActualIntNegative = actualIntNegative + 1;
+  String newFullNegative = String.valueOf(newActualIntNegative);
+
+  $bc.getBadgeEarned().add('1-badge-earned');
+  update($bc);
+  $customData.put("full_negative_validation", newFullNegative);
+  update($customData);
+
+  modify($PointsScore){setScore($PointsScore.getScore() - punti);}
+
+  insert(new AlreadyLevelUp());
+end
+
+//Remove points from user if he receives too many negative validations with already obtained badge
+rule "remove-points-from-user-with-badge"
+when 
+  Action(id == "RemovePoints")
+  InputData(
+    $solution:data['solution'];
+  )
+  $GoldCoinsScore: PointConcept(name == "GoldCoins")
+  $PointsScore: PointConcept(name == "AccumulatedPoints");
+  $bc : BadgeCollectionConcept(name == "wrong answer", badgeEarned contains '1-badge-earned')
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+  Map solutionMap = ((Map)$solution);
+  String myPoints = ((String)solutionMap.get("points"));
+  Double punti = Double.parseDouble(myPoints);
+
+  String actualFullNegative = (String)$customData.get("full_negative_validation");  
+  Integer actualIntNegative = Integer.parseInt(actualFullNegative);
+
+  Integer newActualIntNegative = actualIntNegative + 1;
+  String newFullNegative = String.valueOf(newActualIntNegative);
+
+  $customData.put("full_negative_validation", newFullNegative);
+  update($customData);
+
+  modify($PointsScore){setScore($PointsScore.getScore() - punti);}
+
+  insert(new AlreadyLevelUp());
+end
+
+//Give badge if user receives x number of validation to an answer he has given, without badge
+//per ora non dà punti ma solo la medaglia, sennò i primi che rispondono sono quasi troppo avvantaggiati rispetto agli altri
+rule "give-trust-answer-to-user-no-badge"
+when 
+  Action(id == "GiveTrust")
+  InputData(
+    $solution:data['solution'];
+  )
+  $GoldCoinsScore: PointConcept(name == "GoldCoins")
+  $PointsScore: PointConcept(name == "AccumulatedPoints");
+  $bc : BadgeCollectionConcept(name == "they trust you", badgeEarned not contains '1-badge-earned')
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+  Map solutionMap = ((Map)$solution);
+  String myPoints = ((String)solutionMap.get("points"));
+  Double punti = Double.parseDouble(myPoints);
+
+  String actualFullPositive = (String)$customData.get("full_positive_validation");  
+  Integer actualIntPositive = Integer.parseInt(actualFullPositive);
+
+  Integer newActualIntPositive = actualIntPositive + 1;
+  String newFullPositive = String.valueOf(newActualIntPositive);
+
+  $bc.getBadgeEarned().add('1-badge-earned');
+  update($bc);
+
+  $customData.put("full_positive_validation", newFullPositive);
+  update($customData);
+ 
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + 1.0);}
+  modify($PointsScore){setScore($PointsScore.getScore() + 1.0);}
+
+  insert(new AlreadyLevelUp());
+end
+
+//Increment the full_positive_validation if user receives x number of validation to an answer he has given, WITH badge
+//per ora non dà punti ma solo la medaglia, sennò i primi che rispondono sono quasi troppo avvantaggiati rispetto agli altri
+rule "give-trust-answer-to-user-with-badge"
+when 
+  Action(id == "GiveTrust")
+  InputData(
+    $solution:data['solution'];
+  )
+  $GoldCoinsScore: PointConcept(name == "GoldCoins")
+  $PointsScore: PointConcept(name == "AccumulatedPoints");
+  $bc : BadgeCollectionConcept(name == "they trust you", badgeEarned contains '1-badge-earned')
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+  Map solutionMap = ((Map)$solution);
+  String myPoints = ((String)solutionMap.get("points"));
+  Double punti = Double.parseDouble(myPoints);
+
+  String actualFullPositive = (String)$customData.get("full_positive_validation");  
+  Double actualPositive = Double.parseDouble(actualFullPositive);
+  Integer actualIntPositive = actualPositive.intValue();
+  //Integer actualIntPositive = Integer.parseInt(actualPositive);
+
+  Integer newActualIntPositive = actualIntPositive + 1;
+  String newFullPositive = String.valueOf(newActualIntPositive);
+
+  $customData.put("full_positive_validation", newFullPositive);
+  update($customData);
+
+  modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + 1.0);}
+  modify($PointsScore){setScore($PointsScore.getScore() + 1.0);}
+
+  insert(new AlreadyLevelUp());
+end
+
+rule "change-custom-to-zero"
+when 
+  Action(id=="ResetCustom")
+  InputData(
+    $solution:data['solution'];
+  )
+  $customData : CustomData(this["level"] >=0)
+  not AlreadyLevelUp()
+then 
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("points"));
+  String newVal = "0";
+  if(myData.equals("full_positive_validation")){
+    $customData.put("full_positive_validation", newVal);
+  }
+  if(myData.equals("full_negative_validation")){
+    $customData.put("full_negative_validation", newVal);
+  }
+  update($customData);
+  insert(new AlreadyLevelUp());
+end
+
+// RULES FOR LEVELS
+rule "beginner_level"
+    salience -1000
+    when
+      $customData : CustomData(this["level"] ==5)
+	 $bc : BadgeCollectionConcept(name == "beginner badge", badgeEarned not contains '1-badge-earned')
+	 Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "expert_level"
+    salience -1000
+    when
+        $customData : CustomData(this["level"] ==10)
+        $bc : BadgeCollectionConcept(name == "expert badge", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "professional_level"
+    salience -1000
+    when
+        $customData : CustomData(this["level"] ==20)
+	$bc : BadgeCollectionConcept(name == "professional badge", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "expert_validator"
+    salience -1000
+    when
+        $customData : CustomData(this["validation_completed"] ==20)
+	$bc : BadgeCollectionConcept(name == "expert validator badge", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "expert_contributor"
+    salience -1000
+    when
+        $customData : CustomData(this["points_inserted"] ==20)
+	$bc : BadgeCollectionConcept(name == "expert contributor", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "cyclist"
+    salience -1000
+    when
+        $customData : CustomData(this["answer_completed"] ==20)
+	$bc : BadgeCollectionConcept(name == "cyclist", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end
+
+rule "professional_cyclist"
+    salience -1000
+    when
+        $customData : CustomData(this["answer_completed"] ==50)
+	$bc : BadgeCollectionConcept(name == "professional cyclist", badgeEarned not contains '1-badge-earned')
+	Game( $gameId: id)
+	Player( $playerId : id)
+    then
+	utils.log("apply \'1-badge-earned\'");
+	$bc.getBadgeEarned().add('1-badge-earned');
+	//insert( new BadgeNotification($gameId,$playerId,'10-point-green'));
+	update( $bc );
+end

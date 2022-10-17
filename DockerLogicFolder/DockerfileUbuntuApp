@@ -1,0 +1,94 @@
+#PROBLEMA STA IN TIPPECANOE QUANDO DEVE CREARE IL LAYER DELLE VIE, CERCA PERCHè CI STA
+#ERRORE! PROVA A TOGLIERE I COLORI E VEDI SE CAMBIA QUALCOSA...
+#ipython --TerminalIPythonApp.file_to_run=new_createMissions.ipynb
+#ipython --TerminalIPythonApp.file_to_run=createPbfs.ipynb
+
+
+FROM ubuntu:20.04
+#HAVE TO DELETE THE OVERLAY2 FOLDER AGAIN....
+
+# TO BUILD DOCKER docker build -t ubuntu-bicycle .
+# per usare docker docker image ls
+# docker run -it <dockerid>
+# sudo docker run -dp 8080:8080 ubuntu-bicycle
+# if nothing works anymore use sudo rm -r /var/lib/docker/overlay2
+
+#sudo docker container ls -a
+#sudo docker image ls
+#sudo docker ps -a
+#sudo docker rm <containerId>
+#sudo docker rmi <imageId>
+#docker container stop <<container_id>>
+#sudo docker save -o my_first_working_image.tar ubuntu-bicycle:latest
+
+#sudo docker system prune -a -f
+#sudo docker system prune -a --volumes --force
+# EVERY TIME YOU REBUILD FIRST DO docker system prune so that is frees spaceù
+#Or do docker image prune ...
+# invece che utilizzare workdir potrei fare chain di comandi e usare quindi cd. Per es.:RUN cd opt; \ls; \cd firefox; \ls
+
+ENV DEBIAN_FRONTEND=nonintercative
+
+#Install git, nodejs, npm and python...
+RUN apt-get update \
+    && apt-get -y install git
+
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - 
+
+RUN apt-get install unzip
+
+RUN apt-get install -y nodejs
+RUN apt-get -y install npm
+
+RUN npm install --save @mapbox/geojson-merge
+RUN npm install -g @mapbox/geojson-merge
+
+RUN apt-get -y install python2.7
+RUN apt-get -y install python3.8
+RUN apt-get -y install python3-pip
+
+RUN apt-get install sqlite3
+RUN apt-get install -y libsqlite3-mod-spatialite
+
+RUN pip install ipython
+RUN pip install nbformat
+RUN pip install geopandas==0.9.0
+RUN pip install osmium
+RUN pip install --no-binary :all: osmium
+RUN pip install PyYAML==5.4.1
+RUN pip install overpy
+RUN pip install geojson
+RUN pip install overpass
+RUN pip install osm2geojson
+RUN pip install sqlalchemy
+RUN pip install pyproj
+
+RUN apt-get -y install build-essential
+RUN apt-get install make
+
+RUN apt-get install libsqlite3-dev
+RUN apt-get install zlib1g-dev
+
+RUN apt-get -y install vim
+
+RUN apt-get update
+#Add my applications, so I have to copy(?) and specify the images
+
+COPY AllNeededDirectories.zip AllFiles.zip
+
+RUN unzip AllFiles.zip
+
+#WORKDIR "AllNeededDirectories/tippecanoe-master"
+#RUN apt-get -y install build-essential libsqlite3-dev zlib1g-dev
+#RUN make -j
+#RUN make install
+RUN git clone https://github.com/mapbox/tippecanoe.git
+WORKDIR "tippecanoe"
+RUN make -j
+RUN make install
+
+WORKDIR "/AllNeededDirectories/bicycle-osm-app"
+RUN npm install -g http-server
+RUN npm install request --save
+RUN npm install dotenv
+RUN npm install --save connect-history-api-fallback

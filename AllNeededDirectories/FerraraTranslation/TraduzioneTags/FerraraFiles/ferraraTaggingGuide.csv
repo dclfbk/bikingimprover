@@ -1,0 +1,14 @@
+TAGS,TRADUZIONE1,TRADUZIONE2
+segnaletica,traffic_sign,traffic_signals
+illuminazione,lighting,
+senso_marcia,oneway,
+centro_abitato,inhabited(?),
+entro_mura,,
+tipologia,,
+tipo_fondo,surface,
+alberatura,,
+nome,name,
+sede,,
+livello,,
+percorso,name,
+lege_tipo,"segregated, foot(designated), bicycle(designated)",

@@ -1,0 +1,31 @@
+#sudo docker compose up ubuntu
+version: "3.9"
+
+volumes: 
+    DataVolume1:
+        external: true
+        name: DataVolume1
+        
+services:
+    ubuntu:
+        #image: "ubuntu:20.04"
+        build: 
+            context: ./
+            dockerfile: ./Dockerfile.ubuntu
+        volumes: 
+            - DataVolume1:/datavolume
+    web: 
+        build: #Build the image based on Dockerfile
+            context: ./
+            dockerfile: ./Dockerfile.app
+        volumes: 
+            - DataVolume1:/datavolume
+        command: npm start
+        ports:
+            - "8080:8080"
+        expose:
+            - "8080"
+        depends_on:
+            - ubuntu
+        tty: true
+

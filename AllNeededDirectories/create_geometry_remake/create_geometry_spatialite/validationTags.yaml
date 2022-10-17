@@ -1,0 +1,91 @@
+node-keys:
+    key1:
+        name: amenity
+        values:
+            value1: 
+                name: bicycle_parking
+                question: C'è un parcheggio per biciclette qui?
+                score: 1
+            value2: 
+                name: bicycle_repair_station
+                question: C'è una stazione di riparazioni bici qui? 
+                score: 1
+            value3:
+                name: bicycle_rental
+                question: C'è un posto dove noleggiare bici qui?
+                score: 1
+            value4: 
+                name: drinking_water
+                question: C'è una sorgente d'acqua qui?
+                score: 1
+            value5: 
+                name: water_point
+                question: C'è una sorgente d'acqua qui?
+                score: 1
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+        questions:
+            question1: 
+                question:
+                score:
+
+
+    key2:
+        name: shop
+        values:
+            value1:
+                name: bicycle
+                question: Il negozio vende anche bici elettriche?
+                score: 2
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+        questions:
+            question1:
+                question:
+                score:
+    
+    key3:
+        name: service:bicycle:repair
+        values:
+            value1:
+                name: "yes"
+                question: C'è una stazione di riparazione bici qui?
+                score: 1
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+        questions:
+            question1:
+                question:
+                score:
+
+    key4:
+        name: service:bicycle:pump
+        values:
+            value1: 
+                name: "yes"
+                question: C'è un servizio gratuito per gonfiare le ruote della bicicletta?
+                score: 1
+        tags:
+            tag0:
+                name:
+                value:
+                question:
+                score:
+        questions:
+            question1:
+                question:
+                score:
+    
+    

@@ -1,0 +1,73 @@
+key_count: 1
+way-keys:
+  key1:
+    name: segnaletic
+    question: La segnaletica è orizzontale, verticale o entrambi?
+    score: 3.0
+    validating: "no"
+    answers: solo verticale, solo orizzontale, entrambi, nessuna 
+    icon: radio_button_checked
+  key2:
+    name: livello
+    question: Su cosa si trova la strada ciclabile?
+    score: 3.0
+    validating: "no"
+    answers: su marciapiede, su ponte, a raso e un tratto su ponte, sopraelevato, rampa accordo al ponte, sovrappasso
+    icon: radio_button_checked
+  key3:
+    name: senso_marc
+    question: E' una strada a doppio senso o senso unico?
+    score: 3.0
+    validating: "no"
+    answers: doppio senso, senso unico
+    icon: radio_button_checked
+  key4:
+    name: c_abitato
+    question: E' un centro abitato?
+    score: 2.0
+    validating: "no"
+    answers: sì, no
+    icon: radio_button_checked
+  key5:
+    name: tipo_fondo
+    question: Di che superficie è fatta la strada?
+    score: 3.0
+    validating:  "no"
+    answers: asfalto, bettonella, cemento, stabilizzato, asfalto e bettonella, ghiaia, porfido, legno, autobloccante, pavimentato
+    icon: radio_button_checked
+  key6: 
+    name: sede
+    question: Su cosa si trova la ciclabile?
+    score: 3.0
+    validating: "no"
+    answers: su marciapiede, rilevato, rampa, in argine, in trincea, su ponte, A raso
+    icon: radio_button_checked
+  key7: 
+    name: note_illum
+    question: La strada è illuminata?
+    score: 3.0
+    validating: "no"
+    answers: si a tratti, si, no
+    icon: radio_button_checked
+  key8:
+    name: illuminaz
+    question: La strada è una corsia riservata o no?
+    score: 3.0
+    validating: "no"
+    answers: SEDE PROMISCUA PEDONALI E CICLABILI, CORSIA RISERVATA SU MARCIAPIEDE, SEDE PROPRIA, CORSIA RISERVATA SU SEDE STRADALE, SEDE PROMISCUA CICLABILI E VEICOLARI ZTL
+    icon: radio_button_checked
+  key9: 
+    name: condition
+    question: Quale è la condizione?
+    score: 2.0
+    validating: "no"
+    answers: MEDIOCRE, BUONO, SUFFICIENTE, DISCRETO
+    icon: radio_button_checked
+  key10:
+    name: access
+    question: L'accesso è pubblico?
+    score: 2.0
+    validating: "no"
+    answers: si,no
+    icon: radio_button_checked
+  

@@ -1,0 +1,38 @@
+package eu.trentorise.game.model;
+import eu.trentorise.game.notification.BadgeNotification;
+import eu.trentorise.game.core.Utility;
+import java.util.Map;
+
+
+declare AlreadyLevelUp
+end
+
+rule "new-name"
+when
+  Action(id == "ChangeName")
+  InputData(
+    $solution:data['solution'];
+  )
+  $customData : CustomData(this["newName"] == null)
+then
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("newName"));
+  $customData.put("newName", myData);
+  update($customData);
+end
+
+rule "change-name"
+when
+  Action(id == "ChangeName")
+  InputData(
+    $solution:data['solution'];
+  )
+  $customData : CustomData(this["newName"] != null)
+  not AlreadyLevelUp()
+then
+  Map solutionMap = ((Map)$solution);
+  String myData = ((String)solutionMap.get("newName"));
+  $customData.put("newName", myData);
+  update($customData);
+  insert(new AlreadyLevelUp());
+end

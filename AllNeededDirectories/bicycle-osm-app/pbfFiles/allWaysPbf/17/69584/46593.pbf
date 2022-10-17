@@ -1,0 +1,331 @@
+Ønx
+Trento(€ typeidtagscolor"
+way" ƒ×5"
+{"highway":"steps"}"	
+#6EB1BE" şŠ·"‡
+„{"bus":"yes","highway":"unclassified","motor_vehicle":"no","name":"Piazza Leonardo da Vinci","oneway":"yes","surface":"cobblestone"}"	
+#B88DA1" Ïåá±"e
+c{"highway":"unclassified","name":"Piazza Leonardo da Vinci","oneway":"yes","surface":"cobblestone"}"	
+#AF03CD" ½¯ÒJ",
+*{"footway":"sidewalk","highway":"footway"}"	
+#BA39EB" Ï¯ÒJ"D
+B{"footway":"crossing","highway":"footway","surface":"cobblestone"}"	
+#0D660B" À¯ÒJ"\
+Z{"colonnade:left":"no","colonnade:right":"open","covered":"colonnade","highway":"footway"}"	
+#D8D5C2" Ëëú"h
+f{"area":"yes","highway":"pedestrian","lit":"yes","name":"Piazza Dante Alighieri","surface":"concrete"}"	
+#3A6427" ıÄ£î"M
+K{"bus":"yes","highway":"platform","public_transport":"platform","ref":"10"}"	
+#54D2FD" ¿ÒÁ&"&
+${"highway":"service","oneway":"yes"}"	
+#3F842B" ûÄ£î"M
+K{"bus":"yes","highway":"platform","public_transport":"platform","ref":"13"}"	
+#DDCD0B" üÄ£î"M
+K{"bus":"yes","highway":"platform","public_transport":"platform","ref":"14"}"	
+#22D12A" ´ÒÁ&"	
+#31EF4F" şÄ£î"M
+K{"bus":"yes","highway":"platform","public_transport":"platform","ref":"12"}"	
+#FEAD12" ÿÄ£î"M
+K{"bus":"yes","highway":"platform","public_transport":"platform","ref":"11"}"	
+#0106C2" ‚Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"7"}"	
+#CCC705" ªÒÁ&"	
+#E6CE5F" úÄ£î"Z
+X{"crossing":"marked","footway":"crossing","highway":"footway","traffic_calming":"table"}"	
+#2CEB31" Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"8"}"	
+#FA6472" ƒÅ£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"9"}"	
+#B55AA8" ˆÅ£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"4"}"	
+#F4106E" §Åã#"Y
+W{"highway":"service","parking:condition:both":"customers","parking:lane:both":"marked"}"	
+#AF775C" ­ÒÁ&"	
+#1F04C3" ¼ÚÈ%"=
+;{"highway":"footway","lit":"yes","surface":"paving_stones"}"	
+#BAF873" „Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"1"}"	
+#A6154B" ÓÖ5"P
+N{"footway":"sidewalk","highway":"footway","lit":"yes","surface":"cobblestone"}"	
+#A0EB40" ôğÿ
+"~
+|{"highway":"tertiary","lanes":"3","name":"Piazza Dante","oneway":"yes","parking:lane:both":"no_parking","surface":"asphalt"}"	
+#C28065" É¸³È"€
+~{"crossing":"traffic_signals","crossing_ref":"zebra","footway":"crossing","highway":"footway","lit":"yes","surface":"asphalt"}"	
+#955856" Â›¾T"	
+#71904D" ¹ÚÈ%";
+9{"highway":"steps","lit":"yes","surface":"paving_stones"}"	
+#B6E385" åÖ5"I
+G{"crossing":"traffic_signals","footway":"crossing","highway":"footway"}"	
+#045EE9" €Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"6"}"	
+#89FE0C" ÄÒÁ&"	
+#EA4100" †Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"2"}"	
+#769D3D" …Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"3"}"	
+#CF65E6" öÖ5"I
+G{"footway":"sidewalk","highway":"footway","lit":"yes","surface":"sett"}"	
+#72CC99" ´ÄÁ7"8
+6{"highway":"service","parking:lane:both":"no_parking"}"	
+#CC2A35" ÇÁÎÈ"¤
+¡{"alt_name":"Cavalcavia San Lorenzo","highway":"tertiary","lanes":"1","name":"Via San Lorenzo","oneway":"yes","parking:lane:both":"no_parking","surface":"paved"}"	
+#E2B52D" µÔŒ"ò
+ï{"access:conditional":"no @ (Mo-Sa 07:00-20:00)","alt_name":"Cavalcavia San Lorenzo","bicycle":"yes","highway":"tertiary","lanes":"1","name":"Via San Lorenzo","oneway":"yes","parking:lane:both":"no_parking","psv":"yes","surface":"asphalt"}"	
+#89C233" ÒÒÁ&"	
+#845EF5" ‡Å£î"L
+J{"bus":"yes","highway":"platform","public_transport":"platform","ref":"5"}"	
+#CAB952" ¢•®C"Y
+W{"highway":"tertiary","maxspeed":"50","name":"Via Torre Vanga","surface":"cobblestone"}"	
+#3FF6D8" £Ö "†
+ƒ{"alt_name":"Cavalcavia San Lorenzo","highway":"tertiary","lanes":"2","name":"Via San Lorenzo","oneway:bicycle":"no","oneway:conditional":"yes @ (Mo-Sa 07:00-20:00)","oneway:psv":"no","parking:lane:both":"no_parking","psv":"opposite_lane","surface":"asphalt"}"	
+#47B9BC" µ›¾T"	
+#1E2AD7" ¥Î¦|"	
+#28AF58" ¿¯ÒJ"
+{"highway":"footway"}"	
+#0D1309" ¨©¬"Y
+W{"highway":"tertiary","maxspeed":"50","name":"Via Prepositura","surface":"cobblestone"}"	
+#883B52" ¦Î¦|"	
+#735745" Ñ¯ÒJ"D
+B{"footway":"sidewalk","highway":"footway","surface":"cobblestone"}"	
+#BDD30F" ©Î¦|",
+*{"footway":"crossing","highway":"footway"}"	
+#22B1F4" £Î¦|"	
+#0E536A" ¡•®C"c
+a{"highway":"tertiary","maxspeed":"50","name":"Via Prepositura","oneway":"no","surface":"asphalt"}"	
+#C7E094" ¬Î¦|"	
+#0C2E9B" Ò¥Í|"	
+#F63B13" Ô¥Í|"	
+#58CCA3" È‡»:"Y
+W{"highway":"pedestrian","lit":"yes","name":"Piazza della Portella","surface":"asphalt"}"	
+#D035F2" Ó¥Í|"	
+#C9EB42" ¨Î¦|"	
+#45EF49" ÆÖ1" 
+{"alt_name":"Piazza Portela","highway":"residential","lanes":"1","name":"Piazza della Portella","oneway":"yes","oneway:bicycle":"no","surface":"cobblestone"}"	
+#0AE437" ªÎ¦|"	
+#787627" ­Î¦|"F
+D{"footway":"sidewalk","highway":"footway","surface":"paving_stones"}"	
+#E9FB75" ¢Î¦|"	
+#715B6B" ¤•®C"1
+/{"highway":"footway","surface":"paving_stones"}"	
+#C879F4" ¤Î¦|"	
+#43DFF1" ÃÁÎÈ"	
+#803D8F" ˜Ïù†"ù
+ö{"highway":"tertiary","maxspeed":"50","name":"Via Torre Vanga","parking:condition:both":"ticket","parking:condition:right":"ticket","parking:lane:both":"parallel","parking:lane:left":"no_parking","parking:lane:right":"parallel","surface":"paved"}"	
+#4BAE43" »Ö5"	
+#DD06D2" ™û¬E"
+{"highway":"service"}"	
+#8F10ED" ›û¬E"$
+"{"area":"yes","highway":"service"}"	
+#9C3A89" ”ìŒ2"	
+#9BED90" ™ìŒ2"3
+1{"highway":"service","tunnel":"building_passage"}"	
+#C3D9A5" ‘íğ"
+‹{"highway":"residential","lanes":"1","name":"Via Roma","old_name":"Via Longa","oneway":"yes","oneway:bicycle":"no","surface":"cobblestone"}"	
+#67C225" ÃÖ5"8
+6{"highway":"footway","lit":"yes","surface":"concrete"}"	
+#39E3F8" ´›¾T"~
+|{"highway":"tertiary","lanes":"3","name":"Piazza Dante","oneway":"yes","parking:lane:left":"no_parking","surface":"asphalt"}"	
+#CE9BC4" õğÿ
+"	
+#D19453" ˆ®Õ^"~
+|{"highway":"tertiary","lanes":"2","name":"Piazza Dante","oneway":"yes","parking:lane:both":"no_parking","surface":"asphalt"}"	
+#3F40EC" ĞŸ«j"~
+|{"highway":"tertiary","lanes":"1","name":"Piazza Dante","oneway":"yes","parking:lane:both":"no_parking","surface":"asphalt"}"	
+#F87A56" Íëú"	
+#AEADF4" °·º%"	
+#A765B9" ³·º%"	
+#056774" Ğëú"6
+4{"highway":"footway","lit":"yes","surface":"gravel"}"	
+#F488AA" «âÌ¹"O
+M{"bridge":"yes","highway":"footway","layer":"1","lit":"yes","surface":"wood"}"	
+#5E51B9" Èëú"	
+#10EC93" Éëú"	
+#B21AB2" ÑŸ«j"
+›{"highway":"residential","lanes":"2","lanes:psv":"1","lit":"yes","name":"Piazza Dante","oneway":"yes","parking:lane:both":"no_parking","surface":"asphalt"}"	
+#E9C8F4" ÀÁÎÈ"	
+#242BE3" Ø³ÿ
+"„
+{"highway":"tertiary","maxspeed":"50","name":"Via Torre Vanga","oneway":"yes","parking:lane:both":"no_parking","surface":"paved"}"	
+#DE319A" ÄÁÎÈ"	
+#0EF466" ÑÖ5"	
+#82DD23" ®íğ"à
+İ{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","lit":"yes","name":"Via Andrea Pozzo","oneway":"yes","oneway:bicycle":"no","parking:lane:both":"no_parking","surface":"cobblestone"}"	
+#70C68B" ÂÁÎÈ"	
+#90041C"  ØÃ7"I
+G{"footway":"crossing","highway":"footway","lit":"yes","surface":"sett"}"	
+#9C9A70" É‡»:"`
+^{"crossing":"traffic_signals","crossing_ref":"zebra","footway":"crossing","highway":"footway"}"	
+#31B107" ıºÛ'"	
+#D29223" ã•µ&"y
+w{"highway":"pedestrian","name":"Passaggio Giovanni Peterlongo","short_name":"Passaggio Peterlongo","surface":"asphalt"}"	
+#19B857" €ÿÎ"£
+ {"highway":"pedestrian","layer":"-1","name":"Passaggio Giovanni Peterlongo","short_name":"Passaggio Peterlongo","surface":"asphalt","tunnel":"building_passage"}"	
+#09C5C0" şºÛ'"?
+={"arcade:left":"open","covered":"arcade","highway":"footway"}"	
+#220026" ÁÁÎÈ"	
+#43071D" ‰®Õ^"Â
+¿{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","name":"Via Roma","old_name":"Via Longa","oneway":"yes","oneway:bicycle":"no","surface":"cobblestone"}"	
+#143A21" ÕŸ J"5
+3{"highway":"steps","step_count":"2","tunnel":"yes"}"	
+#A95882" €»Û'"	
+#911611" »Û'"F
+D{"colonnade:right":"open","covered":"colonnade","highway":"footway"}"	
+#DCA8FB" ÷•µ&"	
+#4BB30A" ìû·r"	
+#A4EADA" ±¤"	
+#59D5A8" èû·r"	
+#568827" üºÛ'"	
+#FC0F80" ú•µ&"¯
+¬{"highway":"pedestrian","layer":"-1","lit":"yes","name":"Passaggio Giovanni Peterlongo","short_name":"Passaggio Peterlongo","surface":"asphalt","tunnel":"building_passage"}"	
+#6E2ADE" êû·r"R
+P{"footway":"sidewalk","highway":"footway","lit":"yes","surface":"paving_stones"}"	
+#7939C9" éû·r"a
+_{"highway":"pedestrian","lit":"yes","name":"Passaggio Giovanni Peterlongo","surface":"asphalt"}"	
+#D88241" ÕŸ¿¤"	
+#14369F" ·ùÚ¯"	
+#83706B"  öç"
+›{"highway":"tertiary","lanes":"2","lit":"yes","maxspeed":"50","name":"Via Torre Vanga","oneway":"yes","parking:lane:both":"no_parking","surface":"asphalt"}"	
+#B98F49" ›Öş2"+
+){"highway":"service","surface":"asphalt"}"	
+#B4EC64" ¥¸¡I"	
+#8BCF3C" ­âÌ¹"	
+#37930C" šÖş2"	
+#CC6CF6" ™Öş2"	
+#C764B9" ‰‰¾'")
+'{"highway":"service","service":"alley"}"	
+#72095F" ‚‰¾'"E
+C{"highway":"service","service":"alley","tunnel":"building_passage"}"	
+#51639C" ïìğ"»
+¸{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lit":"yes","name":"Via Roma","old_name":"Via Longa","oneway":"yes","oneway:bicycle":"no","surface":"sett"}"	
+#FC6EC2" çû·r"	
+#D3DA80" ¸Ã¡&"	
+#BD2052" ·Ã¡&"	
+#B29A8B" ú¬½4"½
+º{"highway":"tertiary","maxspeed":"50","name":"Via della Prepositura","parking:condition:left":"ticket","parking:lane:left":"parallel","parking:lane:right":"no_parking","surface":"paved"}"	
+#6BED8E" ÈÚÈ%"‹
+ˆ{"highway":"residential","lanes":"1","lit":"yes","name":"Via San Giovanni","oneway":"yes","oneway:bicycle":"no","surface":"cobblestone"}"	
+#84E86E" Ì·ª"¿
+¼{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","lit":"yes","name":"Via delle Orfane","oneway":"yes","oneway:bicycle":"no","surface":"cobblestone"}"	
+#B523B7" ¾šÓ‚"	
+#129C9D  "
+	!î.¹{  "	°¶/¯Z5
+i  	"	Ÿè2 ğ  
+"	ŸÄ3
+*  "	uÂ3@§«  "
+	jœ7iŸ$  "	;Ÿ"? ÉîÇíƒŸ  "
+	Ê´
+»ş  "	¨Š!è
+µ|Q  "
+	’
+‡ş   !"
+	Š
+
+ëÈ   "#"	¬ÈüçŠù´ë  $%&"
+	Ò²
+›Â  '()"
+	²
+»€  *+,"
+	èô
+ëÔ   -."		˜°×èó¤Õ  /01"	º¤­“  234"
+	üÈ
+Ï   567"
+	¬è
+Í¢  89:"
+	ÚŞ
+™&  ;<="	øŸ*· ?8¡€‰”ğŞ  >?"	Œ‚Úì	  @AB"		æ€	
+¡*  CDE"
+	À
+¹ğ  FGH"	à’	;	Ÿ  IJK"	¨Ÿ Zä:æ  LMN"		Ê‚
+º3  OP"	Òğ
+æ”  QRS"		 ü
+¹  TUV"	 ê—(¿  WXY"
+	Ğš
+çÚ  Z["	šŠT7Æ™Ç  \]^"
+	†€
+·ğ  _`a"
+	Îğ
+óî  bcd"	Âà5uå
+  efg"	 ö‹ÑÜ  hij"	 öíÔ‘À  klm"	ŠÔlÂp’Â#  no"	Ÿ†"" ;¬ò¯ü  pqr"
+	Àü
+Ñ¦  stu"	–ä-·8­š  vwx"	Š¾ŸD  ytz"	°¶/› #  {|"	Îš1
+D  }~"	 ’7
+5
+  €‚"	ğä26‚®ô
+  ƒ~„"	ÚŞ1b’j˜)  …†‡"	‚ A2/Ÿ}£³ÉŸİ/gE	  ˆ‰Š"
+	ò9
+›
+  ‹Œ"	¦ˆ8
+P  "		ÔÚ9
+|ş
+  ‘"	ÄØ8".Fb8¶N
+  ’“"		Ú	„0
+$Æ
+  ”~•"	ş	Ê1~¼Õ‚  –—˜"
+	ÊØ/
+¤˜
+  ™š"		¤Â7
+4º  ›‰œ"		Øü9
+ Ò  Ÿ"	îğ:›R
+   ¡"	ÌÚ9Ï.£-  ¢£¤"	üº;BÙé ¿…,%fRÌ$TB˜  ¥‰¦"	îğ:
+J)  §¨©"	îœ;*Ï†÷€õŞ«˜  ª¨«"		üº;
+"è!
+  ¬­"	’ ˆ,ÇĞï,‹–   ®¯°"	ğ *}ÇÎ“d
+  ±M²"		’ ˆ,
+O  ³´µ"	ò²*ğä#  ¶·¸"	¼!‚."ò³ñ|   ¹´º"		˜Â;
+Ò  »¼½"	²”=6ì )  ¾¿À"	€ä;2»C¯ë©%ÿ+  ÁÂÃ"
+	ş"
+Ø§  ÄÅÆ"
+	Ì Ê
+
+Ä˜
+  ÇiÈ"
+	"â
+ñ”  ÉÊË"		"â
+Jš  ÌÍÎ"	Ú"ü!èÄ5  ÏÂĞ"$	è,ŸBƒ ‰ğ£ê ŒŠÔZÊ,¨ı€  ÑÂÒ"		º*„
+üC#  ÓÂÔ"	˜?Ä‘•»ŸÅŸ<  ÕÖ×"+	<„*³†¡ú1l4ë	 Ñ*•ß	‘Ã…w¯Ÿ  ØÙÚ"
+	º=Ş
+«Ù;  ÛÖÜ"*	æ*¬ BÖx²hìEºGàå‚•Š: &	 ÕŸwgO  İÂŞ"		ö=‚
+;£!  ßàá"	Ú"üNÚ˜šXÖ  âÍã"	Æ"¨!Î·ª  äåæ"		ğ *
+¨Y
+  çè"	î#È,;eŸ&
+  éê"		ö#Ø/
+  ëìí"		˜%Æ)
+ò  î‰ï"		Œ%¸,
+  ğñò"	ˆ&ª,
+{  óôõ"		Ì+¶*
+]¡
+  ö~÷"	æ+Ğ+
+m  øùú"	ü+´,c™  ûüı"		–,ğ-
+»  şÿ€"
+	ö#Ø/
+Ğæ  ì‚"
+	Œ%¸,
+¾  ƒ„…"	Ê'È<‹½	]  †‡ˆ"	Æ%¾;
+
+  ‰~Š"	Ê%Î;
+t#  ‹Œ"	ø*æ+"×VÆâĞ%f  ù"
+	¢-¨6
+‹·  Œ‘"	æ):
+d
+  ’~“"	Œ*†<
+K  ”£•"	Ò+’;Ñ(7
+  –~—"	È+Ş:
+
+4  ˜™š"		ä-¬:
+Aƒ  ›œ"		ì-Ş:
+™4  Ÿ "	ì-Ş:
+1
+  ¡A¢"	ì-Ş:
+
+B  £Â¤"		”9ş 
+.¾)  ¥¦§"	˜%Æ)2c’]‚]ºoŠk   ¨©ª"	ö9¶& œf"
+  «c¬"	 Aˆ'"Ÿ³”·x|  ­Â®"		¦:¸)
+ê!
+  ¯~°"		‚<ô-
+ıR'
+  ±~²"	˜8ä)*ØÀ	ŒYyÕÛ»,  ³´µ"		¾2À:
+˜  ¶·¸"	Ø2Ø;`¨ '  ¹º»"	 Aø7*ŸÁ¬Ç`•<•l  ¼œ½"	ì-Ş:”‡   ¾Â¿"	ì@æ
+4	  ÀÂÁ"	˜?Äh   ÂÃÄ"	ĞØ;º¨6   ÅÆÇ"	– A:m1¢›  ÈÉÊ"	Ê'È<b¸$ *
+  ËÌ"	 Aè82Ÿ^¡´‘
+²LÀ( 
