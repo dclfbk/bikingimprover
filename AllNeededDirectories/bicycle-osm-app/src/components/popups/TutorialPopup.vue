@@ -39,8 +39,9 @@
     }
   }
 </script>
-<style>
+<style scoped>
 .md-dialog-container{
     background-color:white;
+    color:black;
 }
 </style>

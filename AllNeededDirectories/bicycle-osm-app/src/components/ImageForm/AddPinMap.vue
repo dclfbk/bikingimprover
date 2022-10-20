@@ -59,8 +59,8 @@ export default{
                 allCards[i].style.boxShadow = "0px 4px 8px 0px rgba(0,0,0,0.2)"
                 allCards[i].style.border= "none";
             }
-            allCards[position].style.boxShadow = "0px 0px 30px #6667AB";
-            allCards[position].style.border= "1px solid #6667AB";
+            allCards[position].style.boxShadow = "0px 0px 30px var(--secondaryColor)";
+            allCards[position].style.border= "1px solid var(--secondaryColor)";
             this.selected = position
         },
 

@@ -243,4 +243,13 @@ ion-icon{
     min-width:36px; 
     font-size:36px! important;
 }
+
+/*progress::-moz-progress-bar { background: var(--secondaryColor); }
+progress::-webkit-progress-value { background: var(--secondaryColor); }
+progress { color: var(--secondaryColor); }*/
+progress{
+    accent-color: var(--secondaryColor);
+    /*background-color: var(--secondaryColor);*/
+    color: var(--secondaryColor)
+}
 </style>

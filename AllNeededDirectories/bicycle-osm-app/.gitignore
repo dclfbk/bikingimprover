@@ -22,6 +22,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-# Ignore the auth_config.json that stores the auth0 credentials (domain, clientid....)
-/auth_config.json

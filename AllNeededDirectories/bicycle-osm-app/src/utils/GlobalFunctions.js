@@ -32,8 +32,8 @@ export function getTheme(){
     switch(theme){
       case "default": r.style.setProperty('--white','#222222');
                       r.style.setProperty('--black','white');
-                      r.style.setProperty('--primaryColor', '#666666'); //#ECC478
-                      r.style.setProperty('--secondaryColor', '#6667AB');
+                      r.style.setProperty('--primaryColor', 'black'); //#ECC478
+                      r.style.setProperty('--secondaryColor', '#ECC478');
                       r.style.setProperty('--inv','invert(1)');
                       break;
       case "blackish":r.style.setProperty('--white','white');

@@ -154,4 +154,10 @@ ion-icon{
     color:#8C8C8C
 }
 
+progress{
+    accent-color: var(--secondaryColor);
+    /*background-color: var(--secondaryColor);*/
+    color: var(--secondaryColor)
+}
+
 </style>

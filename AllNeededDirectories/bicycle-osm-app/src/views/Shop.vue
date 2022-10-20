@@ -14,6 +14,28 @@
     </ion-header> 
     <br>
     <ion-content @click=clickedPage()>
+      <!--<div>
+        <h2 class="my_subTitle"> Pins </h2>
+        <div class = "cards" v-if="this.list_of_pins">
+            <ul class = "card-list">
+              <li style="padding-right:10px" v-for="(value,index) in this.list_of_pins" v-bind:key="'s'+index" @click="clickShopCard(index)" class='list-card'>
+                <ShopCard :image="'images/' + list_of_pins[index].IMAGE" :price="list_of_pins[index].PRICE" :type="'pinType'" ref="shopCard"/>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <hr style="border-top:1px solid var(--secondaryColor)">
+      <div>
+        <h2 class="my_subTitle"><translate>powerUps</translate></h2>
+        <div class = "cards" v-if="this.list_of_power_ups">
+            <ul class = "card-list">
+              <li style="padding-right:10px" v-for="(value,index) in this.list_of_power_ups" v-bind:key="'s'+index" @click="clickShopCard(index+list_of_pins.length)" class='list-card'>
+                <ShopCard :image="'images/'+list_of_power_ups[index].IMAGE" :price="list_of_power_ups[index].PRICE" 
+                :type="'powerType'" :description="list_of_power_ups[index].DESCRIPTION" ref="shopCard"/>
+              </li>
+            </ul>
+        </div>
+      </div>-->
       <!-- se voglio fare di tutta la pagina aggiungo style="height:100%" alle ion slides e div-->
       <div style="height:90%">
       <ion-slides ref="slides" pager="true" :options="slideOpts" style="height:100%">
@@ -153,7 +175,6 @@ export default{
     },
     methods:{
       changeSlide(index){
-        console.log("WAAAAAAAAAAA");
         console.log(index);
         this.$refs.slides.slideTo(index,1000);
       },
@@ -392,7 +413,7 @@ h2{
 }
 
 ion-slides{
-  --bullet-background: var(--primaryColor);
+  --bullet-background: black;
   --bullet-background-active: var(--secondaryColor);
 }
 </style>

@@ -54,6 +54,7 @@ export default {
   methods:{
     showInfo(){
       console.log(this.medalColor);
+      console.log(this.medalName);
       console.log(this.medalDescription);
       var pop = this.$refs.generalPopupTutorial
       /*var medal_text = this.$gettext("medalName") + "\"" + this.medalName + "\"" + this.$gettext("obtainedMsg") + " ";

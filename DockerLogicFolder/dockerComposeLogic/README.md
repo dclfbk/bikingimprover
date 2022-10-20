@@ -13,15 +13,17 @@ I File possono essere ottenuti dalla repository su git
 
 Controllare che nella cartella AllNeededDirectories/bicycle-osm-app/pbfFiles ci siano le seguenti cartelle:"CenterGeojson, LayersNames" e che siano vuote. se non si sono allora crearle.
 
+IMPORTANTE: Eliminare dalle sottocartelle all'interno di AllNeededDirectories/tippecanoe/tippecanoe_funzionante/NewSystem i file .gitignore, altrimenti il codice non funzionerà.
+
 0) Lanciare il comando "sudo docker volume create --name DataVolume1" per creare il volume per tenere dati utili
 1) Lanciare il comando "sudo docker compose build ubuntu" per creare l'immagine contenente ubuntu e gli script necessari
-2) Lanciare il comando "sudo docker run -d --name systemContainer compose_from_repository_ubuntu" per creare il container contenente l'immagine creata
+2) Lanciare il comando "sudo docker run -d --name systemContainer dockercomposelogic_ubuntu" per creare il container contenente l'immagine creata
 3) Lanciare il comando "sudo docker cp systemContainer:/datavolume datavolume" per copiare nella directory corrente la cartella datavolume
 # 2) Lanciare comando "sudo docker container ls -a" per ottenere la lista dei container creati
 # 3) Utilizzando l'id del container generato lanciare il comando "sudo docker cp &ltcontainerID&mt:/datavolume datavolume"
 4) Usare il comando "sudo chmod -R o+rw datavolume" per dare i permessi alla cartella datavolume
 5) Lanciare il comando "sudo docker compose build web" per creare l'immagine dell'applicazione
-6) Lanciare il comando "sudo docker run -dp 8080:8080 compose_from_repository_web" per lanciare l'applicazione
+6) Lanciare il comando "sudo docker run -dp 8080:8080 dockercomposelogic_web" per lanciare l'applicazione
 6) Navigare alla pagina localhost:8080 e visualizzare il sito.
 
 I file che vengono salvati nel volume si troveranno poi nella cartella "/var/lib/docker/volumes/DataVolume1/_data"

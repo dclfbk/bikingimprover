@@ -1,8 +1,8 @@
 <template>
         <!---->
     <div class="home">
-        <h1 v-if="!$auth.isAuthenticated" v-translate>authNeededMsg</h1>
-        <h1 v-if="$auth.isAuthenticated" v-trasnlate>Login Già Effettuato, Buon Divertimento!<!--You're already logged in, have fun mapping!--></h1>
+        <h1 style="text-align:center" v-if="!$auth.isAuthenticated" v-translate>authNeededMsg</h1>
+        <h1 style="text-align:center" v-if="$auth.isAuthenticated" v-trasnlate>Login Già Effettuato, Buon Divertimento!<!--You're already logged in, have fun mapping!--></h1>
         <br>
         <!-- Check that the SDK client is not currently loading before accessing is methods -->
         <div class="divCentrale" v-if="!$auth.loading">

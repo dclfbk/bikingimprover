@@ -10,8 +10,8 @@
     <div v-if="showSelect" class="map-overlay top">
       <div class="map-overlay-inner">
         <fieldset>
-          <label>Select layer</label>
-          <select id="my_layer" name="my_layer">
+          <label style="color:var(--black)">Select layer</label>
+          <select id="my_layer" name="my_layer" style="background-color:var(--white); color:var(--black);">
             <option value="show_all"><translate>showAllMsg</translate></option>
             <option value="nothing"><translate>showNothingMsg</translate></option>
             <!--<option value="trento_choice">Trento</option>
@@ -22,7 +22,7 @@
           </select>
         </fieldset>
         <fieldset>
-          <button style="width:100px" @click="changeWayLayer(page,completed_w)">Select</button>
+          <button style="width:100px; color:var(--black); background-color:var(--white); border:1px solid var(--black)" @click="changeWayLayer(page,completed_w)">Select</button>
           <div id="swatches"></div>
         </fieldset>
       </div>
@@ -189,8 +189,14 @@ export default {
 
     this.askGeoLocation();
     //const mapStyle = "https://api.maptiler.com/tiles/terrain-rgb/tiles.json?key=S1aB9ElJLePXra57G3cm" LOTR NON FUNZIONA
-    const mapStyle = "https://api.maptiler.com/maps/topo/style.json?key=S1aB9ElJLePXra57G3cm"
-    //const mapStyle = "https://api.maptiler.com/maps/basic-v2-dark/style.json?key=S1aB9ElJLePXra57G3cm"
+    var mapStyle="";
+    if(localStorage.getItem("theme")=="blackish"||localStorage.getItem("theme")==null){
+      console.log(localStorage.getItem("theme"))
+      mapStyle = "https://api.maptiler.com/maps/topo/style.json?key=S1aB9ElJLePXra57G3cm"
+    }else{
+      console.log(localStorage.getItem("theme"))
+      mapStyle = "https://api.maptiler.com/maps/basic-v2-dark/style.json?key=S1aB9ElJLePXra57G3cm"
+    }
     const initialState = {
       lng: 11.116667,
       lat: 46.066666,
@@ -202,9 +208,9 @@ export default {
       style: `${mapStyle}`,
       center: [initialState.lng, initialState.lat],
       zoom: initialState.zoom,
-      maxZoom: 19,
+      maxZoom: 20,
     });
-    this.map.setMaxZoom(19);
+    this.map.setMaxZoom(20);
     this.map.dragRotate.enable();
 
     ref.map.resize();
@@ -226,7 +232,7 @@ export default {
     this.map.addControl(
       geolocate
     );
-    this.map.maxZoom=17;
+    this.map.maxZoom=20;
 
     //ALL LOGIC OF THE MAP ON LOAD
     ref.map.on('load',function(){
@@ -321,8 +327,9 @@ export default {
           setLngLat(e.lngLat).
           setDOMContent(this.$refs.pinMode.$el).
           addTo(this.map);
-          my_popup._container.style.backgroundColor = "#6667AB";
-          my_popup._content.style.backgroundColor= "rgba(255,255,255,1)";
+          my_popup._container.style.backgroundColor = "var(--secondaryColor)";
+          my_popup._content.style.backgroundColor = "var(--white)";
+          //my_popup._content.style.backgroundColor= "rgba(255,255,255,1)";
         })
       }else{
         this.$refs.tutPop.title = this.$gettext("lackPinMsg");
@@ -445,8 +452,6 @@ export default {
                            ref.createAllNodeLayers(ref, ref.node_layer_list, ref.completed_n);
                            ref.createAllClusterLayers(ref, ref.way_layer_list);
                            ref.createAllCenterLayers(ref, ref.way_layer_list, ref.completed_w);
-                           //console.log(ref.way_layer_list)
-                           //console.log(ref.node_layer_list)
                            break;    
           case "node_choice": ref.removeAllLayers(ref, ref.way_layer_list, ref.node_layer_list, ref.center_points_layer_list, ref.cluster_layer_list);
                               ref.createAllNodeLayers(ref, ref.node_layer_list, ref.completed_n); break;
@@ -768,8 +773,9 @@ export default {
             setLngLat(e.lngLat).
             setDOMContent(ref.$refs.htmlPopup.$el).
             addTo(ref.map);
-            my_popup._container.style.backgroundColor = "#6667AB";
-            my_popup._content.style.backgroundColor= "rgba(255,255,255,1)";
+            my_popup._container.style.backgroundColor = "var(--secondaryColor)";
+            my_popup._content.style.backgroundColor = "var(--white)";
+            //my_popup._content.style.backgroundColor= "rgba(255,255,255,1)"; //var(--white)
           })
         }        
       })
@@ -859,7 +865,7 @@ export default {
         'filter': ["all",['!has','point_count'],['==','city',cityName]],
         //["in",121212,my_completed_ways]
         "icon-allow-overlap": true,
-        'maxzoom':20,
+        'maxzoom':21,
         'minzoom' : 14,
         'paint':{
           'circle-radius': 10,
@@ -1032,7 +1038,8 @@ export default {
         setDOMContent(ref.$refs.userPin.$el).
         addTo(ref.map);
         my_popup._container.style.backgroundColor = "black";
-        my_popup._content.style.backgroundColor= "rgba(255,255,255,1)";
+        my_popup._content.style.backgroundColor = "var(--white)";
+        //my_popup._content.style.backgroundColor= "rgba(255,255,255,1)";
       })
     },
 
@@ -1257,6 +1264,10 @@ export default {
 <style scoped>
 @import '~maplibre-gl/dist/maplibre-gl.css';
 
+option{
+  color:var(--black)
+}
+
 .map-container {
   position: absolute; top: 0; bottom: 0;  left: 0; right:0;
   height: 100%;
@@ -1294,7 +1305,7 @@ padding: 10px;
 }
  
 .map-overlay .map-overlay-inner {
-background-color: #fff;
+background-color: var(--white);
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 border-radius: 3px;
 padding: 10px;

@@ -5,7 +5,7 @@
       <li>
             <div>
                 <form>
-                    <label for="fname">è una strada percorribile in bicicletta?</label><br>
+                    <label for="fname"><translate>TutQuestion</translate></label><br>
                     <div class="select-style2" style="overflow-y:scroll"> 
                         <select size="1"  autocomplete="off" id="p_answers" name="answerlist" @change=select()>
                         <option style="height:8px">si</option>

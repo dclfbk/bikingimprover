@@ -33,7 +33,7 @@
     methods:{
         skipTutorial(){
           console.log("Clicked skip tutorial");
-          this.$userData.isNew = false;
+          //this.$userData.isNew = false;
           this.$router.push('/mytiles'); 
         }
     }

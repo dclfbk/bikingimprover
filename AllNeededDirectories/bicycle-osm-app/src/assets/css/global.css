@@ -10,6 +10,15 @@
     --brown: brown;
 }   
 
+
+.md-icon{
+    color:var(--black);
+  }
+
+span{
+    color:var(--black);
+}
+
 .titleTab{
     display:inline-flex;
     overflow:auto;
@@ -33,7 +42,7 @@ h1{
     /* Add shadows to create the "card" effect */
     /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
     transition: 0.3s;
-    background-color:var(--white);
+    /*background-color:var(--white);*/
     position:relative;
   }
   
@@ -54,6 +63,7 @@ clear: both;
     padding-top:20px;
     opacity:0;
     transition: 0.8s all ease-in-out;
+    max-width:250px;
 
 }
 
@@ -115,6 +125,16 @@ clear: both;
     animation: fadeIn 1s 1;
     animation-fill-mode: forwards;
 }
+
+.md-dialog-container{
+    background-color:white;
+    color:black;
+}
+
+.md-dialog-title {
+    color:black;
+}
+
 
 @keyframes fadeIn {
     0% {

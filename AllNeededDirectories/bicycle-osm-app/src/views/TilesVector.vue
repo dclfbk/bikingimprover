@@ -98,6 +98,7 @@
       },
 
       async createDBUser(userName){
+        //console.log("USERRRRRRRRRRRRRRRRRRRRRRRRRR")
         console.log(userName)
         var my_body = {
           "userName": userName
@@ -141,17 +142,18 @@
 
 
       async checkIfCompletelyValidated(){
+        console.log("CHECK IF COMPLETELY VALIDATED....");
         //call game engine to check the custom data full_positive and full_negative. Then it resets them to 0
         if(this.$userData.full_positive!=0){
           console.log("SOME GUYS FULLY VALIDATED YOUR ANSWERS!");
-          this.$refs.popupPositive.text = "5 persone hanno validato "+this.$userData.full_positive +" delle tue risposte! Congratulazioni! Hai ricevuto punti!"
+          this.$refs.popupPositive.text = this.$gettext("ValStartPos") +this.$userData.full_positive + this.$gettext("ValEndPos");
           this.$refs.popupPositive.second = true;
           await this.resetCustomValidation("full_positive_validation")
           //resetValidated
         }
         if(this.$userData.full_negative!=0){
           console.log("SOME GUYS INVALIDATED YOUR ANSWER, YOU'RE LOSING POINTS");
-          this.$refs.popupNegative.text = "Mi spiace ma 5 persone non pensano tu abbia risposto correttamente a " +this.$userData.full_negative + " domande quindi... Hai perso i punti che avevi guadagnato da quelle domande!"
+          this.$refs.popupNegative.text = this.$gettext("ValStartNeg") +this.$userData.full_negative + this.$gettext("ValEndNeg");
           this.$refs.popupNegative.second = true;
           //resetValidated
           await this.resetCustomValidation("full_negative_validation")
@@ -159,6 +161,7 @@
       },
 
       async resetCustomValidation(full){
+        console.log("resetting....")
         var my_body = {
         "playerId" : this.$userData.userName,
         "typeMission" : "reset",
@@ -169,7 +172,7 @@
           const my_url = this.$api_url + "/missions/givePoint"
           const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json"},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body: JSON.stringify(my_body),
           };
           const fetchdata = await fetch(my_url, requestSpatialite)

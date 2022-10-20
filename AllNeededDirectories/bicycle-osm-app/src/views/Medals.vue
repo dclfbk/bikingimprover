@@ -46,12 +46,14 @@ export default{
           await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url)).then(async items=>{
             console.log(items)
             await(this.updatePage(this.$userData)).then(items=>{
+              items = this.sortByColor(items);
               this.my_badges = items;
             });
           });
           //this.updatePage(this.$userData);
       }else{
         await(this.updatePage(this.$userData)).then(items=>{
+          items = this.sortByColor(items);
           this.my_badges = items;
         });
         //this.updatePage(this.$userData);
@@ -75,6 +77,13 @@ export default{
   },
 
   methods:{
+      sortByColor(my_list){
+        var sortOrder = {"gold":0, "silver":1, "brown":2, "black":3}
+        my_list.sort(function(p1,p2){
+          return sortOrder[p1.COLOR]-sortOrder[p2.COLOR];
+        })
+        return my_list;
+      },
 
       async updatePage(userData){
         //if(userData.badges.length)

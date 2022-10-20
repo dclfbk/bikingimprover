@@ -9,6 +9,13 @@
     <TutorialPopup :text="this.popup_text" ref="tutorial_popup"></TutorialPopup>
     <QuestTutorialPopup ref="questPopup" v-if="showQuests"/>
     <GeneralPopupTutorial ref="generalPopupTutorial" v-if="showGeneral"></GeneralPopupTutorial>
+    <ion-item style="visibility:hidden">
+      <ion-label style="display:none">Choose Language</ion-label>
+      <ion-select ref="my_select" style="visibility:hidden" @ionChange="languagePick($event)">
+          <ion-label> Choose Language </ion-label>
+          <ion-select-option v-for="(my_language,key) in $language.available" :value="key" v-bind:key="my_language">{{my_language}}</ion-select-option>
+      </ion-select>
+    </ion-item>
   </div>
 </template>
 
@@ -17,13 +24,15 @@ import maplibre from 'maplibre-gl';
 import TutorialPopup from '../popups/TutorialPopup'
 import QuestTutorialPopup from '../popups/QuestTutorialPopup'
 import GeneralPopupTutorial from '../popups/GeneralPopupTutorial.vue'
+import {setLanguage} from '../../utils/GlobalFunctions.js';
+import Vue from 'vue'
 
 export default {
   name: "MapTutorial",
   components:{
       TutorialPopup,
       QuestTutorialPopup,
-      GeneralPopupTutorial
+      GeneralPopupTutorial,
   },
   data(){
     return{showQuests:null, map:null, my_title:"", popup_text:"", showGeneral:null, ltlngObject:null}
@@ -39,11 +48,11 @@ export default {
       lat: 46.069092939704404,
       zoom: 14
     };
+
     const startPoint = {
       lng: 11.11695030023975,
       lat: 46.069092939704404,
     }
-    this.popup_text = "Cliccando una via colorata o un cerchio all'interno di essa potrai vederne le domande associate. Prova a cliccare la via o il cerchio associato."
 
     this.map = new maplibre.Map({
       container: this.$refs.myTutorialMapp,
@@ -61,8 +70,7 @@ export default {
             zoom:18
         })
         //CALL FIRST POPUP
-        ref.$refs.tutorial_popup.text=ref.popup_text;
-        ref.$refs.tutorial_popup.second=true;
+        ref.$refs.my_select.open();
         ref.map.addSource('route', {
             'type': 'geojson',
             'data': {
@@ -136,8 +144,16 @@ export default {
     
   },
   methods:{
+    languagePick(event){
+      setLanguage(event.detail.value);
+      Vue.config.language = event.detail.value
+      this.popup_text = this.$gettext("TutClickWay");
+      this.$refs.tutorial_popup.text=this.popup_text;
+      this.$refs.tutorial_popup.second=true;
+    },
+
     showQuestion(ref,e,title){
-        ref.popup_text="Ora puoi selezionare una risposta (in questo caso già selezionata). Prova ora a premere submit e inviare la risposta."
+        ref.popup_text = this.$gettext("TutChooseAnswer");
         ref.$refs.tutorial_popup.text=ref.popup_text;
         ref.$refs.tutorial_popup.second=true;
         console.log(title);

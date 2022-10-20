@@ -9,6 +9,7 @@ RUN npm install -g http-server
 COPY AllNeededDirectories/bicycle-osm-app/package*.json ./
 
 # install project dependencies
+RUN npm clean-install
 RUN npm install
 RUN npm install dotenv
 RUN npm install --save connect-history-api-fallback

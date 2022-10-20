@@ -22,8 +22,8 @@ export default {
   },
   data(){
       return{
-          title: "Congratulazioni",
-          text: "Congratulazioni! Hai risposto alla tua prima domanda! Continua così e scalerari la classifica!",
+          title: this.$gettext("TutCongrTitle"),//"Congratulazioni",
+          text: this.$gettext('TutCongrText'),//"Congratulazioni! Hai risposto alla tua prima domanda! Continua così e scalerari la classifica!",
           number: 0,
           finished: false
       }
@@ -51,11 +51,11 @@ export default {
         popup_prova[0].style.display="none";
         if(!this.finished){
           switch(this.number){
-            case 0: this.$parent.newInfo("Posizione","Qui puoi premere i tasti per zoomare/dezoomare e trovare la tua posizione!",0); break;
-            case 1: this.$parent.newInfo("Menù","Questo è il menù con cui puoi navigare tra le pagine",1); break;
-            case 2: this.$parent.newInfo("Punteggio","Qui puoi tenere traccia della tua posizione in classifica e del tuo punteggio!",2);break;
-            case 3: this.$parent.newInfo("Inserisci Pin","Utilizzando questo tasto potrai poi inserire un pin con una descrizione a tua scelta! Dovrai però prima comprarli nel negozio!",3);break;
-            case 4: this.$parent.newInfo("Fine Tutorial", "Congratulazioni! Hai finito il tutorial e puoi cominciare a mappare!",4); break;
+            case 0: this.$parent.newInfo(this.$gettext("TutPositionTitle"),this.$gettext("TutPositionText"),0); break;
+            case 1: this.$parent.newInfo("Menu",this.$gettext("TutMenuText"),1); break;
+            case 2: this.$parent.newInfo(this.$gettext("pointsMsg"),this.$gettext("TutPointsText"),2);break;
+            case 3: this.$parent.newInfo(this.$gettext("TutPinTitle"), this.$gettext("TutPinText"),3);break;
+            case 4: this.$parent.newInfo(this.$gettext("TutEndTitle"),this.$gettext("TutEndText"),4); break;
             default: break;
           }
         }else{
@@ -74,7 +74,7 @@ export default {
     margin-right: 20px;
     float:right;
     --border-radius: 15px;
-    --background: white;
+    --background: var(--white);/*white;*/
     --color: $color1;
   }
 

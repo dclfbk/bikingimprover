@@ -37,7 +37,7 @@
         <md-menu-item to="/options">
           <div style="float:left">
             <md-icon>settings<!--paid--></md-icon>
-            <span style="padding-left:10px">Options</span>
+            <span style="padding-left:10px">Settings</span>
           </div>
         </md-menu-item>
 
@@ -96,14 +96,6 @@ export default {
     background-color:var(--white);
     color:var(--white);
     height:290px;
-  }
-
-  .md-icon{
-    color:var(--black);
-  }
-
-  span{
-    color:var(--black);
   }
 
   .author-card {

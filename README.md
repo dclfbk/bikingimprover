@@ -1,4 +1,14 @@
-# Biking Improver
+English README version: [README.en.md](README.en.md)
+# osm gamification
+
+repository per il periodo di stage di Francesco Weikmann
+
+Uno schema, da parte di [MoDiS](https://das.fbk.eu/) su come affrontare il tema dello stage
+
+![](https://das.fbk.eu/sites/soa.fbk.eu/files/fbk_gamification-framework.png)
+
+
+la cartella [doc](doc) contiene documenti creati durante lo stage
 
 # SETUP</br>
 Muoversi all'interno dell cartella riguardante la [web-app](src/AllNeededDirectories/bicycle-osm-app) e creare un file chiamato .env, dopodichè seguire le indicazioni dei prossimi paragrafi.
@@ -58,11 +68,11 @@ Andare all'interno della cartella riguardante la [web-app](src/AllNeededDirector
 
 ***Auth0***</br>
 L'appicazione utilizza auth0 per gestire l'autenticazione degli user. Per creare la web-app è quindi necessario creare un account auth0 o utilizzarne uno già esistente (https://auth0.com/). 
-una volta effettuato l'accesso ad auth0, creare un'applicazione e configurarla per l'utilizzo su vuejs seguendo la guida quick start.
+una volta effettuato l'accesso ad auth0, creare un'applicazione e configurarla per l'utilizzo su vuejs seguendo la guida quick start. Basterà creare un'applicazione per vue.js con un nome. Successivamente creare una api sotto la sezione api.
 All'interno della cartella riguardante la [web-app](src/AllNeededDirectories/bicycle-osm-app) creare un file chiamato auth_config.json e inserire i seguenti dati all'interno del json:
 - "domain": Il dominio utilizzato dalla applicazione creata (può essere trovato nei settings della app)
 - "clientId": Il client ID utilizzato dalla applicazione creata (può essere trovato nei settings della app)
-- "audience": l'url della propria app con la'aggiunta di "/api/v2/"
+- "audience": identifier della api creata, lo si trova nella sezione delle api.
 - "client_secret": Il client_secret della app (lo si trova nella sezione delle applicazione riguardante le api)
 - "grant_type": "client_credentials",
 - "client_id_api": id delle api della applicazione (lo si trova nella sezione delle applicazione riguardante le api)
@@ -71,15 +81,20 @@ All'interno della cartella riguardante la [web-app](src/AllNeededDirectories/bic
 Se l'applicazione viene utiizzata solamente in locale inserire i seguenti indirizzi negli indirizzi di callback all'interno della applicazione su auth0: 
 http://localhost:8080/callback, http://localhost:8080/myTiles. Inserire http://localhost:8080 nei campi callback, logout, weborigins, allowed origins nelle impostazioni della applicazione su auth0. Altrimenti seguire le indicazioni di Auth0. 
 
-Nella DashBoard dell'applicazione collegata a Auth0 bisognerà aggiungere una azione custom che dev'essere chiamata durante il login. Quest'azione creerà un campo signUpName nello usr in modo da associarlo allo user della gamification engine. Codice su auth0 dashboard action custom:</br>
+Nella DashBoard dell'applicazione collegata a Auth0 bisognerà aggiungere una azione custom che dev'essere chiamata durante il login. Quest'azione chiamata storeFirstNickName creerà un campo signUpName nello usr in modo da associarlo allo user della gamification engine. Codice su auth0 dashboard action custom:</br>
 
 - exports.onExecutePostLogin = async (event, api) => { if (event.user.user_metadata.signUpName!=null) { console.log(Skipping the expensive task because it already occurred for ${event.user.email}.); return; } // do and expensive task api.user.setUserMetadata("signUpName", event.user.nickname); };</br>
+
+Aggiungere quindi un'altra azione chiamata saveUserSignUpName con codice:</br>
+
+- exports.onExecutePreUserRegistration = async (event, api) => { //console.log(event.user) api.user.setAppMetadata("signUpName",event.user.nickname) console.log(api.user); };
 
 Dovrà essere aggiunta quindi una regola che permetta di ottenere la metadata signUpName ogni qualvolta si vogliono ottenere le info dello user. Questa regola ha codice:</br>
 
 - function (user, context, callback) { const namespace = 'myUserID'; user.user_metadata = user.user_metadata || {}; user.user_metadata.signUpName = user.user_metadata.signUpName || null; context.idToken[${namespace}signUpName] = user.user_metadata.signUpName; callback(null, user, context); }</br>
 
-All'interno della sezione Actions/flow sempre in auth0 andare su login e quindi inserire la regola e la azione creata.
+All'interno della sezione Actions/flow sempre in auth0 andare su login e quindi inserire la regola e la azione storeFirstNickName creata.
+Andare ora su Actions/flow/PreUserRegistration e aggiungere la azione  saveUserSignUpName.
 
 ***EmailJS***</br>
 La webApp contiene anche una sezione nel quale è possibile lasciare scrivere delle mail ai developer. Il servizio che viene utilizzato è EmailJs(https://www.emailjs.com/). Se si volesse continuare ad utilizzare cambiando la mail allora bisognerà iscriversi al servizio e successivamente modificare i campi: 

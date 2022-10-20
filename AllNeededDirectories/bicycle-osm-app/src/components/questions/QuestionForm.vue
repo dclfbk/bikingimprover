@@ -6,9 +6,9 @@
     </form>-->
     <!-- -->
     <form>
-      <label for="fname">{{question_to_show}}</label><br>
+      <label for="fname" style="color:var(--black)">{{question_to_show}}</label><br>
       <div class="select-style2" style="overflow-y:scroll"> 
-        <select size="1"  autocomplete="off" id="p_answers" name="answerlist" v-model="answer" @change=select()>
+        <select size="1"  autocomplete="off" id="p_answers" name="answerlist" v-model="answer" @change=select() style="color:var(--black); background-color:var(--white)">
           <option v-for="(value,index) in this.possible_answers" v-bind:key="'P'+index" style="height:8px" :value="start_answer[index]">{{possible_answers[index]}}</option>
           <!--v-bind:id="'PID'+index"-->
           <option>cancel</option>

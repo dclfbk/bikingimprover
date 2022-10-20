@@ -15,7 +15,6 @@
         <MedalsInfo class="element_list_medals" :medalName="my_badges[index].MEDALNAME" :medalColor="my_badges[index].COLOR" :medalDescription="my_badges[index].DESCRIPTION"/>
       </li>
       <ion-button class="back_button" @click="goToClassification()">Go Back</ion-button>
-        <!--<MedalsInfo :medalsList="my_badges"/>-->
     </ion-content>
     <ion-content class = "ion-text-center" justify-content-center @click=clickedPage() v-else>
         <NoMedalsClassInfo/>
@@ -59,16 +58,16 @@ export default{
             if(this.$userInfo.userName==nickname){
                 //console.log("Perfect");
                 await this.updatePage(this.$userInfo).then(items=>{
-                  console.log(items);
-                  this.my_badges = items
+                  items = this.sortByColor(items);
+                  this.my_badges = items;
                 });
             }else{
                 //console.log("Not the same");
                 //console.log("nickname: " + nickname + "name: " + this.$userInfo.userName)
                 await(userStats.createUser(nickname,this.$api_url));
                 await this.updatePage(userStats).then(items=>{
-                  console.log(items);
-                  this.my_badges = items
+                  items = this.sortByColor(items);
+                  this.my_badges = items;
                 });
                 Vue.prototype.$userInfo = userStats;
             }
@@ -87,6 +86,14 @@ export default{
   },
 
   methods:{
+    sortByColor(my_list){
+        var sortOrder = {"gold":0, "silver":1, "brown":2, "black":3}
+        my_list.sort(function(p1,p2){
+          return sortOrder[p1.COLOR]-sortOrder[p2.COLOR];
+        })
+        return my_list;
+      },
+      
       async updatePage(userData){
           /*if(userData.badges.length>0){
             this.my_badges=new Array();

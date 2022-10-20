@@ -53,7 +53,9 @@
 /*ion-content{
   bottom:50px;
 }*/
-
+h3{
+  color:var(--black)
+}
 body{
   background:var(--white);
 }

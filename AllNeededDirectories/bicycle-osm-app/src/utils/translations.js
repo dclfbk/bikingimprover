@@ -48,7 +48,7 @@ var translations = {
         "first steps": "You get the 'fist steps' medal if you answer your first question!",
         "professional cyclist": "You get the medal 'professional cyclist' if you answer at least 50 questions!",
         "cyclist":"You get the 'cyclist' medal if you answer at least 20 questions!",
-        "expert validator": "You get the 'expert validator' if you validate at leas 20 answers!",
+        "expert validator badge": "You get the 'expert validator' if you validate at least 20 answers!",
         "professional badge": "You get the 'professional badge' if you reach level 20!",
         "expert badge": "You get the medal 'expert badge' if you reach level 10!",
         "beginner badge": "You get the medal 'beginner badge' if you reach level 5!",
@@ -67,6 +67,7 @@ var translations = {
         "contact": "Contact Us",
         "inserisci": "Insert",
 
+        //Possible Questions
         "Posso andare in bicicletta per questa strada?": "Can I use the bicycle in this way?",
         "E' vero che posso andare in bicicletta per questa strada?":"Is it true that I can use the bicycle in this street?",
         "Di che superficie è fatta questa strada?":"Which surface is the way made of?",
@@ -89,7 +90,8 @@ var translations = {
         "C'è un servizio gratuito per gonfiare le ruote della bicicletta?": "Is there a service to pump the bicycle's wheel?",
         "Quanti posti per bicicletta ci sono in questo parcheggio?":  "How many bicycle parking spaces are there in this parking place?",
         "Il negozio vende anche bici elettriche?": "Does the shop sell electric bikes too?",
-
+        
+        //Possible Answers
         "Yes": "Yes",
         "No": "No",
         "si": "Yes",
@@ -122,7 +124,27 @@ var translations = {
 
         "checkTrueMsg": "Is it true that the answer to the question: ",
         "checkEndMsg": " is ",
-        
+
+        //Tutorial Section
+        "TutClickWay": "By clicking a way or a circle inside a way you can see all its questions. Try to click the way or the associated circle.",
+        "TutChooseAnswer": "Now you can select an answer (in this case it's already selected). Try to hit submit to send the answer.",
+        "TutQuestion": "Can I use the bicycle on this street?",
+        "TutCongrTitle": "Congratulations",
+        "TutCongrText": "Congratulations! You answered your first question! Keep going and you'll climb the ranking!",
+        "TutPositionTitle": "Position",
+        "TutPositionText": "There you'll find the buttons to zoom/dezoom and find your position!",
+        "TutMenuText": "This is the menu that you can use to move between pages",
+        "TutPointsText": "There you can track your rank and points!",
+        "TutPinTitle": "Add Pin",
+        "TutPinText": "Using this button you'll be able to add pins with a brief description of the map! But first you have to buy them in the shop!",
+        "TutEndTitle": "End Of The Tutorial",
+        "TutEndText": "Congratulations! You finished the tutorial and you can finally start mapping!",
+
+        //Validation Notification
+        "ValStartPos": "5 people positively validated ", 
+        "ValEndPos": " of your answers! Congratulations! You received points!",
+        "ValStartNeg": "Sorry but 5 people think that you didn't answer correctly at ",
+        "ValEndNeg": " questions so... You lost the points you got from those questions!",
     },
     "Italiano":{
         "welcomeMsg": "Benvenuto",
@@ -173,7 +195,7 @@ var translations = {
         "first steps": "Ottieni la medaglia 'first steps' se rispondi alla tua prima domanda!",
         "professional cyclist": "Ottieni la medaglia 'professional cyclist' se rispondi ad almeno 50 domande!",
         "cyclist":"Ottieni la medaglia 'cyclist' se rispondi ad almeno 20 domande!",
-        "expert validator": "Ottieni la medaglia 'expert validator' se validi almeno 20 risposte!",
+        "expert validator badge": "Ottieni la medaglia 'expert validator' se validi almeno 20 risposte!",
         "professional badge": "Ottieni la medaglia 'professional badge' se raggiungi il livello 20!",
         "expert badge": "Ottieni la medaglia 'expert badge' se raggiungi il livello 10!",
         "beginner badge": "Ottieni la medaglia 'beginner badge' se raggiungi il livello 5!",
@@ -192,6 +214,7 @@ var translations = {
         "contact": "Contattaci",
         "inserisci": "Inserisci",
 
+        //Domande possibili
         "Posso andare in bicicletta per questa strada?": "Posso andare in bicicletta per questa strada?",
         "E' vero che posso andare in bicicletta per questa strada?":"E' vero che posso andare in bicicletta per questa strada?",
         "Di che superficie è fatta questa strada?":"Di che superficie è fatta questa strada?",
@@ -214,7 +237,8 @@ var translations = {
         "C'è un servizio gratuito per gonfiare le ruote della bicicletta?": "C'è un servizio gratuito per gonfiare le ruote della bicicletta?",
         "Quanti posti per bicicletta ci sono in questo parcheggio?":  "Quanti posti per bicicletta ci sono in questo parcheggio?",
         "Il negozio vende anche bici elettriche?": "Il negozio vende anche bici elettriche?",
-
+        
+        //Risposte possibili
         "si": "Si",
         "no": "No",
         "Yes": "Si",
@@ -240,6 +264,28 @@ var translations = {
         "pavimentazione_pietre": "pavimentazione_pietre",
         "checkTrueMsg": "E' vero che la risposta alla domanda: ",
         "checkEndMsg":" è ",
+
+        //Sezione tutorial
+        "TutClickWay": "Cliccando una via o un cerchio associato ad essa, potrai vederne tutte le domande associate. Prova a cliccare la via o il cerchio associato",
+        "TutChooseAnswer": "Ora puoi selezionare una risposta (in questo caso già selezionata). Prova ora a premere submit e inviare la risposta.",
+        "TutQuestion": "E' una strada percorribile in bicicletta?",
+        "TutCongrTitle": "Congratulazioni",
+        "TutCongrText": "Congratulazioni! Hai risposto alla tua prima domanda! Continua così e scalerari la classifica!",
+        "TutPositionTitle": "Posizione",
+        "TutPositionText": "Qui puoi premere i tasti per zoomare/dezoomare e trovare la tua posizione!",
+        "TutMenuText": "Questo è il menu con cui puoi navigare tra le pagine",
+        "TutPointsText": "Qui puoi tenere traccia della tua posizione in classifica e del tuo punteggio!",
+        "TutPinTitle": "Inserisci Pin",
+        "TutPinText": "Utilizzando questo tasto potrai poi inserire un pin con una descrizione a tua scelta! Dovrai però prima comprarli nel negozio!",
+        "TutEndTitle": "Fine Tutorial",
+        "TutEndText": "Congratulazioni! Hai finito il tutorial e puoi cominciare a mappare!",
+
+        //Validation Notification
+        "ValStartPos": "5 persone hanno validato ", 
+        "ValEndPos": " delle tue risposte! Congratulazioni! Hai ricevuto punti!",
+        "ValStartNeg": "Mi spiace ma 5 persone non pensano tu abbia risposto correttamente a ",
+        "ValEndNeg": " domande quindi... Hai perso i punti che avevi guadagnato da quelle domande!",
+
     }
 }
 

@@ -64,7 +64,7 @@ ion-content{
 }
 
 h3{
-  color:black;
+  color:var(--black);
 }
 </style>
 

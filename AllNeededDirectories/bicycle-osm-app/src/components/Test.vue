@@ -19,7 +19,7 @@
           <ValidationForm v-else 
             :id="open[index].ID" :item="$gettext('checkTrueMsg') + $gettext(open[index].QUESTION) + $gettext('checkEndMsg') + $gettext(open[index].ANSWER) + '?'" 
             :type="open[index].TYPE" :score="open[index].SCORE" :userAnswered="open[index].USERANSWERED" :validationNumber="open[index].NUMBEROFVALIDATIONS"
-            :userWhoValidated="open[index].U<SERSWHOVALIDATED" :realQuestion="open[index].QUESTION" ref="validateOtherQuests"
+            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" ref="validateOtherQuests"
           />
         </div>
       </li>
@@ -238,6 +238,7 @@ export default {
                   type=i.type;
                   realQuestion = i.realQuestion;
                   numberOfValidations = i.validationNumber;
+                  score = i.score;
                   console.log("THIS IS THE NUMBER OF VALIDATION WHEN SENDIN: " + i.numberOfValidations);
                   //numberOfValidations = numberOfValidations.toString();
                   close_popup=true;
@@ -335,6 +336,7 @@ export default {
     //used to get the elements separated by a , and insert them in an array
     splitTheArray(string){
       var my_array = []
+      console.log(string)
       my_array = string.split(",");
       console.log("This is my array after split: " + my_array);
       return my_array
@@ -560,13 +562,15 @@ export default {
     margin-right: 20px;
     float:right;
     --border-radius: 15px;
-    --background: white;
-    --color: $color1;
+    --background: var(--white);
+    --color: var(--black);
+    /*--color: $color1;*/
   }
 
   .my_title{
     display:flex;
     justify-content:center;
+    color:var(--black);
   }
 
   .maplibregl-popup-content {

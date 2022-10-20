@@ -1,14 +1,14 @@
 <template>
     <div>
-        <label><translate  style="color:black">{{item}}</translate></label><br>
+        <label><translate  style="color:var(--black)">{{item}}</translate></label><br>
         <div class='content'>
             <div class="radiocheck">
                 <input type="radio" name="si_no" id="yes_answer" v-model="answer" value="true">
-                <label for="si_no"><translate  style="color:black">si</translate></label>
+                <label for="si_no"><translate  style="color:var(--black)">si</translate></label>
             </div>
             <div class="radiocheck">
                 <input type="radio" name="si_no" id="no_answer" v-model="answer" value="false">
-                <label for="si_no"><translate  style="color:black">no</translate></label>
+                <label style="color:var(--black)" for="si_no"><translate  style="color:var(--black)">no</translate></label>
             </div>
         </div>
     </div>
