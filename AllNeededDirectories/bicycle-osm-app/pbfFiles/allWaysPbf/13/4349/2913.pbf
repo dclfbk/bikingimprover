@@ -1,3026 +1,0 @@
-Ëõx
-Trento(€ typeidtagscolor"
-way" ü‡ƒ"1
-/{"highway":"unclassified","name":"Via Provina"}"	
-#809AF3" Ü¶»ˆ"
-{"highway":"unclassified"}"	
-#1BF159" Û‡ƒ"D
-B{"highway":"unclassified","name":"Via Stella","surface":"asphalt"}"	
-#B0AE32" ƒ¥û"F
-D{"highway":"unclassified","name":"Via dell'Impresa","source":"bing"}"	
-#273A0A" ë¯Èf"
-{"highway":"track"}"	
-#D0D06C" ¡¤û"	
-#9CCDEE" ò¯Èf"	
-#2D1342" ì¯Èf"	
-#833ECB" ÏÓ¤q"	
-#E2AAD2" ‰Œ"	
-#7F0A76" İ£û"	
-#F37C72" ÓïŠú"	
-#5386D8" öˆÊf"	
-#A3A15C" ÓÓ¤q"	
-#E17C66" åÓ¤q"	
-#F7A5DA" ÑïŠú"	
-#FED89A" á”Çƒ"&
-${"highway":"service","oneway":"yes"}"	
-#57B359" â”Çƒ"&
-${"highway":"path","surface":"grass"}"	
-#5B49F0" …Åúâ"j
-h{"bicycle":"designated","foot":"designated","highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#D85C99" ÙÚ"D
-B{"highway":"residential","name":"Via Fersina","surface":"asphalt"}"	
-#3FBA30" œ”ó"1
-/{"highway":"unclassified","name":"Via Fersina"}"	
-#7485A8" µ‘N"1
-/{"highway":"service","service":"parking_aisle"}"	
-#5059DD" ‘N"–
-“{"bicycle":"designated","cycleway":"sidewalk","foot":"designated","footway":"sidewalk","highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#E2221F" ‹‘N"S
-Q{"crossing":"zebra","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#518F57" §‘N"œ
-™{"bicycle":"designated","cycleway":"crossing","foot":"designated","footway":"crossing","highway":"cycleway","segregated":"yes","surface":"paving_stones"}"	
-#DEC899" †‘N"	
-#8A161B" Ñ¿Ñ8"S
-Q{"highway":"secondary","maxspeed":"50","name":"Viale Verona","surface":"asphalt"}"	
-#7189C1" çêÂï"@
->{"footway":"sidewalk","highway":"footway","surface":"asphalt"}"	
-#957B11" ©‘N"	
-#E54447" ˜‘N"2
-0{"highway":"cycleway","surface":"paving_stones"}"	
-#270898" ï«ûâ"
-{"highway":"footway"}"	
-#3B823B" Í™§."C
-A{"highway":"secondary","name":"Viale Verona","surface":"asphalt"}"	
-#B66203" Î³”?"Q
-O{"highway":"tertiary","name":"Viale Verona","oneway":"yes","surface":"asphalt"}"	
-#301D4E" ˆ‘N"p
-n{"bicycle":"designated","foot":"designated","highway":"cycleway","segregated":"yes","surface":"paving_stones"}"	
-#F48A8E" ò«ûâ"	
-#8827E0" åêÂï"	
-#EC0D63" íöÑ"@
->{"highway":"service","oneway":"yes","service":"parking_aisle"}"	
-#79C597" îºĞ"L
-J{"highway":"residential","name":"Via Tullio Odorizzi","surface":"asphalt"}"	
-#8F9F5C" ğºĞ"[
-Y{"highway":"track","name":"Via Tullio Odorizzi","surface":"asphalt","tracktype":"grade1"}"	
-#D480F6" âëÓ"	
-#466E6C" ïºĞ"	
-#8DA67D" ÄĞ"	
-#F60FD1" áëÓ"N
-L{"highway":"residential","name":"Via Giuseppe Ferrandi","surface":"asphalt"}"	
-#95425E" –»Ğ"5
-3{"highway":"residential","name":"Via Enrico Conci"}"	
-#5AF59B" ÇÒìŒ"d
-b{"bicycle":"yes","foot":"yes","highway":"cycleway","motor_vehicle":"no","surface":"paving_stones"}"	
-#21473B" ŒëÓ"F
-D{"highway":"tertiary","name":"Via Enrico Conci","surface":"asphalt"}"	
-#E0E6CE" é˜Ë"
-{"highway":"service"}"	
-#FF13E8" ’Ë¥."T
-R{"highway":"secondary","name":"Via Galassa","old_ref":"SS349","surface":"asphalt"}"	
-#DF18C0" æ˜Ë"
-{"highway":"pedestrian"}"	
-#3E5105" £‹À"<
-:{"highway":"unclassified","name":"Strada delle Tabarelle"}"	
-#2F7F0D" øçŞ±"
-{"highway":"residential"}"	
-#197A9A" í‚Ş7"	
-#B71297" ¥‹À"4
-2{"highway":"unclassified","name":"Via Torricelle"}"	
-#038CEF" ğ‚Ş7"	
-#1A84EC" î‚Ş7"	
-#97D785" ï‚Ş7"	
-#E5BDD3" Îé4"U
-S{"access":"private","highway":"track","name":"Via Torricelle","tracktype":"grade1"}"	
-#DDF10F" ¡†ú"=
-;{"access":"private","highway":"track","tracktype":"grade1"}"	
-#0B19EE" Ùİå"7
-5{"highway":"residential","name":"Via Villa Parolari"}"	
-#046B7F" ÉŸ¨7"0
-.{"highway":"residential","service":"driveway"}"	
-#B52D9A" ÈŸ¨7"?
-={"access":"private","highway":"service","service":"driveway"}"	
-#C48687" åÑ‰Â"E
-C{"highway":"unclassified","name":"Via Marzola","surface":"asphalt"}"	
-#C71F82" òÈ"0
-.{"highway":"residential","name":"Via Marzola"}"	
-#C8D572" õ¥È"J
-H{"highway":"unclassified","name":"Via della Grotta","surface":"asphalt"}"	
-#DABD53" ö¥È"	
-#B3C909" ·¼ô"?
-={"access":"private","highway":"service","name":"Via Marzola"}"	
-#ADF25C" Æ×¨7"	
-#E6045A" ¸ë§£"G
-E{"highway":"unclassified","name":"Via Valdacole","surface":"asphalt"}"	
-#505CF2" ¿×¨7"T
-R{"highway":"residential","name":"Via Valdacole","oneway":"no","surface":"asphalt"}"	
-#4E1D29" ÛúÂ’";
-9{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"2"}"	
-#A87953" İúÂ’",
-*{"highway":"path","obstacle":"vegetation"}"	
-#13970A" ‹İĞ{"Ú
-×{"bicycle":"yes","emergency":"yes","foot":"yes","forestry":"yes","highway":"track","horse":"yes","motor_vehicle":"forestry","mtb:scale":"0","mtb:scale:uphill":"1","sac_scale":"hiking","trail_visibility":"excellent"}"	
-#9A9B22" ˆæ±"Z
-X{"highway":"unclassified","name":"Pista Ciclabile Valle dell'Adige","surface":"asphalt"}"	
-#19EA38" ß”Çƒ"	
-#756E56" ã”Çƒ"8
-6{"highway":"footway","layer":"1","surface":"concrete"}"	
-#126B29" Ş”Çƒ"	
-#5A7E71" å”Çƒ"G
-E{"bridge":"yes","highway":"footway","layer":"1","surface":"concrete"}"	
-#637428" à½Œ"	
-#8318E8" ß½Œ"u
-s{"bridge":"yes","highway":"unclassified","layer":"1","name":"Pista Ciclabile Valle dell'Adige","surface":"asphalt"}"	
-#7A6592" ¹Èè"	
-#AD4196" ë”Çƒ"	
-#9DCD2C" ¸´æƒ"	
-#D400B8" ¯´Û‘".
-,{"footway":"designated","highway":"footway"}"	
-#972F79" °´Û‘"=
-;{"footway":"designated","highway":"footway","tunnel":"yes"}"	
-#BF7D57" ì”Çƒ"	
-#8BB689" ï”Çƒ"9
-7{"area":"yes","highway":"pedestrian","surface":"paved"}"	
-#89EE4B" ±´Û‘"@
->{"footway":"designated","highway":"footway","surface":"paved"}"	
-#6F492C" ¹´æƒ"	
-#CC9307" ·´æƒ"	
-#EE955A" ÅÿÜ‘"	
-#6B2A3F" ê”Çƒ"	
-#FB3403" ğ”Çƒ"C
-A{"footway":"designated","highway":"footway","surface":"concrete"}"	
-#43905F" İ‘"	
-#DE4E05" Ÿİ‘"	
-#F7EFC2" ´´æƒ"	
-#7F25B0" µ´æƒ"	
-#BCB954" ¹Èè",
-*{"highway":"footway","surface":"concrete"}"	
-#4ED5D4" é”Çƒ"	
-#3A7945" ç”Çƒ"B
-@{"footway":"designated","highway":"footway","surface":"asphalt"}"	
-#48647E" Í´æƒ"W
-U{"footway":"designated","highway":"service","service":"driveway","surface":"asphalt"}"	
-#93021D" æ”Çƒ"	
-#9E7211" Î´æƒ"E
-C{"highway":"service","service":"parking_aisle","surface":"asphalt"}"	
-#5FB82C" «´æƒ"	
-#829F2A" ®´æƒ"
-{"highway":"steps"}"	
-#457BAC" ±´æƒ"	
-#FFDABB" ñ”Çƒ"	
-#A5C236" ¬´æƒ"	
-#CC9E14" ª´æƒ"	
-#6AD86C" ²´æƒ"	
-#7E1621" ¨´æƒ"1
-/{"highway":"footway","surface":"paving_stones"}"	
-#2D0548" ä”Çƒ"	
-#F9FC47" ó¢‰å"	
-#2AFA47" í”Çƒ"+
-){"highway":"footway","surface":"asphalt"}"	
-#443FCB" ³´æƒ"	
-#50DCBD" ¯´æƒ"	
-#D3E8CA" î”Çƒ"@
->{"highway":"footway","surface":"paving_stones","tunnel":"yes"}"	
-#B009BD" °´æƒ"	
-#50ED1A" ©´æƒ"	
-#007226" ¶´æƒ"	
-#BA0D1C" è”Çƒ"	
-#7DC0D2" µÖÀÌ"	
-#4DFF33" ¾´æƒ"	
-#3EA3D3" ¿´æƒ"	
-#56EB31" À´æƒ"	
-#757730" Ã´æƒ"	
-#D1CA4F" Â´æƒ"	
-#162715" »´æƒ"	
-#1E2E5F" û¢‰å"	
-#A49E46" ú¢‰å"	
-#759661" ë»’"	
-#190875" ÓúŒ“">
-<{"highway":"track","surface":"asphalt","tracktype":"grade1"}"	
-#70E1C0" ¡ÌØ"Z
-X{"highway":"track","layer":"-1","surface":"asphalt","tracktype":"grade1","tunnel":"yes"}"	
-#C5F0A8" Ş½Œ"Ü
-Ù{"bicycle":"designated","foot":"designated","highway":"cycleway","name":"Pista Ciclabile Valle dell'Adige","name:de":"Etschtalradweg","name:it":"Pista Ciclabile Valle dell'Adige","segregated":"no","surface":"asphalt"}"	
-#5B87A4" “Çèf"	
-#212214" À•®Ï"	
-#DE58F8" ¿•®Ï"%
-#{"area":"yes","highway":"services"}"	
-#E254E9"  ÌØ"B
-@{"highway":"track","surface":"pebblestone","tracktype":"grade2"}"	
-#F85A04" û–"_
-]{"access":"agricultural","created_by":"Potlatch 0.9c","highway":"track","tracktype":"grade2"}"	
-#CBE4F7" ¡¥5"x
-v{"bicycle":"designated","foot":"designated","highway":"cycleway","oneway":"yes","segregated":"no","surface":"asphalt"}"	
-#432D34" ÀÜ›?",
-*{"highway":"service","service":"driveway"}"	
-#437A50" „×æƒ"	
-#37D03D" …×æƒ"k
-i{"crossing":"zebra","crossing:island":"yes","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#73B01F" ƒ×æƒ"	
-#48075A" òµŸ5"	
-#3C32FC" óµŸ5"	
-#A764A6" ß¶·†"	
-#F83E0B" Ú¶·†"	
-#1754BB" ä³ÃÁ"	
-#4E4929" æ³ÃÁ"	
-#6A2400" å³ÃÁ"	
-#124087" £ÀÁ"	
-#6D0999" ¢ÀÁ"	
-#589D01" ¤ÀÁ"S
-Q{"highway":"residential","name":"Via Fersina","oneway":"yes","surface":"asphalt"}"	
-#05B958"  ÀÁ"	
-#BD9C0B" ûšãÀ"Y
-W{"highway":"tertiary","junction":"roundabout","name":"Via Fersina","surface":"asphalt"}"	
-#E29486" ºªãÀ"	
-#EF269E" ÄˆãÀ"	
-#A82E06" Î…ÌÇ"€
-~{"bicycle":"designated","crossing":"zebra","cycleway":"crossing","foot":"designated","highway":"cycleway","surface":"asphalt"}"	
-#43FB36" ¡ÀÁ"	
-#BD2EB6" üšãÀ"U
-S{"highway":"tertiary","name":"Via Gino Bartali","oneway":"yes","surface":"asphalt"}"	
-#F476FA" ‡”ó"	
-#CD7E63" Ò´æƒ"	
-#8D01CB" †£‰å"	
-#0B80C8" ü¢‰å"	
-#2B8C5D" ı¢‰å"	
-#E08CB6" ‚Åúâ"?
-={"crossing":"zebra","footway":"crossing","highway":"footway"}"	
-#986DFF" ¥ÀÁ"	
-#71351A" Ï…ÌÇ"i
-g{"bicycle":"designated","foot":"designated","highway":"cycleway","segregated":"no","surface":"asphalt"}"	
-#640CFF" Ÿ¹Èè"	
-#947844" ç³ÃÁ"	
-#6BB5F4" è³ÃÁ"	
-#675632" ¦ÀÁ"T
-R{"highway":"tertiary","name":"Via Gino Bartali","oneway":"no","surface":"asphalt"}"	
-#C9BC72" è¶·†"	
-#EC270E" ş¢‰å"	
-#372B32" ÿ¢‰å"	
-#8BD444" ø¢‰å"	
-#BEDDC1" ö¢‰å"	
-#80B97C" ÷¢‰å"	
-#B25505" õ¢‰å"	
-#BD0FAA" ‡£‰å"	
-#19CC2D" ô¢‰å"	
-#2F3D4F" ‰£‰å"	
-#795EE7" Š£‰å"	
-#33EEC3" àş¢Ë"—
-”{"bicycle":"designated","crossing":"marked","cycleway":"crossing","foot":"designated","footway":"crossing","highway":"cycleway","surface":"asphalt"}"	
-#17A9C9" Åúâ"	
-#E99745" ¼Ü›?"	
-#5D4743" ƒÅúâ"@
->{"crossing":"marked","footway":"crossing","highway":"footway"}"	
-#E14972" Ë­Ÿ5"S
-Q{"access":"no","disused:highway":"trunk_link","highway":"service","oneway":"yes"}"	
-#0811A7" ßş¢Ë"	
-#ED360B" Û‹‘"’
-{"bicycle":"designated","foot":"designated","highway":"cycleway","layer":"-1","lit":"yes","segregated":"no","surface":"asphalt","tunnel":"yes"}"	
-#BF8789" „Åúâ"	
-#EE8EAE" Ú‹‘"	
-#63A157" ıˆ™j"	
-#86547D" éĞ«Ä"	
-#5F8197" ¦±Ê"M
-K{"highway":"unclassified","name":"Via Ragazzi del '99","surface":"asphalt"}"	
-#B594D7" Ç†’$"\
-Z{"highway":"residential","name":"Via Ragazzi del â€™99","oneway":"no","surface":"asphalt"}"	
-#95E6E3" £Ñ¾"	
-#8DFC95" Ğ×´–"¨
-¥{"bicycle":"designated","crossing":"zebra","cycleway":"crossing","foot":"designated","footway":"crossing","highway":"cycleway","segregated":"no","surface":"asphalt"}"	
-#FCF761" Ñ×´–"9
-7{"highway":"service","name":"Via dei Marinai d'Italia"}"	
-#CB8B58" œÛ‘"H
-F{"highway":"service","name":"Via dei Marinai d'Italia","oneway":"yes"}"	
-#64ECAC" Š¹Ø‘"	
-#C15D08" ˆ¹Ø‘"	
-#A9C4E9" å£Ëó"	
-#38F029" Ï×´–"	
-#5EB587" º“Ê"	
-#85DDFA" ¼“Ê"	
-#63BFDD" ½“Ê"	
-#7ED9B8" è£Ëó"L
-J{"highway":"residential","name":"Via Ragazzi del '99","surface":"asphalt"}"	
-#540172" Åù·²"	
-#671038" ‡…ïÔ"u
-s{"bicycle":"designated","foot":"designated","highway":"cycleway","lit":"yes","segregated":"no","surface":"asphalt"}"	
-#170421" â£Ëó"Ÿ
-œ{"bicycle":"designated","crossing":"zebra","cycleway":"crossing","foot":"designated","highway":"cycleway","lit":"yes","segregated":"no","surface":"asphalt"}"	
-#EFCB29" ã£Ëó"	
-#CBC6B6" Ã¿é"	
-#8F389E" É¿é"	
-#05B57A" ç¶·†"	
-#5A3958" Ñ«Ä"	
-#25B079" ãäÖ"K
-I{"highway":"residential","name":"Via Ragazzi del '99","surface":"gravel"}"	
-#226118" İ‹·i"\
-Z{"access":"private","highway":"residential","name":"Via Stella di Man","surface":"gravel"}"	
-#DB3062" µ¤û"*
-({"highway":"track","tracktype":"grade2"}"	
-#855CA5" ê¯Èf"	
-#293E4B" ï¯Èf"	
-#DD4B33" ­´š6"	
-#0DD785" ú†Ö<"	
-#1EFD6A" «´š6"	
-#1CD036" é¯Èf"'
-%{"highway":"service","source":"bing"}"	
-#527FF6" ¡×µ±"<
-:{"highway":"service","motor_vehicle":"no","source":"bing"}"	
-#A7EF8C" –¡¥5"	
-#C7C9A4" ô¯Èf"	
-#FD9395" ¢×µ±"5
-3{"access":"no","highway":"service","source":"bing"}"	
-#E6494C" Òú­'"ø
-õ{"bicycle":"designated","foot":"designated","highway":"cycleway","layer":"-1","name":"Pista Ciclabile Valle dell'Adige","name:de":"Etschtalradweg","name:it":"Pista Ciclabile Valle dell'Adige","segregated":"no","surface":"asphalt","tunnel":"yes"}"	
-#C12AF9" ”¡¥5"”
-‘{"bicycle":"designated","bridge":"yes","foot":"designated","highway":"cycleway","layer":"1","oneway":"yes","segregated":"no","surface":"asphalt"}"	
-#4C11BE" £¡¥5"	
-#161952" ›¡¥5"	
-#35902A" •×µ±"†
-ƒ{"bicycle":"designated","foot":"designated","highway":"cycleway","layer":"-1","segregated":"no","surface":"asphalt","tunnel":"yes"}"	
-#3695CF" ûˆ™j"3
-1{"highway":"service","layer":"-1","tunnel":"yes"}"	
-#4B6EF9" ¡¥5"	
-#E18900" Üö«Ä"	
-#A72D31" úŒòò"	
-#954818" Ûö«Ä"“
-{"bicycle":"designated","crossing":"zebra","cycleway":"crossing","foot":"designated","highway":"cycleway","segregated":"no","surface":"asphalt"}"	
-#841B8F" ØÁğÇ"B
-@{"crossing":"unmarked","footway":"crossing","highway":"footway"}"	
-#EC722C" Ò©"	
-#488C50" ÖÁğÇ",
-*{"footway":"sidewalk","highway":"footway"}"	
-#BED277" Êúõƒ"	
-#0F29CF" ÙÁğÇ"	
-#F49DC3" Ëúõƒ"	
-#1509A2" ÑÁğÇ"	
-#AF033C" ÔÁğÇ"	
-#A933E5" ÕÁğÇ"	
-#8A39A6" Úö«Ä"	
-#13DE97" ÚÁğÇ"	
-#26B063" ÒÁğÇ"	
-#DE1963" ÓÁğÇ"	
-#2264A3" ¹“Ê"	
-#A8E217" Ùö«Ä"	
-#C00F18" Ìúõƒ"	
-#7B2D3F" Âù·²"	
-#1DA175" ûéË“"-
-+{"highway":"footway","surface":"compacted"}"	
-#1C86DF" ¿ù·²"	
-#8DA90F" ùöıõ"E
-C{"highway":"unclassified","name":"Via Lidorno","surface":"asphalt"}"	
-#33F68C" Ãù·²"	
-#1D5637" ‰¹Ø‘"	
-#1A2AF0" ñĞ«Ä"T
-R{"crossing":"marked","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#483AAE" íĞ«Ä"	
-#EC1CC9" ïĞ«Ä"	
-#04D5E5" Ñˆ‘"\
-Z{"highway":"unclassified","name":"Via Ragazzi del '99","oneway":"yes","surface":"asphalt"}"	
-#FB674F" Òˆ‘"	
-#EB8886" şĞ«Ä"	
-#46A537" Íúõƒ"T
-R{"highway":"service","oneway":"yes","service":"parking_aisle","surface":"asphalt"}"	
-#26E280" üĞ«Ä"	
-#43EEA4" €Ñ«Ä"	
-#17C0DD" øĞ«Ä"	
-#F91D90" öĞ«Ä"	
-#8E47E2" ôĞ«Ä"	
-#926956" úĞ«Ä"	
-#F3BDD1" Ó×´–"	
-#B4C6A7" üˆ™j"	
-#E8250C" ŒÑ«Ä"	
-#04F619" ‡Ñ«Ä"O
-M{"crossing":"z","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#FFBC18" ŠÑ«Ä"	
-#D2D24E" úˆ™j"P
-N{"highway":"track","smoothness":"bad","surface":"gravel","tracktype":"grade2"}"	
-#29727C" œéÇ"	
-#06CCB7" —Ü‡§"u
-s{"bicycle":"designated","foot":"designated","highway":"cycleway","segregated":"no","surface":"asphalt","width":"2"}"	
-#AA56EB" ÁúŒ“"*
-({"highway":"track","tracktype":"grade3"}"	
-#99BA7D" ÆúŒ“"	
-#2CC9B8" ÇúŒ“"	
-#0A488A" ÄÙ–6"	
-#CE1BF0" ÄúŒ“"@
->{"highway":"service","service":"driveway","surface":"asphalt"}"	
-#42AB29" ÅúŒ“"	
-#1C636C" ûöıõ"	
-#42F6C8" ”ÓÊ"	
-#37581D" ¦Ñ¾¹"F
-D{"highway":"tertiary","name":"Via Gino Bartali","surface":"asphalt"}"	
-#BA5087" ´‘N"	
-#84F95E"  ‘N"–
-“{"bicycle":"designated","cycleway":"crossing","foot":"designated","footway":"crossing","highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#806DDE" Î™À½"	
-#CE6646" ÊÒÑ"b
-`{"highway":"tertiary","name":"Via Alcide Degasperi","oneway":"yes","short_name":"Via Degasperi"}"	
-#E3941C" “ÓÊ"	
-#E95D90" ÷ÿ·"	
-#747629" €€éÆ"	
-#5F7D3F" Ğ™À½"	
-#1E4D16" ‰Ï¿½"†
-ƒ{"access":"yes","bicycle:backward":"dismount","highway":"residential","name":"Via Gino Bartali","surface":"asphalt","width":"2.3m"}"	
-#64931D" Ë™À½"	
-#F54538" ·‘N"	
-#42CE2F" ÉÒÑ"R
-P{"highway":"secondary","name":"Viale Verona","oneway":"yes","surface":"asphalt"}"	
-#BF4CA2" ¬‘N"¬
-©{"bicycle":"designated","crossing":"zebra","crossing:island":"yes","cycleway":"crossing","foot":"designated","highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#93B496" ¾·Ş"[
-Y{"highway":"secondary","name":"Via di Madonna Bianca","oneway":"yes","surface":"asphalt"}"	
-#E75B74" À­"c
-a{"highway":"secondary","junction":"roundabout","name":"Via Alcide Degasperi","surface":"asphalt"}"	
-#8EDF45" Ì™À½"	
-#4C1317" Í™À½"	
-#FC4253" ¥‘N"”
-‘{"bicycle":"designated","crossing":"zebra","cycleway":"crossing","foot":"designated","highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#69F090" êË³"	
-#E1AC50" Ñ³”?"?
-={"highway":"cycleway","segregated":"yes","surface":"asphalt"}"	
-#65E16A" ›êï"	
-#F804D2" öÿ·"S
-Q{"highway":"tertiary","name":"Via Clorinda Menguzzato \"Veglia\"","oneway":"yes"}"	
-#19BDF9" øÿèÆ"=
-;{"highway":"tertiary","name":"Viale Verona","oneway":"yes"}"	
-#4D48A9" ÇÒÑ"	
-#5B72BD" ÈÒÑ"	
-#590C69" ÷ÿèÆ"	
-#472DEC" ÆÒÑ"	
-#4DB8D8" Ò™À½"	
-#E3E837" äêÂï"	
-#90AAEF" Ñ™À½"	
-#B4574C" ‚¡ßÛ"	
-#D29323" ÿ ßÛ"	
-#0A9B62" ê¶·†"	
-#986751" ‰ÒÊY"	
-#423C2A" ¾ÑÊY"C
-A{"highway":"residential","name":"Via Ancilla Marighetto \"Ora\""}"	
-#FB2184" ¡ßÛ"	
-#96989C" ‡ÒÊY"'
-%{"highway":"steps","step_count":"15"}"	
-#FEBF08" ƒ¡ßÛ"	
-#AE37F7" €¡ßÛ"	
-#412429" „¡ßÛ"	
-#AF5440" Ó­"X
-V{"highway":"tertiary","name":"Via Clorinda Menguzzato \"Veglia\"","surface":"asphalt"}"	
-#9C8CE1" ö ßÛ"	
-#3926E8" ·ÑÊY"	
-#606AF8" Ê™À½"	
-#F7C514" …¥Š"D
-B{"highway":"unclassified","name":"Via Ancilla Marighetto \"Ora\""}"	
-#F36736" ¢îëM"	
-#8AF766" Ò¢İM"
-{"highway":"path"}"	
-#FBD204" †ÖŠ"f
-d{"highway":"residential","maxspeed":"20","name":"Via Clorinda Menguzzato \"Veglia\"","width":"3.80"}"	
-#1CAADC" ›ÃË"0
-.{"highway":"unclassified","surface":"asphalt"}"	
-#5E29B5" œÃË"	
-#D0942E" „ÖŠ"	
-#8CCC1D" …ÖŠ"	
-#39BCC3" ŞùØM"	
-#5D5D80" ¾¦Úˆ"	
-#A55B3D" ¦îëM"	
-#5D32CC" ×ùØM"7
-5{"highway":"footway","lit":"yes","surface":"asphalt"}"	
-#3F16EB" ÙùØM"	
-#29155A" öğÑ"L
-J{"highway":"unclassified","name":"Via Angelo Bettini","surface":"asphalt"}"	
-#2342B8" ÛùØM"	
-#9FB488" İùØM"	
-#A8AB95" ÚùØM"	
-#05A563" Ğ·Ç8"	
-#2ACC80" µÖØ"	
-#C5EFCF" À·Ş"G
-E{"highway":"residential","name":"Via Clorinda Menguzzato \"Veglia\""}"	
-#020127" ÷ ßÛ"	
-#EA8B69" ¬ÊÌ"*
-({"highway":"footway","surface":"gravel"}"	
-#7ADCDE" ø ßÛ"	
-#1C307A" ù ßÛ"\
-Z{"crossing":"unmarked","footway":"crossing","highway":"footway","traffic_calming":"table"}"	
-#488DB3" ı ßÛ"	
-#EBAC00" ´ÄØ"	
-#C8CE92" ˆ¡ßÛ"	
-#509F08" …¡ßÛ"	
-#F3E5BD" Ç×Š"q
-o{"highway":"residential","maxspeed":"20","name":"Via Ancilla Marighetto \"Ora\"","oneway":"yes","width":"3.80"}"	
-#1E8FC1" †¡ßÛ"	
-#F13322" ‡¡ßÛ"	
-#CA833A" ‰¡ßÛ"	
-#BE34FF" ÂÔŠ"	
-#75CEFE" Ï·Ç8";
-9{"footway":"sidewalk","highway":"footway","tunnel":"yes"}"	
-#01457E" ú ßÛ"	
-#4C0549" ªÊÌ"k
-i{"highway":"residential","maxheight":"3.80 m","name":"Via Clorinda Menguzzato \"Veglia\"","tunnel":"yes"}"	
-#AAACAE" ş ßÛ"H
-F{"footway":"sidewalk","highway":"footway","layer":"-1","tunnel":"yes"}"	
-#1C0DFB" û ßÛ"	
-#464486" ü ßÛ"	
-#BED6CE" ùÇÊ"5
-3{"highway":"unclassified","name":"Piazzale Europa"}"	
-#30057B" «ÊÌ"4
-2{"highway":"residential","name":"Piazzale Europa"}"	
-#BFD398" ÜùØM"	
-#CC670F" øÇÊ"I
-G{"highway":"unclassified","name":"Piazzale Europa","surface":"asphalt"}"	
-#577C16" Â·Ş"¡
-{"access":"delivery","foot":"yes","goods":"destination","highway":"service","motorcar":"delivery","name":"Piazzale Europa","noexit":"yes","surface":"asphalt"}"	
-#0CB11A" ÖùØM"	
-#39D749" çì‚&"	
-#9792F5" ±ÃØ"%
-#{"access":"no","highway":"service"}"	
-#D1BFA8" ¾¿é"J
-H{"highway":"residential","name":"Via Stella di Man","surface":"asphalt"}"	
-#AE5F06" Ü¶·†"O
-M{"highway":"unclassified","name":"Via di Madonna Bianca","surface":"asphalt"}"	
-#FF0C22" ¥±Ê"	
-#14954C" ä£Ëó"‰
-†{"bicycle":"designated","crossing":"zebra","foot":"designated","highway":"cycleway","lit":"yes","segregated":"no","surface":"asphalt"}"	
-#B3E598" Á¿é"	
-#F1D3C2" ¬ïŠ"	
-#FD0F11" Ó™À½"	
-#C5D3DF" ÉğÃ†"	
-#AC8AFC" ÇğÃ†"	
-#66173D" ÎğÃ†"*
-({"access":"private","highway":"footway"}"	
-#FC54F5" »ÑÊY"V
-T{"access":"private","highway":"residential","name":"Via Ancilla Marighetto \"Ora\""}"	
-#9FB7E0" ùÖø6"	
-#F47C52" ÂğÃ†"	
-#4CCE48" ÄğÃ†"	
-#D779A5" ĞğÃ†"	
-#7113EA" ÆğÃ†"(
-&{"access":"private","highway":"steps"}"	
-#9F1A15" ÊğÃ†"	
-#4BD198" ÷Öø6"	
-#BE8FD5" ô×Š"b
-`{"access":"private","highway":"residential","name":"Via Ancilla Marighetto \"Ora\"","width":"4"}"	
-#CCE0C0" ã™§."L
-J{"highway":"secondary","name":"Via di Madonna Bianca","surface":"asphalt"}"	
-#CA72FA" Ä¿é"	
-#313F79" Ç¿é"C
-A{"highway":"steps","incline":"down","ramp:wheelchair":"separate"}"	
-#5D3B23" ÄÍ‰"	
-#88AEDB" ÅÍ‰"	
-#DEFC98" Â¿é"	
-#4AFC19" È¿é"	
-#8A3CE7" Æ¿é"	
-#439865" Å¿é"	
-#346F48" Ô™À½"L
-J{"footway":"sidewalk","highway":"footway","lit":"yes","surface":"asphalt"}"	
-#6C8E64" ÇÍ‰"#
-!{"highway":"footway","level":"0"}"	
-#B07BCD" ÃÍ‰"&
-${"highway":"steps","incline":"down"}"	
-#7D4BDD" ÆÍ‰"#
-!{"highway":"footway","level":"1"}"	
-#359EA4" ÂÍ‰"	
-#8D4F45" ¤éÇ"	
-#C0AC2E" Õ™À½"	
-#138E5D" Ìå¶ó"	
-#A6E302" Íå¶ó"	
-#9F75B2" Îå¶ó"	
-#E0C4D4" ÌğÃ†"w
-u{"crossing":"zebra","crossing:island":"yes","footway":"crossing","highway":"footway","lit":"yes","surface":"asphalt"}"	
-#11064A" ×™À½"	
-#B11416" ™’ÌÒ"I
-G{"highway":"residential","name":"Via Stella di Man","surface":"gravel"}"	
-#4058D1" Ö™À½"	
-#39A9E6" ºŒÇ"	
-#7CD2C8" ğÙ‘"	
-#89E51C" Æù·²"	
-#EDC29A" õÖø6"	
-#64BF2D" Çù·²")
-'{"highway":"steps","surface":"asphalt"}"	
-#AAA5C5" Èù·²"	
-#84B3E4" ¤±Ê"	
-#04801C" ÅÇÊ"	
-#0DEA97" ÑğÃ†"	
-#0DF456" «±Ê"Z
-X{"cycleway:both":"no","highway":"unclassified","lane_markings":"no","surface":"asphalt"}"	
-#43C1C2" ª±Ê"	
-#DF69D2" ¨±Ê"	
-#CE91AA" Ê‡œ¥"d
-b{"highway":"tertiary","lanes":"2","name":"Via Clorinda Menguzzato \"Veglia\"","surface":"asphalt"}"	
-#9FE298" ‡ËÑ"	
-#FE327D" ˆÒÊY"	
-#9D0863" ¯£Š&"	
-#B2FA51" ´ªğ%"	
-#79A7B8" °ÃØ"	
-#A69450" ÃÔŠ"	
-#620C5A" äöÑ"<
-:{"highway":"residential","name":"Via Clorinda Menguzzato"}"	
-#00A14A" çöÑ"	
-#13B371" ú§Ç8";
-9{"highway":"service","oneway":"yes","service":"driveway"}"	
-#A9A2B2" ˜ªÇ8"	
-#91D23C" É ÌÇ"	
-#69C51B" »£Š&"	
-#A0EAF6" µ£Š&"	
-#9EF211" Ï ÌÇ"	
-#4BC19C" Ê ÌÇ"	
-#791598" ğÊÑ"@
->{"highway":"tertiary","name":"Via Edmund Mach","oneway":"yes"}"	
-#058E59" ¹£Š&"	
-#A46206" ½£Š&"\
-Z{"highway":"tertiary","junction":"roundabout","name":"Via Clorinda Menguzzato \"Veglia\""}"	
-#58DCD9" Í ÌÇ"	
-#55BC93" ·£Š&"	
-#AA32D7" Î ÌÇ"	
-#C0E0E4" ´£Š&"	
-#34477F" Ë ÌÇ"	
-#7C8FD8" ÀÑÊY"	
-#236C0C" §±Ê"	
-#9E49EE" Ú‘"	
-#6FD4CF" ¸ÑÊY"	
-#D4AF92" ÂÑÊY"	
-#2A9795" Ëí‹7"	
-#C07692" ôûŠà"H
-F{"access":"private","highway":"footway","surface":"paved","width":"1"}"	
-#6F503F" ÷ûŠà"F
-D{"access":"private","highway":"steps","surface":"paved","width":"1"}"	
-#EF65CC" Çÿ‚Ç"	
-#C9641A" Ì ÌÇ"|
-z{"bicycle":"designated","crossing":"zebra","foot":"designated","highway":"cycleway","segregated":"no","surface":"asphalt"}"	
-#1F7D46" ØùØM"	
-#3B4281" §îëM"*
-({"highway":"track","tracktype":"grade1"}"	
-#70C579" ©îëM"	
-#E46C06" ¤îëM"	
-#BC22A1" ¡îëM"	
-#E7A912" ¥îëM"	
-#7DF6C7" ¨îëM"	
-#808346" ªîëM"	
-#229989" Û¶Ê6"	
-#6B0007" ›¶Ê6"	
-#485AAE" ¬ªğ%"	
-#470517" Ç‡»:"	
-#249E54" éöÑ"	
-#B92A75" £ÜŠ"	
-#204AEC" ìì‚&"	
-#AA1DE3" «ªğ%"	
-#7A73E3" ²ÃØ"	
-#58D2DF" æöÑ"	
-#513E41" ‚¶Ê6"@
->{"footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#359B97" ¹Ø/"	
-#C31CA2" öÜŠ"	
-#DE582D" İ¶Ê6"	
-#BE001E" ïì‚&"	
-#17242F" ğä¤"	
-#535B07" •¶Ê6"\
-Z{"footway":"sidewalk","highway":"footway","layer":"-1","surface":"asphalt","tunnel":"yes"}"	
-#1352C8" ñä¤"b
-`{"highway":"tertiary","layer":"-1","name":"Via Enrico Conci","surface":"asphalt","tunnel":"yes"}"	
-#89D2D0" ¢¶Ê6"	
-#64EE00" ¶ä›o"	
-#EE5BCE" û…Ñ")
-'{"access":"no","highway":"residential"}"	
-#45FC54" š£Æ8"	
-#ED3348"  îëM"	
-#F7A6B6" ì÷Â"	
-#BB0232" À‹ùÆ"s
-q{"bicycle":"yes","foot":"yes","highway":"cycleway","motor_vehicle":"no","surface":"paving_stones","tunnel":"yes"}"	
-#DC6C9E" ¿‹ùÆ"	
-#F50BA6" —»Ğ"D
-B{"access":"yes","highway":"residential","name":"Via Enrico Conci"}"	
-#4313F3" ú…Ñ"	
-#B9F3CC" ŠøÅ8"I
-G{"highway":"residential","name":"Via Enrico Conci","surface":"asphalt"}"	
-#809AF0" ¡£Æ8"	
-#D0BDC1" «£Æ8"	
-#B0AECE" Ó¢İM"2
-0{"bridge":"yes","highway":"footway","layer":"1"}"	
-#D6867F" £îëM"	
-#CFA509" Ô¢İM"	
-#8C06E7" å÷Â"U
-S{"highway":"residential","lit":"yes","name":"Via Enrico Conci","surface":"asphalt"}"	
-#1AB547" şˆÑ"W
-U{"highway":"service","maxheight":"2.8","service":"parking_aisle","surface":"asphalt"}"	
-#E95CD5" €¶Ê6"	
-#65D182" ç÷Â"+
-){"highway":"service","surface":"asphalt"}"	
-#58499F" ¤¶Ê6"	
-#4D8579" ¸¶Ê6"	
-#77662C" õÜŠ"E
-C{"highway":"service","name":"Via Enrico Conci","surface":"asphalt"}"	
-#ED2646" Ÿ¶Ê6"€
-~{"crossing":"traffic_signals","crossing_ref":"zebra","footway":"crossing","highway":"footway","lit":"yes","surface":"asphalt"}"	
-#0CA101" ³¶Ê6"	
-#E72069" £¶Ê6"	
-#7244B5" Í¶Ê6"V
-T{"crossing":"unmarked","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#E6A7DD" ÷ÜŠ"	
-#6086D7" §Ø³"C
-A{"highway":"service","name":"Via Enrico Conci","service":"alley"}"	
-#C1E00A" Ğ¿Ñ8"R
-P{"highway":"tertiary","lanes":"2","name":"Via Enrico Conci","surface":"asphalt"}"	
-#4E2E4E" ›£Æ8"	
-#3BAD7D" ˜£Æ8"	
-#D1A344" ‚Ñ"	
-#76673E" §£Æ8"	
-#15C187" ££Æ8"	
-#451A88" ‚Ñ"	
-#F6EB49" Ñ¶Ê6"	
-#631C9C" é¶Ê6"	
-#7B9608" «¶Ê6"	
-#49BDA3" ÿ…Ñ"	
-#7CEFF6" åöÑ"	
-#C0ED79" …Ğğ6"	
-#CA4008" ûìì6"	
-#9CA66D" »Ø/"	
-#990B3C" àä»ˆ"	
-#AE5BCC" Èÿ‚Ç"	
-#55F10E" ¤Ü¹¶">
-<{"highway":"unclassified","oneway":"no","surface":"unpaved"}"	
-#2B6163" ß¶Ê6"	
-#8CDEAD" ûØM"	
-#5DEF0E" ”Ó×ı"$
-"{"highway":"path","mtb:scale":"1"}"	
-#68C586" Ù„ÌÇ"	
-#6FB50E" Á§‚¼"	
-#35639D" “ïïŒ"E
-C{"bridge":"yes","highway":"track","layer":"1","tracktype":"grade2"}"	
-#FDF114" ’ïïŒ"0
-.{"bridge":"yes","highway":"track","layer":"1"}"	
-#C388CC" í”¤"	
-#8AEB49" —ïïŒ"	
-#4434DA" ñ”¤"	
-#6D49BD" î”¤"4
-2{"highway":"unclassified","junction":"roundabout"}"	
-#BBCD1D" ï”¤"	
-#FD0E36" À§‚¼"	
-#1CE334" ¿§‚¼"	
-#53F438" Õ©."8
-6{"highway":"secondary","name":"Via di Madonna Bianca"}"	
-#1898AB" üºÅM"	
-#941B89" ¸§‚¼"	
-#34585F" ãİè="<
-:{"highway":"secondary","oneway":"yes","surface":"asphalt"}"	
-#2140F9" ’½¾g"	
-#1B4E26" ·´"9
-7{"highway":"secondary","old_ref":"SS12","oneway":"yes"}"	
-#453C9D" ¹§‚¼"	
-#A173DE" ÓËÎ^"H
-F{"highway":"unclassified","name":"Via dei Viticoltori","oneway":"yes"}"	
-#DEA1E0" ÕËÎ^"+
-){"highway":"unclassified","oneway":"yes"}"	
-#CAE66D" º§‚¼"	
-#B7C6F1" ğ”¤"9
-7{"highway":"unclassified","name":"Via dei Viticoltori"}"	
-#887807" ©±Ê"	
-#8A481C" õûŠà"	
-#8142EC" öûŠà"	
-#CDB57D" ‡ûŠà"	
-#0CFAF9" ¿£ W"E
-C{"highway":"tertiary","name":"Via Edmund Mach","surface":"asphalt"}"	
-#7C3930" Â§‚¼"	
-#A7E739" Ö¶"e
-c{"highway":"service","name":"McDrive","oneway":"yes","service":"drive-through","surface":"asphalt"}"	
-#F34627" ÔËÎ^"G
-E{"highway":"secondary","name":"Via di Madonna Bianca","oneway":"yes"}"	
-#0C7314" ·§‚¼"	
-#0121E6" ‹Ê"B
-@{"highway":"secondary","junction":"roundabout","old_ref":"SS12"}"	
-#D26BA5" »§‚¼"	
-#5DA7B2" ÖËÎ^"'
-%{"highway":"tertiary","oneway":"yes"}"	
-#0D6936" ÒËÎ^"	
-#DA09D7" ¾§‚¼"	
-#BE1129" ŠÊ"	
-#939BB7" ŒÊ"	
-#EEF08A" ½§‚¼"	
-#14ABCB" ¼§‚¼"	
-#209A80" ½¾g"	
-#3490F0" ™éÇ"	
-#25B2C8" ”˜¿¾"	
-#80634E" “˜¿¾"	
-#A34101" ˜Ìº²"	
-#9F60B9" —Ìº²"	
-#864EC9" ç¶Ó"§
-¤{"access":"private","bicycle":"private","foot":"private","highway":"service","horse":"private","motor_vehicle":"private","name":"Via di San Vincenzo","oneway":"no"}"	
-#7B328B" é¶Ó"[
-Y{"highway":"track","name":"Via di San Vincenzo","surface":"asphalt","tracktype":"grade1"}"	
-#96BE45" ™Ìº²"	
-#007511" ¯ÊİÇ":
-8{"highway":"service","oneway":"yes","surface":"asphalt"}"	
-#F50B3F" ¨ÊİÇ"9
-7{"highway":"service","oneway":"yes","surface":"gravel"}"	
-#8978B5" «ÊİÇ"	
-#2DB49A" ›°Ó"	
-#EB2531" š°Ó"	
-#1A088A" »İÇ¼"	
-#0D4E1E" Ù»”"k
-i{"highway":"secondary","maxspeed":"50","name":"Via di San Vincenzo","old_ref":"SS12","surface":"asphalt"}"	
-#8C361D" Ÿ°Ó"	
-#E05C90" ¶§‚¼"	
-#F01DA2" ·İÇ¼"	
-#1FAE7F" µİÇ¼"	
-#AA1898" ¶İÇ¼"	
-#F17451" œ°Ó"	
-#1C51FA" °Ó"	
-#014E97" ´İÇ¼"	
-#D0FB19" ¸İÇ¼"	
-#DB8982" ºİÇ¼"	
-#460BC8" ’ÃÀ"`
-^{"cycleway:both":"no","highway":"unclassified","name":"Via al CastellÃ¨r","surface":"asphalt"}"	
-#B94498" ½¾şÇ"	
-#B04167" ªÊİÇ"	
-#CC19F0" ¬ÊİÇ"™
-–{"cycleway:both":"no","highway":"secondary","lanes":"2","lit":"yes","maxspeed":"50","name":"Via di San Vincenzo","old_ref":"SS12","surface":"asphalt"}"	
-#A8696A" ¯ƒĞ2"F
-D{"highway":"track","name":"Via al CastellÃ¨r","surface":"compacted"}"	
-#253340" ›ÃÀ"+
-){"highway":"track","surface":"compacted"}"	
-#497B44" Ã¶Ê6"	
-#9EEB6C" ûÙŠ"J
-H{"highway":"residential","name":"Via al CastellÃ¨r","surface":"asphalt"}"	
-#611D1C"  Ìº²"	
-#A3E44C" ıµÅM"	
-#FE82A1" „¶ÅM"	
-#0BFB92" ¶ÅM"	
-#734351" ¤‚éı":
-8{"highway":"track","mtb:scale":"0","tracktype":"grade2"}"	
-#7F4441" úÙŠ"E
-C{"highway":"residential","name":"Via al CastellÃ¨r","width":"3.80"}"	
-#CBDC0F" ¡¶Ê6"6
-4{"highway":"residential","name":"Via al CastellÃ¨r"}"	
-#911B88" Ä¶Ê6"	
-#868D32" ƒĞ2"	
-#3DB504" µ¥q"	
-#BD04D1" ³¥q"	
-#879298" Ÿè†ä"9
-7{"highway":"path","mtb:scale":"2","sac_scale":"hiking"}"	
-#23F66E" —¾˜"x
-v{"highway":"path","incline":"down","mtb:scale":"3","mtb:scale:uphill":"2","name":"Sentiero verso Busa dei Castagnari"}"	
-#BC25BA" óµÅM"g
-e{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"4","name":"Sentiero verso Busa dei Castagnari"}"	
-#A381D5" à—Â"	
-#4F34BD" şµÅM"	
-#CD436E" ¨‰Œ"	
-#9B1336" ¡‰Œ"	
-#8DE743" Ñú­'"	
-#5E367E" „¨Ë"L
-J{"access":"no","foot":"permissive","highway":"track","tracktype":"grade2"}"	
-#450ADE" Œœâ "	
-#9A358D" úöıõ"	
-#F91C41" š¦û"	
-#D07F50" ˜×µ±"t
-r{"bicycle":"designated","foot":"designated","highway":"cycleway","lit":"no","segregated":"no","surface":"asphalt"}"	
-#777768" üöıõ"	
-#C1BA73" ù“Ø/"\
-Z{"highway":"service","lanes":"1","maxspeed":"10","service":"driveway","surface":"asphalt"}"	
-#13EE29" ³åj"J
-H{"access":"private","highway":"service","lanes":"2","surface":"asphalt"}"	
-#A32150" „ı¿‘"	
-#E2B0E2" ıöıõ"	
-#F6D661" şöıõ"8
-6{"area":"yes","highway":"pedestrian","surface":"sett"}"	
-#E0CBE9" ±åj"	
-#5B7C23" €÷ıõ"	
-#D49401" ÆÕ˜"@
->{"highway":"unclassified","name":"Via Lidorno","oneway":"yes"}"	
-#839DFB" ÿöıõ"	
-#4C88B1" ş”±ë"	
-#615CEE" ç‘—³"	
-#3ECF98" àÓ¤q"	
-#69E11D" ¶¾è<"	
-#2956EE" ÇÓ¤q"	
-#61BE69" ÏïŠú"	
-#8AF8DD" ãÓ¤q"	
-#58B0B6" è½Ùê"	
-#E2187A" ¸¾è<"	
-#657F4D" Ä“â ">
-<{"access":"private","highway":"service","surface":"asphalt"}"	
-#0BDE31" Å“â "=
-;{"access":"private","highway":"service","surface":"gravel"}"	
-#D98AA5" ¸åj"	
-#2F6E3B" î“Ø/"	
-#63799C" Ç“â "*
-({"access":"private","highway":"service"}"	
-#A12BFA" ¶åj"	
-#E56010" ·åj"	
-#AC96A8" Â“â "	
-#A1794D" ØéÇ"	
-#7A4DF1" éÇ"B
-@{"access":"agricultural","highway":"track","tracktype":"grade3"}"	
-#172BC1" ¨åj"	
-#1FA376" Ã“â "	
-#92F0CC" ›¤»"	
-#9CC5BB" Ÿ›¤»"	
-#84BA77" ¢›¤»"	
-#AAF64B" å‘—³"	
-#0DDE59" ¡›¤»"	
-#515DF4" ¨›¤»"P
-N{"highway":"unclassified","name":"Via della Cooperazione","surface":"asphalt"}"	
-#6F5070" äÀ³¾"	
-#F4E58B" èÀ³¾"2
-0{"bridge":"yes","highway":"service","layer":"1"}"	
-#73B4EC" ¤›¤»"	
-#224EE8" ¨‰ïï"	
-#50ACED" §›¤»"l
-j{"highway":"unclassified","layer":"-1","name":"Via della Cooperazione","surface":"asphalt","tunnel":"yes"}"	
-#A62571" ­‰ïï"8
-6{"highway":"service","layer":"1","service":"driveway"}"	
-#7F0F14" ¥‰ïï"	
-#AD0A28" ¦‰ïï"H
-F{"highway":"service","layer":"-1","service":"driveway","tunnel":"yes"}"	
-#55FA9A" »óˆ¼"	
-#A7A8B9" ¼óˆ¼"	
-#BE9355" æšëo"	
-#FDE6B7" ¬‰ïï"	
-#B2EFBB" ·óˆ¼"	
-#AC4F06" çÀ³¾"#
-!{"highway":"service","layer":"1"}"	
-#B6D499" ™úÆ"	
-#1BB76F" éÀ³¾"	
-#070D06" æÀ³¾"	
-#CAD5AE" ‘º³¾"	
-#7EA274" åšëo"	
-#A5E692" åÀ³¾"	
-#93780B" ¾éÇ"	
-#719E6B" ½¾g"	
-#2BB255" Œ½¾g"	
-#1A39BD" ±§‚¼"	
-#8B0A37" °§‚¼"	
-#4E867E" ÇéÇ"	
-#751CFD" ®ÊİÇ"	
-#9AC61F" ®¿À"5
-3{"highway":"unclassified","name":"Via Aldo Gorfer"}"	
-#9A46A5" ÃÀ"	
-#B8F884" ä‡¥é"	
-#030FB8" ü“Ø/"I
-G{"highway":"service","name":"Via di San Vincenzo","service":"driveway"}"	
-#960051" ²§‚¼"	
-#375975" Š™¿g"	
-#19BABD" ÄéÇ"	
-#9AC788" â‘—³"	
-#79EE40" æ‘—³"	
-#6B7E6A" á‘—³"	
-#6F7FF3" ­ÊİÇ"	
-#B1B18A" ã‘—³"	
-#3456BC" •ïïŒ"	
-#AD8F34" ¨ƒĞ2"	
-#61AF50" ‘ïïŒ"	
-#5FD9A3" –ïïŒ"	
-#5D2EA2" ”ïïŒ"	
-#C6A292" è‘—³"	
-#63EFEF" ä‘—³"	
-#353937" ğéÇ"9
-7{"highway":"unclassified","name":"Via di San Vincenzo"}"	
-#DA6544" ¸Ìº²"	
-#8161B3" îĞ¼"	
-#9D2865" ìå¿Á"8
-6{"highway":"residential","name":"Via di San Vincenzo"}"	
-#240F71" ÙÅóã"t
-r{"crossing":"traffic_signals","crossing_ref":"zebra","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#020AA1" ìĞ¼"k
-i{"crossing":"marked","crossing_ref":"zebra","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#E1945F" ğĞ¼"	
-#87FC80" òĞ¼"	
-#B75DC1" ñĞ¼"	
-#311821" Àóˆ¼"	
-#20CA2F" øÿÉ„"	
-#6B9B2F" ¦â€¼"	
-#661F42" öÿÉ„"i
-g{"highway":"secondary","maxspeed":"50","name":"Via di San Vincenzo","oneway":"yes","surface":"asphalt"}"	
-#7D3C6F" õÿÉ„"z
-x{"highway":"secondary","maxspeed":"50","name":"Via di San Vincenzo","old_ref":"SS12","oneway":"yes","surface":"asphalt"}"	
-#5A4BA9" ¤‰ïï"	
-#6EA568" ¸óˆ¼"	
-#2DF700" ÿÅû˜"	
-#7E7D87" €Æû˜"	
-#17687A" ¶óˆ¼"	
-#8C0DE9" ºóˆ¼"w
-u{"access":"permissive","highway":"unclassified","motor_vehicle":"private","name":"Via Nazionale","surface":"asphalt"}"	
-#6DB149" ¿óˆ¼"	
-#9CD823" ¹óˆ¼"	
-#2CFE24" š‰¼"	
-#AFBE4D" ¤ÅŒ'"_
-]{"highway":"unclassified","name":"Via della Cooperazione","oneway":"yes","surface":"asphalt"}"	
-#F68D8E" ôÿÉ„"^
-\{"highway":"residential","name":"Via della Cooperazione","oneway":"yes","surface":"asphalt"}"	
-#FD2C36" ğÿÉ„"c
-a{"highway":"secondary","maxspeed":"50","name":"Via Nazionale","oneway":"yes","surface":"asphalt"}"	
-#D829A3" œùÍ"}
-{{"highway":"secondary","junction":"roundabout","maxspeed":"50","name":"Via Nazionale","old_ref":"SS12","surface":"asphalt"}"	
-#95E2B0" òÿÉ„"V
-T{"highway":"unclassified","name":"Via Pomeranos","oneway":"yes","surface":"asphalt"}"	
-#477C2D" ÌŠÎ"	
-#644A83" ôĞ¼"	
-#E65DC1" ¹ÿ±Ë"	
-#923690" ºÿ±Ë"9
-7{"access":"private","highway":"footway","tunnel":"yes"}"	
-#1676D8" ¾óˆ¼"	
-#39338B" ÅáÒ
-"t
-r{"highway":"secondary","maxspeed":"50","name":"Via Nazionale","old_ref":"SS12","oneway":"yes","surface":"asphalt"}"	
-#B704DE" ñÿÉ„"e
-c{"highway":"secondary","maxspeed":"50","name":"Via Nazionale","old_ref":"SS12","surface":"asphalt"}"	
-#451A57" –‰¼"	
-#A3ADCA" Ë«À½"	
-#695884" ¾ÿ±Ë"	
-#934147" Áÿ±Ë"D
-B{"access":"private","highway":"footway","surface":"paving_stones"}"	
-#2F6CEC" Áóˆ¼"	
-#263A1D" ”‰¼"	
-#95849B" Èâ¼"	
-#1B3ABE" ½ÿ±Ë"	
-#E6D1EA" Ãÿ±Ë"S
-Q{"access":"private","highway":"footway","surface":"paving_stones","tunnel":"yes"}"	
-#A9A195" ˜‰¼"	
-#DE4D1E" ©Õ”ô"	
-#8E10C6" —‰¼"	
-#0F1D5B" ™‰¼"	
-#907534" ØŒ¼"	
-#E0E180" ªÕ”ô"K
-I{"highway":"unclassified","name":"Via della RozÃ²la","surface":"asphalt"}"	
-#FF62D2" •‰¼"	
-#1A6398" Êâ¼"	
-#014D15" ˜ØŒ¼"	
-#DCD108" ºÆ‘"	
-#28B632" Ìâ¼"	
-#058E18" Àÿ±Ë"	
-#992727" Äÿ±Ë"	
-#E0E922" æ²Ó"L
-J{"highway":"residential","name":"Via Dario Lorenzini","surface":"asphalt"}"	
-#1BEC38" –ØŒ¼"	
-#90A6AB" ØŒ¼"P
-N{"access":"private","highway":"service","service":"driveway","surface":"sett"}"	
-#8C506C" ›ØŒ¼"	
-#ABC095" íĞ¼"	
-#8AE4CB" óĞ¼"	
-#FA0994" Ö«¡)"	
-#C70DD7" «Õ”ô"	
-#11006B" ëĞ¼"	
-#D735ED" êĞ¼"	
-#56AE13" ¬Õ”ô"	
-#DC5DED" «ÁŸÉ"	
-#359BF9" èí‡"	
-#B426ED" ²ä‹Ë"\
-Z{"access":"permissive","highway":"service","motor_vehicle":"private","service":"driveway"}"	
-#653F48" ±ä‹Ë"	
-#739206" £úÆ"/
--{"highway":"residential","surface":"asphalt"}"	
-#B15536" çí‡"	
-#D3A46E" ©ÅŒ'"	
-#4C2797" °ä‹Ë"	
-#2B1301" ŸÁ÷†"	
-#0EEAC7" Ãâ¼"	
-#3FD0B5" Äâ¼"	
-#F8E5B1" Âóˆ¼"	
-#609EC3" ¬ÅŒ'"	
-#6F9C98" Åâ¼"6
-4{"highway":"steps","incline":"up","surface":"metal"}"	
-#BCA967" ¿ùÍ"G
-E{"highway":"unclassified","name":"Via Pomeranos","surface":"asphalt"}"	
-#9D6A28" Æâ¼"	
-#8AF215" ¼ÿ±Ë"	
-#5D08E1" Î«À½"	
-#E52ADE" Âÿ±Ë"	
-#36B0E0" Ì«À½"	
-#237E14" Í«À½"	
-#9F1B7B" ÜğÍ"F
-D{"highway":"residential","name":"Via Pomeranos","surface":"asphalt"}"	
-#FCF4C9" Ï«À½"	
-#F87CDA" šØŒ¼"	
-#88F602" Ñ«À½"	
-#DFB635" ™ØŒ¼"	
-#26D99A" ‘ØŒ¼"	
-#E75C61" ’ØŒ¼"	
-#ECE54A" “¼Ü"	
-#E165A5" ØŒ¼"(
-&{"highway":"footway","surface":"sett"}"	
-#08EF0F" œØŒ¼"=
-;{"highway":"service","service":"driveway","surface":"sett"}"	
-#FCBC16" “ØŒ¼"	
-#214328" …ØŒ¼"	
-#395FC6" À¡ø"	
-#8667D0" Çâ¼"	
-#551E7C" ïä¤"J
-H{"highway":"residential","name":"Strada ai Palazzi","surface":"asphalt"}"	
-#A3B032" ¼¡ø"	
-#220B97" Òíå³"	
-#266623" Õíå³"	
-#36DF0F" Öíå³"	
-#8A9AED" Ôíå³"	
-#D02B86" Ñíå³"	
-#2F46C8" ç÷”Â"	
-#F733BB" Óíå³"	
-#7121FA" ù²Ó")
-'{"highway":"service","service":"alley"}"	
-#DC301C" æ÷”Â"	
-#D4CF13" –Ìº²"	
-#708176" •Ìº²"	
-#CCD44D" ¶Û¹`"	
-#CCC23C" ¸×æ³"	
-#D26CDE" ”Ìº²"	
-#ADE8A2" ×íå³"	
-#3FF9AA" ÷²Ó"B
-@{"highway":"residential","name":"Strada ai Palazzi","width":"4"}"	
-#34D42E" ‘Ìº²"	
-#535115" ’Ìº²"	
-#BDE565" “Ìº²"	
-#D9571B" ¹ÈÑ"0
-.{"highway":"residential","name":"Via Galassa"}"	
-#3CDFA5" ıÚÂ"`
-^{"cycleway:right":"no","highway":"tertiary","name":"Via Vittorio de Riccabona","oneway":"yes"}"	
-#C4F72F" Ë¥."	
-#B66977" ÈÒğ"J
-H{"highway":"tertiary","name":"Via Vittorio de Riccabona","oneway":"yes"}"	
-#098045" ˆøÅ8"	
-#A5D787" ›»Ğ"	
-#E1DB8E" ßƒÑ"/
--{"area":"yes","highway":"platform","ref":"3"}"	
-#755C20" ï÷Â"K
-I{"highway":"service","name":"Via Enrico Conci","service":"parking_aisle"}"	
-#219D9A" Ë¥."2
-0{"highway":"tertiary","name":"Via Enrico Conci"}"	
-#E9E4B4" ØĞØ"	
-#BA5DAC" ×ĞØ"	
-#D55F64" ‘Ë¥."@
->{"highway":"secondary","name":"Via Galassa","old_ref":"SS349"}"	
-#E1E1EA" ÂïÍ8"	
-#A3147B" ùïû"O
-M{"highway":"tertiary","name":"Via Vittorio de Riccabona","surface":"asphalt"}"	
-#998ECC" Ò‘¹Š"i
-g{"access":"yes","foot":"yes","highway":"footway","horse":"no","motor_vehicle":"no","surface":"asphalt"}"	
-#C8C5DC" ©”ı"	
-#10809B" ¥£Æ8"	
-#1581ED" ş…Ñ"	
-#371F4B" Î÷Â"	
-#63B1C2" ŒË¥."	
-#13C25D" ÷¹Š"	
-#220B9F" ½êÍ8"	
-#5C5135" †øÅ8"	
-#8D33BC" —î÷¢"m
-k{"handrail":"yes","handrail:left":"yes","handrail:right":"yes","highway":"steps","surface":"paving_stones"}"	
-#F19549" ª”¹Š"]
-[{"bicycle":"yes","foot":"yes","highway":"footway","motor_vehicle":"no","surface":"asphalt"}"	
-#6CE5A4" •Ë¥."	
-#E4DA47" Ü–Í8"	
-#0C6C19" „øÅ8"N
-L{"highway":"unclassified","name":"Via Vittorio de Riccabona","oneway":"yes"}"	
-#AE82DE" ¢¤Ç8"	
-#DF3491" ı…Ñ"	
-#981AE3" Ï÷Â"	
-#C2C328" Í÷Â"	
-#E4C4C6" ¯¶Ê6"	
-#69E740" ¶Ê6"	
-#EE8B0D" ™Ğ‚"	
-#32AFC5" ºÇĞ"	
-#3F43E0" ¶Ê6"	
-#33A7F6" ¡¤Ç8"	
-#FE7B26" Ô¿Ñ8"	
-#C1D91A" ·‡Ñ8"	
-#81BBC9" ¬ôã"'
-%{"bicycle":"yes","highway":"service"}"	
-#78E8B4" Ë¥."	
-#B850C0" ôµÅM"	
-#293455" ™Ïª"	
-#025491" ¶‡Ñ8"	
-#2DC074" ˜Ğ‚";
-9{"highway":"tertiary","name":"Via Vittorio de Riccabona"}"	
-#E6D70D" šî÷¢"	
-#D30AB4" ™î÷¢"	
-#313E3B" ˜î÷¢"	
-#F0F518" ­Õš"	
-#560073" Á¼³":
-8{"highway":"unclassified","name":"Strada della Pozzata"}"	
-#B2EBFC" £¶‘"9
-7{"highway":"residential","name":"Strada della Pozzata"}"	
-#DFBA47" ¨¶‘"G
-E{"access":"no","highway":"residential","name":"Strada della Pozzata"}"	
-#DB0CAB" £ïû"	
-#4FB361" ”Ë¥."	
-#DE7D2B" §ô÷B"I
-G{"highway":"unclassified","name":"Strada della Pozzata","oneway":"yes"}"	
-#C84F2B" Ÿî÷¢"	
-#209B40" ¡ô÷B"E
-C{"highway":"residential","lit":"yes","name":"Strada della Pozzata"}"	
-#224EA8" £Åš"	
-#4227A0"  î÷¢"	
-#0D4A59" ÄøÂ"X
-V{"highway":"residential","name":"Via Giuseppina Bassetti","short_name":"Via Bassetti"}"	
-#748F2B" ä¢ú"'
-%{"access":"private","highway":"path"}"	
-#285283" î÷¢"	
-#9CE6E2" –î÷¢"	
-#0AEF09" î½š"	
-#2A7258" æ¢ú"	
-#CA12E1" ©šú"8
-6{"access":"private","highway":"path","motorcar":"yes"}"	
-#56BEFD" ŒûØM"@
->{"access":"private","highway":"path","trail_visibility":"bad"}"	
-#3D5A53" ‚¶ÅM"	
-#5689F2" ÅøÂ"5
-3{"highway":"residential","name":"Via Zita Lorenzi"}"	
-#E0CB5E" §ëÙó";
-9{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"1"}"	
-#913DFB" ¦ëÙó";
-9{"highway":"path","mtb:scale":"1","mtb:scale:uphill":"1"}"	
-#870254" ÿµÅM"	
-#B800BC" ”­˜"	
-#95F1A2" €¶ÅM"	
-#D6A5EE" ¶‡¤"	
-#08E44F" üµÅM"'
-%{"bicycle":"yes","highway":"footway"}"	
-#AA23DD" á˜Â"	
-#900355" ÉøÂ"=
-;{"access":"private","highway":"track","tracktype":"grade2"}"	
-#AAE2C9" ÎÂé4"	
-#B3213C" ÏÂé4"	
-#D1CBD1" ¸‡Ñ8"	
-#BB4891" Ïá†ô"	
-#C642A1" íÒğ">
-<{"highway":"residential","name":"Via al Bosco della CittÃ "}"	
-#C8C86D" šÑô"*
-({"highway":"track","tracktype":"grade5"}"	
-#206D5F" ›Ñô"	
-#64ADC1" ˜Ñô"U
-S{"access":"private","highway":"service","motorcar":"yes","service":"parking_aisle"}"	
-#2B64DE" Ò©"*
-({"highway":"track","tracktype":"grade4"}"	
-#9F0B97" ˜·é4";
-9{"highway":"residential","layer":"0","surface":"unpaved"}"	
-#4C2E77" Ôú"	
-#8ECB3F" ™Ñô"	
-#FAD681" ë³Æ"	
-#149ED9" ¼Ì"	
-#E08E0F" Î£ú"	
-#399E4D" ¨î÷¢"	
-#909ACA" Ë£ú"	
-#F2A1ED" Óú"	
-#BD1FF9" §î÷¢"	
-#BB9A9A" «å¤"	
-#8ED151" Ëé4"6
-4{"highway":"track","layer":"1","tracktype":"grade1"}"	
-#8DA1BE" Ã¤ú"	
-#90166D" ‹Ò©"	
-#3180FA" ™·é4"	
-#3093CD" ‹áâ"F
-D{"access":"private","highway":"residential","name":"Via Torricelle"}"	
-#932365" Ò©"	
-#319CF2" ş¥È"3
-1{"highway":"residential","name":"Via delle Node"}"	
-#B70368" ¹¼ô"T
-R{"access":"private","bicycle":"yes","highway":"path","motorcar":"yes","ski":"yes"}"	
-#6EA3CF" ¬ü©".
-,{"access":"private","highway":"residential"}"	
-#3315AC" Ü”ı"Z
-X{"access":"private","highway":"residential","name":"Via Torricelle","surface":"asphalt"}"	
-#29F071" •Ñô"	
-#75D011" ¶˜±J"	
-#DE31D7" ú¥È"	
-#E22E9D" —Ñô"	
-#BCE873" „ş´"7
-5{"highway":"track","layer":"-1","tracktype":"grade2"}"	
-#634D76" ˆÒ©"{
-y{"access":"private","highway":"residential","layer":"0","name":"Via Torricelle","surface":"asphalt","tracktype":"grade1"}"	
-#F7153C" ïğ“"	
-#94BED5" ûï“"	
-#A4D749" ı¥È"	
-#7EE8B1" µ‡Ñ8"B
-@{"highway":"unclassified","name":"Via San Rocco","oneway":"yes"}"	
-#9435D1" ‘Ñ"	
-#D9EE8F" ’Ñ"	
-#39F06B" Ë¥."3
-1{"highway":"unclassified","name":"Via San Rocco"}"	
-#41BD43" ¾•ı"V
-T{"access":"private","highway":"residential","name":"Via professore Giacomo Roberti"}"	
-#EB714D" õµÅM"o
-m{"bicycle":"designated","foot":"designated","highway":"cycleway","segregated":"no","surface":"paving_stones"}"	
-#41E7DD" ·×î5">
-<{"highway":"service","layer":"-1","service":"parking_aisle"}"	
-#A04104" ì½š"…
-‚{"bicycle":"designated","bridge":"yes","foot":"designated","highway":"cycleway","layer":"1","segregated":"no","surface":"asphalt"}"	
-#58B8B0" ¥×ãÖ"	
-#E1B966" İ‡Ù"K
-I{"highway":"unclassified","junction":"roundabout","name":"Via San Rocco"}"	
-#8FCF74" úµÅM"	
-#A89839" ˜Ñ"	
-#AFF7E1" ‹Ë¥."C
-A{"highway":"unclassified","name":"Via Torricelle","oneway":"yes"}"	
-#E21ECD" ç›È"	
-#531507" ÍÂé4"(
-&{"highway":"track","surface":"gravel"}"	
-#6656A8" ±Ì›8"	
-#7F62DF" ÈÍé4"D
-B{"access":"private","highway":"service","service":"parking_aisle"}"	
-#800E3F" ÓøÂ"	
-#7A8D31" ûÛ6"	
-#C2D7B8" ‰È"	
-#4E985F" «Îú"D
-B{"highway":"unclassified","name":"Via professore Giacomo Roberti"}"	
-#B67961" ìÑË6"	
-#B4DF7F" ¤•ı"@
->{"highway":"unclassified","name":"Via al Castel di San Rocco"}"	
-#23ACBD" ¶•ı"R
-P{"access":"private","highway":"service","name":"Via professore Giacomo Roberti"}"	
-#69FAA2" ¬•ı"M
-K{"access":"private","highway":"service","name":"Via Prof. Giacomo Roberti"}"	
-#0A7455" úï“"	
-#E54008" ğğ“"P
-N{"highway":"path","motor_vehicle":"no","mtb:scale":"1","mtb:scale:uphill":"2"}"	
-#7A3737" Æ¤ã"	
-#F904A8" Éî“"	
-#CA557F" øµÅM"	
-#936B6C" Ì¤"	
-#29DFB2" ƒ¶ÅM"	
-#EF3204" ÷µÅM"J
-H{"highway":"path","incline":"up","mtb:scale":"3","mtb:scale:uphill":"3"}"	
-#481661" öµÅM"'
-%{"highway":"path","surface":"gravel"}"	
-#2ECE02" ùØı"	
-#7F4252" ¨ëÙó"	
-#57ABC7" Š»­–"M
-K{"highway":"track","name":"Via al Bosco della CittÃ ","tracktype":"grade2"}"	
-#9822A8" ‰»­–"G
-E{"highway":"track","name":"LocalitÃ  San Rocco","tracktype":"grade2"}"	
-#794C18" Ëä»ˆ"	
-#7BE6AC" ²¸É·"'
-%{"highway":"path","surface":"ground"}"	
-#AF8131" ¦‚éı";
-9{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"3"}"	
-#77982A" ùµÅM"	
-#F6C762" ¥‚éı";
-9{"highway":"path","mtb:scale":"1","mtb:scale:uphill":"2"}"	
-#4CE764" ûµÅM"	
-#E5C0C0" œò£¡"	
-#DECB98" ëø£¡":
-8{"access":"private","highway":"path","surface":"ground"}"	
-#7022C4" Á÷²Ş"	
-#AAF181" ş•Â"	
-#5F7456" Ğä»ˆ"	
-#1751AB" ùÂÔ~"5
-3{"highway":"residential","name":"Via Pia Zambotti"}"	
-#1E4561" òê­"H
-F{"access":"private","highway":"residential","name":"Via Pia Zambotti"}"	
-#50C6FB" ğê­"j
-h{"access":"private","highway":"track","name":"Via Pia Zambotti","surface":"gravel","tracktype":"grade1"}"	
-#F9D8B0" ÷‹ı"D
-B{"highway":"track","name":"Via Pia Zambotti","tracktype":"grade2"}"	
-#E2D8FD" “–Â"	
-#4FF8FA" «Ø‹Ë"L
-J{"highway":"unclassified","motor_vehicle":"permit","name":"Via San Rocco"}"	
-#F4410D" İŒı"	
-#72F134" æòë"	
-#E1B986" Èªã"	
-#8302DE" Ôä»ˆ"S
-Q{"highway":"unclassified","name":"Via professore Giacomo Roberti","oneway":"yes"}"	
-#D100C2" Õä»ˆ"	
-#359291" Êä»ˆ"	
-#D146E8" ùÛ6"	
-#E39F41" îÛ6"	
-#85F5C6" óœ²"?
-={"highway":"residential","name":"Via al Castel di San Rocco"}"	
-#85FA0E" ôœ²"	
-#6789F1" ²¬Æº"]
-[{"highway":"track","mtb:scale":"1","sac_scale":"hiking","surface":"concrete","width":"2.5"}"	
-#77F24C" Ó–ˆ3";
-9{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"4"}"	
-#0C2B68" á””"	
-#797854" å””"L
-J{"highway":"path","mtb:scale":"1","sac_scale":"hiking","surface":"ground"}"	
-#A85F59" æ””"f
-d{"highway":"path","mtb:scale":"2","sac_scale":"hiking","surface":"ground","trail_visibility":"good"}"	
-#EB74C1" Ñµ©7"	
-#FD1EBB" Íµ©7"	
-#53E6B6" Ïµ©7"	
-#252E03" Ğµ©7"	
-#185BBA" ã”ı"L
-J{"highway":"unclassified","name":"Strada dei Bindesi","surface":"asphalt"}"	
-#1F61E2" Õ¼â")
-'{"highway":"path","sac_scale":"hiking"}"	
-#986094" ¹×¨7"	
-#95A59D" ›‹À"	
-#7FEE84" ·ë§£">
-<{"highway":"unclassified","oneway":"no","surface":"asphalt"}"	
-#A5D543" ‹À"V
-T{"highway":"unclassified","name":"Via ValdacÃ²le","oneway":"no","surface":"asphalt"}"	
-#158EE8" ŞúÂ’"	
-#F3D9C3" ØúÂ’"	
-#9BC949" ‹À"%
-#{"highway":"track","mtb:scale":"0"}"	
-#11CE2A" §‹À"	
-#AC8A50"  Ì´æ"	
-#017430" å¥ƒ>"	
-#F861CE" µø¯<"	
-#859431" ª‹À"I
-G{"access":"permissive","highway":"service","name":"Strada dei Bindesi"}"	
-#968DA1" áúÂ’"N
-L{"highway":"path","incline":"down","mtb:scale":"4","name":"Sentiero Dosalt"}"	
-#2C9744" –ÈÇ{"e
-c{"highway":"path","incline":"down","mtb:scale":"2","mtb:scale:uphill":"4","name":"Sentiero Dosalt"}"	
-#0481AA" şÃí§"	
-#1F310A" ª®é"P
-N{"foot":"designated","highway":"track","mtb:scale":"0","mtb:scale:uphill":"0"}"	
-#AA54D0" €Ûç"c
-a{"highway":"path","incline":"up","mtb:scale":"2","mtb:scale:uphill":"4","name":"Sentiero Dosalt"}"	
-#E4F1EA" ÙúÂ’"	
-#77BF68" ºë§£"	
-#E4E3C2" ÜúÂ’"	
-#A260CF" ÚúÂ’"	
-#83B06F" €Ûç";
-9{"highway":"path","mtb:scale":"3","mtb:scale:uphill":"2"}"	
-#E7A095" ßúÂ’"	
-#57D293" îÇúM"	
-#718DD4" ¬µé"	
-#81175F" ùƒü—"	
-#9D6AE1" ×±ôz"v
-t{"bicycle":"yes","foot":"yes","highway":"track","mtb:scale":"1","sac_scale":"hiking","trail_visibility":"excellent"}"	
-#D5C215" ûƒü—"	
-#8A4A90" ‚™ê—"&
-${"highway":"path","surface":"earth"}"	
-#8B6E5D" àúÂ’">
-<{"highway":"track","mtb:scale":"0","name":"Sentiero Dosalt"}"	
-#68D08B" ×úÂ’"	
-#F6D6AA" ‹À"	
-#0B9899" Ü–ˆ3"t
-r{"access":"no","highway":"path","mtb:scale":"1","sac_scale":"hiking","surface":"ground","trail_visibility":"good"}"	
-#03C9DC" ¡Ì´æ"	
-#DF0DA0" œ‹À"%
-#{"highway":"track","mtb:scale":"1"}"	
-#7A495D" «®é"	
-#2874CF" ûİâê"	
-#4F0F91" º°Ö’"	
-#5424B4" Ö¨¨"(
-&{"foot":"permissive","highway":"path"}"	
-#66D32B" ş–ı"	
-#E649FF" À¨¨"Œ
-‰{"foot":"permissive","highway":"path","incline":"down","mtb:scale":"3","sac_scale":"hiking","surface":"ground","trail_visibility":"good"}"	
-#E614CF" ‹À"”
-‘{"bicycle":"yes","foot":"yes","highway":"path","mtb:scale":"2","mtb:scale:uphill":"2","smoothness":"very_bad","tracktype":"grade3","width":"1.5"}"	
-#17CB18" ´æÀ"	
-#766BE7" ã””"}
-{{"highway":"path","mtb:scale":"1","sac_scale":"mountain_hiking","surface":"ground","trail_visibility":"good","width":"0.3"}"	
-#6B403C" ’–Â"	
-#A97B6C" êŒóB"	
-#EC9309" —ı":
-8{"created_by":"Potlatch 0.10f","highway":"unclassified"}"	
-#DAB188" ½ãÀ"	
-#906C44" ’¿Ó"D
-B{"highway":"track","name":"Via Pia Zambotti","tracktype":"grade1"}"	
-#3A9E4B" ö•Â"	
-#AEBA3D" ØÄÀ"	
-#DDF335" Ç”Â"	
-#D8847A" ÕÍ÷†"	
-#B68B3A" ”Åç³"	
-#13CEFF" Åç³"	
-#749CDF" ŸÅç³"	
-#39AFB4" —½ı•"	
-#90C7A4" ºãÀ"	
-#7B523B" ¹°Ö’"	
-#608ABF" öêÂ÷"f
-d{"highway":"path","mtb:scale":"1","sac_scale":"hiking","surface":"ground","trail_visibility":"good"}"	
-#3526AF" é””"	
-#B2C691" ê””"P
-N{"highway":"track","mtb:scale":"0","surface":"compacted","tracktype":"grade2"}"	
-#D67F20" Æóª±"n
-l{"highway":"path","mtb:scale":"2","sac_scale":"hiking","surface":"ground","trail_visibility":"intermediate"}"	
-#89D2FC" ¹›ÁA"›
-˜{"access":"forestry","bicycle":"yes","foot":"yes","highway":"path","incline":"up","mtb:scale":"1","mtb:scale:uphill":"1","surface":"ground","width":"1"}"	
-#77A449" à º8"	
-#50DD31" ¿•Â"5
-3{"created_by":"Potlatch 0.10f","highway":"service"}"	
-#BB7261" ™¿g"	
-#D7DCCC" ˆ™¿g"	
-#D9CD94" Ù º8"	
-#FC930F" Ü•Â"	
-#1932B6" ™¿g"	
-#D95B36" Ò•Â"	
-#9C9A39" ·Û¹`"	
-#18B4E0" é÷”Â"X
-V{"bicycle":"yes","foot":"yes","highway":"path","mtb:scale":"1","mtb:scale:uphill":"1"}"	
-#C460AA" «ºÓ"	
-#5CD05C" ˜½ı•"	
-#5BF9B8" ¾µíJ"	
-#509706" ¾áÒ
-"V
-T{"hgv":"no","highway":"tertiary","name":"Strada delle Novaline","surface":"asphalt"}"	
-#A0D86E" ¿µíJ"	
-#F0C484" ÀµíJ"	
-#E806E5" ½µíJ"	
-#5EA8B1" èÄÀ"2
-0{"highway":"unclassified","name":"Via Pianizza"}"	
-#BCC264" Œ˜ÁA"|
-z{"access":"forestry","highway":"track","incline":"up","mtb:scale":"2","surface":"ground","tracktype":"grade3","width":"2"}"	
-#6B2EF0" ¾ëÀ"	
-#46CA25" å÷À"	
-#0D12B9" æ÷À"	
-#ACC1A7" ¿ëÀ"	
-#78E96F" ï¡Ìè"ï
-ì{"description":"Tratto di sentiero che si stacca dalla mulattiera dei Fontanazzi (s. Rocco) e, dopo aver attraversato la forestale Bindesi-Pianizza, sale nel bosco fino a raggiungere il sentiero che va al forte Brusafer.","highway":"path","horse":"no","mtb:scale":"3","mtb:scale:uphill":"3","name":"Fontanazzi","surface":"ground","trail_visibility":"intermediate"}"	
-#502B6F" ßßŠõ"	
-#29FC3F" íµõ‚"	
-#6F79B3" £Ìº²"	
-#7B0503" ˜ÈÇ{"	
-#B55C93" İ«¨"	
-#487806" •‹À"ú
-÷{"bicycle":"yes","designation":"IT-TN:strada_forestale_tipo_a","emergency":"yes","foot":"yes","forestry":"yes","highway":"track","horse":"yes","motor_vehicle":"forestry","mtb:scale":"0","mtb:scale:uphill":"1","name":"Strada forestale Pramarquart"}"	
-#8F7729" À¥óæ"	
-#7DDDF9" ç””"w
-u{"highway":"path","mtb:scale":"2","sac_scale":"mountain_hiking","surface":"ground","trail_visibility":"intermediate"}"	
-#9387F9" ïöØ""o
-m{"highway":"track","mtb:scale":"0","mtb:scale:uphill":"1","sac_scale":"mountain_hiking","tracktype":"grade3"}"	
-#93EC9C" î–Ñ{"*
-({"highway":"path","name":"sentiero BES"}"	
-#1398FD" á¥ƒ>"P
-N{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"3","tracktype":"grade3"}"	
-#EE2F17" îµõ‚"n
-l{"highway":"path","mtb:scale":"0","mtb:scale:uphill":"1","sac_scale":"mountain_hiking","tracktype":"grade3"}"	
-#F306E1" ã÷”Â"	
-#898B0A" …É`"E
-C{"highway":"track","name":"Via della Lavandara","surface":"ground"}"	
-#3B14F6" „É`"	
-#F4B6AA" €É`"O
-M{"highway":"track","mtb:scale":"1","mtb:scale:uphill":"1","surface":"ground"}"	
-#EFE6A0" —±Â´"3
-1{"highway":"service","name":"LocalitÃ  Valsorda"}"	
-#E4CF2C" ‚É`"	
-#2FD17C" Ä‚Á_"N
-L{"highway":"path","mtb:scale":"1","mtb:scale:uphill":"1","surface":"ground"}"	
-#9695D6" ²šÏV"Y
-W{"highway":"path","mtb:scale":"4","mtb:scale:uphill":"4","sac_scale":"mountain_hiking"}"	
-#DB8FDD" †É`"	
-#104DE5" ËïŠú"	
-#CDF659" ÈïŠú"	
-#727825" ÌïŠú"	
-#9C9ADE" ´óˆ¼"	
-#A27B57" µóˆ¼"	
-#4889E0" óÿÉ„"O
-M{"highway":"residential","name":"Via della Cooperazione","surface":"asphalt"}"	
-#E83505" “±Â´"9
-7{"highway":"residential","name":"LocalitÃ  I Carozeti"}"	
-#6E1643" ’±Â´"	
-#23995A" ¡«Ê„"	
-#3653A1" ¨Õ”ô"	
-#D9E5D0" ›‰¼"	
-#6FE538" è™§."	
-#34C6B6" ÑÈ†ì"[
-Y{"highway":"tertiary","name":"Via della Torre Franca","oneway":"yes","surface":"asphalt"}"	
-#E8DD55" ØŒ¼"	
-#505011" ŒØŒ¼"	
-#D65C04" ØŒ¼"	
-#862B5C" µİ†4"L
-J{"highway":"residential","name":"Via Adolfo Endrizzi","surface":"asphalt"}"	
-#9B011D" ‹ØŒ¼"	
-#42DC85" ØŒ¼"	
-#37E6A9" ±Â´"	
-#A74A03" Éİ"<
-:{"highway":"unclassified","name":"Via della Torre Franca"}"	
-#8EF068" ˆØŒ¼"	
-#82D3FE" ‡ØŒ¼"	
-#6902D7" áÜ—»"	
-#1BB904" èÜ—»"$
-"{"highway":"steps","incline":"up"}"	
-#AA49A5" ‰ØŒ¼"	
-#447AA3" ŠØŒ¼"	
-#9174A0" œŠ••"P
-N{"highway":"unclassified","name":"Via della Torre Franca","surface":"asphalt"}"	
-#7056FE" âÜ—»"	
-#2FE3EC" ”ØŒ¼"	
-#C5EE84" äÜ—»"	
-#6F4F2C" İÜ—»"	
-#714A4F" ŞÜ—»"	
-#D2C109" ‚ùÍ"	
-#E4EE3D" †ØŒ¼"	
-#26756B" ßÜ—»"	
-#0ABA7C" é”Â"=
-;{"highway":"track","surface":"gravel","tracktype":"grade2"}"	
-#0A50FE" øä¤"6
-4{"highway":"residential","name":"Strada ai Palazzi"}"	
-#FCA93F" Ë¼â³"	
-#E61212" Å¼â³"	
-#AA785A" Æ¼â³"	
-#7A7349" ô”Â"	
-#F8F831" ˜•Â"	
-#FA85B0" –±Â´"	
-#44BA68" –•Â"8
-6{"highway":"unclassified","name":"LocalitÃ  Valsorda"}"	
-#724196" ‡•Â"<
-:{"highway":"unclassified","name":"Strada della Lavandara"}"	
-#C2F29F" ¶ëÉ‚"5
-3{"highway":"track","name":"Strada della Lavandara"}"	
-#48886F" ëû±›"	
-#AEAB49" ¿¥óæ"	
-#A6F2BC" ™Ÿ×";
-9{"highway":"path","mtb:scale":"3","mtb:scale:uphill":"3"}"	
-#2ED278" ‰ˆåV"	
-#DEA417  "
-	‚	Ÿ  "	Ÿ´
-:#  	"	Ÿ¸2 ”¢"(#8A  
-"		Ê
-›æ'  "	ŸøJh©+<->."	^$  "	†
-	 «"6õ  "	¢ö¡Ÿ  "
-	v¦u‰)  "	N¬%R)¿U7[„,   "	Ÿ (*@'D5¢ƒw$  "	Ÿˆ%:d<4Bú  "	Ÿ€. ¸(!  "	Ÿ6* 7Lìa”>   !"	Ÿ¶<
-.  "#"	Ÿø>"P	?  $%"
-	=ì>×N  &'("	vQi  )*+"	t5*6$ #  ,-."	ÌŸ2@ ,"j2(ş  /01"	ŞŸ"> (r0n4”  234"	¦
-b"Y&Ÿ  567"	°q  89:"	¤Ÿ
-  ;<="	šs
-  >?@"	¶‡
-(<  A-B"	ŞK" .@  CDE"	œK
-S!  FGH"	ì>:
- E)  IGJ"		²a9  KLM"	²a
-=*  NOP"	ÖŸZ .
-	  QRS"	
-;  TUV"	º."-+  WXY"		Â.-	a  ZO["	êW
-1(%  \O]"	È‚BL  %Ÿ  ^_`"	q	 
-  abc"	àŸ"$  def"		¸LP
-  gbh"	M"•#}',  iej"	Üi"j
-"!  k6l"	Ú: $  mno"	†‘B!
-)(!6
-.  pqr"	ˆ)
-!   stu"	¬Ÿ"P*P,"  vwx"	Ô ğ2;;×ï)  yz{"	æ Ÿ
-*n"  |}~"	" 27%_=	
-  €"		â!=1//  ‚ƒ„"	œ#Ÿb"!' 5
-$  …†‡"	$Ÿ
-
-
-  ˆ6‰"	€&Ÿ
-  Š‹Œ"	è)9	?!K9
-  O"	ü&ƒ
-
-  O"	ş&™
-
-  ‘O’"	†&"*F061  “”•" 	¦'Ÿj&& 
- 
- 8*   –—˜"		ğ(y  ™š›"	°*Ÿ"$ )  œ"		˜*)   Ÿ ¡"		²*			%  ¢£¤"	’.Ÿ:
-&  ¥¦§"	Ò.Ÿ
-4  ¨©ª"
-	ê0Ÿ
-#  «£¬"	ä0‡2 W"  ­®¯"	Ş/52	   °¦±"		Ì0m
-0  ²³´"	´5Ÿb	'%
-i.c¯=   µ¶·"	î2	*4v;p!*  ¸¹º"	ş9˜J)9A“GE  »¼½"	È;" U1V  ¾¿À"E	¬<ŸúBN@4 Z*<
-"G59K 'M3-(  ÁÂÃ"	Ÿ2 ÚøÔh®R’"
-  Ä'Å"	ôğ"¯é ¼—  ÆÇÈ"	Ì
-˜Æ
-  É'Ê"	„Ÿ 	ğ  ËÌÍ"	îÆ
-  ÎÂÏ"
-	Ø
-  ĞÑÒ"	¾¾
-
-  ÓOÔ"	òöô×  ÕÇÖ"		àô
-ó  ×ÇØ"		à”
-Û  ÙÚÛ"	Àş
-	  ÜİŞ"	Ìô
-  ßÌà"	ìô
-    áâã"	 ¨ÈN…  äåæ"	Ôî&h#  çÌè"	ê”
-	   éÇê"	ø”
-   ëåì"	âÔ
-*  íÇî"		Ìü
-ß  ïğñ"	ä°1Ü
-  ò6ó"		äò
-…
-  ôzõ"	ò
-+   öÌ÷"	º¶
-9  øÇù"	¸ş
-G  úûü"		Â†
-®  ıÌş"	ÌŒ
-   ÿ€"	Â†
-$   ‚ƒ„"	æ†
-.  …Ç†"		Ä´
-§  ‡ˆ‰"		æ†
-°  ŠÇ‹"	Ü˜
-q  Œ"	à¬
-e  Ç"	‚²
-Z  ‘ğ’"	àş
- .  “Ì”"	ä˜
-   •Ç–"	ô˜
-   —Ì˜"	Ü´
-  ™š›"	Şö
-I  œÇ"	üØ–è "
-  'Ÿ"	Æê"%	ûíŸÿ   ¡¢"	âŒ
-  £Ç¤"		ä¶
-Ò  ¥ğ¦"		à¬
-ä  §¨©"	Ì°
- 0  ªš«"	Ìà
-  ¬¡­"	Êú
-   ®Ì¯"	¶¼
-=  °€±"	Ä´
-*$
-  ²6³"	Ôî25U«	Xpê  ´¡µ"	ºü
-   ¶·"	º”
-  ¸û¹"	È¨
-  º»"	øì
-  ¼¡½"	Œì
-   ¾û¿"		¾Ü
-ß
-  À_Á"		Ò 
-«.
-  Â_Ã"	²¼R&!¹	¯’Â
-  ÄÅ"	–¦" (š  ÆÇÈ"	ø˜
-	  ÉÊË"	Š
-L2  ÌÍÎ"!	¢üZ†–Th2z"œ"°–	,(
-  ÏzĞ"
-	‚Ò% 
-  Ñ'Ò"	ø°
-"Bj+  ÓÔÕ"	ğ®JVŒ 
-0DI,5SCO-  Ö×Ø"	ÖøZ&A"
-X ^^+0$  ÙÚÛ"	èî§¡(%  ÜİŞ"	Œü:	;
-   ßàá"
-	èÂ&6
-  âGã"	¤ŒŸ-  äåæ"	šÒ
-  çàè"	–Œ
-   éàê"	ìâ
-C  ëàì"	ğş
-	]
-  íî"		’fU  ïàğ"	â
-ò
-
-q  ñàò"	Ö
-ô
-  óàô"	Êò
-   õàö"	ğò
-
-  ÷'ø"
-	ì$  ù€ú"	î¶
-4   ûüı"	¨ô
-(  şüÿ"	è²3  €‚""	ò²r	 	
-
- 		
-  ƒ-„"	°†
-  …ü†"	Òê
- D  ‡ˆ‰"
-	Ìˆ
-  Šü‹"
-	Ò®  Œ"	È	’
-U   "
-	’	Ô*%  ‘š’"	¾Ü
-o  “û”"
-	ÖŞ 
-  •_–"		ØÆ
-‘
-  —_˜"	Şî
-y  ™š›"	Ş
-
-  œ0"	Ò®"@@âz3  Ÿ ""	ê”j &
-#,,	2˜† 
-
-  ¡¢"	äÊä¢ç  £à¤"
-	öòmU  ¥à¦"	Ğò
- 0  §¨©"	È	’b<2–:h(	#  ªà«"	Ìò¡	
-  ¬6­"	æ’
-e
-  ®_¯"
-	–¬"
-  °'±"	¨Æ 
-
-
-  ²'³"	 º
-
-  ´'µ"	°Î
-
-  ¶z·"	Æê
-
-  ¸O¹"
-	¼´F
-  ºz»"	Æê
-R&
-  ¼6½"	ììB
-`
-# 	AN
-  ¾6¿"	Æø
-^  ÀÁÂ"	€	Ü	
-$
-  ÃGÄ"	ì	Ò2	7ï5­U
-
-  Å-Æ"	†	î"^
-  ÇÈÉ"	’	Â	
-#  ÊËÌ"	Ô¾
-2 "  ÍŸÎ"	şò	*
-Œ
-,  ÏĞÑ"	¸	Ê
-Z
-  Ò<Ó"	Ì	
-)  ÔŸÕ"	°	¤B 
-6 †	ì T 
-  Öz×"	²	Ş*Q#K'#  ØŸÙ"	ª	ø
-* &*ÂÂ  ÚÛÜ"		¨Ò
-Ğ'  İŞß"	Ú	Ö:Â  ÊH  àÛá"7	¨	è	²¼¾¼4J "4,4 š:
-H	3  âãä"	ˆ
-  åæç"	‚¶ 	#  èéê"	ˆ2$B lF
-  ë'ì"	–Â"#%  íéî"	°ü:!	#o#  ïŸğ"		’Î
-aÈ*
-  ñGò"	”¤R0B  6,6 ,4/
-  óOô"	Ìâ
-	
-  õOö"	¼„
-  ÷ø"	Êì  ùúû"	”ªI ‡
-  üzı"	ğ²848"#  şÿ€"	îŠ*/ …·  ‚ƒ"	ˆ”
-   „ÿ…"	–"š (
-  †G‡"	à¾B	  ÷¡  ˆà‰"		Şº
-Ó
-  Š‹"	”ª  ŒŸ"	”ö
-K  "	øˆ"		?  ‘’“"	ææ1» /  ”•–"	kÄZl ÚBV‹6M"gKGOÙ !E-u.
-  —_˜"	ø„Z	!:ì)¥%
-  ™š"		ˆä
-¿A
-  ›zœ"	àĞ"3
-  '"	è†
-J
-  Ÿ' "	àĞ	  ¡¢£"
-	Âú.  ¤¥¦"
-	ÚÄ82+  §İ¨"	¼R 		'  ©¢ª"
-	èG &  «¬­"	¢ü:+‚ T( 2  ®¯°"	€ê
- >  ±²³"	Œ	Ş!7	¥U  ´²µ"	¤’N&F  ¶İ·"	°	Ş"l	  ¸¹º"	ª	Ş
-&  »¼½"	®	†
-'  ¾İ¿"	Œ	ş"	v:  ÀŸÁ"	¼	î".
-  Â6Ã"		¾	æ
->‰  ÄÅÆ"	Ê	ê
-  ÇÈÉ"	¸
-ä
-+
-  ÊzË"	†°R%›7	#%!s/
-m  ÌÍÎ"	˜€"5 
-
-  Ï6Ğ"	ş
-¦ U!  ÑÍÒ"	²
-ö 44
-  Ó6Ô"$	ØĞz)U			+	D
-  Õ'Ö"	ş
-¦  ×ÈØ"	î
-°
-  ÙÍÚ"	ö
-˜
-&  ÛŸÜ"	æ¢:	'›7	##)6  İÍŞ"%	â
-¾z
-	! ""6
-
-HŠ
-  ßzà"	¼Ú"-  áÍâ"
-	ÀÆ !E
-  ã6ä"
-	¼Ú?  åÈæ"	Øä
-
-  ç6è"
-	¼Ú	.  éŸê"	ğ  ëìí"	ğ	¬" 
-  îï"	êÂÓV  ğñò"	Â
-Ö”8  óÅô"	æ¢
-
-  õéö"	ÄŠ
-  ÷øù"	”Ò
-,  úåû"	Ú‚
-3  ü¡ı""	Øœr "
-
-H0$  şÿ€"
-	Ş´/%  ÿ‚"
-	”Ú$&  ƒå„"	ü¬
-	<  …†‡"+	èÜ’
-	}a><0
-
-
-  ˆG‰"	ÂÆ
- 9#"
-  ŠG‹"	Şş2 	
-  ŒG"	à¤
-
-  <"	ê˜
-	  ¡‘"
-	† 
-
-  ’<“"	Îº
-  ”¡•"	Şş
-
-  –z—"		Úâ
-–  ˜¡™"
-	œ¤k	A  š›œ"	† 
-
-  G"	œ¤0":  Ÿ ¡")	Ô¨‚b È:(,@T*:$$0< ŠF.
-
-  ¢ £"	îà`”5  ¤¥¦"		’
-È_  §¨©"	Ö¢“;%  ª†«"	¦ò:%c  "d   ¬¡­"	Êô
- 
-  ®z¯"		Ğà
-Ë  °±²"		Ô
-  ³ˆ´"	¦
- 
-  µG¶"	Ä¸!×9 ñ
-  ·z¸"		®@O4  ¹º»"
-	º
--ÜD
-  ¼6½"	¼R"))A  ¾¿À"	À@
-
-  ÁåÂ"		òf  ÃÄÅ"	¬|+
-  ÆzÇ"	üt
-(:  ÈÄÉ"	ÂZ
-JZ#  ÊàË"	æ†202,$
-  ÌGÍ"	úÆ:9##9/7O   ÎÏĞ"	Ø" K  ÑøÒ"	øì
-%#
-  Ó-Ô"	ÊN:$	   ÕÖ×"	*$"#  ØÙÚ"	ì>
-  ÛÜİ"
-	–Ì:(  Şßà"	ÔØ" 
-  áGâ"		ŠR
-  ãGä"	²0
-	  åæç"	²0
-#  èÖé"	ê”2
- =    êëì"	ŠR"#  íÍî"		Â.&.  ïğñ"
-	¤Ø-#  òóô"	¤Ø"1)A!  õğö"	àĞ*  ÷ğø"	 î
-  ùåú"
-	œŠ   ûÜü"
-	´®
-'-%  ı¡ş"	Ä†:@>!  ÿÍ€"	²‚*5+/S  È‚"	²‚
-  ƒÍ„"	 ¼	/  …Í†"	²‚DÈ#
-  ‡ˆ"	ş¸2)
-
-  
-  ‰zŠ"	¦À*	 '1  ‹Œ"		¦ª
-  È"	 ¼
-   ‘’"	¤ø
-2'
-  “O”"	¬¼"
-  •È–"	è 
-  —Í˜"	Ò¨((#  ™š›"	 î*008@¼rğ  œÈ"	ô’
-  ŒŸ"		Î¬
-€"
-   G¡"	†Ê	*‰O¿	 ,  ¢£¤"	ÊêJ	TÈv°	Š$
-  ¥O¦"	”z
- 7  §¨©"&	®&‚ 
-&,&&
-  ª«¬"
-	¢”!  ­®¯"	Ì‚*'#
-  °G±"	ğ.:- 
- 0,
-
-  ²«³"	šğ
- y%  ´«µ"	š:		(z$"
-  ¶O·"	²2
-   ¸à¹"	ş* T> E  º¨»"4	ì~º
-
- $ 
-<=
-5-  ¼½¾"	Ö¨Z		
-  ¿½À"	¶È
-X>  ÁÂÃ"-	Öü’#E31)'au—+%/93+*eq-
-  ÄOÅ"	È
-q
-  ÆOÇ"	Äü ?"
-  ÈOÉ"	˜ä
-M;  ÊÈË"	”ğ
-   Ì«Í"	Øè=‡  ÎÏĞ"		ôê
-ş%  ÑÍÒ"	†î:q
- 0%  ÓÔÕ"	€î:#,Z3!  ÖÍ×"	”à*\P $   ØÙÚ"	†î
-,   ÛÍÜ"	òì
-?   İÏŞ"	ˆæ": ğ  ßÍà"	®¾
- l  áÔâ"
-	Èd  ãäå"		Ú²
-£  æÈç"	Ô†
-  èÈé"	Îª
-  êÍë"	Ôº
-$h  ìÏí"	Ìò8€à  îïğ"	òŞ
-&  ñÍò"	˜Ü
-   óôõ"	òä
-&   ö÷ø"	˜ê
-%  ùÈú"	šÜ
-   ûÍü"	šê
-   ışÿ"	¸â
- A  €‚"	˜ä
-   ƒ½„"
-	ú/5  …†‡"
-	¸âV
-   ˆ‰Š"	‚†#/'  ‹½Œ"	ô¢B:$E
-  O"5	ÖÎº@,&"&!$;\("!')1 
-%
-3  ‘"	Ğ–
-U)  ’“”"	Ü¤B¡Ÿ|  •–—"		ê	
-· 
-  ˜z™"	îÒ"l P  š›œ"	Îú
- )
-  G"	ôÆB‹Ù Ÿ*@
-  ŸG "		†Ê	
-´  ¡à¢"	ú€
-E	  £ˆ¤"	º¾
-2  ¥å¦"	†Ê	
-  §¨©"	æÖ	
-  ª«¬"	´ŒEÈ  ­¨®"	¸
-
-
-  ¯°"	šÆ
-
-  ±ˆ²"	¨Ê
-
-(!  ³¨´"	Şâ	* 6     µ¶·"	ÖÈ
-
-   ¸¨¹"	ĞÈ
-
- !  º«»"	ö*#E
-7	=  ¼½¾"
-	˜ŒBH>  ¿ÀÁ"-	´®‚L1¦l(®6R3ªD:hLRº(F,ì6Ä  ÂàÃ"	Š¢
-   ÄÅÆ"	ø–
- 
-  Ç6È"	öâ¥ 
-  ÉOÊ"	‚Î
-   ËÈÌ"	èì
-   ÍÅÎ"	„–
-   ÏÅĞ"	–
- 1  ÑšÒ" 	â˜jQ        ÓÔÕ"	îş
-"t@:Z  Ö×Ø"
-	ŒÈ    ÙÚÛ"
-	˜Â
-  ÜİŞ"
-	˜Â 
-  ßOà"
-	²¼ !  á“â"	Ü¤"¼ ¦3  ã®ä"		€Ê
-¡
-  å6æ"	Ü
--
-  ç6è"	à¶
-- 
-  ézê"	ğê*>  ëìí"	€€
-  îøï"	ôÆ
-  ğñò"	Œ
-X%&
-  óGô"	øÒB(,?5!	c  õŒö"
-	Šè
-#M  ÷ø"
-	úÂ  ùŒú"		”Ä
-œ/  ûŒü"	‚°=	3  ışÿ"	 â
-  €¨"	¾Ü
-
-  ‚zƒ"	ˆÈ
-.
-  „z…"
-	Ø¤M1  †Ô‡" 	 Ì	Z	X:¤ H6r8R¶68¬2²   ˆ‰Š"	Ü²"*,&V$p
-  ‹'Œ"	ş a
-Zr  à"
-	œ€	9&!  ‘"	Ú²"Jè0æ  ’«“"	°”€7€A  ”Œ•"	°š'K
-  –O—"	 "'%?
-  ˜O™"
-	ºÒ5%  š›"	ê 	
-C  œÏ"	ˆì2f$æ  Ÿ "	ê 	
- `  ¡Ÿ¢"	Ğ–
-j  £¤¥"	êœ	" #.$  ¦Ï§"	ê€
-
-N  ¨È©"
-	Œœ  ªğ«"	ô¢
-2$  ¬ğ­"
-	²)  ®Í¯"	Œœ"  °Ÿ±"	ş¸" 
-"
-   ²³´"	¶Ú
-H  µğ¶"
-	ôî
-! 
-3  ·¸¹""	ÖØr		
-   ºÈ»"
-	Üú
-
-  ¼ğ½"	æ´
-E  ¾Í¿"	öŠ
-  À³Á"	Æ¢
-I  ÂŸÃ"
-	Ö‚91  ÄŒÅ"	 „)
-—*
-  ÆzÇ"
-	ş¤<[  È«É"	°š à/
-  Ê«Ë"	Œâ
-S  ÌŒÍ"	¦´+'¥%  Î£Ï"	°”2v ,Œ V OFmF  ĞÑÒ"	Ú
-   ÓÔÕ"	¦ê
-
-  Öz×"
-	ÂÌ		1  ØÙÚ"	¸ş
-  ÛÜ"	²è
-  İŞß"		ş>R
-H   à¨á"	¼*K;8  âÔã"	€”
-;8  ä¨å"'	¾À‚	
-)	 
-:  æÔç")	”ÜŠ%!!	*"$2"E!  èÔé"	˜ğ*	%!  ê¨ë"	Œ€*  ìí"	êÀ
-
-  îGï"	¶¨"IÕ+=  ğñ"	ê
-  òó"	ğ¾
-4%  ôàõ"	–¦:y  M%#%  öà÷"	¾’:C"	W -
-  ø6ù"	ì¶
-d$
-  úOû"	¶¨:9#%
-//C  üı"	´
-9  şÏÿ"	´
-b  €		‚	"	Æ
-
-  ƒ	z„	"
-	Ø˜S>  …	½†	"-	Îğš[ 
-  
-  ‡	Gˆ	"	ÆÊ"E A  ‰	¨Š	"
-	¨à''
-  ‹	wŒ	"	ÊÔ
-s(  			"	°
-I  	‘	’	"	’º
-G)  “	Ô”	"	àôJ#I$
-  •	–	"	â@"H3   —	˜	™	"	Â
-h"
-  š	O›	"	ì„2 $@ 8
-B1  œ	Ô	" 	¾®j 7
-E	8		W5
-  	qŸ	"
-	´¼ DA8   	¡	¢	"	ú4
-
-  £	t¤	"	ì@
-  ¥	¦	§	"		¢h8  ¨	˜	©	"	œ¶
-F-  ª	«	¬	"	– ØR·Å - 
-
-  ­	O®	"	ü
-
-
-  ¯	O°	"	¶¾"/#A
-  ±	²	³	"	Ø¸
-	  ´	¡µ	"	ô¤   ¶	¡·	"	òÂ
-	*  ¸	¹	º	"	ô¾Jzl²,>$  »	¼	½	"	şÆ"-		1 W  ¾	¡¿	"	†è
-  À	Á	Â	"	Î9  Ã	Ä	"	¬î
-%
-  Å	OÆ	"	Ìê
-'  Ç	È	É	"	‚¦B
-
-tH   Ê	Ë	Ì	"	âğ
-
-  Í	zÎ	"	ÆÀ"-7#  Ï	ÔĞ	"	Êä"   Ñ	Ò	Ó	"	Ú
-
-  Ô	zÕ	"	ö‚
-@  Ö	×	Ø	"	–‰A  Ù	Ú	Û	"0	¦ ´¢Ob ¿'U !	]$#
-  Ü	Oİ	"	¢˜2
- Œ
-  Ş	Oß	"	¨®
-y*
-  à	Oá	"	–J" "!"3(e«İ
-
-  â	Oã	"	¬ÚV
-  ä	Oå	"	‚ö
- 
-  æ	Oç	"	ªö"0
-8 0
-  è	é	" 	Ü’j "
-
-4  ê	Ôë	"#	Œ ÄrAN#! ­ --
-  ì	Oí	"	„À"   î	ï	"	 ¸
- I"  ğ	Ïñ	"	ê€
-*`f\s*U  ò	Ÿó	"	¦À
-$  ô	šõ	"	Öü2[l)6;\uÒ
-  ö	z÷	"		š¼
-£[5
-  ø	zù	"%	ìêz¶h
-5
- 0
-  ú	û	"	ÄÂş)  ü	ı	ş	"	¤F¿
-3
-  ÿ	O€
-"	¢²
-!  
-•‚
-"	îğ*7 +!  ƒ
-„
-…
-"	üŠ*/N"<
-  †
-<‡
-"	ÄÂ
-  ˆ
-æ‰
-"	Úú
-  Š
-‹
-Œ
-"	ğæ
-  
-
-
-"	â
-
-  
-z‘
-"	„‚
-
-  ’
-z“
-"
-	òŠ:
-
-  ”
-z•
-"
-	¾¸
- S/  –
-—
-˜
-"	Î¸b 	 	 
-  ™
-š
-"
-	ŞÔ 
-  ›
--œ
-"	È¬* 
-		  
-æ
-"	Îº
-  Ÿ
- 
-¡
-"	ô¤
-	-  ¢
- 
-£
-"	ô¤
-,
-  ¤
--¥
-"
-	Øú'  ¦
-§
-¨
-"	úĞ
-6  ©
-æª
-"
-	Ä–	  «
-¬
-­
-"
-	¸ğ$& 
-  ®
--¯
-"	æò*!		  °
-±
-²
-"	òØ
-  ³
-´
-µ
-"	îô
-  ¶
-æ·
-"
-	†ş	  ¸
-¹
-º
-"	ˆÖd#€5
-  »
-¼
-"	ÒÀA%s  ½
-Ñ¾
-"	ª‚
-  ¿
-ÑÀ
-"		ÄÄ
-+…  Á
-ÑÂ
-"	º®
- 7  Ã
-Ä
-Å
-"&	äœr¹
-I-NÏ%ƒQ+>Ó;
-  Æ
--Ç
-"
-	öô,68  È
-É
-Ê
-"'	úÂ‚
- 	I
- "   Ë
-Ì
-Í
-"	˜ü	"
-  Î
--Ï
-"	ŒÖ2%  Ğ
-Ñ
-Ò
-"	ô†:
-  Ó
--Ô
-"	äú"	3
-  Õ
-Ö
-×
-"
-	äœ   Ø
-³Ù
-"	Æ²
-  Ú
-æÛ
-"	ÜŒ
-  Ü
-¬
-İ
-"	ìî
-)-  Ş
-¬
-ß
-"
-	¤à" &$
-  à
--á
-"	êª:	
-  â
-æã
-"	úì
-
-  ä
-zå
-"
-	îô,t 
-  æ
-ç
-"	²Ò*#{
-  è
-6é
-"		˜î
-¯B  ê
-àë
-"	¶´•.
-  ì
-í
-"	êü
-
-  î
-ï
-"		Ö€
-£  ğ
-ñ
-ò
-"	ªó!e!  ó
-ô
-õ
-"	î"u«u¿.
-  ö
-÷
-"	¨âqİ]  ø
-ù
-ú
-"		‚
-ç-  û
-ü
-ı
-"	š R==p(.¦´2
-('  ş
-ü
-ÿ
-"	¢¾BcPE  €à"	ÎÚ
-K
-  ‚zƒ"	ÎÚ
-D 3
-  „G…"#	äúr L$6 8 >H4 (2(	%  †‡ˆ"	ìî2&P`º4 
-  ‰'Š"	¬î. .
-  ‹'Œ"
-	’Ú  ¡"	¤ò
-
-  <"	¤ò
-
-  ‘G’"
-	¸ğ
-  “à”"		ÎÚ
-®
-  •'–"	’Ú
-,  —ø˜"	Â´
- '
-  ™Gš"	Â´
- L
-  ›6œ"	®ş
-$*  Ÿ"	œÂBì ˆ¦<:v8*   Ÿ¡"	Œì
-q\%  ¢ù
-£"	ŒÒ:L   ¤¥¦"	ŒÒ"?âB2(!  §¨©"	®Œ*z.1  ª«¬" 	Ğô!j	!'Y-Dm+%	 
-  ­z®"	öÜ"
->0¬´k  ¯°±"Z	âŠº+
-‘A%G9	+${3-@
-]5 .<V¥1K é	1	U%…11!2
-  ²³""	®ÒjB"¬ƒ(Y ;*^&Fz  ´¨µ"
-	Ìº%  ¶¨·"	ô¬: )[)  ¸¨¹"	àÆ 9¾  º»¼"¬	„!ğ’!
- 35!)7	
-!!	'%+	k-
-+39#3O%!
-
- (f‚ 
-	
-')- !$G  ½¾¿"6	®òºh@02&JpF6b6Z*:8t.BX /*?+1=©!  ÀÁÂ"	âŠ*PM?Y=  ÃÁÄ"	¤Î
--
-G&  Å†Æ"	Ò„:(n¸
-6 2!
-  ÇÈ"	 ¾*$ ,Œ
-
-  É†Ê"
-	Ú–@"D  ËÌÍ"3	ôü²jc6(".800*&(2-;v.JV  ÎÏĞ"E	šÊú	 : +0&&*""1#	
-*6 0*'	NB
-  ÑÒÓ"
-	º” *
-P  Ô»Õ"?	ŒÀâ!	2:8$>@&
-F	:=J:    Ö¨×"
-	 ´$
-  ØÙ"	–Š)*‰»ËU&
-  ÚÛ"	MŒ.: ÷.“
-|ı#  ÜÍİ"	€¨*<: Ä.    Şßà"	ô‚:ÛGJ  áñâ"9	†°ª02*Dš8Dd
-HL ˜ö8Øä2 b ^4šÄ	(
-  ã<ä"	Ä¸!
- #  åŞæ"	ÔŞ%*™ ™;K  çèé":	¦	„¢š ¶@ œ	VDe¢‚Æ
-P Ğ†"DôŠ  =
-  êGë"-	Ä¸!Š ˆ* 0, ŠVT
-*Ê 
-ê"  ìíî"	Î'*
- ¦  ïğñ"
-	¨š+ s"  òíó"	®â,*			 
-%   ôøõ"	†-
-   ö÷ø"	Ì. FC C#  ùğú"	°¶,*–
-ô)
-  ûGü"	°†/J 
-	 ›	 3  ışÿ""	ÈØ,j	$ š
-™
-  €<"	†/
- 
-  ‚zƒ"	¸â/
-m #
-  „…"	æ¶1*ƒ/	@¥bÍ
-  †‡"	ÊĞ4=¿
-  ˆ‰"	L¼5
-^ò)
-  Š‹"	ŞÎ9B)Ù
-““
-  Œ"
-	 Ğ?50
-  "	ô<"¼[R¼
-  ‘"	¢ A
-Ÿ:³$
-  ’“"	æÌ8™!  ”•–"	¢ü5*5   —˜™"	¤ˆ6
-\  š˜›"		¨ä6
-
-®
-  œz"		º¼/
-œ$  Ÿ "	²Ø12!F 6’5 %  ¡•¢"	Œ„424Ë.
-€
-  £z¤"	„¸4
->
-  ¥¦"
-	äÈ6b3'
-  §z¨"	Ôü6Bic\,y %r—   ©ª«"	öö;"xLV,¼~  ¬ª­"	öÊ?l4&
-  ®z¯"	ø†52«¼<}Ğ_ 
-  °±"	°Ü89Ú&  ²
-³"	üè;
-
-"
-  ´µ"	¶Â;2L (
-  ¶·"	ÜÚ6:+‚Ö.
-&‡¤)
-  ¸¹"	†ğ;B
-#
-Zm’™º]  º»¼"	°¸=\±
-  ½z¾"	ìš>
-  ¿ÀÁ"		úœ>
-  ÂÁ	Ã"	ÄŠ="{ 	  ÄàÅ"		â=
-‰  ÆÇÈ"	²ª=
-  ÉÊË"	ÒÊ=í%[#  ÌÊÍ"	àœ<2?	 R  ÎÏĞ"	†¢<
-%   ÑÍÒ"	‚²=" 	/
-  ÓGÔ"	²=b-	
-   Õ»Ö"	ŠÊ=/¡+   ×àØ"	üÒ=
-)  ÙÁ	Ú"		‚ª=
-Œ  ÛÜİ"	ˆ²>
-(#  ŞÁ	ß"	¸Ú?*“ß7~  àÜá"
-	œ¶>P`  âÀã"		°¸>
-’  ä»å"	î¨?Ê2
-  æ»ç"		´Ä>
-‘/
-  èzé"	ÂĞ>
-
-$
-  êë"	Ø$*eƒj¯%~áØZ
-  ìí"	†ò"9§-'
-  îï"	êî!B¿ L,&9<Un
-  ğñ"	 ¢%¥Lu"
-  òó"	È–%2
-	 	"
-  ôõ"	Ø$2"&
-
-
-
-v !  öù
-÷"	üô*$ 2M  øùú"<	¶Î#Ê))³ 
-3)“E!
-"@+1td HR*<&  û«ü"	¢Œ 
->  ıàş"
-	°Ò$@  ÿ€"	¾œ%	=8K
-  ‚ƒ"	èş)E¤-
-  „…"	°¨+RtaZ_
-AWQš¹àCR 6
-  †‡"&	¬Ş0z‡	|" $y 	ƒW_U!1?N=
-  ˆz‰"	–Ö+
-[
-  Šz‹"	¦’+"	D$9
-  Œ")	ºÊ+‚M	?B§M	
-b8>8
-ä
-bC  ‡"2	ÎĞ ’
-Hf„:Ô.ˆ>@ â2	JIÂ#~vÄ$$:6
-  ‘"	–Î.…
-  ’“"	æ‚!ºi" 8  ”Ş•"'	¬Š ‚
-	:< " :8~0 
-Y9+-W-
-  –—"	œî#Z3=«!$Q!
-  ˜™"	¢¢#º/ !;
-  š›"+	è#’r>042)&2@,$  H>/ U!5#=%&
-  œ"	Ìà4:	2 t 3h),¬
-  Ÿ"	Æ¸5"0 a#   ¡¢"	úê5*Õ)]{¹!G&
-  £¤"	‚0B[HD0	
-7
-  ¥G¦"	„ê3>À  §¨©"		’Ş5
-
-‰  ª«¬"	†˜5
-   ­®¯"	†Ì5
- 3
-  °6±"		°6
-º
-  ²O³"	Šê7
-
-  ´Úµ"	„ô7
- 
-  ¶G·"	¶ş;	
-  ¸z¹"
-	Èˆ< 
-  º»"	Ìä;â³.
-  ¼½¾"
-	üÀ;&   ¿ÀÁ"	â˜<
-W  ÂàÃ"	ş¨={ "
-  ÄGÅ"	àö=2
-			W
-  ÆzÇ"	Ôô<
-	@
-  ÈzÉ"	º>
-i
-  Ê<Ë"	ò‚>
-  ÌÍÎ"		„Ò=
-Şd
-  Ï<Ğ"	º–<
-,
-  ÑGÒ"	ò‚>R¨Ù	 (
-
-  ÓGÔ"		ÄÜ>
-Zá  ÕÖ×"
-	¶ˆ<%  ØÙÚ"	ü<
-*  ÛÜİ"	¬º<Z  Şßà"	ÒÂ<  áâã"	ú²<
-  äâå"	Üº<
-
-  æ<ç"	ú¼<
-  è¨é"	Öò<
-  êëì"	æú<
-
-  í<î"	ú<
-&  ïğñ"
-	’Â="=A  òóô"	’Â=
-.
-  õGö"	ú="!+  ÷¨ø"	Ê=
-+l  ù¨ú"	´È=
-  ûüı"	¨ä=
-&  şÍÿ"	ÄŠ=
-
-  €O"	Î†=
-  ‚¨ƒ"		šÄ<
-YĞ  „ë…"	ÄÎ=
-  †‡ˆ"	şô=
-
-  ‰GŠ"	àæ>G
-  ‹óŒ"		şğ=
-k
-  <"	ÄÜ>
-
-"
-  G"	ÄÜ>22>	 H%
-  ‘G’"	àæ>:7†
-
-<    “”•"	¬’>
--!
-  –<—"	ú=
-
-  ˜6™"	¸ô=
-
-  šG›"	ú=J<
- 
-  œ”"	ìÈ>
-?5
-  6Ÿ"	Ş>
-"   ü¡"	Êş=
-L  ¢ü£"	öˆ>
-  ¤¥¦"	ìÈ>Iª6
-  §G¨"	Èú>5ˆ  ©ª«"
-	ôğ?	G'
-  ¬G­"	„ş@BwE 'F¡ 
-&
-  ®G¯"	†Ì5: ^1~QÀ 
-  °Í±"	„ü7
-  ²´
-³"	ÀÈ:  ´‡µ"	¼¦:
-2  ¶´
-·"	¦Ø:
-	
-  ¸6¹"	ÀÈ:
-  º‡»"	¦Ø:
-)h  ¼†½"	ÒĞ:A°8
-  ¾z¿"
-	úä;  &  ÀÁÂ"	ØÄ;:"
-	1+)  ÃÁÄ"	ØÄ;	“  ÅÆÇ"		¬Ì:
-  ÈÀÉ"	’ä;
- 
-  ÊzË"	 ê;
-
-  ÌÍ"	ªÜ;
-.  Î†Ï"	üè9"!-1-'  ĞøÑ"	ü¨<
- 
-  ÒšÓ"
-	œ²<0 #
-  ÔGÕ"	È‚=2E 
-
-
-  Ö6×"	äô;"6' 3*   ØÙÚ"	à¶<
- 
-  ÛÜİ"		†Ô<
-‹!  Ş¡ß"	àÀ<
-  à á"	æ=
-;  â¨ã"	ø‚=
-n.  äüå"	¦”=
-'`  æ¨ç"	ÔÔ=
-X$
-  èOé"	¬ø=
-'  êëì"	 ê;:6$™¶
-  íOî"	æ°=
-
-  ïGğ"
-	°ö<
-¥Â
-  ñGò"	˜ğ<
-
-  ó<ô"	°ö<
-
-  õ<ö"	ü®>
-
-
-  ÷<ø"	ŒÖ>
-  ù”ú"
-	è°?		q]  ûüı"	ğæ?
-,k  şÿ€"
-	Ê@)+ 
-  G‚"	€ä>*XF 6-p
-  ƒ<„"	‚Ğ?
-!  …ë†"	 ê;"
-¶²BP 
-  ‡Gˆ"	°ö<*pJ|v>@L  ‰Š‹";	´ AÒ9-7S@ig+a)ww#5#GC [97-a	QEi7k+  Œë"	¢æ<J*rLxr„Š 5
-4""
-  "	°æ22
- P
-
-  ‘"
-	ÒŞ3*
-  ’“"	à¨4R(#!!	; "m%	-
-  ”•"	ÆÜ3";8$
-  –—"	ö¸4:/
-  ˜™"
-	Ú–6k]  
-  š›"	ÆÜ3*4$ 0  œ"	à¨4%(Sª
-  Ÿ6 "
-	à†6"&K%
-  ¡¢"	úÒ8:00E"6A;@…
-K
-  £¤";	¸¢7ÂUM 
-.	 '4! 0¤D6^ Î	_;4S(Ì·*1#G
-  ¥¦"7	Œ¬5Â|t( &! >
-0" #C]UK[qM'G;
-  §¨"	úÔ3""BF "
-  ©ª"	¸¢7®8Ì"(
-  «¬"	¶È5J"
-$
-<)  ­®¯"	†Š:B	!
-‰-)*cF !>… 
-  °±"	Ü¾:*mI
-  ²z³"
-	úÒ8:A.)
-  ´µ"
-	‚º9
-±,  ¶·¸"	Î Z "( &	,  ¹º»"		Ö!z.  ¼º½"	ò!Â
-  ¾¿À"	î!Ü
-!
-  ÁqÂ"	€ Â
-  ÃŸÄ"	– Ø ¤  ÅÆÇ"	Î ¬
-!  ÈÉÊ"	Ô ğ*$,(  ËÌÍ"
-	¦!Ú#7-1  Î¿Ï"	Œ"º
-  Ğ¿Ñ"	" 	  ÒÓÔ"	¶"¸
-'  Õ¿Ö"	Œ"º
-*&  ×ØÙ"	î!Ü:,
-82L‚4 0'  ÚÛÜ"	Ì!ÎB B`:H$=  İ·Ş"	Ö#d^jx
-  ßOà"	‚ Æ"4#	  áâ"	î ª
- =
-  ãqä"	î ª
-n  åÌæ"	Â!Š_1  çÛè"
-	Ú!  éÌê"	Â!Š
- <  ë¿ì"	î!¾	  íîï"	î!”
-
-)  ğñò"	î!”J 
- 	  óÌô"	Â!Æ
-  õ¿ö"
-	î!¾  ÷øù"	À!Ö
-
-$
-  úOû"	ø â:Ze4
-  üı"	ˆ 
- +
-  şqÿ"
-	ˆ ^!
-  €q"	 ¸" \¦Õh
-  ‚Oƒ"	Ú ²
-  „Í…"	ò Æ"(  †Ì‡"	š!ª
-=H
-  ˆq‰"	şª
-  ŠÈ‹"	š °
-  Œ¤"	Ü ò	   Ì"	Ü ò
-5B
-  w‘"
-	À!Ö&.  ’“”"	’!ú  •¿–"
-	š!ª67 +  —Ÿ˜"	º!àR	VYW  ™¿š"
-	¢"À#   ›¿œ"
-	ğ!Ú  Ÿ"	ä"ô"	   Ÿ¡"
-	ú"ú#^,  ¢Ÿ£"	Ö"Ø
-6  ¤Ÿ¥"
-	Ø#Ê<
-  ¦§"
-	%P›B  ¨©ª"1	Ş%Ÿªv	*&
-' ,^v
-(^2	)$  «¬­"	¾&¸2¡ %1#/  ®¯°"	–&>
-'  ±¬²"		®&L"7  ³Ó´"&	º'Ör‡q'%		#	q 7?•‡u¯?=#  µ¶·"	&Œ"  ¸†¹"		ˆ%¸
-—  º»¼"	ú%
-'  ½¶¾"	Ş%Ü"+
-		  ¿†À"		à%¨
-Ë*8  ÁÂÃ"'	ä"ô‚46
-` :|JT
-T:4""  ÄÅÆ"	ú%¨•;  Ç†È"		ê%€
-…  ÉàÊ"	´&q‡
-  ËÌ"	²&†"L#'
-  ÍOÎ"	ú%Ö&  ÏĞÑ"	¬'È K­/  ÒÓÔ"	‚!¬b	%#!#@G.  Õ»Ö"	Š#œZ[R#‹/A	H*  ×ØÙ"	º!àJ< $\Æ6j$4R^  ÚÛÜ"M	È!Öš	/	%5#I(	 9S, ' $	  İŞß"	Œ"¤"#  àÛá"	° ¾22P:  â•ã")	”$–Š!);;qyOA-=I;,	  ä¨å"	î""]W1-5  æ•ç"$	€$ôzA#'!/		,6X $  èéê"	®%¾	1  ëØì" 	Š#œj2f	jpd"%cIy0  íîï"	”&Ö
-b$0R
-‰1
-3
-T"  ğ†ñ"
-	ò'Ü  ò†ó"	ü'Ö
-  ôÓõ"	ô'ò	";	!!  öŸ÷"	ä'„
-:  øùú")	(šŠ		{)/ b 4&  ûüı"	ˆ*%B&	M )  şüÿ"	¶(’J(
-f,2 "!  €‚"	ì*¤*2
-
-
-!  ƒ„…"	Ê+* "(¼  †‡ˆ"	î*ˆ
-,	  ‰¨Š"	Ä*Ô2  ‹Œ"
-	œ+º&	  ‹"	Æ+„"!		  †"	°+â
-0  ‘„’"	’*Èb)y 	yXp%	   “„”"
-	–'†
-§#  •„–"	¦*Ş*Jb_ˆÛ%  ——˜"
-	°*Š@  ™„š"	¦*Ş…G  ›‹œ"6	è)9²( 8v 4r >	42®((2Uğ9¤x	
-   Ÿ"
-	Æ+ğ*:   „¡"	ğ*À
-
-
-  ¢†£"	¢+ú
-/  ¤„¥"	²+ôb:G/ 
-0!  ¦§¨"	ö*Ø*,"pV  ©„ª"
-	,ô<  «¬­"+	/’-5')?/='%MAm;71	%  ®¯°"	˜-°:	
-"   ±²³"
-	‚,Ä(  ´µ¶"	ª,ÆB1$&(`2   ·î¸"	Ò-¢
-4  ¹¬º"		ò/R7=  »¬¼",	Œ/]š.   P. (F	@,B& 	  ½—¾"	”.²
-#[  ¿ÀÁ"	º+ğ"46l$P"<+  ÂÃÄ"	Ü,¬R2,3I!'U5e  Å•Æ"	Ú,Ì
-/3  Ç„È""	Ü,¨	j-!'Ï 90**H–,@. 4  ÉŸÊ"	ö/˜<#  ËÌÍ"	Ö(È
-2	'+/Y#%  ÎÌÏ"	’(î	" %   ĞÌÑ"	ô'ò	(*P  ÒÓÔ"		Š)Œ
-3Ã  ÕÖ×"	ö*Ü	ê&:˜+  ØÙÚ"	Ø(èR 3	 k(	mA+&	I.O  ÛÜİ"
-	)Ò%R!  Şßà"	À(ê*? &	 	  áÙâ"	Ø(è
-/  ãäå"	è(Òb
-
-
-	 	
-  æéç"	è(æ
-  èÓé"	”)¸
-	+  êëì"	”)¸
-5  íÓî"		ˆ)Â
-‰  ïğñ"	š)¬
-n
-)  òÓó"	ø(ÒB	!±%-wAe§  ôõö"
-	Ê(ğ[@'  ÷Óø"	”)èB0&	#&  &
-  ù6ú"	°*¢6 U  ûõü"	ê*È "  ışÿ"
-	„+˜ 
-Hp%  €ş"	À+º:,P	*>  ‚ƒ„"-	æ,Àš	$//'y3QC	3W3   …†‡"	Ü+Š	"°
->"  ˆ‰Š"	,ì* Ğ+  ‹„Œ"	î,üJGK k+'¤2ªJ0@  "/	È,œšJŠ,j:&,,("b&ª
-* 8$  Ö‘"	Ê,ê2 
-Roº",  ’„“"	î,üR^2 &
-2@/J¿-+<_"[>  ”¹•"-	¢"êš
-!#+%'+		l  –•—"[	¢"êÒ
-"
- :	V&-	&
-
-?t'-/! 1&I%;'5;	%+)'  ˜¨™"	æ ÂB	#:  š›œ")	ş „Š"	M/#			'  Ÿ"	ö$B!"!'&
-   z¡"	ô$ˆB(2*!		  ¢¨£"
-	Æ$ä1  ¤¥¦" 	‚%´jl  D 
-B,  §¨©"	Î&Ô"0 "@-
-  ª«"	”)ªZ#‹'	K5A!!_Y5#\  ¬­®"K	ğ#°’ 1
-9
-5%	)G+=i# )  ¯°±"	¾!öJ	
-'  ²¨³"	êôB
-B  ´µ¶"1	Ş#ğª!				1&	)<!		.6 
-=3  ·µ¸""	¾!ör 
-. 	."
-E5!  ¹•º"	ô¤*H*H$  »¼½"	˜"¸
-!  ¾­¿"	ˆ$*S
-?0/00+  À»Á"	Ì#€J°&**$	LX8	)*
-  ÂÃ"	 (’Jo$% ©R  ÄÅÆ"A	¤&$Ò
-5H©ugEO1])=#1N‘.™0·$YTó s+•a   ÇÈÉ"	š%ğ"  4	"2I  ÊËÌ"
-	Ô&ˆ'3  ÍÎÏ"	ò&Ä""%N(0"
-  ĞÅÑ"	‚'Ì
-I  ÒÓÔ"	â(ü
->)  Õ¨Ö"	î(°JU#+   ×ÖØ"
-	°)Ì='  ÙşÚ"	ˆ)˜BoA6$J  ÛÜİ"	ˆ)˜
-  ŞÜß"
-	ö(È
-%
-  àá"	ú(°:	A9A%é+
-  â6ã"	Ò*š&3
-  ä6å"	²*”
-'  æçè"	„*¨B-2U*/
-/  éçê"	ˆ+ôb?
-G'w' #uGY	G	-=  ëìí",	à+„Š
-<5)5#-5+	Ÿ=©A§T  îïğ"C	°+îò265"	>"$2>	!6"V"&( ./k)$  ñ†ò"	Æ(Ü2.2J"j>†"  óôõ"	ö,*+ß'=H  ö÷ø"7	¤0üÂ8>80E`=*-+$->-Z3,!		N,+:6:1P  ù ú"
-	Ä1Ú  ûàü"	Ê1Æ
-  ı ş"	Æ1Ò
-  ÿ €"	Ä1Ú^  ‚ƒ"M	ª5Ğš_(Q
-$35	'1&Q#%3	5S/
-)k	#  „…†"	ø/–2T
-$
-  ‡†ˆ"	Æ2¢"3+ 4  ‰¹Š"#	4¼r"/L	­+#  ‹Œ"	Â5Â
-JL<  "+	ª5Ğ’/A%'47-'C[U7'  ‘¨’"	î7ŞB	!	+1
-!  “¨”"	Æ5ê*> ,-"%%1I  •–—"8	ö/˜º"‚ †f .".:DF	0®    ˜¨™"	¬2¨"*%  š°›"	¸0¶:
-& ^J$J
-  œ"	Ö3®
- 
-  Ÿ"	 4”* ) U   ¡¢"D	Ä4¤ò-
-	k$o/(7-93A-%Á
-E&A5 #"!"	-  £¤¥"	¬8ôR§zM,C.r	H$B	,=  ¦§¨",	Ê9¾’	$>V^#.1 K[Ø	4ERT2KjO%  ©¨ª"	ô3Ê:#/'C
-  «¬­"	Ä4Ø]!
-3  ®¯°"	¾4–
-fY  ±¨²"	Ş9Ş
- E#  ³¨´"	ú7ò2Hh.V
-2$  µ¨¶"	ş9˜24P .£  ·¹¸"
-	ş9˜ :$0C  ¹º»"2	ª5ĞªX3*+D1) "LF(*L:.N 80#&%:‚+  ¼¨½"	ä:œRx'(8=*!84h#  ¾–¿"	°;ˆ2
-,ISZ
-  ÀÁ"
-	ü;¸)!!5  Â­Ã"$	”>¨zOa #s-3&e"=; ,g(!  ÄÅÆ"	ü;¸*OU7,C2k'  Ç­È"	”>¨B$2KF)J8%
-3  ÉÊË""	ü;¸r2;B	&4:\%6G4=5	;>%b  ÌÍÎ"	Ê9¾%W˜V  Ï›Ğ"E	ü;¸ú6404n:+J634I^'&<nB>6,&
-^	, XB4*4$&F.  Ñ°Ò"	Ê0˜Z ¼V@	&F:$  ÓÔÕ"	Ê0î2!N…&%D;0#  Ö„
-×"	Ö0Œ" "fZ<  ØÙÚ"	È0ª"8
-<:&  Û¬Ü"	¸4Ö
-}  İµŞ"
-	¨4¨!%'  ß„
-à"	È0ªB%RF&6R;  D  áâã"3	¬5Â²!? -;';)C%S;¬  ä¬å"š	Ş-¨)Ê9%;5%!&"	8
-"!#
-/%"	3	!-/;3's393#"JU!	!%! D1 q!<;*E#5%"M--3 #
-Y9I 1T½N  æçè"=	7Ú11K_-? ' )+%G#1)c3'CY) /Y3ku  éêë"d	¸4Öò4Z"A„z4$ 6.V$**D(",V& H2J>"f (62D&,.H6*h.  :T  ì¨í"
-	ì7†>  îïğ"-	Ê:òš![%/<j.>*0j	'5	I  ñîò"8	 œÂ,ZD *.²
-JH
-&.&
-J(&\
-.3  óÈô""	Æ!€$r*
-d p#" :6H,
-"5  õö÷"$	ö €&z Hx:$
-)'  øöù"	à$¤%BQE'/  úûü"
-	†'Â$'%  ıÎş"	ê'¬$
-cQ  ÿ†€"@	Æş.â '&a,Q%0[/%?	}Eo<%%9/'¿%08  ¨‚"'	è Â)‚4, .
-."N	
-	
-7K!;a 
-  ƒ„"	¤"ö)*&:2	0  …Å†"	æ"º+ZÀ‡	“ sT
-  ‡ˆ"	Ô"+
-
-  ‰¨Š"	à"¨+ C   ‹¨Œ"	ê&Ü)"™CG.-H  •"7	Ò&˜0º;·=çE0+'1] ;9?I1"a-
-+ )-  ­"	¼&Ò-+'  ‘’“"	Œ*Ü BH$*!1'
-  ”•"	Ò(â!
-.!  –—˜"	Ä)”*$t0PT:  ™š›")	è,ü'Š 9E?/#3	Q+/	y5)}  œ"l	Î'Ş(’u
-&)'
-
-  DP
- 9F
- %$ 
-$(&  I\	:
-
-%äc
- /@J2t+  Ÿ¨ "	Ğ,’-R#	;)/!  ¡¢£"	¼+®)*26
-:.P
-  ¤z¥"	Ş-¨) ’-
-  ¦§"	â/ğ,Z5³C1%1m+-+
-  ¨z©"		Ü-–-
-‹
-  ªz«"
-	Ğ/ğ-u y
-  ¬z­"
-	Ğ/ğ-E9
-  ®¯"	¸/¬0"351"Ÿk
-  °±"[	Æğ4Ò	f2  08#H=$U){6W=% 	#+%))
-	B<(8\JJJ .$4
-Vv  ²³´"e	¨¾5Ú 2(
-”8 ` "$¾. ( 	 0 	 
-N  
-€KTIL]¶Ÿ|ÏF«NÅE4  µŞ¶"#	’&ş4r ,W˜8RH4)%$  ·¨¸"	â!Ì82 .%<	:.
-  ¹zº"	”!è<'(9|U  »¼½"D	ˆ'è+º)"òb)Â2Öv(“æy¨È[vœÕ°(6t˜”
-  ¾z¿"	È œ<"
->!
-  ÀÁ"	¬!À<*8 \p'h
-  ÂÃ"		¢#°=
-Â2E  ÄÅÆ"4	Ü-Ú,ªš>I t;¬+?u>S6uj	4 "'<)*c+@  ÇÈÉ"/	”)æ3’†xNØg@/815"y„™61@')
-f;%
-A  Ê„Ë"	è*Ø8"Y
-  Ì¨Í"	Æ*Ò7P,  Î„Ï"	Î)–9RBbfZPH2ÎD @"
-  ĞÑ"	Î.²72,X (&0&=  ÒÓÔ",	ö,z>fT@vTlD†¬‚€ª„ˆ”*xLP "~a  Õ¨Ö"P	è6œ&¢7!#)) 	­)a'=7+) 8>*  +  ×¨Ø"	Ô.ô(J4.:€&$<fD'ä+
-  ÙÚ"	Ê1ö-R OS!#[-s]{  Û¨Ü"j	ö7ú‚"	<L%¶L0/ "$N+ T 4'	
-"(#´ z02H<$06>FP$
-44B0L*Z$#b&  İâŞ"	¬8¤ "6@ X6  ßàá"	Š:ê"
-%i  âêã"X	Œ:Ä"ª	6 >2 80(&8Z8L¨$:80F,8"2H@xTR<<&	 }‚#K9+O*³
-?gEg#
-335"M
-5  äåæ"$	 Aä)z-S)	+75'%+K57)#5)3)-3g  çèé"V	â8ê4ª0*$-.e%/
-	1/>G^™- cI/-';	1/#o#	I?;Q=aG‡›0±ˆ  êëì"w	ò5æ6Âa		!'WCu??%7? I& 18  	
-
-)
-	
-	9	 	µ  íîï"£	ş1š.ò$L-&	2  
- 
-Z;D
-'
-
-
-
-R	 -#f8- 6	.
-S %	B6, $?F(!&(% *<:  	 	!
-
-$ $1
-	*
-
-
-	9 +
-
-	B.$F-  ğñò"	Œ7‚7ZEC
-!b^*<?")5  óñô"
-	Ô7ø6),  õö÷"	Î3â>R!#)3G!e‡3Uk_+!#/e,
-  øù"	ê1š;Z&(,\
-(4&*@&'  úûü"	¤4ä;BvO?5S  ışÿ"	¢2?
-#/
-  €"	ø2‚> *
-c  ‚ƒ„"R	Ğ7 7¢]hK3*//'G 0,F>$4/5]Y/?- 62
-ªX@ +eCOPˆÌ  …†‡"	®;®4"OE1kF  ˆ¹‰"5	<ª<º'	 -)3mE #&C /]3K+ _3+s'
-)lGP!J7^3lI
-  Š‹"	º A8Ÿ 
-  Œ"	¦ A"cŸA])5%
-  "
-	|¼?|DÖR
-  6‘"	ìšA
-3
-  ’G“"	ø A"6Y$E.Sr©,  ”•–"	è AJ.M,Q.Ux¯Í&  —˜™"	ö A
-1  š˜›"	è A
-?
-  œz"	âì@"I	A
-  óŸ"	’€@
-/l
-   G¡"	Úè@
-8  ¢ó£"	âì@
-4  ¤¥¦"
-	Ş A
- 
-  §G¨"	¬”@*66	
-  ©<ª"	²†@
-
-  «<¬"	ü@
-  ­®¯"
-	’€@
-„
-  °<±"	šÀ@
-
-  ²G³"		¬”@
-Ğv  ´üµ"
-	ÎŞ@"]  ¶·¸"	–’A
-
-  ¹Gº"	˜ğ@	 
-  »<¼"	ªö@
-
-  ½z¾"	¤ì@
-D  ¿ÀÁ"	ôæ@
-
-  Â<Ã"	„ş@
-
-  ÄGÅ"
-	üŠA
-  ÆÇÈ"	 A@Ÿ7
-  É6Ê"	Àö@
-*$
-  ËGÌ"	Š¸>:	
-jVd^DDB\'  ÍüÎ"	°æ@B8%   ÏüĞ"	¦€A
-5 ,
-  ÑGÒ"	¦€A
- 	¡ :>Ÿ)84NN$2  Ó”Ô"	Æ A"=WEG95  ÕàÖ"	¢ê@
-Xe
-  ×_Ø"	¶†A
-)  ÙÚÛ"	ø A"7-3  ÜİŞ""	Ô AjŸ
-Uc	#--=++%c"W   ßà"	Î’A	   áâ"	¨ A'		  ã¨ä"	¼ –A
-
-  å®æ"	¢, A")/OS   çşè"	¢2?"	gn'&¸z(  éşê"	ö4ş@B)	95!q  ëìí"	à3 A–!@5  îïğ"$	Î3â>zX."4
-$#
-8"F  ñòó"5	ò9ş>º*@ - #$	);	
-
-,   ô­õ"	Ø@ŸvDXt  öà÷"c	Œ:Ä"Ò!#'	U8'
-)1³I0ç•"o,Û•'Ã
--j•F/21W45=>GQ?2%I<…#")P7!m(
-3  øùú""	”=òr2
- .D@J4"bR$@NC
-  ûü"3	 AÊ=²	+%E$S#eD//+ 70#/

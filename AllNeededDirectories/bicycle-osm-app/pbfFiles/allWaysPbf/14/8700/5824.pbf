@@ -1,357 +1,0 @@
-®|x
-Trento(Ä typeidtagscolor"
-way" ñéõ"B
-@{"highway":"residential","name":"Via del Senter","oneway":"yes"}"	
-#4A8B76" É÷ë…"L
-J{"highway":"unclassified","name":"Via Vittorio Marchesoni","oneway":"yes"}"	
-#CE268A" î¡Õ"4
-2{"highway":"residential","name":"Via della Selva"}"	
-#22E177" µ∏÷"K
-I{"highway":"residential","name":"Via Vittorio Marchesoni","oneway":"yes"}"	
-#F40054" ›ùÌ%"9
-7{"highway":"residential","name":"Via della Resistenza"}"	
-#7360D8" ¶Òë`"
-{"highway":"unclassified"}"	
-#201607" ıïÇå"+
-){"highway":"unclassified","oneway":"yes"}"	
-#A9CFF2" ÙïÇå"G
-E{"highway":"unclassified","layer":"-1","oneway":"yes","tunnel":"yes"}"	
-#E3675D" °Òë`"T
-R{"highway":"unclassified","layer":"-1","oneway":"yes","tunnel":"building_passage"}"	
-#24ED7F" ·éõ".
-,{"highway":"residential","name":"Via Celva"}"	
-#E2A08C" ú√å7"
-{"highway":"track"}"	
-#37F38E" ¨¨ÆÂ"	
-#014FE5" Âéõ"	
-#DD20B2" ÷¯•}"
-{"highway":"path"}"	
-#5669DD" ÿ¯•}"	
-#BA795E" Ä˛à¡"'
-%{"highway":"path","surface":"ground"}"	
-#3D21D2" ŸÙòn"!
-{"foot":"yes","highway":"path"}"	
-#189A0B" √ûé"Œ
-À{"bicycle":"yes","foot":"yes","highway":"track","incline":"up","motor_vehicle":"no","mtb:scale":"0","mtb:scale:imba":"0","mtb:scale:uphill":"0","smoothness":"bad","surface":"ground","tracktype":"grade2"}"	
-#0697B1" ∞¿–‰"@
->{"highway":"service","oneway":"yes","service":"parking_aisle"}"	
-#516C14" Õüé"(
-&{"foot":"permissive","highway":"path"}"	
-#87B512" ¶´≥Ì"C
-A{"foot":"permissive","highway":"path","name":"Sentiero S. Agata"}"	
-#27D5D2" €õ˚ë"z
-x{"highway":"tertiary","maxspeed":"50","name":"Via della Resistenza","oneway":"no","sidewalk":"left","surface":"asphalt"}"	
-#1911FF" æ÷°Z"	
-#BB6FB7" Ω÷°Z"e
-c{"bridge":"yes","highway":"tertiary","layer":"1","name":"Via della Resistenza","surface":"asphalt"}"	
-#3417A0" Ñ∞ö"3
-1{"highway":"unclassified","name":"Via Redondolo"}"	
-#83B7AA" ´ÆΩÕ"	
-#41792A" õ†."	
-#A2FA9B" Öùk"9
-7{"highway":"service","oneway":"yes","psv":"designated"}"	
-#A58C63" ˘¬Ì%"	
-#C2640F" Ôõ†."	
-#056393" ê¡‰ì"
-{"highway":"service"}"	
-#837786" í¡‰ì"	
-#C61FCF" ì•k":
-8{"highway":"unclassified","name":"Via della Resistenza"}"	
-#2D5DF1" á€Õ"E
-C{"highway":"service","service":"parking_aisle","surface":"asphalt"}"	
-#39204D" ‚‚√ª"/
--{"highway":"footway","surface":"cobblestone"}"	
-#B5AEA3" Ö¡‰ì"*
-({"access":"private","highway":"footway"}"	
-#B58EE8" Ä¡‰ì"
-{"highway":"steps"}"	
-#5BFA6F" ≠¨ÆÂ"ù
-ö{"access":"yes","bicycle":"yes","foot":"yes","highway":"unclassified","horse":"yes","lanes":"1","name":"Via dei Ronchi","oneway":"no","surface":"asphalt"}"	
-#22E421" ÛïÇå"	
-#2EDFA6" óá "
-{"highway":"residential"}"	
-#631877" ‡åÀ"M
-K{"highway":"unclassified","name":"Via della Resistenza","sidewalk":"right"}"	
-#041910" »˛ú"	
-#C5D159" §Òë`"	
-#137317" †√å7")
-'{"highway":"track","surface":"asphalt"}"	
-#6FDB7D" ≈â¢"S
-Q{"crossing":"zebra","footway":"crossing","highway":"footway","surface":"asphalt"}"	
-#D7819D" ≤à·Ø"	
-#A30A0B" Ì´≈¥"	
-#42751C" —∂Ë"h
-f{"created_by":"Potlatch 0.10f","highway":"tertiary","name":"Via della Resistenza","surface":"asphalt"}"	
-#F90B34" ÷õ˚ë"M
-K{"highway":"tertiary","name":"Via Borino","oneway":"yes","surface":"paved"}"	
-#B70B28" ≤≥ˇ"	
-#6CD239" åÙﬁ"	
-#8DB84A" Ú¶ù"6
-4{"highway":"unclassified","name":"Via alle Volpare"}"	
-#BA3067" ´ñÈÖ"	
-#D8CFE2" †Òë`"	
-#66D95A" ¢Òë`"	
-#1BE571" ßÒë`"	
-#D92AFE" ƒÊ®õ"¥
-±{"highway":"path","incline":"up","mtb:scale":"1","mtb:scale:imba":"0","mtb:scale:uphill":"1","sac_scale":"hiking","source":"survey","surface":"ground","trail_visibility":"good"}"	
-#8C1B65" âåõ"	
-#098A06" √πæ°",
-*{"highway":"service","service":"driveway"}"	
-#8E81EE" ç≠ªw"+
-){"highway":"footway","surface":"unpaved"}"	
-#594ACF" äÙﬁ"@
->{"highway":"tertiary","name":"Via Borino","surface":"asphalt"}"	
-#608E79" ≥à·Ø"	
-#7F229B" Ô¨ªw"[
-Y{"bridge":"yes","highway":"tertiary","layer":"1","name":"Via Borino","surface":"asphalt"}"	
-#538B8E" ˇÌ⁄I"	
-#229BCF" ú˙ë…"	
-#9203D6" Ó¨ªw"	
-#6DE5EC" ¸©À"
-}{"highway":"residential","lanes":"1","maxheight":"3.7","maxwidth":"3","name":"Via Pinara","oneway":"yes","surface":"asphalt"}"	
-#8F1874" ì™ù"C
-A{"highway":"residential","name":"Via Borino","surface":"asphalt"}"	
-#C1CEB4" è≠ªw"	
-#BD93D7" ¥ÃêÈ"C
-A{"highway":"unclassified","name":"Via Brenz","surface":"asphalt"}"	
-#E54FA8" ã≠ªw"1
-/{"highway":"service","service":"parking_aisle"}"	
-#BE046A" ˙åõ"	
-#313A36" ≤±¯ä":
-8{"highway":"unclassified","name":"Pinara","oneway":"no"}"	
-#1E631D" „™ù"/
--{"highway":"residential","name":"Via Borino"}"	
-#7FC94F" Âí Ô"&
-${"highway":"service","oneway":"yes"}"	
-#192022" É–∂π"	
-#A0030B" Ö–∂π"	
-#1E001A" Ãõ˚ë"	
-#EFF5F9" ≠åõ"	
-#A53D6A" …õ˚ë"B
-@{"highway":"residential","name":"Via Celva","surface":"asphalt"}"	
-#9C5887" ±ñÈÖ"	
-#2201D2" ØñÈÖ"	
-#705176" üÒë`"	
-#1DF2B0" ”ﬂˆ_"	
-#BA90E0" ø™ù"A
-?{"highway":"unclassified","name":"Via Brenz","surface":"paved"}"	
-#BCD211" æ™ù"
-{"highway":"footway"}"	
-#55A495" “ﬂˆ_",
-*{"highway":"tertiary","name":"Via Borino"}"	
-#6DD5B6" á–∂π"	
-#BE0FC9" Î—˛"4
-2{"highway":"unclassified","name":"Via dei Ronchi"}"	
-#E73B7B" –¢∞"	
-#C55803" ì˛Ó">
-<{"highway":"track","surface":"unpaved","tracktype":"grade3"}"	
-#4FAA83" ¨ªw"0
-.{"highway":"unclassified","name":"Via Borino"}"	
-#C7C48F" ô˜O"3
-1{"highway":"track","name":"Pinara","oneway":"no"}"	
-#31F394" ∂Ê œ"	
-#7F4752" ìŸ–{"	
-#D0570C" ó˛Ó"q
-o{"bicycle":"yes","foot":"yes","highway":"unclassified","sac_scale":"mountain_hiking","trail_visibility":"good"}"	
-#5C2EA2" ∂Ô´ª"*
-({"highway":"track","motor_vehicle":"no"}"	
-#7EC633" ‰ûîî"	
-#DD3107" ª¯´ª"$
-"{"bicycle":"yes","highway":"path"}"	
-#459F49" å≠ªw"i
-g{"bicycle":"yes","foot":"yes","highway":"path","sac_scale":"mountain_hiking","trail_visibility":"good"}"	
-#A7F3D6" é˛Ó"Y
-W{"foot":"yes","highway":"path","sac_scale":"mountain_hiking","trail_visibility":"good"}"	
-#DE76EF" ‰¡¶È"7
-5{"highway":"residential","name":"Strada per Maranza"}"	
-#9415E6" Ÿ¯•}"	
-#D7CF01" °π‚ß"	
-#498E6A" Œõ˚ë"	
-#FFE8B9" £√å7"Q
-O{"access":"forestry","highway":"track","surface":"ground","tracktype":"grade3"}"	
-#3132E6" ”õ˚ë"	
-#0042C2" Ó≈“à"	
-#113F23" Ï≈“à"	
-#7375DC" ◊¯•}"	
-#CBD77D" ©«˝"	
-#6E8357" Å´ù"L
-J{"created_by":"Potlatch 0.10","highway":"unclassified","name":"Via Eremo"}"	
-#7A19A2" ç´ù"(
-&{"highway":"track","name":"Via Eremo"}"	
-#070660" º´ù"+
-){"highway":"tertiary","name":"Via Eremo"}"	
-#23AF5A" √ÇÔ#"*
-({"highway":"service","name":"Via Eremo"}"	
-#49303C" ¡¸—∏"	
-#D2A93F" ø¸—∏"	
-#145822" Ω¸—∏"	
-#9EFA62" ¿¸—∏"	
-#813F89" æ¸—∏"	
-#52EF1B" ∆ñìõ"œ
-Ã{"highway":"path","incline":"up","mtb:scale":"5","mtb:scale:uphill":"5","name":"E419B","sac_scale":"alpine_hiking","source":"survey","surface":"ground","trail_visibility":"intermediate","wheelchair":"no"}"	
-#F54F1C" à¯Ì∞"F
-D{"highway":"path","incline":"down","surface":"ground","width":"0.5"}"	
-#9A4189" Ò≈“à"	
-#2D39CB" ùÙÕ"	
-#8DAF54" á¯Ì∞"D
-B{"highway":"path","incline":"up","surface":"ground","width":"0.5"}"	
-#246963" ñá "<
-:{"highway":"residential","name":"Localit√† Passo Cimirlo"}"	
-#096947" ¶√å7"\
-Z{"foot":"designated","highway":"path","sac_scale":"hiking","trail_visibility":"excellent"}"	
-#732244" –ÛÊí"=
-;{"highway":"unclassified","name":"localit√† Passo Cimirlo"}"	
-#53B2D4" ◊ÛÊí"	
-#DB0123" Ë√¬¥"4
-2{"highway":"tertiary","name":"strada per Maranza"}"	
-#D947DC" Ï∂»"	
-#52AEAC" ‡§û."	
-#5DC1CC" ‚ûîî"	
-#4B81B1" ã∏¬¥"	
-#0D8C6D" ‚˝™ª"	
-#026DDE" ˝≥¨∆"$
-"{"highway":"path","mtb:scale":"2"}"	
-#47E5D1" Óÿ¶È"	
-#0BE6F9" Ôÿ¶È"	
-#A14FF1" ë˛Ó"i
-g{"foot":"yes","highway":"path","sac_scale":"hiking","surface":"unpaved","trail_visibility":"excellent"}"	
-#09DB1A" Ûü®"	
-#AA2765" Ø¨ÆÂ"ú
-ô{"bicycle":"yes","highway":"track","motor_vehicle":"no","sac_scale":"mountain_hiking","surface":"unpaved","tracktype":"grade2","trail_visibility":"good"}"	
-#7114DC" ›ÿ¨"õ
-ò{"bicycle":"yes","highway":"path","motor_vehicle":"no","sac_scale":"mountain_hiking","surface":"unpaved","tracktype":"grade2","trail_visibility":"good"}"	
-#2F2081" ≥Ä»{"	
-#EDB5F0" Â¡¶È"	
-#E359E7" ¯éÓ∑"P
-N{"highway":"path","mtb:scale":"2","mtb:scale:uphill":"3","sac_scale":"hiking"}"	
-#13B487" ê˛Ó"L
-J{"highway":"path","sac_scale":"mountain_hiking","trail_visibility":"good"}"	
-#642CFD" ûœ“∫"	
-#E45A8A" éÅı"7
-5{"highway":"unclassified","name":"localit√† Cimirlo"}"	
-#06DE35" °‚´"	
-#9C62F0" é∏¬¥"	
-#C4207F" è∏¬¥"	
-#773D1E" Ë∂»"	
-#2F3405" †˛Ù"	
-#4C516D" ú˛Ù"D
-B{"cutting":"no","highway":"footway","lanes":"1","surface":"paved"}"	
-#323C5B" û˛Ù"K
-I{"created_by":"Potlatch 0.10f","highway":"residential","surface":"paved"}"	
-#5CFF63" ∆∆Ä§"	
-#7B8FED" Îÿ¶È"X
-V{"highway":"track","name":"Strada per Maranza","surface":"paved","tracktype":"grade1"}"	
-#D0CEE9" ¬¡±ã"	
-#3A16BE" ÷ﬂˆ_"	
-#E647E5" Æ¨ÆÂ"	
-#03BE5E" ¥Ö»{"	
-#FD705A" êÀ¶È"	
-#CBE02B  "	üHx(J"  "	'ü" <dN>  	"	ƒù"$>  
-"	ƒù
-  "	ît*(YQ	  "	Íü(	L 
-  "	§ü
-  "	®ë
-L  "	¸e
-1  "
-	¯üi   !"	ﬁü*%`23  "#"	˛è
-a  $ %"	¶ü	HXJ  &'("	ú&ü!4-l/j  )'*"	ú%j"…E)#Åo/&  +,-"	∆%¥Jt5PL&6C	=JE  ./0"	˛è
-(  123"	ü»
-j  456"	Ñ! p    789"	5÷"vH  :;<"	∏1+/  =>?"	ü‡*ZK4U@m(O!  @>A"	qú: #7%  BCD"	ü–
-.3>  EFG"0	üà9¢0!<!,3$" @D0bNv,%	3{qFç   HI"	ÿ<2>>Cd+XD∞`  JK"	Jå
- !  LMN"	,¨:+
- (*  OP"	‚
-5  QR"	ît
-I  STU"
-	Æä@	  VTW"	ÓÄ
-  XYZ"	∏
-U  [\]"	™¸©	   ^_`"	§¸+?!  abc"	ÇÜ
-   def"
-	ÇÜ '  ghi"	îtRPn
- PO0Z  jk"
-	∞EFà+  lmn"	¸ÆZo;3C/q°#+{ ,  opq"	öÜZ#IG/[%k!Q	Aaù
-Å9!  rTs"	‰ú2(∫"! Y  tu"	∫z5Ce(  vwx"	ñ	ﬁRIKC-5[
-9_3  yz{"		∞  |T}"	^û
-V0*  ~T"	Êå õ+;  ÄÅÇ"		hÏ'=  ÉÑÖ"	¬ä
-'   ÜÑá"	hÏ*$#":&42  àÑâ"	¬¸#M/+H  äãå"7	¬ä∫ 	8	8B&LL<JXp@†Jñj l : X6P,XV" C;
-  ç'é"+	».ä+/-;15´D5ôD#5• eO@
-  èê"0	ûÄö>H"	.58E? )<=&;dá@A´"AK	GìS
-  ëhí"C	¬å⁄F<hH&.@û∂2f@6Ü4l"d,ö..DN\d5\ R\82ä` ñB 
-  ìî"	‡¿
-*E6Y<I`90&  ïñó"	‚‹2p(¢hHåî)4!
-  òô"	ñû"…4ë*9ü>  öõú"		 à
-Kü,  ùûü"	ñöR1G
-ç4)5 E=(  †°¢"	¬¸2$ú*ÇHÍ¥$X*‡  £õ§"	Ê÷)¨s  •¶ß"	‰Œ
-
-2
-  ®©"	é™"-q
-ßc/'  ™õ´"	‡¿§®	r$  ¨°≠"	ÓÄ2x24B*"öL|.9  ÆØ∞"(	ü˙Ç 
-,<:<8$V"ípFL7T/F?:;.%.	*  ±≤≥"	ñ¢:Î'?=ì-˚"°ë5&
-  ¥ µ"	¨
-⁄:¢CTà ggi  ∂∑∏"	Ç	à
-.  π∫ª"
-	Ù	⁄$`Z!  º∑Ω"	∞	Ë"Dﬁ9^å $  æø¿"	æ*6`äxŒFî)  ¡¬√"	ºêB@\NJYºWjg£%  ƒ≈∆"	‚‹"
-4&3Y_%
-  « »"	öÿ2Ñ	"Ao"Ò$ü*
-  …  "	–ŒRKQ,>
-" )  ÀãÃ"	¥æ:cs6ﬂÜı∞5 1p$  ÕãŒ"	¬¸2SM ë
-uo#s--  œ–—"	ﬁåR/{Cã'#1ãa]E)E?U%*
-  “'”"	ﬁå2¡Ãè^—§Ö⁄’j) 6
-  ‘ ’"&	∆!Ëjøñ-∞$Ç!*}$1
-h(#ñEÜ
-,)
-  ÷ ◊"	Ë¿J-A3_o7ô5{/Y'"
-  ÿ Ÿ"	ûÚ*ú£N%N/ .  ⁄€‹"	ºêB0≤Å^%æ®ñ2Ü(¿8  ›ﬁﬂ"	Ë¿NES À{  ‡·‚"j	Ç	à⁄¢|(.,“0J§êJö.
-("/0.@º<r;h'xAbK&?6+$~LL:	V;J0(JçîI$IE0$,Ç,à"\Ñ.¢Ü-!
-  „ ‰"	ò*Uï-BV`  ÂÊÁ"O	˛‹Í:ön	lû`à :VPl8RVÇà æåg§/º=Vÿ`nX~à:Ñ6êvZ†,
-  ËmÈ"	™“Z84
-.,.-1	)/E-  ÍÎÏ"	ñ%ÃB/'oâ°oUÌ±È,£$  ÌÓÔ"	≤Æ *Ô
-IS7èEÖF  ÒÚ"5	Ë	Ú%ÇGñü|œt'ºcÇ[6◊25x&@¿ËàåÇàJ∞\FÚ.
-  Û'Ù"	û	‡4"F>">LÄ
-  ı'ˆ"p	∆Ï/ÇA MK•kkk∑]+I9C.3I@âPe K;&"/$2Cj'^@-5k?<:fRD;ø•1iPı˙[<≠R&'Ä. ,#"79E'  ˜¯˘"	Ï‡:ddLB`h04XÇö>(*  ˙˚¸"	î∏ ::I™f]¨[Ëˆdî
-  ˝ ˛"
-	»ñ 6  ˇÄÅ"%	à#ƒ"r/&9B#dU¶Å"˘Wy"Q\v4TYaAN|  ÇÉÑ"k	Ù∫%¬8D4 ö&x˛æ(TX?˛$ åf
-+ M$16öWJæÌÆê(1w∏5`i@3õ1è6èÍ+ X†vÕ¿+6OB!Jí"†=  ÖÜá",	å†Aj2C"[/îI¿Èvõ¿[∆ö<íO^ò⁄7ñØ  àâä"	é¬;+FêM¶!
-  ã å"	ú%j*@tV¬Ü
-r
-  ç,é"	ä'n:7(5!,  è–ê"	 *íBΩÒ=Yá$€.ïo'w3#  ëíì"	 *í"µ°ªèE#_7  î–ï"&	‚4Ê	rs/ç3õCOG
-_@73W3ãC…s% %  ñõó"	Æ*÷:,(I
-  òõô"
-	Œ*æLr"  öõõ"	ä/˙Df†V4  ú–ù"#	û/ÙZWÜÉUIqüUMœÒ-+1VÌπ   ûü†"	‚'ˆˇØ ã"  °¢£"	ò$ƒ*1T9Ncd /  §•¶"	≤Æ Z:E&ck2]@Ef;|=ö–{*$-#  ß®©"	˛#ﬁ*@]`√ìay&
-  ™ ´"	¢0ò:)	51Á+3+è
-  ¨T≠"	û.≤"S:&"
-/
-  Æ Ø"	≤1åbc9K3!?!IE;y¢5T($#
-  ∞±"	¸'ˆ2HV0B,nÊ3
-  ≤ ≥"#	Ó2†r'#I))K#I-w%5◊W_9;  ¥µ∂"*	 *íz8w~‡æH)É9	P1-Eƒ1£\1ác;#  ∑∏π"	Ê4‚*™Pr2Æ
-H00)  ∫õª"	‹3ÿJ0.28)'5%  º–Ω"	Ç7˛2ø1Q/ç3OT
-(  æø¿"	»5à	B^*7:I.ò(*
-2%  ¡¬√"	ú:–:A3'''OYO_CA  ƒ≈∆"0	‚4Ê	¢
-:(8r<8>0@8@8t@@0dPh`*.(tJJ,Ñ  [  «»…"J	ﬁ;úÇ#%As E35+w≠;'i[%.96! I5Q@gXa2S*%f*ÆDí *á   »À"v	Ä=Ó∫*BT" kQ//	! m
-W]3WI!#T!&,p#!-C)U!Üw"U w
-
-(<"p9ï  ÃÕŒ"É	∫%û∫%%I11|ªé≠<5T»%x∫.j:D<#(*,T"ÓxF:.Z>Z02HBh?7
-EGŸ'.hnDZDö T@)2≥§1@F:2J8 RH3^)V?à°æmêh j6  œ»–"	Ä=ÓóI	&  —»“"	†Aê2üE±MìG4
-  ”‘"$	¬; r/v/HIN/@`t(<:>7`?JG4õâ	-  ’â÷"	Ü@˙Z11(;8WdC8-2N!8).8'
-  ◊'ÿ"	§%éBAJeXg87P`º4DtD  Ÿ⁄€"3	‘)∞1íCe"*9nãö?N;`'*C gÇaR±dw(Å6W*ãV?8Éå
-  ‹'›"
-	ˆ%å;mCK
-  ﬁ'ﬂ"	ñ&ƒ;
-7Q  ‡·‚"@	Ã<§)¢?ë;˚kÀØcØ8Ì9ô13´9OMI›ëS°8?+#ï©Â≈≠ÉO?∑  „â‰"•	†Aî≤âX1DR09`bjD@&(r2\jIn?N9*Q!+&W)$=DhJ^∫."xXM$-ƒmPW7i?0<(!Ik—)üπ4ˇÜóäõ4K
-=(WbqRmÿ…¿1BMB[¢õh8W>·‹I&3  ÂÊÁ""	éAÓ&;&Q	 J!'}É•2m2.pt+  ËÈÍ"	Ã<§)Rt2ijWD#/2@-Nd
-  Î'Ï"T	ÄA®8Úì#ß± mD5x«`mPaÑ}§G´	m:ô™±|ç ['ë8@ﬂk!≈K-C£â?Cìe=7%?%  ÌâÓ"	¯æ>2ç¬!"9yc&aN)  ÔÒ"	Ù†AJ!>X .5' 1-  ÚÛÙ"	¯æ>Z6#JF6>&LFln&  ıﬁˆ"	†AÙü.a  ˜¯˘"	†A˛üI±3
-  ˙'˚"	û?∂b†.
-  ¸˝"	íAÃ?Q i 
-  ˛Tˇ"		»@Ñ
-Và(  Ä»Å"	†A∆BI8GB3ëG   Ç»É"	ˆ>º"t6j  ÑÖÜ"
-	Ê@û
-%  áàâ"	ÜA˛
-
-:
-  ä'ã"*	àA∏*=1M"ë$U	 ’*-D	 Y 
-   åçé"	û?‡bà  èçê"	àA∏
-  ëûí"	éAÓ&
-  ìÊî"	†Aå'
-  ïÜñ"	ÄA®8
- e
-  ó'ò"	†A∞8
-

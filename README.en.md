@@ -9,6 +9,26 @@ The questions are generated thanks to the scripts inside the [create_geometry_sp
 Once the questions are generated, the .pbf files are created via [tippecanoe](AllNeededDirectories/tippecanoe/tippecanoe_funzionante/NewSystem). The pbf files are read by MapLibre in order to be shown to the user. We are using .pbf files instead of .geojson files because the weigh less to the user during the loading phase (but they weigh more in the server).</br>
 The [web-app](AllNeededDirectories/bicycle-osm-app) is translated only in english and italian for now. If you want to add languages you can modify the file [translation.js](AllNeededDirectories/bicycle-osm-app/src/utils).
 
+# REQUIREMENTS</br>
+The web-app was created in an Ubuntu 20.04 environment. On docker you can find the ubuntu version with all the neccessary packages installed in the repository franz99/ubuntu_image_web:ubuntu_ready_packages. You can always install them in your ubuntu environment.
+The used packages are:
+- git, "apt-get update \ && apt-get -y install git"
+- unzip, "apt-get install unzip"
+- nodejs, "apt-get install -y nodejs"
+- npm, "apt-get -y install npm"
+- @mapbox/geojson-merge, "npm install --save @mapbox/geojson-merge" "npm install -g @mapbox/geojson-merge"
+- python2.7, "apt-get -y install python2.7"
+- python3.8, "apt-get -y install python3.8"
+- python3-pip, "apt-get -y install python3-pip"
+- sqlite3, "apt-get install sqlite3"
+- libsqlite3-mod-spatialite, "apt-get install -y libsqlite3-mod-spatialite"
+- build-essential "apt-get -y install build-essential"
+- make, "apt-get install make"
+- libsqlite3-dev, "apt-get install libsqlite3-dev"
+- zlib1g-dev, "apt-get install zlib1g-dev"
+- vim, "apt-get -y install vim"
+- tippecanoe, "git clone https://github.com/mapbox/tippecanoe.git" then go to the tippecanoe folder and use the commands "make -j" and "make install"
+
 # SETUP</br>
 First of all clone the repository on your computer.
 Move to the [web-app](AllNeededDirectories/bicycle-osm-app) folder and create a .env file, then follow the guidelines of the next paragraphs.

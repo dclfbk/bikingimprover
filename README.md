@@ -1,5 +1,25 @@
 English README version: [README.en.md](README.en.md)
 
+# REQUIREMENTS</br>
+L'applicazione è stata creata su ambiente Ubuntu 20.04. Su docker è presente la versione ubuntu con i pacchetti necessari installati alla repository franz99/ubuntu_image_web:ubuntu_ready_packages. Altrimenti potete installarli sul vostro ambiente ubuntu.
+I pacchetti usati sono:
+- git, "apt-get update \ && apt-get -y install git"
+- unzip, "apt-get install unzip"
+- nodejs, "apt-get install -y nodejs"
+- npm, "apt-get -y install npm"
+- @mapbox/geojson-merge, "npm install --save @mapbox/geojson-merge" "npm install -g @mapbox/geojson-merge"
+- python2.7, "apt-get -y install python2.7"
+- python3.8, "apt-get -y install python3.8"
+- python3-pip, "apt-get -y install python3-pip"
+- sqlite3, "apt-get install sqlite3"
+- libsqlite3-mod-spatialite, "apt-get install -y libsqlite3-mod-spatialite"
+- build-essential "apt-get -y install build-essential"
+- make, "apt-get install make"
+- libsqlite3-dev, "apt-get install libsqlite3-dev"
+- zlib1g-dev, "apt-get install zlib1g-dev"
+- vim, "apt-get -y install vim"
+- tippecanoe, "git clone https://github.com/mapbox/tippecanoe.git" quindi andare nella cartella tippecanoe e lanciare i comandi "make -j" "make install"
+
 # SETUP</br>
 Muoversi all'interno dell cartella riguardante la [web-app](AllNeededDirectories/bicycle-osm-app) e creare un file chiamato .env, dopodichè seguire le indicazioni dei prossimi paragrafi.
 

@@ -1,185 +1,0 @@
-­Rx
-Trento(€ typeidtagscolor"
-way" Àşú
-"¾
-»{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via Paolo Oss Mazzurana","old_name":"Contrada di San Benedetto","oneway":"yes","oneway:bicycle":"no","surface":"paving_stones"}"	
-#E7115F" ¾šÓ‚",
-*{"footway":"sidewalk","highway":"footway"}"	
-#129C9D" •É”H"z
-x{"bicycle":"yes","highway":"footway","lit":"yes","name":"Vicolo Colico","oneway:bicycle":"no","surface":"paving_stones"}"	
-#8B3FF7" ‰¸ª"Ø
-Õ{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","name":"Via Camillo Benso Cavour","oneway":"yes","oneway:bicycle":"no","shortest_name":"Via Cavour","surface":"cobblestone"}"	
-#F91863" œÉ”H"$
-"{"area":"yes","highway":"service"}"	
-#34739D" ¤ªğ%"	
-#12A0D8" ÀËã("
-{"highway":"footway"}"	
-#35D11D" ÅØÃ"‡
-„{"access":"destination","bicycle":"yes","cycleway":"opposite","foot":"yes","highway":"residential","lanes":"1","lit":"yes","name":"Via Rodolfo Belenzani","old_name":"Via Larga","oneway":"yes","oneway:bicycle":"no","short_name":"Via Belenzani","surface":"sett"}"	
-#7DC97E" µªğ%"C
-A{"highway":"service","service":"alley","surface":"paving_stones"}"	
-#5DACE8" »¦·r"R
-P{"footway":"sidewalk","highway":"footway","lit":"yes","surface":"paving_stones"}"	
-#9096BA" ú©ğ%"d
-b{"highway":"service","service":"alley","surface":"unhewn_cobblestone","tunnel":"building_passage"}"	
-#F47CBB" ø†í""3
-1{"highway":"footway","tunnel":"building_passage"}"	
-#2AD568" à©Ÿ&"=
-;{"highway":"footway","lit":"yes","surface":"paving_stones"}"	
-#A11530"  ’û#"ñ
-î{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","lit":"yes","name":"Via Rodolfo Belenzani","old_name":"Via Larga","oneway":"yes","oneway:bicycle":"no","short_name":"Via Belenzani","surface":"sett"}"	
-#3F88A9" ½šÓ‚"	
-#63C4C6" ¾¦·r"	
-#467D78" ¼¦·r"V
-T{"highway":"pedestrian","lit":"yes","name":"Via Rodolfo Belenzani","surface":"sett"}"	
-#CAD31A" À¦·r"	
-#82DEC5" È©Ÿ&"P
-N{"highway":"pedestrian","name":"Galleria Tirrena","tunnel":"building_passage"}"	
-#1B6AF8" ¢ªğ%"V
-T{"highway":"service","service":"alley","surface":"sett","tunnel":"building_passage"}"	
-#FDB8A3" ‘¬3"5
-3{"area":"yes","highway":"service","surface":"sett"}"	
-#E54FDC" ƒªğ%"	
-#C02D58" ’¬3"	
-#109089" º¦·r"
-‹{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via delle Orne","oneway":"yes","oneway:bicycle":"no","surface":"paving_stones"}"	
-#890A2B" °’û#"4
-2{"highway":"pedestrian","name":"Galleria Tirrena"}"	
-#8F50EB" ˜É”H"K
-I{"highway":"service","surface":"cobblestone","tunnel":"building_passage"}"	
-#6E2D9C" šÉ”H"E
-C{"highway":"service","service":"alley","tunnel":"building_passage"}"	
-#15CBCC" É”H"	
-#646249" ™É”H"3
-1{"highway":"service","tunnel":"building_passage"}"	
-#76578E" ›É”H"/
--{"highway":"service","surface":"cobblestone"}"	
-#AF40B5" î©ğ%")
-'{"highway":"service","service":"alley"}"	
-#E9057E" —É”H"(
-&{"highway":"service","surface":"sett"}"	
-#A68C5F" Öòÿ
-"	
-#81834F" ïš·r"	
-#9960C5" ¾Ëã("	
-#9EDDAA" ÄËã("*
-({"covered":"arcade","highway":"footway"}"	
-#539540" ÈËã("4
-2{"highway":"footway","lit":"yes","surface":"sett"}"	
-#68ACA9" ›¬ª"Í
-Ê{"access":"destination","bicycle":"yes","foot":"yes","highway":"residential","lanes":"1","lit":"yes","name":"Piazza del Duomo","name:de":"Domplatz","oneway":"yes","oneway:bicycle":"no","surface":"sett"}"	
-#FA32ED" ìÇ´%"^
-\{"bicycle":"yes","highway":"pedestrian","name":"Vicolo dei Dall'Armi","oneway:bicycle":"no"}"	
-#2AA396" üúú‘"¿
-¼{"bicycle":"yes","foot":"yes","highway":"pedestrian","lanes":"1","lit":"yes","name":"Piazza del Duomo","oneway":"yes","oneway:bicycle":"no","psv":"opposite_lane","surface":"paving_stones"}"	
-#2ECBB4" ÉËã("	
-#A6A8E3" Ã¬ª"z
-x{"bicycle":"yes","highway":"pedestrian","name":"Vicolo dei Dall'Armi","oneway:bicycle":"no","tunnel":"building_passage"}"	
-#DB5E41" œ¬ª"Ê
-Ç{"area":"yes","bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Piazza Mario Pasi","old_name":"Piazza delle Opere","oneway:bicycle":"no","short_name":"Piazza Pasi","surface":"paving_stones"}"	
-#F5E606" È«ª"À
-½{"bicycle":"yes","foot":"yes","highway":"pedestrian","lanes":"1","lit":"yes","name":"Piazza Mario Pasi","oneway":"yes","oneway:bicycle":"no","psv":"opposite_lane","surface":"paving_stones"}"	
-#200C8E" Á¦·r"	
-#C93858" Äöü×"¹
-¶{"bicycle":"yes","foot":"yes","highway":"pedestrian","lanes":"1","name":"Via Giuseppe Garibaldi","oneway":"yes","oneway:bicycle":"no","psv":"opposite_lane","surface":"paving_stones"}"	
-#1ABA7E" ËËã("	
-#BECFF1" Åöü×"	
-#4F917C" ß·G"¨
-¥{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via Armando Diaz","oneway":"yes","oneway:bicycle":"no","short_name":"Via Diaz","surface":"paving_stones"}"	
-#01294B" ¡âáN"ÿ
-ü{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via Paolo Oss Mazzurana","old_name":"Contrada di San Benedetto","oneway":"yes","oneway:bicycle":"no","short_name":"Via Oss Mazzurana","shortest_name":"Via Mazzurana","surface":"paving_stones"}"	
-#3F54E3" ¤Åã#"J
-H{"highway":"steps","name":"Vicolo del Teatro","surface":"paving_stones"}"	
-#7EA50B" ã±÷K"q
-o{"highway":"pedestrian","lit":"yes","name":"Vicolo del Teatro","oneway:bicycle":"no","surface":"paving_stones"}"	
-#1275B7" Åã#"t
-r{"highway":"footway","lit":"yes","name":"Vicolo del Teatro","surface":"paving_stones","tunnel":"building_passage"}"	
-#7B2DC3" æ©¬"i
-g{"highway":"pedestrian","lit":"yes","name":"Via Armando Diaz","oneway":"yes","surface":"paving_stones"}"	
-#6F35AA" ¿ëó%"A
-?{"area":"yes","highway":"pedestrian","surface":"paving_stones"}"	
-#0DEB4F" °è©"\
-Z{"area":"yes","highway":"pedestrian","name":"Piazzetta del Sas","surface":"paving_stones"}"	
-#D2D306" ·ª"n
-l{"highway":"pedestrian","name":"Via Malpaga","oneway":"yes","oneway:bicycle":"no","surface":"paving_stones"}"	
-#F83667" …®ª"P
-N{"highway":"pedestrian","name":"Piazzetta del Sass","surface":"paving_stones"}"	
-#DD40B1" øúú‘"Ø
-Õ{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via Paolo Oss Mazzurana","oneway":"yes","oneway:bicycle":"no","short_name":"Via Oss Mazzurana","shortest_name":"Via Mazzurana","surface":"paving_stones"}"	
-#D6F8AA" ‘Í'"{
-y{"bicycle":"yes","foot":"yes","highway":"pedestrian","motorcar":"no","name":"Galleria Adria","tunnel":"building_passage"}"	
-#AA162F" ¸œ‡¼"g
-e{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Piazza Lodron","surface":"paving_stones"}"	
-#288A31" ìÛ©"Š
-‡{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Via Oriola","oneway":"yes","oneway:bicycle":"no","surface":"paving_stones"}"	
-#AEA0CE" ¦·ª"M
-K{"highway":"pedestrian","name":"Via Schivabriga","surface":"paving_stones"}"	
-#112AE2" ¹œ‡¼"	
-#9084C4" Øáõ"d
-b{"area":"yes","highway":"pedestrian","lit":"yes","name":"Piazza Lodron","surface":"paving_stones"}"	
-#817DB3" ºœ‡¼"	
-#120FC2" ÃËã("	
-#11FB66" £§°¹"	
-#84676B" š‡¼"”
-‘{"bicycle":"yes","highway":"pedestrian","lit":"yes","name":"Piazza del Duomo","name:de":"Domplatz","name:it":"Piazza del Duomo","surface":"sett"}"	
-#A4B017" š‡¼"	
-#1D52EC" ‘«ª"Ø
-Õ{"alt_name":"Piazza Duomo","area":"yes","highway":"pedestrian","loc_name":"Piaza del Dom","name":"Piazza del Duomo","name:de":"Domplatz","old_name":"Piazza Vittorio Emanuele III","place":"square","surface":"sett"}"	
-#60C022" çö¸r"F
-D{"footway":"sidewalk","highway":"footway","surface":"paving_stones"}"	
-#8B302B" ú‰•"Â
-¿{"bicycle":"yes","foot":"yes","highway":"pedestrian","lanes":"1","lit":"yes","motor_vehicle":"permissive","name":"Via Giuseppe Garibaldi","oneway":"no","oneway:bicycle":"no","surface":"sett"}"	
-#FB96DF" ëö¸r"	
-#46544C" ¯Ô"Ğ
-Í{"alt_name":"Piazza Italia","area":"yes","bicycle":"yes","highway":"pedestrian","lit":"yes","loc_name":"Piaza Italia","name":"Piazza Cesare Battisti","old_name":"Piazza Littorio","surface":"paving_stones"}"	
-#F97832" ÏÏÃ"	
-#2E1B2C" …´¯<"e
-c{"highway":"pedestrian","name":"Via Mantova","surface":"paving_stones","tunnel":"building_passage"}"	
-#9094C4  "	ì%°³
-ûŸ  "	ŸŒ7 Ô
-  	"	Ÿè Òì  
-"	Ÿ¾8 ú,F)  "	Ä² :°†í"Ÿ ı 1*  "	È¸'JV²+ Å" åp0	  "	7æ;
-gı   "	¾¶"GÉ/éŸ  "		öì
-Ğ%  "	´¦OÏÕ Ÿ   "		ÆÆ
-Œg  !"#"	Ÿ¬  _  $%&"	 ´d–  '()"		¨†
-iÏ)  *+"	Œˆ82Ç›ç	ÿÃ_×GçŸ  ,-"		 	ø
-kÑ  ./0"		¨†
-ä  12"		ä	ø
-Cÿ  345"		Œ
-ğ
-”  678"		ŞÌ	
-Ç+  9:;"	úº	Bt€œ‹l¥û˜  <7="		‚´
-ê	  >:?"	œŒ
- ¤ÇŸ  @AB"	¾¶´Åú¿  CDE"	 ÒÖ	:œ  FGH"		Òˆ!
-õZ  IJK"
-	Ø(
-Â‘  LM"	äâ*x w  NOP"		Äğ*
-İ  QRS"		ª	ü 
-×  TUV"		šü&
-’  WXY"		ú
-æ*
-µ
-"  Z(["	ø„8"Ë›ë?ûAù  \]"	Šü7éİ	»¥  ^_"		Š:,  `ab"	,è9"¼?®3†)š7  cde"	¶
-’8V	ì˜  fgh"		¶„;
-=ÿ#  ijk"	âº0*ÅÇSŸõ±  lmn"	ş¼<Í
-Ÿù$  oap"	ø7*ªHøîÄ@ˆ*˜  qrs"		ôĞ2
-•<  tuv".	„„2r ²Ş*â´BÒ~ıÖã^Õ3 ı3±  wxy"
-	ª#ª2
-¹†  z{"		Æª;
-õ  |}~"		ğ°8
-€	  €"	–ª;
-0 
-  m‚"		Š°<
-‹  ƒ„…"	‚9üÑ4Ã
-€!  †‡ˆ"	ì%°fDØ…¾  ‰Š‹"	®7¸
-   Œ"	–7¸ùş  ‘"		Â:Ä
-“  ’“”"		æ:’
-ã+  •–—"	ö8¶BR4Ì? oÛF_ér-#  ˜™š"	æ5º"†4Í¹#  ›œ"	‚9ü"FĞ˜ş	dâF^  Ÿ "		à:Ê
-ã	   ¡¢£"	&Ö*4s¨Sø  ¤¥¦"
-	ô.Ä)
-–ê+  §¨©"	Ş 52ˆÚ‡„’äZÔ Ş  ª«¬"	&Ö*Øç¢ã  ­®¯"	À=ê.oE]  °¨±"		Š0®1
-PÄQ  ²³´"@	¢>â.š°<àbM,±&û0	•ÿ­«<}ÜÌÑ‚sP°k„]²c  µ¨¶"		À=ê.
->Œ
-  ·a¸"	° A5Ÿyñ7§  ¹º"	ˆ A3Ÿ¹¯Q  »¼½"	œÄ;´¼@`  ¾¼¿"	œ A/Ÿ»ãS  ÀÁÂ"B	œ¬8ªØÎ*ş<RŠß¬&ı
-hÅ 3Ÿ_£Y‹Qa°C®;”e¾   ÃÄÅ"	¼¬80°¤   ÆÇÈ"	Š°<0Ğ 
-  ÉÊ"	ş¼<"0&:4l0  ËÌÍ"	 AŸB ÌŸ‹6%ãË	µŸ  Î«Ï"	Š<Š'ö5   ĞÑÒ"	Ú>ò5¦ 
