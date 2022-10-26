@@ -476,11 +476,16 @@ export default {
                     if(ref.showHigher){
                       ref.removeAndReAddCenterSource(ref,ref.completed_w);
                     }
+                    console.log(chosenValue);
                     ref.showHigher = false;
                     ref.createLayer(ref,"my_ways",chosenValue,chosenValue, my_completed_ways);
                     ref.createCenterLayer(ref,chosenValue + "-centered",chosenValue + "Center",my_completed_ways,chosenValue); 
+                    //ref.createSource(ref,"my_nodes",ref.node_url,16)
+                    var nodeName = chosenValue + "Node"
+                    console.log(nodeName);
+                    ref.createNodeLayer(ref,"my_nodes",nodeName,nodeName,ref.completed_n)
                     ref.createClusters(ref,chosenValue + "-centered","clusters" + chosenValue,"cluster-count" + chosenValue,chosenValue);
-                    break;
+                    break;  
         }
     },
 
