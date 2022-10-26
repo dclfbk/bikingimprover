@@ -1,8 +1,8 @@
 # osm gamification
 
 
-- [Video Setup Tutorial](https://drive.google.com/file/d/1kEFduntZRtgRTmlm4DYSM1q9ZMaatgcY/view?usp=sharing)
-- [Video Describing the project](https://drive.google.com/file/d/1bvAA8xmc9u4w5mdwOk17ls66UsH1UUUX/view?usp=sharing)
+- [Video Setup Tutorial](https://drive.google.com/file/d/14lH2EOqcvlQlqfrdfaNT3S3AoQc3HDMO/view?usp=sharing)
+- [Video Describing the project](https://drive.google.com/file/d/1y8Lin66vJZ9Ad7uO6CrAnXnDYc0SI0EZ/view?usp=sharing)
 - [Presentation](https://drive.google.com/file/d/1K8Nci07358HD8wjSEhS7rZGWWMCLXdkj/view?usp=sharing)
 - [Test the app on heroku](https://bicycle-try.herokuapp.com)
 
