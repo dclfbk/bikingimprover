@@ -1,5 +1,11 @@
 # osm gamification
 
+
+- [Video Setup Tutorial](https://drive.google.com/file/d/1kEFduntZRtgRTmlm4DYSM1q9ZMaatgcY/view?usp=sharing)
+- [Video Describing the project](https://drive.google.com/file/d/1bvAA8xmc9u4w5mdwOk17ls66UsH1UUUX/view?usp=sharing)
+- [Presentation](https://drive.google.com/file/d/1K8Nci07358HD8wjSEhS7rZGWWMCLXdkj/view?usp=sharing)
+- [Test the app on heroku](https://bicycle-try.herokuapp.com)
+
 **General Structure**: </br>
 The web-app is characterized by:
 - A frontend created principally with vue.js, ionic and MapLibre.
