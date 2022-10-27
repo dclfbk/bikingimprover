@@ -2,7 +2,7 @@ English README version: [README.en.md](README.en.md)
 
 - [Video Setup Tutorial](https://drive.google.com/file/d/14lH2EOqcvlQlqfrdfaNT3S3AoQc3HDMO/view?usp=sharing)
 - [Video Describing the project](https://drive.google.com/file/d/1y8Lin66vJZ9Ad7uO6CrAnXnDYc0SI0EZ/view?usp=sharing)
-- [Presentation](https://drive.google.com/file/d/1K8Nci07358HD8wjSEhS7rZGWWMCLXdkj/view?usp=sharing)
+- [Presentation](https://drive.google.com/file/d/1GkWwk5YkMv0IePnH0if-U5k2y349Ykgc/view?usp=sharing)
 - [Test the app on heroku](https://bicycle-try.herokuapp.com)
 
 # REQUIREMENTS</br>
