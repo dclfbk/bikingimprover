@@ -1,9 +1,9 @@
 English README version: [README.en.md](README.en.md)
 
-- [Video Setup Tutorial](https://drive.google.com/file/d/1kEFduntZRtgRTmlm4DYSM1q9ZMaatgcY/view?usp=sharing)
-- [Video Describing the project](https://drive.google.com/file/d/1bvAA8xmc9u4w5mdwOk17ls66UsH1UUUX/view?usp=sharing)
-- [Presentation](https://drive.google.com/file/d/1K8Nci07358HD8wjSEhS7rZGWWMCLXdkj/view?usp=sharing)
-- [Test the app on heroku](https://bicycle-try.herokuapp.com)
+- [Video Setup Tutorial](https://drive.google.com/file/d/14lH2EOqcvlQlqfrdfaNT3S3AoQc3HDMO/view?usp=sharing)
+- [Video Describing the project](https://drive.google.com/file/d/1y8Lin66vJZ9Ad7uO6CrAnXnDYc0SI0EZ/view?usp=sharing)
+- [Presentation](https://drive.google.com/file/d/1GkWwk5YkMv0IePnH0if-U5k2y349Ykgc/view?usp=sharing)
+- [Test the app on heroku](https://biking-improver.herokuapp.com)
 
 # REQUIREMENTS</br>
 L'applicazione è stata creata su ambiente Ubuntu 20.04. Su docker è presente la versione ubuntu con i pacchetti necessari installati alla repository franz99/ubuntu_image_web:ubuntu_ready_packages. Altrimenti potete installarli sul vostro ambiente ubuntu.
