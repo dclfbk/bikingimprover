@@ -277,6 +277,140 @@ way-keys:
                     value1: 
         must_not_have_tag:
             tag1: bicycle
+    
+    key4:
+        name: highway
+        values: 
+            value1: cycleway
+        values_not_to_have:
+            value1:      
+        tags: 
+            tag0:
+                name: bicycle
+                value: "yes"
+                question: E' vero che posso andare in bicicletta per questa strada?            
+                score: 1.0
+                validating: "yes"
+                answers: None
+                icon: pedal_bike
+            tag1:
+                name: surface
+                value: None
+                question: Di che superficie è fatta questa strada?
+                score: 3.0
+                validating: "no"
+                answers: asfalto,non asfaltato,pavimentato,terreno,calcestruzzo,pavimentazione_pietre,ghiaia,terroso,erba,compatta,sabbia,pavè(bolognini)
+                icon: edit_road
+            tag2: 
+                name: segregated
+                value: None
+                question: La strada delle biciclette è separata da quella dei pedoni?
+                score: 2.0
+                validating: "no"
+                answers: si,no
+                icon: safety_divider
+            tag3:
+                name: oneway
+                value: None
+                question: E' una strada a senso unico?
+                score: 2.0
+                validating: "no"
+                answers: si,no
+                icon: arrow_upward
+            tag5:
+                name: maxspeed
+                value: None
+                question: Quale è la velocità massima?
+                score: 2.0
+                validating: "no"
+                answers: number
+                icon: speed
+            tag6:
+                name: bicycle
+                value: None
+                question: Posso andare in bicicletta per questa strada?
+                score: 2.0
+                validating: "no"
+                answers: si,no
+                icon: pedal_bike
+            tag7:
+                name: bicycle
+                value: designated
+                question: E' vero che posso andare in bicicletta per questa strada? 
+                score: 1.0   
+                validating: "yes"
+                answers: None
+                icon: pedal_bike
+            tag8: 
+                name: bicycle
+                value: use_sidepath
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0 
+                validating: "yes"
+                answers: None
+                icon: pedal_bike
+            tag9: 
+                name: bicycle
+                value: permissive
+                question: E' vero che posso andare in bicicletta per questa strada?  
+                score: 1.0 
+                validating: "yes"
+                answers: None
+                icon: pedal_bike
+            tag10: 
+                name: bicycle
+                value: dismount
+                question: Devo smontare dalla bici per proseguire?
+                score: 2.0
+                validating: "yes"
+                answers: None
+                icon: directions_walk
+            tag11:
+                name: crossing
+                value: marked
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+                answers: None
+                icon: dangerous
+            tag12:
+                name: crossing
+                value: uncontrolled
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+                answers: None
+                icon: dangerous
+            tag13:
+                name: crossing
+                value: unmarked
+                question: l'attraversamento è pericoloso?
+                score: 3.0
+                validating: "yes"
+                answers: None
+                icon: dangerous
+        questions:
+            question1: 
+                question: Quante panchine sono presenti in questa strada?
+                score: 3.0
+                tagAnswer: None
+                answers: number
+                icon: chair
+            question2:
+                question: La ciclabile passa per un ponte?
+                score: 1.0
+                tagAnswer: bridge
+                answers: si,no
+                icon: radio_button_checked
+        must_have_tag:
+            tag1:
+                name: highway
+                values_to_discard:
+                    value1:
+                values_to_have:
+                    value1: cycleway
+        must_not_have_tag:
+            tag1: cycleway
 
 node-keys:
     key1:
