@@ -50,6 +50,11 @@
           });*/
           if(this.$userData.isNew){
             //TODO create database of power ups for user.
+            this.$auth.getUser();
+            //console.log(this.$auth.user);
+            if(this.$auth.user.myUserIDsignUpName==null){
+              this.$auth.user.myUserIDsignUpName = this.$auth.user.nickname 
+            }
             var userToSend = this.$auth.user.myUserIDsignUpName
             await(this.createDBUser(userToSend)).then(async items=>{
               console.log(items);

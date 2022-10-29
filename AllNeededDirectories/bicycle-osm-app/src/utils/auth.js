@@ -71,6 +71,11 @@ export const useAuth0 = ({
       loginWithRedirect(o) {
         return this.auth0Client.loginWithRedirect(o);
       },
+
+      async getUser(){
+        this.user = await this.auth0Client.getUser();
+      },
+
       /** Returns all the claims present in the ID token */
       getIdTokenClaims(o) {
         return this.auth0Client.getIdTokenClaims(o);

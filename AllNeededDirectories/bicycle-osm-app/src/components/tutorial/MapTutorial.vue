@@ -141,7 +141,11 @@ export default {
             ref.showQuestion(ref,e,"Strada");
         });
     });
-    
+    this.$auth.getUser();
+    console.log(this.$auth.user);
+    if(this.$auth.user.myUserIDsignUpName==null){
+      this.$auth.user.myUserIDsignUpName = this.$auth.user.nickname 
+    }
   },
   methods:{
     languagePick(event){
