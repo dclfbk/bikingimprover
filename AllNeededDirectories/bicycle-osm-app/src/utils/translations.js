@@ -90,6 +90,18 @@ var translations = {
         "C'è un servizio gratuito per gonfiare le ruote della bicicletta?": "Is there a service to pump the bicycle's wheel?",
         "Quanti posti per bicicletta ci sono in questo parcheggio?":  "How many bicycle parking spaces are there in this parking place?",
         "Il negozio vende anche bici elettriche?": "Does the shop sell electric bikes too?",
+
+        //Ferrara's Question, which are public administration
+        "La segnaletica è orizzontale, verticale o entrambi?": "Is the signage horizontal, vertical or both?",
+        "Su cosa si trova la strada ciclabile?": "Where is the cycleway located?",
+        "E' una strada a doppio senso o senso unico?": "Is the street a oneway or not?",
+        "E' un centro abitato?": "Is the centre a city centre?",
+        "Di che superficie è fatta la strada?": "Which surface is the street made of?",
+        "Su cosa si trova la ciclabile?": "Where is the cycleway located?",
+        "La strada è illuminata?": "Is the road sufficiently illuminated?",
+        "La strada è una corsia riservata o no?": "is the road a reserved lane?",
+        "Quale è la condizione?": "Which is the condition of the road?",
+        "L'accesso è pubblico?": "Does it have public access?",
         
         //Possible Answers
         "Yes": "Yes",
@@ -124,6 +136,28 @@ var translations = {
 
         "checkTrueMsg": "Is it true that the answer to the question: ",
         "checkEndMsg": " is ",
+
+         //Ferrara's Answer
+         "solo verticale": "vertical only",
+         "solo orizzontale": "horizontal only",
+         "entrambi": "both",
+         "nessuna": "none",
+         "su marciapiede": "on a sidewalk",
+         "su ponte": "on a bridge",
+         "a raso e un tratto su ponte": "level and a bridge section",
+         "sopraelevato": "raised",
+         "rampa accordo al ponte": "ramp chord on the bridge",
+         "sovrappasso": "overpass",
+         "doppio senso": "two way street", //two way street
+         "senso unico": "oneway",
+         "sì": "yes",
+         "bettonella": "sett",
+         "cemento": "concrete",
+         "stabilizzato": "stabilized",
+         "asfalto e bettonella": "asphalt and paving stones",
+         "porfido": "porphyry",
+         "legno": "wood",
+         "autobloccante": "paver",
 
         //Tutorial Section
         "TutClickWay": "By clicking a way or a circle inside a way you can see all its questions. Try to click the way or the associated circle.",
@@ -237,6 +271,18 @@ var translations = {
         "C'è un servizio gratuito per gonfiare le ruote della bicicletta?": "C'è un servizio gratuito per gonfiare le ruote della bicicletta?",
         "Quanti posti per bicicletta ci sono in questo parcheggio?":  "Quanti posti per bicicletta ci sono in questo parcheggio?",
         "Il negozio vende anche bici elettriche?": "Il negozio vende anche bici elettriche?",
+
+        //Domande Ferrara
+        "La segnaletica è orizzontale, verticale o entrambi?": "La segnaletica è orizzontale, verticale o entrambi?",
+        "Su cosa si trova la strada ciclabile?": "Su cosa si trova la strada ciclabile?",
+        "E' una strada a doppio senso o senso unico?": "E' una strada a doppio senso o senso unico?",
+        "E' un centro abitato?": "E' un centro abitato?",
+        "Di che superficie è fatta la strada?": "Di che superficie è fatta la strada?",
+        "Su cosa si trova la ciclabile?": "Su cosa si trova la ciclabile?",
+        "La strada è illuminata?": "La strada è illuminata?",
+        "La strada è una corsia riservata o no?": "La strada è una corsia riservata o no?",
+        "Quale è la condizione?": "Quale è la condizione?",
+        "L'accesso è pubblico?": "L'accesso è pubblico?",
         
         //Risposte possibili
         "si": "Si",
@@ -264,6 +310,28 @@ var translations = {
         "pavimentazione_pietre": "pavimentazione_pietre",
         "checkTrueMsg": "E' vero che la risposta alla domanda: ",
         "checkEndMsg":" è ",
+
+        //Ferrara's Answer
+        "solo verticale": "solo verticale",
+        "solo orizzontale": "solo orizzontale",
+        "entrambi": "entrambi",
+        "nessuna": "nessuna",
+        "su marciapiede": "su marciapiede",
+        "su ponte": "su ponte",
+        "a raso e un tratto su ponte": "a raso e un tratto su ponte",
+        "sopraelevato": "sopraelevato",
+        "rampa accordo al ponte": "rampa accordo al ponte",
+        "sovrappasso": "sovrappasso",
+        "doppio senso": "doppio senso", //two way street
+        "senso unico": "senso unico",
+        "sì": "sì",
+        "bettonella": "bettonella",
+        "cemento": "cemento",
+        "stabilizzato": "stabilizzato",
+        "asfalto e bettonella": "asfalto e bettonella",
+        "porfido": "porfido",
+        "legno": "legno",
+        "autobloccante": "autobloccante",
 
         //Sezione tutorial
         "TutClickWay": "Cliccando una via o un cerchio associato ad essa, potrai vederne tutte le domande associate. Prova a cliccare la via o il cerchio associato",
