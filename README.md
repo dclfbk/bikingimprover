@@ -1,3 +1,17 @@
+
+<img src="AppImages/Clusters.png" width="15%"></img>
+<img src="AppImages/HomePage.png" width="15%"></img>
+<img src="AppImages/ProfilePage.png" width="15%"></img>
+<img src="AppImages/MedalPage.png" width="15%"></img>
+<img src="AppImages/Questions.png" width="15%"></img>
+<img src="AppImages/LeaderBoardPage.png" width="15%"></img>
+<!--![clusters](AppImages/Clusters.png)
+![homePage](AppImages/HomePage.png)
+![profilePage](AppImages/ProfilePage.png)
+![medalPage](AppImages/MedalPage.png)
+![questions](AppImages/Questions.png)
+![leaderboard](AppImages/LeaderBoardPage.png)-->
+
 English README version: [README.en.md](README.en.md)
 
 - [Project Description](https://docs.google.com/document/d/1WZByJ2fpNfX1I89BCJPFwTi1muwKX84cQAa3ABBLkHc/edit?usp=sharing)
