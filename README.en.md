@@ -4,7 +4,8 @@
 - [Video Setup Tutorial](https://drive.google.com/file/d/14lH2EOqcvlQlqfrdfaNT3S3AoQc3HDMO/view?usp=sharing)
 - [Video Describing the project](https://drive.google.com/file/d/1y8Lin66vJZ9Ad7uO6CrAnXnDYc0SI0EZ/view?usp=sharing)
 - [Presentation](https://drive.google.com/file/d/1GkWwk5YkMv0IePnH0if-U5k2y349Ykgc/view?usp=sharing)
-- [Test the app on heroku](https://biking-improver.herokuapp.com)
+- [Test the app on heroku](https://biking-improver.herokuapp.com) . Since heroku doesn't have a free plan anymore this link might not work properly. If this link doesn't work please use the next one where the webapp is hosted using render.com
+- [Test the app on render](https://biking-improver.onrender.com) 
 
 **General Structure**: </br>
 The web-app is characterized by:
