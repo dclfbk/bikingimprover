@@ -441,9 +441,9 @@ var translations = {
         "è Potabile l'acqua?": "Is het water drinkbaar?",
         "Si può bere gratuitamente qui?": "Kan je hier gratis drinken?",
         "Posso ricaricare la bici elettrica?": "Kan ik de elektrische fiets hier opladen?",
-        "Il parcheggio per biciclette è al coperto?": "Is de fietsparkeerplaats overdekt?",
+        "Il parcheggio per biciclette è al coperto?": "Is de fietsenstalling overdekt?",
         "C'è un servizio gratuito per gonfiare le ruote della bicicletta?": "Is er een gratis dienst voor het oppompen van de fietsbanden?",
-        "Quanti posti per bicicletta ci sono in questo parcheggio?": "Hoeveel fietsparkeerplaatsen zijn er in deze parkeerplaats?",
+        "Quanti posti per bicicletta ci sono in questo parcheggio?": "Voor hoeveel fietsen is er plek in deze fietsenstalling?",
         "Il negozio vende anche bici elettriche?": "Verkoopt de winkel ook elektrische fietsen?",
 
         //Ferrara's Question, which are public administration
