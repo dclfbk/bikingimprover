@@ -1,0 +1,56 @@
+version: "3.9"
+
+volumes:
+  mongo-data:
+
+services:
+  mongo:
+    image: mongo:3.6.2-jessie
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+  gamification-engine:
+    build:
+      context: ../
+      dockerfile: docker/engine/Dockerfile
+    ports:
+      - "8010:8010"
+      - "7777:7777"
+    depends_on:
+      - mongo
+    links:
+      - mongo:mongodb
+    env_file: 
+      - ./engine/gamification.env
+    volumes:
+      - ./engine/logs:/app/game-engine.web/logs
+      - ./engine/config:/app/config
+
+  setup-gamification-engine:
+    build:
+      context: ../
+      dockerfile: docker/setup_gamification_engine/Dockerfile
+    depends_on:
+      - gamification-engine
+    links:
+      - gamification-engine:gamification-engine
+    env_file: 
+      - ./.env
+    profiles:
+      - setup
+    volumes:
+      - ./setup_gamification_engine/main.py:/app/main.py
+
+  web:
+    build:
+      context: ../
+      dockerfile: docker/web/Dockerfile
+    command: node server.js
+    ports:
+      - "8080:8080"
+    env_file: 
+      - ./.env
+    volumes:
+      - ./web/auth0-conf.js:/dist/auth0-conf.js
