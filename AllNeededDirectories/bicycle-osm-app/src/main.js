@@ -9,8 +9,6 @@ import '@ionic/core/css/ionic.bundle.css';
 import { MdButton, MdContent, MdTabs } from 'vue-material/dist/components'
 //import the css description
 import "@/assets/css/global.css"
-// Import the Auth0 configuration
-import { domain, clientId } from "../auth_config.json";
 // Import the plugin here
 import { Auth0Plugin } from "./utils/auth.js";
 
@@ -39,8 +37,8 @@ Vue.use(GetTextPlugin,{
 
 // Install the authentication plugin here
 Vue.use(Auth0Plugin, {
-  domain,
-  clientId,
+  domain: window.AUTH0_DOMAIN,
+  clientId: window.AUTH0_CLIENT_ID,
   onRedirectCallback: appState => {
     router.push(
       appState && appState.targetUrl
