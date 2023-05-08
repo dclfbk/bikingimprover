@@ -1,2 +1,4 @@
 .env
 /AllNeededDirectories/bicycle-osm-app/auth_config.json
+
+docker/web/auth0-conf.js

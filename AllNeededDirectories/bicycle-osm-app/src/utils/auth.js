@@ -1,7 +1,7 @@
 import Vue from "vue";
 import createAuth0Client from "@auth0/auth0-spa-js";
 
-//const authConfig = require("../../auth_config.json");
+//const authConfig = require("../../auth_config.js");
 
 /** Define a default action to perform after authentication */
 

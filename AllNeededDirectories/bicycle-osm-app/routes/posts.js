@@ -1,5 +1,5 @@
 require('dotenv').config()
-const auth_config = require("../auth_config.json")
+const auth_config = require("../auth_config.js")
 const clientId = auth_config.client_id_api
 const client_secret = auth_config.client_secret
 const audience = auth_config.audience
