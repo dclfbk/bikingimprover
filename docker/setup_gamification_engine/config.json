@@ -1,0 +1,40 @@
+{
+  "actions": [
+    "GetsValidatedFiveTimes",
+    "GetValidatedOneTime",
+    "GiveTrust",
+    "RemovePoints",
+    "TestData",
+    "RemoveImage",
+    "BuyPowerUp",
+    "ChangeName",
+    "PinAnswerCompletedTry",
+    "BuyImage",
+    "AddImage",
+    "PointInserted",
+    "ValidatePoint",
+    "CreateImage",
+    "PinAnswerCompleted",
+    "ResetCustom"
+  ],
+  "points": [
+    "GoldCoins",
+    "AccumulatedPoints"
+  ],
+  "badges": [
+    "beginner badge",
+    "expert contributor",
+    "they trust you",
+    "wrong answer",
+    "expert badge",
+    "contributor",
+    "professional badge",
+    "trusted contributor",
+    "validator badge",
+    "expert validator badge",
+    "first steps",
+    "professional cyclist",
+    "cyclist",
+    "green leaves"
+  ]
+}
