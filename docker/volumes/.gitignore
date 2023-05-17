@@ -1,0 +1,3 @@
+databases/applicationValid.db
+pbfFiles/*
+!pbfFiles/.gitkeep

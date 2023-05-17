@@ -1,0 +1,13 @@
+ipython
+geopandas==0.9.0
+nbformat
+
+click>=8.1.0
+osmium
+PyYAML==5.4.1
+overpy
+geopandas
+overpass
+geojson
+requests
+osm2geojson
