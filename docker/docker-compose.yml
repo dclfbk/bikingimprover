@@ -53,4 +53,22 @@ services:
     env_file: 
       - ./.env
     volumes:
-      - ./web/auth0-conf.js:/dist/auth0-conf.js
+      - ./web/auth0-conf.js:/app/dist/auth0-conf.js
+      - ./volumes/databases:/app/databases
+      - ./volumes/pbfFiles:/app/pbfFiles
+
+  setup_web:
+    profiles:
+      - setup
+    command: /data/Trento.xml
+    build:
+      context: ../
+      dockerfile: docker/setup_web/Dockerfile
+    env_file:
+      - ./.env
+    volumes:
+      - ./setup_web/main.py:/app/main.py
+      - ./setup_web/bikingimprover:/app/bikingimprover
+      - ./setup_web/data:/data
+      - ./volumes/pbfFiles:/app/out/pbfFiles
+      - ./volumes/databases:/app/out/databases
