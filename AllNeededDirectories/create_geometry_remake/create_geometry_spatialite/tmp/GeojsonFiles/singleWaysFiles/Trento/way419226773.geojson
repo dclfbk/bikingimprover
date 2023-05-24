@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 419226773, "tags": {"bicycle": "yes", "highway": "footway", "lit": "yes", "segregated": "no", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1428407, 46.0663405], [11.1428467, 46.0662179], [11.1428681, 46.0662026], [11.1427282, 46.0659856]]}}

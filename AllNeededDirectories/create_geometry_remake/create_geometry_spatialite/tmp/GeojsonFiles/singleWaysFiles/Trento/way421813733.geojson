@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 421813733, "tags": {"cycleway:both": "no", "highway": "unclassified", "lane_markings": "no", "lit": "yes", "maxspeed": "40", "maxspeed:type": "sign", "name": "Via alla Cascata", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1531067, 46.0665219], [11.1531061, 46.0664712]]}}

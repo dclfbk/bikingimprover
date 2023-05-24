@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 36847274, "tags": {"highway": "unclassified", "maxspeed": "40", "maxwidth": "2.8", "name": "Via Gabbiolo", "oneway": "no", "sidewalk": "none", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1529096, 46.0556853], [11.1529562, 46.0558536], [11.1530042, 46.0559828], [11.1530541, 46.0561303]]}}

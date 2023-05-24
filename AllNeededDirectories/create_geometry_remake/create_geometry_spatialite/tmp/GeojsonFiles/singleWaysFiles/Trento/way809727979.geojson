@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 809727979, "tags": {"highway": "unclassified", "maxspeed": "30", "name": "Via Val Gola", "surface": "cobblestone", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1065496, 46.0374213], [11.1066013, 46.037432], [11.1068347, 46.0374804], [11.1074033, 46.0375977]]}}

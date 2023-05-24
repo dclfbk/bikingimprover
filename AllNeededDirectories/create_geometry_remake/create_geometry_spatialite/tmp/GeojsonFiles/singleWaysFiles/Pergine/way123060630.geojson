@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 123060630, "tags": {"highway": "secondary", "name": "Via di Castel Rocca", "oneway": "yes", "ref": "SP83"}}, "geometry": {"type": "LineString", "coordinates": [[11.2065581, 46.0871335], [11.206423, 46.087153], [11.2063391, 46.0871801]]}}

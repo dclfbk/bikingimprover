@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 78455812, "tags": {"highway": "unclassified", "maxspeed": "50", "name": "Via Giuseppe Gilli", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1207561, 46.0911469], [11.1202139, 46.0910155], [11.1198381, 46.0909244], [11.1196844, 46.0908872]]}}

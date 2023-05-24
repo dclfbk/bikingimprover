@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 318406725, "tags": {"cycleway:right": "no", "highway": "unclassified", "lanes": "1", "name": "Via Ezio Franceschini", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.114484, 46.0928938], [11.11439, 46.0928098], [11.114295, 46.0927695]]}}

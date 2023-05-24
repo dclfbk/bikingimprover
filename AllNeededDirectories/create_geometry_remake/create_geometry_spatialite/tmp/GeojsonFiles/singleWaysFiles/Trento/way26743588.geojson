@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 26743588, "tags": {"fixme": "verify surface", "highway": "unclassified", "name": "Strada monastero di Sant'Anna", "surface": "unpaved", "tracktype": "grade2"}}, "geometry": {"type": "LineString", "coordinates": [[11.0420305, 46.0631058], [11.0421367, 46.062843], [11.0422448, 46.062562]]}}

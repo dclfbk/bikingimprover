@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 23056771, "tags": {"cycleway:right": "no", "highway": "secondary", "lanes": "2", "name": "Via Bolzano", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1125195, 46.0969958], [11.1127734, 46.096235], [11.1130632, 46.0955786], [11.1136041, 46.0946024]]}}

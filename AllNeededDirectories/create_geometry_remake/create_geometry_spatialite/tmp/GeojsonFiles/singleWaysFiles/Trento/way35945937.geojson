@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 35945937, "tags": {"bridge": "yes", "highway": "path", "layer": "1", "piste:difficulty": "intermediate", "piste:grooming": "classic;skating", "piste:type": "nordic", "sac_scale": "hiking"}}, "geometry": {"type": "LineString", "coordinates": [[11.0388261, 46.0138575], [11.0388314, 46.0137852]]}}

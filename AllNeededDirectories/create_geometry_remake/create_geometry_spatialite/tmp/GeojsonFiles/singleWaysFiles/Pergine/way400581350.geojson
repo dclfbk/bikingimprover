@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 400581350, "tags": {"cycleway:both": "no", "highway": "secondary", "lanes": "2", "ref": "SP66", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2411459, 46.0785259], [11.2411134, 46.0784701], [11.241054, 46.0784408]]}}

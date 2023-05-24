@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 483221924, "tags": {"bicycle": "yes", "cycleway:both": "no", "highway": "unclassified", "lane_markings": "no", "name": "Lungadige Louis Braille", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1148647, 46.0788931], [11.1141767, 46.0795623], [11.1140636, 46.0796609], [11.1138771, 46.0798211]]}}

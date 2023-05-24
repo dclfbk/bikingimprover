@@ -1,0 +1,9260 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.60 f4c14d41",
+  "osm3s": {
+    "timestamp_osm_base": "2023-05-22T13:23:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 254917402,
+  "lat": 46.0672187,
+  "lon": 11.1379545,
+  "timestamp": "2012-09-29T13:56:35Z",
+  "version": 3,
+  "changeset": 13296900,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 257481472,
+  "lat": 46.0687113,
+  "lon": 11.1201097,
+  "timestamp": "2010-09-26T22:51:53Z",
+  "version": 7,
+  "changeset": 5886612,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 268401565,
+  "lat": 46.0677293,
+  "lon": 11.1215698,
+  "timestamp": "2022-10-28T04:52:48Z",
+  "version": 15,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-09-07",
+    "fountain": "drinking",
+    "historic": "yes",
+    "name": "Fontana dell'Aquila",
+    "wheelchair": "limited",
+    "wikidata": "Q3747377",
+    "wikipedia": "it:Fontana dell'aquila (Trento)"
+  }
+},
+{
+  "type": "node",
+  "id": 268409383,
+  "lat": 46.0672129,
+  "lon": 11.1233878,
+  "timestamp": "2022-10-28T05:05:16Z",
+  "version": 8,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-10-28",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 268435082,
+  "lat": 46.0659610,
+  "lon": 11.1241484,
+  "timestamp": "2022-10-28T05:05:16Z",
+  "version": 7,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-24",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 268437618,
+  "lat": 46.0661698,
+  "lon": 11.1255502,
+  "timestamp": "2023-05-22T07:30:55Z",
+  "version": 8,
+  "changeset": 136398798,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-24",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 268768138,
+  "lat": 46.0714947,
+  "lon": 11.1307716,
+  "timestamp": "2021-08-21T06:31:49Z",
+  "version": 3,
+  "changeset": 110013696,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-21"
+  }
+},
+{
+  "type": "node",
+  "id": 268768139,
+  "lat": 46.0731621,
+  "lon": 11.1281284,
+  "timestamp": "2023-01-31T12:50:16Z",
+  "version": 4,
+  "changeset": 131920791,
+  "user": "luci21",
+  "uid": 13359138,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-21",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 268768142,
+  "lat": 46.0744317,
+  "lon": 11.1291327,
+  "timestamp": "2021-08-24T13:01:43Z",
+  "version": 3,
+  "changeset": 110173682,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 269312698,
+  "lat": 46.0670880,
+  "lon": 11.1267422,
+  "timestamp": "2022-10-28T05:12:44Z",
+  "version": 6,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-24",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 269565332,
+  "lat": 46.0744300,
+  "lon": 11.1250762,
+  "timestamp": "2023-03-03T12:34:52Z",
+  "version": 8,
+  "changeset": 133251969,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 271292335,
+  "lat": 46.0883817,
+  "lon": 11.1335400,
+  "timestamp": "2018-04-27T10:36:50Z",
+  "version": 4,
+  "changeset": 58471759,
+  "user": "Exchange173",
+  "uid": 7158271,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 271292336,
+  "lat": 46.0888492,
+  "lon": 11.1342119,
+  "timestamp": "2023-01-16T17:28:00Z",
+  "version": 3,
+  "changeset": 131347019,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-16"
+  }
+},
+{
+  "type": "node",
+  "id": 271292337,
+  "lat": 46.0888681,
+  "lon": 11.1407194,
+  "timestamp": "2010-11-13T16:14:55Z",
+  "version": 2,
+  "changeset": 6359413,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 271292339,
+  "lat": 46.0821615,
+  "lon": 11.1485440,
+  "timestamp": "2023-01-13T17:38:17Z",
+  "version": 4,
+  "changeset": 131239392,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 271292341,
+  "lat": 46.0783962,
+  "lon": 11.1366485,
+  "timestamp": "2016-11-19T16:32:41Z",
+  "version": 5,
+  "changeset": 43804194,
+  "user": "Andreww87",
+  "uid": 4704164,
+  "tags": {
+    "amenity": "drinking_water",
+    "name": "fontana \"bambina\"",
+    "name:it": "fontana \"bambina\""
+  }
+},
+{
+  "type": "node",
+  "id": 271292342,
+  "lat": 46.0896762,
+  "lon": 11.1313978,
+  "timestamp": "2011-02-17T15:14:32Z",
+  "version": 3,
+  "changeset": 7314038,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 271375023,
+  "lat": 46.0713458,
+  "lon": 11.1408508,
+  "timestamp": "2021-09-10T15:49:58Z",
+  "version": 3,
+  "changeset": 111030766,
+  "user": "Baldomo",
+  "uid": 10747471,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-10"
+  }
+},
+{
+  "type": "node",
+  "id": 276591564,
+  "lat": 46.0182146,
+  "lon": 11.1055598,
+  "timestamp": "2022-04-29T11:13:28Z",
+  "version": 3,
+  "changeset": 120343729,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 276591588,
+  "lat": 46.0187455,
+  "lon": 11.1042520,
+  "timestamp": "2022-04-29T11:13:28Z",
+  "version": 3,
+  "changeset": 120343729,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 276591633,
+  "lat": 46.0181250,
+  "lon": 11.1036890,
+  "timestamp": "2022-04-29T11:18:01Z",
+  "version": 3,
+  "changeset": 120343900,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 276591846,
+  "lat": 46.0196399,
+  "lon": 11.1079103,
+  "timestamp": "2022-04-29T11:13:28Z",
+  "version": 3,
+  "changeset": 120343729,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 276601219,
+  "lat": 46.0190898,
+  "lon": 11.1054421,
+  "timestamp": "2008-07-06T10:30:49Z",
+  "version": 1,
+  "changeset": 406723,
+  "user": "mrgrass",
+  "uid": 46925,
+  "tags": {
+    "amenity": "drinking_water",
+    "created_by": "Potlatch 0.9c"
+  }
+},
+{
+  "type": "node",
+  "id": 276601266,
+  "lat": 46.0174925,
+  "lon": 11.1053220,
+  "timestamp": "2023-04-24T20:26:10Z",
+  "version": 3,
+  "changeset": 135317970,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 277727837,
+  "lat": 46.0374301,
+  "lon": 11.1077052,
+  "timestamp": "2013-06-30T20:55:51Z",
+  "version": 3,
+  "changeset": 16770159,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 277727873,
+  "lat": 46.0377109,
+  "lon": 11.1063738,
+  "timestamp": "2011-06-09T11:19:39Z",
+  "version": 4,
+  "changeset": 8387604,
+  "user": "pfranz",
+  "uid": 152676,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 277729818,
+  "lat": 46.0800044,
+  "lon": 11.1144630,
+  "timestamp": "2023-01-03T08:03:06Z",
+  "version": 4,
+  "changeset": 130815217,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 277730442,
+  "lat": 46.0661952,
+  "lon": 11.1540090,
+  "timestamp": "2022-11-29T11:42:08Z",
+  "version": 7,
+  "changeset": 129517432,
+  "user": "Lyreplus",
+  "uid": 17831198,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-09",
+    "fountain": "drinking",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 278131845,
+  "lat": 46.0193348,
+  "lon": 11.1057507,
+  "timestamp": "2008-07-13T10:10:58Z",
+  "version": 2,
+  "changeset": 473483,
+  "user": "mrgrass",
+  "uid": 46925,
+  "tags": {
+    "amenity": "drinking_water",
+    "created_by": "Potlatch 0.9c"
+  }
+},
+{
+  "type": "node",
+  "id": 278131933,
+  "lat": 46.0097363,
+  "lon": 11.1236454,
+  "timestamp": "2023-05-06T14:35:32Z",
+  "version": 4,
+  "changeset": 135779709,
+  "user": "drazde",
+  "uid": 719795,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-17",
+    "created_by": "Potlatch 0.9c",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 278767662,
+  "lat": 46.0548761,
+  "lon": 11.1362582,
+  "timestamp": "2010-08-30T12:54:01Z",
+  "version": 2,
+  "changeset": 5635947,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 278767663,
+  "lat": 46.0581440,
+  "lon": 11.1375115,
+  "timestamp": "2008-07-15T17:48:13Z",
+  "version": 1,
+  "changeset": 499146,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 278767664,
+  "lat": 46.0616796,
+  "lon": 11.1368070,
+  "timestamp": "2022-02-18T11:50:27Z",
+  "version": 2,
+  "changeset": 117561319,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 278767665,
+  "lat": 46.0612339,
+  "lon": 11.1303668,
+  "timestamp": "2023-02-11T13:00:56Z",
+  "version": 3,
+  "changeset": 132403563,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-08-14",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 278767666,
+  "lat": 46.0686889,
+  "lon": 11.1279738,
+  "timestamp": "2022-10-28T04:54:00Z",
+  "version": 3,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-01",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 278767667,
+  "lat": 46.0703712,
+  "lon": 11.1262970,
+  "timestamp": "2023-01-14T13:25:02Z",
+  "version": 4,
+  "changeset": 131264886,
+  "user": "dieterdreist",
+  "uid": 26139,
+  "tags": {
+    "amenity": "fountain",
+    "check_date": "2021-08-15",
+    "drinking_water": "yes",
+    "seasonal": "yes",
+    "wikimedia_commons": "File:Fountain Trento, Italia Jan 14, 2023 01-59-37 PM.jpeg"
+  }
+},
+{
+  "type": "node",
+  "id": 278767668,
+  "lat": 46.0695291,
+  "lon": 11.1263907,
+  "timestamp": "2023-01-14T13:28:46Z",
+  "version": 5,
+  "changeset": 131265014,
+  "user": "dieterdreist",
+  "uid": 26139,
+  "tags": {
+    "amenity": "fountain",
+    "check_date": "2021-08-15",
+    "drinking_water": "yes",
+    "seasonal": "yes",
+    "wikimedia_commons": "File:Fountain Trento, Italia Jan 14, 2023 01-58-08 PM.jpeg"
+  }
+},
+{
+  "type": "node",
+  "id": 278767669,
+  "lat": 46.0693568,
+  "lon": 11.1257885,
+  "timestamp": "2023-01-14T13:33:51Z",
+  "version": 4,
+  "changeset": 131265208,
+  "user": "dieterdreist",
+  "uid": 26139,
+  "tags": {
+    "amenity": "fountain",
+    "check_date": "2021-08-15",
+    "drinking_water": "yes",
+    "seasonal": "yes",
+    "wikimedia_commons": "File:Fountain Trento, Italia Jan 14, 2023 01-56-36 PM.jpeg"
+  }
+},
+{
+  "type": "node",
+  "id": 278767670,
+  "lat": 46.0701115,
+  "lon": 11.1255355,
+  "timestamp": "2023-01-31T13:03:28Z",
+  "version": 7,
+  "changeset": 131920791,
+  "user": "luci21",
+  "uid": 13359138,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-01-04",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 278767671,
+  "lat": 46.0702277,
+  "lon": 11.1204330,
+  "timestamp": "2021-08-04T06:13:54Z",
+  "version": 3,
+  "changeset": 109125775,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-04"
+  }
+},
+{
+  "type": "node",
+  "id": 278767673,
+  "lat": 46.0632222,
+  "lon": 11.1260645,
+  "timestamp": "2022-06-27T22:14:49Z",
+  "version": 3,
+  "changeset": 122930272,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-06-28"
+  }
+},
+{
+  "type": "node",
+  "id": 278767674,
+  "lat": 46.0637667,
+  "lon": 11.1266714,
+  "timestamp": "2023-05-01T15:45:47Z",
+  "version": 5,
+  "changeset": 135579820,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-06-28",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 279462074,
+  "lat": 46.0649536,
+  "lon": 11.1565609,
+  "timestamp": "2016-05-30T13:19:17Z",
+  "version": 9,
+  "changeset": 39665513,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 279463131,
+  "lat": 46.0662372,
+  "lon": 11.1559237,
+  "timestamp": "2016-05-11T20:22:57Z",
+  "version": 5,
+  "changeset": 39252017,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 279565037,
+  "lat": 46.0672558,
+  "lon": 11.1659817,
+  "timestamp": "2022-11-29T14:19:40Z",
+  "version": 6,
+  "changeset": 129523731,
+  "user": "topongo",
+  "uid": 17833114,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-11-29",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 281326267,
+  "lat": 46.0861161,
+  "lon": 11.1598624,
+  "timestamp": "2012-08-17T10:34:25Z",
+  "version": 2,
+  "changeset": 12760804,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281326269,
+  "lat": 46.0887532,
+  "lon": 11.1613475,
+  "timestamp": "2011-03-09T22:17:47Z",
+  "version": 3,
+  "changeset": 7509380,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281326272,
+  "lat": 46.0851692,
+  "lon": 11.1587387,
+  "timestamp": "2018-03-24T16:10:50Z",
+  "version": 2,
+  "changeset": 57490001,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281326274,
+  "lat": 46.0852070,
+  "lon": 11.1572569,
+  "timestamp": "2022-04-02T21:43:01Z",
+  "version": 4,
+  "changeset": 119248129,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281326278,
+  "lat": 46.0819596,
+  "lon": 11.1534747,
+  "timestamp": "2015-05-03T00:07:41Z",
+  "version": 2,
+  "changeset": 30735277,
+  "user": "lestremo",
+  "uid": 2884555,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281328920,
+  "lat": 46.1082514,
+  "lon": 11.1424417,
+  "timestamp": "2015-11-05T23:50:09Z",
+  "version": 2,
+  "changeset": 35115042,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 281328921,
+  "lat": 46.1075416,
+  "lon": 11.1463846,
+  "timestamp": "2010-09-09T17:22:16Z",
+  "version": 2,
+  "changeset": 5734546,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 285310114,
+  "lat": 46.1314779,
+  "lon": 11.1016843,
+  "timestamp": "2023-03-09T17:28:14Z",
+  "version": 2,
+  "changeset": 133487986,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 285952243,
+  "lat": 46.0737698,
+  "lon": 11.1345725,
+  "timestamp": "2022-08-22T05:53:21Z",
+  "version": 5,
+  "changeset": 125208464,
+  "user": "AlceAttrezzata",
+  "uid": 16790774,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-08-22"
+  }
+},
+{
+  "type": "node",
+  "id": 293333191,
+  "lat": 46.0482133,
+  "lon": 11.0664515,
+  "timestamp": "2011-07-23T14:41:02Z",
+  "version": 2,
+  "changeset": 8806903,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 293338583,
+  "lat": 46.0651730,
+  "lon": 11.0418660,
+  "timestamp": "2023-04-03T09:25:38Z",
+  "version": 3,
+  "changeset": 134445650,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 301236630,
+  "lat": 46.1318957,
+  "lon": 11.1417521,
+  "timestamp": "2008-09-30T21:04:03Z",
+  "version": 1,
+  "changeset": 722241,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 301329696,
+  "lat": 46.1208760,
+  "lon": 11.1183718,
+  "timestamp": "2008-10-01T09:16:47Z",
+  "version": 1,
+  "changeset": 8978,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 301329697,
+  "lat": 46.1218866,
+  "lon": 11.1176767,
+  "timestamp": "2008-10-01T09:16:48Z",
+  "version": 1,
+  "changeset": 8978,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 301329699,
+  "lat": 46.1245368,
+  "lon": 11.1174554,
+  "timestamp": "2023-03-08T16:08:21Z",
+  "version": 4,
+  "changeset": 133446842,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 301778616,
+  "lat": 45.9887809,
+  "lon": 11.0343316,
+  "timestamp": "2022-11-06T21:33:33Z",
+  "version": 6,
+  "changeset": 128571329,
+  "user": "Saradas00",
+  "uid": 15737705,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "drinking_water": "yes",
+    "ele": "2060",
+    "fee": "no",
+    "name": "Fontana delle Rogiole",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 304730083,
+  "lat": 46.1245036,
+  "lon": 11.1340137,
+  "timestamp": "2023-05-15T13:52:08Z",
+  "version": 3,
+  "changeset": 136128039,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 305418342,
+  "lat": 46.0645474,
+  "lon": 11.0965967,
+  "timestamp": "2010-06-03T20:15:56Z",
+  "version": 3,
+  "changeset": 4895870,
+  "user": "Fabry",
+  "uid": 66900,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 359541639,
+  "lat": 46.0866794,
+  "lon": 11.0635848,
+  "timestamp": "2022-04-11T13:32:27Z",
+  "version": 3,
+  "changeset": 119579936,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 361378958,
+  "lat": 46.0613247,
+  "lon": 11.1502816,
+  "timestamp": "2010-03-29T22:38:40Z",
+  "version": 3,
+  "changeset": 4272284,
+  "user": "user_136835",
+  "uid": 136835,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 383169055,
+  "lat": 46.0730448,
+  "lon": 11.1128702,
+  "timestamp": "2021-03-09T21:01:20Z",
+  "version": 4,
+  "changeset": 100733342,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 386888073,
+  "lat": 46.0337384,
+  "lon": 11.1423708,
+  "timestamp": "2012-05-07T23:03:04Z",
+  "version": 3,
+  "changeset": 11534697,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 393455572,
+  "lat": 46.0655834,
+  "lon": 11.0990201,
+  "timestamp": "2022-09-07T17:13:04Z",
+  "version": 4,
+  "changeset": 125910807,
+  "user": "RaelZero",
+  "uid": 2701091,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 417859449,
+  "lat": 46.0663027,
+  "lon": 11.1393032,
+  "timestamp": "2009-06-09T13:49:56Z",
+  "version": 1,
+  "changeset": 1468140,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 421791279,
+  "lat": 46.0062313,
+  "lon": 11.1367983,
+  "timestamp": "2019-01-14T15:37:56Z",
+  "version": 4,
+  "changeset": 66305666,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 428313921,
+  "lat": 46.0485061,
+  "lon": 11.1239771,
+  "timestamp": "2021-08-16T13:18:35Z",
+  "version": 2,
+  "changeset": 109752372,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-16"
+  }
+},
+{
+  "type": "node",
+  "id": 428313922,
+  "lat": 46.0490855,
+  "lon": 11.1238502,
+  "timestamp": "2021-08-16T13:19:35Z",
+  "version": 4,
+  "changeset": 109752372,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-16"
+  }
+},
+{
+  "type": "node",
+  "id": 428313997,
+  "lat": 46.0525126,
+  "lon": 11.1256726,
+  "timestamp": "2020-03-17T14:38:49Z",
+  "version": 2,
+  "changeset": 82307135,
+  "user": "mcheck",
+  "uid": 478872,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 428314131,
+  "lat": 46.0513623,
+  "lon": 11.1259756,
+  "timestamp": "2009-06-23T11:46:06Z",
+  "version": 1,
+  "changeset": 1601182,
+  "user": "moretto",
+  "uid": 34460,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 428667181,
+  "lat": 46.0480329,
+  "lon": 11.1456147,
+  "timestamp": "2011-06-04T18:28:39Z",
+  "version": 3,
+  "changeset": 8341555,
+  "user": "pfranz",
+  "uid": 152676,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 430764605,
+  "lat": 46.0563726,
+  "lon": 11.1535367,
+  "timestamp": "2021-08-11T14:08:03Z",
+  "version": 2,
+  "changeset": 109520921,
+  "user": "Mattis1987",
+  "uid": 13783555,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 434169550,
+  "lat": 46.0412184,
+  "lon": 11.1524680,
+  "timestamp": "2012-03-20T12:19:25Z",
+  "version": 5,
+  "changeset": 11040632,
+  "user": "pfranz",
+  "uid": 152676,
+  "tags": {
+    "amenity": "drinking_water",
+    "natural": "spring"
+  }
+},
+{
+  "type": "node",
+  "id": 438238490,
+  "lat": 46.0378984,
+  "lon": 11.1047533,
+  "timestamp": "2011-06-09T11:19:42Z",
+  "version": 3,
+  "changeset": 8387604,
+  "user": "pfranz",
+  "uid": 152676,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 445777823,
+  "lat": 46.0678869,
+  "lon": 11.1147451,
+  "timestamp": "2022-06-28T08:36:39Z",
+  "version": 3,
+  "changeset": 122944652,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-06-28"
+  }
+},
+{
+  "type": "node",
+  "id": 463198171,
+  "lat": 46.0560309,
+  "lon": 11.1529888,
+  "timestamp": "2021-08-11T14:08:03Z",
+  "version": 3,
+  "changeset": 109520921,
+  "user": "Mattis1987",
+  "uid": 13783555,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 466307936,
+  "lat": 46.0452346,
+  "lon": 11.1445567,
+  "timestamp": "2019-06-05T20:25:08Z",
+  "version": 3,
+  "changeset": 70966987,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 466349693,
+  "lat": 46.0524963,
+  "lon": 11.1482414,
+  "timestamp": "2020-08-26T13:44:19Z",
+  "version": 3,
+  "changeset": 89975955,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 469206794,
+  "lat": 46.0428286,
+  "lon": 11.1804149,
+  "timestamp": "2012-03-17T23:25:05Z",
+  "version": 2,
+  "changeset": 11013783,
+  "user": "scratera",
+  "uid": 76312,
+  "tags": {
+    "amenity": "drinking_water",
+    "name": "Fontana del Gai"
+  }
+},
+{
+  "type": "node",
+  "id": 474778841,
+  "lat": 46.0727748,
+  "lon": 11.0594861,
+  "timestamp": "2011-07-17T01:54:01Z",
+  "version": 2,
+  "changeset": 8744092,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 474779172,
+  "lat": 46.0566623,
+  "lon": 11.0612840,
+  "timestamp": "2022-07-19T09:43:26Z",
+  "version": 2,
+  "changeset": 123798932,
+  "user": "Fabry",
+  "uid": 66900,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 490647567,
+  "lat": 46.0916474,
+  "lon": 11.1286233,
+  "timestamp": "2022-10-27T15:58:46Z",
+  "version": 2,
+  "changeset": 128136655,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 526801006,
+  "lat": 46.0748996,
+  "lon": 11.1146772,
+  "timestamp": "2022-09-12T06:28:56Z",
+  "version": 2,
+  "changeset": 126072384,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-09-12"
+  }
+},
+{
+  "type": "node",
+  "id": 556932255,
+  "lat": 46.0660034,
+  "lon": 11.1530478,
+  "timestamp": "2012-10-28T15:06:24Z",
+  "version": 3,
+  "changeset": 13661082,
+  "user": "wheelmap_visitor",
+  "uid": 290680,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 556932263,
+  "lat": 46.0659369,
+  "lon": 11.1536827,
+  "timestamp": "2012-10-28T15:09:35Z",
+  "version": 4,
+  "changeset": 13661082,
+  "user": "wheelmap_visitor",
+  "uid": 290680,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 558628505,
+  "lat": 46.0701801,
+  "lon": 11.1202276,
+  "timestamp": "2019-09-22T18:39:35Z",
+  "version": 7,
+  "changeset": 74778889,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "21",
+    "name": "e.motion / Stazione Autocorriere",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 558628547,
+  "lat": 46.0710117,
+  "lon": 11.1130338,
+  "timestamp": "2021-03-06T16:19:28Z",
+  "version": 3,
+  "changeset": 100543241,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 559245412,
+  "lat": 46.0650648,
+  "lon": 11.1023029,
+  "timestamp": "2017-08-26T12:53:45Z",
+  "version": 2,
+  "changeset": 51458369,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 560485381,
+  "lat": 46.0657094,
+  "lon": 11.1318468,
+  "timestamp": "2020-06-28T17:22:15Z",
+  "version": 4,
+  "changeset": 87256465,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 560584081,
+  "lat": 46.0687528,
+  "lon": 11.1195098,
+  "timestamp": "2022-09-20T06:55:26Z",
+  "version": 5,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "21",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 669932152,
+  "lat": 46.0341296,
+  "lon": 11.1386327,
+  "timestamp": "2012-05-07T22:37:19Z",
+  "version": 2,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 669949079,
+  "lat": 46.0311453,
+  "lon": 11.1394147,
+  "timestamp": "2012-05-07T22:37:20Z",
+  "version": 3,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 672848447,
+  "lat": 46.0495318,
+  "lon": 11.1442492,
+  "timestamp": "2011-06-03T00:53:37Z",
+  "version": 2,
+  "changeset": 8325502,
+  "user": "pfranz",
+  "uid": 152676,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 674758906,
+  "lat": 46.0517402,
+  "lon": 11.1451976,
+  "timestamp": "2010-03-26T12:45:59Z",
+  "version": 1,
+  "changeset": 4237340,
+  "user": "user_136835",
+  "uid": 136835,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 675334479,
+  "lat": 46.0489259,
+  "lon": 11.1456022,
+  "timestamp": "2017-08-30T12:55:27Z",
+  "version": 5,
+  "changeset": 51577725,
+  "user": "piero64",
+  "uid": 6548063,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 675334492,
+  "lat": 46.0496820,
+  "lon": 11.1462456,
+  "timestamp": "2010-03-26T23:59:37Z",
+  "version": 1,
+  "changeset": 4243056,
+  "user": "user_136835",
+  "uid": 136835,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 678035999,
+  "lat": 46.0735775,
+  "lon": 11.1631146,
+  "timestamp": "2016-05-30T14:14:25Z",
+  "version": 2,
+  "changeset": 39666470,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 699906584,
+  "lat": 46.0974298,
+  "lon": 11.1191569,
+  "timestamp": "2023-01-03T11:02:03Z",
+  "version": 4,
+  "changeset": 130821253,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 726442980,
+  "lat": 46.0791934,
+  "lon": 11.1150734,
+  "timestamp": "2023-01-03T08:03:12Z",
+  "version": 3,
+  "changeset": 130815217,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-09-11",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 764073292,
+  "lat": 46.0628947,
+  "lon": 11.0959984,
+  "timestamp": "2010-06-04T08:39:39Z",
+  "version": 1,
+  "changeset": 4899085,
+  "user": "Fabry",
+  "uid": 66900,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 769072670,
+  "lat": 46.0450085,
+  "lon": 11.1052768,
+  "timestamp": "2019-10-05T18:32:24Z",
+  "version": 4,
+  "changeset": 75325327,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 769072683,
+  "lat": 46.0633993,
+  "lon": 11.0971619,
+  "timestamp": "2010-06-11T08:41:01Z",
+  "version": 1,
+  "changeset": 4960643,
+  "user": "alessioz",
+  "uid": 24966,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 822199024,
+  "lat": 46.0480499,
+  "lon": 11.1374650,
+  "timestamp": "2023-01-23T06:20:48Z",
+  "version": 4,
+  "changeset": 131592342,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-16",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 853841113,
+  "lat": 46.0672119,
+  "lon": 11.1251680,
+  "timestamp": "2022-07-04T09:34:33Z",
+  "version": 5,
+  "changeset": 123181231,
+  "user": "ciampix",
+  "uid": 38643,
+  "tags": {
+    "name": "Moser",
+    "opening_hours": "Mo 15:00-19:00; Tu-Sa 09:00-12:00,15:00-19:00",
+    "service:bicycle:pump": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 860648409,
+  "lat": 46.0085476,
+  "lon": 11.1553113,
+  "timestamp": "2010-08-14T22:13:21Z",
+  "version": 1,
+  "changeset": 5495124,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 867439167,
+  "lat": 46.0736057,
+  "lon": 11.1202899,
+  "timestamp": "2012-03-14T23:05:58Z",
+  "version": 3,
+  "changeset": 10983667,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 867439176,
+  "lat": 46.0741039,
+  "lon": 11.1207776,
+  "timestamp": "2010-08-18T21:39:49Z",
+  "version": 1,
+  "changeset": 5531016,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 874276715,
+  "lat": 46.0676545,
+  "lon": 11.1200716,
+  "timestamp": "2023-04-28T20:19:48Z",
+  "version": 4,
+  "changeset": 135483422,
+  "user": "gimicky",
+  "uid": 55980,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-03-05",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 877620990,
+  "lat": 46.0736341,
+  "lon": 11.1207303,
+  "timestamp": "2019-09-22T18:39:35Z",
+  "version": 4,
+  "changeset": 74778889,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "4",
+    "name": "C'entro in bici / Via Dogana",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 877621006,
+  "lat": 46.0633092,
+  "lon": 11.1237841,
+  "timestamp": "2018-12-21T10:21:18Z",
+  "version": 5,
+  "changeset": 65664096,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 877621131,
+  "lat": 46.0634049,
+  "lon": 11.1238432,
+  "timestamp": "2023-02-11T12:44:00Z",
+  "version": 6,
+  "changeset": 132402908,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "docking_station",
+    "capacity": "18",
+    "name": "e.motion / Centro Santa Chiara",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "https://www.provincia.tn.it/Servizi/Accesso-al-servizio-di-Bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 880590677,
+  "lat": 46.0725406,
+  "lon": 11.1201955,
+  "timestamp": "2022-09-05T15:41:03Z",
+  "version": 6,
+  "changeset": 125820792,
+  "user": "RaelZero",
+  "uid": 2701091,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 880590846,
+  "lat": 46.0707546,
+  "lon": 11.1211741,
+  "timestamp": "2021-08-09T05:43:35Z",
+  "version": 5,
+  "changeset": 109377747,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 880590952,
+  "lat": 46.0678245,
+  "lon": 11.1227012,
+  "timestamp": "2021-07-16T07:36:27Z",
+  "version": 5,
+  "changeset": 108097083,
+  "user": "giocomai",
+  "uid": 6269039,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 885669885,
+  "lat": 46.0717731,
+  "lon": 11.1196211,
+  "timestamp": "2022-10-22T05:00:35Z",
+  "version": 8,
+  "changeset": 127908836,
+  "user": "brakkio",
+  "uid": 32856,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "dropoff_point",
+    "capacity": "20",
+    "name": "C'entro in bici / Piazza Dante - Stazione FS",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 885670019,
+  "lat": 46.0683792,
+  "lon": 11.1239126,
+  "timestamp": "2019-06-09T17:34:12Z",
+  "version": 3,
+  "changeset": 71076989,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 885670050,
+  "lat": 46.0720915,
+  "lon": 11.1198710,
+  "timestamp": "2018-11-04T06:14:18Z",
+  "version": 5,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "42",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 885670069,
+  "lat": 46.0688747,
+  "lon": 11.1259804,
+  "timestamp": "2021-07-16T06:16:45Z",
+  "version": 4,
+  "changeset": 108088659,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 885670132,
+  "lat": 46.0674692,
+  "lon": 11.1237587,
+  "timestamp": "2021-09-28T12:34:56Z",
+  "version": 5,
+  "changeset": 111817333,
+  "user": "ciampix",
+  "uid": 38643,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "30",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 885670138,
+  "lat": 46.0715348,
+  "lon": 11.1210963,
+  "timestamp": "2019-09-22T18:39:35Z",
+  "version": 10,
+  "changeset": 74778889,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no",
+    "name": "C'entro in bici / Palazzo della Regione",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 886066141,
+  "lat": 46.0900661,
+  "lon": 11.1130807,
+  "timestamp": "2011-07-06T15:35:40Z",
+  "version": 3,
+  "changeset": 8649425,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 888452720,
+  "lat": 46.0708413,
+  "lon": 11.1216625,
+  "timestamp": "2021-08-12T06:44:37Z",
+  "version": 5,
+  "changeset": 109551594,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 888671461,
+  "lat": 46.0864321,
+  "lon": 11.1212415,
+  "timestamp": "2023-03-17T11:28:28Z",
+  "version": 2,
+  "changeset": 133784514,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 889555365,
+  "lat": 46.0660002,
+  "lon": 11.1241149,
+  "timestamp": "2018-12-21T10:09:05Z",
+  "version": 6,
+  "changeset": 65664096,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 889555501,
+  "lat": 46.0661549,
+  "lon": 11.1240310,
+  "timestamp": "2010-10-05T19:16:56Z",
+  "version": 2,
+  "changeset": 5963891,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 890486688,
+  "lat": 46.0657166,
+  "lon": 11.1246919,
+  "timestamp": "2023-05-18T08:01:23Z",
+  "version": 5,
+  "changeset": 136241693,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 890486735,
+  "lat": 46.0659986,
+  "lon": 11.1246730,
+  "timestamp": "2022-06-27T22:11:33Z",
+  "version": 4,
+  "changeset": 122930186,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 890517069,
+  "lat": 46.0712655,
+  "lon": 11.1215881,
+  "timestamp": "2021-11-15T22:03:11Z",
+  "version": 3,
+  "changeset": 113826725,
+  "user": "scfrank",
+  "uid": 486953,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 892578597,
+  "lat": 46.0714327,
+  "lon": 11.1226627,
+  "timestamp": "2021-07-23T05:59:53Z",
+  "version": 4,
+  "changeset": 108465212,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 892578601,
+  "lat": 46.0732932,
+  "lon": 11.1216617,
+  "timestamp": "2022-12-25T03:04:05Z",
+  "version": 7,
+  "changeset": 130471276,
+  "user": "DeadLetterQueue",
+  "uid": 3486044,
+  "tags": {
+    "access": "yes",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "safe_loops",
+    "capacity": "20",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 892578711,
+  "lat": 46.0733371,
+  "lon": 11.1221723,
+  "timestamp": "2021-09-02T05:40:09Z",
+  "version": 3,
+  "changeset": 110595737,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 892579097,
+  "lat": 46.0631787,
+  "lon": 11.1233437,
+  "timestamp": "2018-12-21T10:22:34Z",
+  "version": 4,
+  "changeset": 65664096,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "13",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 893551365,
+  "lat": 46.0573696,
+  "lon": 11.1263682,
+  "timestamp": "2022-06-16T06:08:19Z",
+  "version": 2,
+  "changeset": 122444867,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 894044423,
+  "lat": 46.0749963,
+  "lon": 11.1223983,
+  "timestamp": "2010-09-03T10:45:21Z",
+  "version": 1,
+  "changeset": 5669573,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 894044477,
+  "lat": 46.0737965,
+  "lon": 11.1228601,
+  "timestamp": "2021-07-13T10:22:26Z",
+  "version": 4,
+  "changeset": 107899869,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "19",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 894044539,
+  "lat": 46.0736671,
+  "lon": 11.1227668,
+  "timestamp": "2021-07-13T10:22:35Z",
+  "version": 4,
+  "changeset": 107899869,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 894044569,
+  "lat": 46.0746616,
+  "lon": 11.1226833,
+  "timestamp": "2016-09-20T13:15:41Z",
+  "version": 2,
+  "changeset": 42298637,
+  "user": "Fabry",
+  "uid": 66900,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 894044582,
+  "lat": 46.0748941,
+  "lon": 11.1227031,
+  "timestamp": "2010-09-03T10:45:28Z",
+  "version": 1,
+  "changeset": 5669573,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 894044640,
+  "lat": 46.0750332,
+  "lon": 11.1236820,
+  "timestamp": "2021-09-14T05:54:39Z",
+  "version": 2,
+  "changeset": 111175979,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-09-14"
+  }
+},
+{
+  "type": "node",
+  "id": 894044642,
+  "lat": 46.0742703,
+  "lon": 11.1228776,
+  "timestamp": "2021-07-13T10:22:58Z",
+  "version": 4,
+  "changeset": 107899869,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 897112203,
+  "lat": 46.0981760,
+  "lon": 11.1171460,
+  "timestamp": "2023-01-03T11:02:03Z",
+  "version": 5,
+  "changeset": 130821253,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 902879200,
+  "lat": 46.1157823,
+  "lon": 11.1169944,
+  "timestamp": "2022-09-21T10:42:21Z",
+  "version": 5,
+  "changeset": 126458797,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 903083795,
+  "lat": 46.1317948,
+  "lon": 11.1337295,
+  "timestamp": "2014-01-10T17:49:20Z",
+  "version": 2,
+  "changeset": 19921609,
+  "user": "andzan75",
+  "uid": 1850423,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 904221271,
+  "lat": 46.1070272,
+  "lon": 11.1464956,
+  "timestamp": "2010-09-09T17:22:14Z",
+  "version": 1,
+  "changeset": 5734546,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 910855359,
+  "lat": 46.0277869,
+  "lon": 11.0419508,
+  "timestamp": "2010-09-13T16:40:22Z",
+  "version": 1,
+  "changeset": 5771254,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 920866155,
+  "lat": 46.0551796,
+  "lon": 11.1261103,
+  "timestamp": "2022-04-24T21:14:33Z",
+  "version": 2,
+  "changeset": 120139299,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 923131644,
+  "lat": 46.0716057,
+  "lon": 11.1192786,
+  "timestamp": "2022-09-19T17:07:31Z",
+  "version": 3,
+  "changeset": 126387168,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 927358861,
+  "lat": 46.0681994,
+  "lon": 11.1210015,
+  "timestamp": "2010-09-26T22:50:36Z",
+  "version": 1,
+  "changeset": 5886612,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 927359152,
+  "lat": 46.0670501,
+  "lon": 11.1190405,
+  "timestamp": "2022-09-20T06:56:47Z",
+  "version": 5,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "25",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 927359322,
+  "lat": 46.0694639,
+  "lon": 11.1216467,
+  "timestamp": "2022-01-29T11:55:14Z",
+  "version": 4,
+  "changeset": 116741049,
+  "user": "Valerio_Bozzolan",
+  "uid": 1875845,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 927359403,
+  "lat": 46.0677578,
+  "lon": 11.1188796,
+  "timestamp": "2023-03-17T12:34:11Z",
+  "version": 3,
+  "changeset": 133786707,
+  "user": "topongo",
+  "uid": 17833114,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "25",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 927359417,
+  "lat": 46.0659931,
+  "lon": 11.1176404,
+  "timestamp": "2018-11-04T06:16:28Z",
+  "version": 3,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 929034650,
+  "lat": 46.0760614,
+  "lon": 11.1239478,
+  "timestamp": "2021-07-19T10:58:02Z",
+  "version": 5,
+  "changeset": 108243582,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 930522335,
+  "lat": 46.0718554,
+  "lon": 11.1196820,
+  "timestamp": "2018-11-04T06:14:11Z",
+  "version": 5,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "21",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 932175253,
+  "lat": 46.0628876,
+  "lon": 11.1260640,
+  "timestamp": "2010-09-30T19:34:09Z",
+  "version": 1,
+  "changeset": 5922800,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 935352258,
+  "lat": 46.1333440,
+  "lon": 11.1213576,
+  "timestamp": "2022-09-21T10:42:21Z",
+  "version": 3,
+  "changeset": 126458797,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 938729359,
+  "lat": 46.0669955,
+  "lon": 11.1244926,
+  "timestamp": "2011-07-21T23:52:57Z",
+  "version": 2,
+  "changeset": 8793944,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 938729365,
+  "lat": 46.0661029,
+  "lon": 11.1239814,
+  "timestamp": "2011-05-24T19:36:23Z",
+  "version": 2,
+  "changeset": 8238918,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 938729458,
+  "lat": 46.0661631,
+  "lon": 11.1239086,
+  "timestamp": "2012-06-01T22:23:21Z",
+  "version": 2,
+  "changeset": 11772463,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 941909486,
+  "lat": 46.0675862,
+  "lon": 11.1154079,
+  "timestamp": "2010-10-08T20:53:14Z",
+  "version": 1,
+  "changeset": 5989373,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 941909602,
+  "lat": 46.0669140,
+  "lon": 11.1150723,
+  "timestamp": "2019-11-16T18:22:01Z",
+  "version": 2,
+  "changeset": 77171758,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "14"
+  }
+},
+{
+  "type": "node",
+  "id": 944252537,
+  "lat": 46.1353465,
+  "lon": 11.1275079,
+  "timestamp": "2010-10-10T17:11:30Z",
+  "version": 1,
+  "changeset": 6004278,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 944808837,
+  "lat": 46.1307958,
+  "lon": 11.1286951,
+  "timestamp": "2010-10-11T04:43:54Z",
+  "version": 1,
+  "changeset": 6008462,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 948758405,
+  "lat": 46.0696893,
+  "lon": 11.1213468,
+  "timestamp": "2019-05-23T07:12:22Z",
+  "version": 4,
+  "changeset": 70540364,
+  "user": "giocomai",
+  "uid": 6269039,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "44",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 955208074,
+  "lat": 46.0930007,
+  "lon": 11.1161808,
+  "timestamp": "2010-10-17T21:18:12Z",
+  "version": 1,
+  "changeset": 6072058,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 959910981,
+  "lat": 46.0623916,
+  "lon": 11.1257453,
+  "timestamp": "2022-12-18T12:42:04Z",
+  "version": 4,
+  "changeset": 130211209,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 959911107,
+  "lat": 46.0650627,
+  "lon": 11.1229149,
+  "timestamp": "2020-11-20T13:31:13Z",
+  "version": 4,
+  "changeset": 94503802,
+  "user": "paoloianes",
+  "uid": 1672779,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "15",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 963712275,
+  "lat": 46.0693289,
+  "lon": 11.1203361,
+  "timestamp": "2010-10-24T18:51:08Z",
+  "version": 1,
+  "changeset": 6160997,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 969087731,
+  "lat": 46.0686736,
+  "lon": 11.1201112,
+  "timestamp": "2022-03-05T08:56:01Z",
+  "version": 4,
+  "changeset": 118118149,
+  "user": "Valerio_Bozzolan",
+  "uid": 1875845,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "7",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 975288305,
+  "lat": 46.0770849,
+  "lon": 11.1194552,
+  "timestamp": "2023-01-03T08:04:21Z",
+  "version": 4,
+  "changeset": 130815217,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-09-05",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 975288325,
+  "lat": 46.0755945,
+  "lon": 11.1191522,
+  "timestamp": "2023-03-24T09:56:33Z",
+  "version": 5,
+  "changeset": 134058646,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "6",
+    "covered": "no",
+    "fixme": "removed?"
+  }
+},
+{
+  "type": "node",
+  "id": 975288333,
+  "lat": 46.0757526,
+  "lon": 11.1192270,
+  "timestamp": "2023-03-24T09:56:33Z",
+  "version": 5,
+  "changeset": 134058646,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "6",
+    "covered": "no",
+    "fixme": "removed?"
+  }
+},
+{
+  "type": "node",
+  "id": 975288403,
+  "lat": 46.0790502,
+  "lon": 11.1180065,
+  "timestamp": "2022-09-13T21:32:38Z",
+  "version": 4,
+  "changeset": 126153400,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 975312964,
+  "lat": 46.0738883,
+  "lon": 11.1185610,
+  "timestamp": "2010-11-02T21:45:55Z",
+  "version": 1,
+  "changeset": 6272116,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 985533484,
+  "lat": 46.0686933,
+  "lon": 11.1155288,
+  "timestamp": "2019-09-22T18:49:07Z",
+  "version": 3,
+  "changeset": 74779153,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "4",
+    "name": "C'entro in bici / Parcheggio via Canestrini",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 989961336,
+  "lat": 46.0655292,
+  "lon": 11.0839743,
+  "timestamp": "2010-11-15T10:34:00Z",
+  "version": 1,
+  "changeset": 6376296,
+  "user": "Mich74",
+  "uid": 65798,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 990462102,
+  "lat": 46.0677883,
+  "lon": 11.1235002,
+  "timestamp": "2022-03-06T11:03:41Z",
+  "version": 3,
+  "changeset": 118154060,
+  "user": "Valerio_Bozzolan",
+  "uid": 1875845,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 998661865,
+  "lat": 46.0707175,
+  "lon": 11.1219381,
+  "timestamp": "2021-08-12T06:44:53Z",
+  "version": 4,
+  "changeset": 109551594,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "11",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1005696320,
+  "lat": 46.0145454,
+  "lon": 11.1324114,
+  "timestamp": "2019-08-29T18:42:25Z",
+  "version": 2,
+  "changeset": 73895819,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1073482343,
+  "lat": 46.0680729,
+  "lon": 11.1253983,
+  "timestamp": "2014-04-21T11:29:44Z",
+  "version": 2,
+  "changeset": 21835552,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "20"
+  }
+},
+{
+  "type": "node",
+  "id": 1123469919,
+  "lat": 46.0698076,
+  "lon": 11.1201006,
+  "timestamp": "2022-09-20T06:54:58Z",
+  "version": 4,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1123469924,
+  "lat": 46.0697515,
+  "lon": 11.1201134,
+  "timestamp": "2022-09-20T06:55:01Z",
+  "version": 4,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1129326718,
+  "lat": 46.0566026,
+  "lon": 11.1197157,
+  "timestamp": "2013-06-25T18:22:11Z",
+  "version": 2,
+  "changeset": 16703260,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1146662384,
+  "lat": 46.1384125,
+  "lon": 11.1233611,
+  "timestamp": "2011-02-11T04:53:40Z",
+  "version": 1,
+  "changeset": 7252014,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1152983911,
+  "lat": 46.0614243,
+  "lon": 11.1241665,
+  "timestamp": "2019-10-04T05:09:06Z",
+  "version": 4,
+  "changeset": 75260363,
+  "user": "HubMiner",
+  "uid": 238419,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "70",
+    "addr:postcode": "38122",
+    "addr:street": "Corso III Novembre",
+    "name": "Baldo",
+    "opening_hours": "Mo 15:00-19:00, Su-Sa 08:30-12:00,15:00-19:00",
+    "shop": "bicycle",
+    "website": "https://www.instagram.com/ciclibaldotrento/"
+  }
+},
+{
+  "type": "node",
+  "id": 1156474607,
+  "lat": 46.0369746,
+  "lon": 11.1334960,
+  "timestamp": "2022-02-03T19:47:23Z",
+  "version": 2,
+  "changeset": 116978394,
+  "user": "Stypox",
+  "uid": 8643744,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-02-03"
+  }
+},
+{
+  "type": "node",
+  "id": 1170415625,
+  "lat": 46.1031917,
+  "lon": 11.1098912,
+  "timestamp": "2013-04-12T21:47:00Z",
+  "version": 2,
+  "changeset": 15706679,
+  "user": "snaut",
+  "uid": 123131,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "43",
+    "addr:postcode": "38121",
+    "addr:street": "Via Bolzano",
+    "name": "Moser Sport",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 1175312920,
+  "lat": 46.1102717,
+  "lon": 11.1104611,
+  "timestamp": "2011-02-26T19:07:42Z",
+  "version": 1,
+  "changeset": 7403280,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1175312958,
+  "lat": 46.1011086,
+  "lon": 11.1183264,
+  "timestamp": "2011-05-31T22:15:08Z",
+  "version": 2,
+  "changeset": 8306300,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1175313039,
+  "lat": 46.1071360,
+  "lon": 11.1123737,
+  "timestamp": "2011-02-26T19:07:44Z",
+  "version": 1,
+  "changeset": 7403280,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1176801171,
+  "lat": 46.1149478,
+  "lon": 11.1158428,
+  "timestamp": "2022-09-21T10:42:21Z",
+  "version": 4,
+  "changeset": 126458797,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1198817905,
+  "lat": 46.1241241,
+  "lon": 11.1155519,
+  "timestamp": "2011-03-12T18:01:49Z",
+  "version": 1,
+  "changeset": 7536276,
+  "user": "cubeiker",
+  "uid": 342044,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1202027599,
+  "lat": 46.0696624,
+  "lon": 11.1187205,
+  "timestamp": "2022-12-06T19:50:39Z",
+  "version": 5,
+  "changeset": 129796221,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1211136796,
+  "lat": 46.0662349,
+  "lon": 11.1187207,
+  "timestamp": "2018-11-04T06:16:43Z",
+  "version": 3,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1211136847,
+  "lat": 46.0662420,
+  "lon": 11.1187781,
+  "timestamp": "2018-11-04T06:16:45Z",
+  "version": 3,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1214597766,
+  "lat": 46.0674085,
+  "lon": 11.1218211,
+  "timestamp": "2022-09-07T14:50:06Z",
+  "version": 5,
+  "changeset": 125905778,
+  "user": "canfe",
+  "uid": 6645382,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "25",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1240890947,
+  "lat": 46.0666660,
+  "lon": 11.1152251,
+  "timestamp": "2011-04-11T12:38:56Z",
+  "version": 1,
+  "changeset": 7832663,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1240890955,
+  "lat": 46.0667286,
+  "lon": 11.1150801,
+  "timestamp": "2019-11-16T18:22:01Z",
+  "version": 2,
+  "changeset": 77171758,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1240890960,
+  "lat": 46.0667624,
+  "lon": 11.1150567,
+  "timestamp": "2019-11-16T18:22:01Z",
+  "version": 4,
+  "changeset": 77171758,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "4",
+    "name": "C'entro in bici / Parcheggio Duomo",
+    "network": "C'entro in bici",
+    "operator": "Trentin o Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 1255827339,
+  "lat": 46.0580633,
+  "lon": 11.1193134,
+  "timestamp": "2019-09-22T18:24:58Z",
+  "version": 4,
+  "changeset": 74778565,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "9",
+    "name": "e.motion / Bezzi",
+    "network": "E.Motion",
+    "operator": "Provincia Autonoma di Trento",
+    "parking": "surface"
+  }
+},
+{
+  "type": "node",
+  "id": 1271454377,
+  "lat": 46.0873315,
+  "lon": 11.1201884,
+  "timestamp": "2011-05-03T20:14:24Z",
+  "version": 1,
+  "changeset": 8043405,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1279291410,
+  "lat": 46.0645486,
+  "lon": 11.1213714,
+  "timestamp": "2019-06-05T13:10:53Z",
+  "version": 2,
+  "changeset": 70954355,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5",
+    "parking": "surface"
+  }
+},
+{
+  "type": "node",
+  "id": 1279291451,
+  "lat": 46.0604949,
+  "lon": 11.1212350,
+  "timestamp": "2011-05-10T15:40:51Z",
+  "version": 1,
+  "changeset": 8103366,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1296594743,
+  "lat": 46.0836121,
+  "lon": 11.1222646,
+  "timestamp": "2022-11-19T10:54:45Z",
+  "version": 2,
+  "changeset": 129118567,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 1296656754,
+  "lat": 46.0609047,
+  "lon": 11.1251512,
+  "timestamp": "2019-03-10T10:29:46Z",
+  "version": 2,
+  "changeset": 67984366,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1297477144,
+  "lat": 46.1078234,
+  "lon": 11.1126827,
+  "timestamp": "2023-01-23T13:13:00Z",
+  "version": 2,
+  "changeset": 131607587,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1300215314,
+  "lat": 46.0694713,
+  "lon": 11.1236914,
+  "timestamp": "2022-08-19T14:33:15Z",
+  "version": 3,
+  "changeset": 125110863,
+  "user": "Peter van der Veeken",
+  "uid": 2385407,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1305109208,
+  "lat": 46.0718837,
+  "lon": 11.1747494,
+  "timestamp": "2011-05-29T18:30:43Z",
+  "version": 1,
+  "changeset": 8284466,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1305109310,
+  "lat": 46.0718338,
+  "lon": 11.1749382,
+  "timestamp": "2011-05-29T18:30:45Z",
+  "version": 1,
+  "changeset": 8284466,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1307179778,
+  "lat": 46.0707536,
+  "lon": 11.1259977,
+  "timestamp": "2022-09-20T07:02:08Z",
+  "version": 4,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1307180338,
+  "lat": 46.0707979,
+  "lon": 11.1260019,
+  "timestamp": "2022-09-20T07:02:05Z",
+  "version": 4,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1307198164,
+  "lat": 46.0385752,
+  "lon": 11.1243198,
+  "timestamp": "2019-11-22T19:53:29Z",
+  "version": 3,
+  "changeset": 77443740,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1307278612,
+  "lat": 46.0993566,
+  "lon": 11.1188258,
+  "timestamp": "2011-05-31T22:14:27Z",
+  "version": 1,
+  "changeset": 8306300,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1308053919,
+  "lat": 46.0918520,
+  "lon": 11.1163063,
+  "timestamp": "2013-01-05T19:28:14Z",
+  "version": 4,
+  "changeset": 14540825,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 1309442246,
+  "lat": 46.0863473,
+  "lon": 11.1199227,
+  "timestamp": "2011-06-02T19:32:23Z",
+  "version": 1,
+  "changeset": 8323559,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1309442289,
+  "lat": 46.0862994,
+  "lon": 11.1199507,
+  "timestamp": "2011-06-02T19:32:28Z",
+  "version": 1,
+  "changeset": 8323559,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1311009193,
+  "lat": 46.0578334,
+  "lon": 11.1330810,
+  "timestamp": "2022-10-18T06:34:55Z",
+  "version": 3,
+  "changeset": 127705952,
+  "user": "Gabriele Bettega",
+  "uid": 2279592,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1312440679,
+  "lat": 46.0670783,
+  "lon": 11.1201791,
+  "timestamp": "2022-09-07T12:31:38Z",
+  "version": 5,
+  "changeset": 125900114,
+  "user": "canfe",
+  "uid": 6645382,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1312440696,
+  "lat": 46.0688755,
+  "lon": 11.1206975,
+  "timestamp": "2011-06-04T23:19:31Z",
+  "version": 1,
+  "changeset": 8344199,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 1312440722,
+  "lat": 46.0704061,
+  "lon": 11.1214035,
+  "timestamp": "2022-10-27T12:00:12Z",
+  "version": 7,
+  "changeset": 128126402,
+  "user": "zancloud",
+  "uid": 8766366,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "docking_station",
+    "capacity": "24",
+    "name": "e.motion / Biblioteca",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "https://www.provincia.tn.it/Servizi/Accesso-al-servizio-di-Bike-sharing"
+  }
+},
+{
+  "type": "node",
+  "id": 1313709030,
+  "lat": 46.0696227,
+  "lon": 11.1207837,
+  "timestamp": "2022-01-29T09:14:08Z",
+  "version": 4,
+  "changeset": 116735611,
+  "user": "Valerio_Bozzolan",
+  "uid": 1875845,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "32",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1331468347,
+  "lat": 46.0633910,
+  "lon": 11.1243167,
+  "timestamp": "2022-08-19T12:48:50Z",
+  "version": 3,
+  "changeset": 125106110,
+  "user": "Peter van der Veeken",
+  "uid": 2385407,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "9",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1331468407,
+  "lat": 46.0656258,
+  "lon": 11.1235993,
+  "timestamp": "2022-05-12T18:30:26Z",
+  "version": 5,
+  "changeset": 120901704,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "18",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1331576743,
+  "lat": 46.0059527,
+  "lon": 11.1274289,
+  "timestamp": "2019-01-27T12:07:56Z",
+  "version": 2,
+  "changeset": 66675361,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1331577026,
+  "lat": 46.0060612,
+  "lon": 11.1282984,
+  "timestamp": "2019-05-16T12:28:19Z",
+  "version": 3,
+  "changeset": 70316601,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1338599021,
+  "lat": 46.1225827,
+  "lon": 11.1174982,
+  "timestamp": "2012-08-20T17:55:32Z",
+  "version": 2,
+  "changeset": 12798994,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1338599055,
+  "lat": 46.1221366,
+  "lon": 11.1183198,
+  "timestamp": "2012-08-20T17:55:32Z",
+  "version": 2,
+  "changeset": 12798994,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1346805321,
+  "lat": 46.0711284,
+  "lon": 11.0596014,
+  "timestamp": "2011-07-17T01:53:49Z",
+  "version": 2,
+  "changeset": 8744092,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1351489030,
+  "lat": 46.0911655,
+  "lon": 11.1124398,
+  "timestamp": "2011-07-06T15:35:30Z",
+  "version": 1,
+  "changeset": 8649425,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 1358016522,
+  "lat": 46.0608786,
+  "lon": 11.1251452,
+  "timestamp": "2019-03-10T10:29:47Z",
+  "version": 5,
+  "changeset": 67984366,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1358016528,
+  "lat": 46.0610955,
+  "lon": 11.1249092,
+  "timestamp": "2019-03-09T20:11:35Z",
+  "version": 4,
+  "changeset": 67970288,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1363980707,
+  "lat": 46.0718167,
+  "lon": 11.0568152,
+  "timestamp": "2011-07-17T01:50:33Z",
+  "version": 1,
+  "changeset": 8744092,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1363980777,
+  "lat": 46.0722550,
+  "lon": 11.0606570,
+  "timestamp": "2022-04-11T13:32:29Z",
+  "version": 2,
+  "changeset": 119579936,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1363980983,
+  "lat": 46.0753930,
+  "lon": 11.0583330,
+  "timestamp": "2011-07-17T01:50:47Z",
+  "version": 1,
+  "changeset": 8744092,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1363981388,
+  "lat": 46.0788315,
+  "lon": 11.0584359,
+  "timestamp": "2011-07-17T01:51:00Z",
+  "version": 1,
+  "changeset": 8744092,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1365224529,
+  "lat": 46.0450041,
+  "lon": 11.1053255,
+  "timestamp": "2019-10-05T18:32:24Z",
+  "version": 3,
+  "changeset": 75325327,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 1366801180,
+  "lat": 46.0689405,
+  "lon": 11.1259523,
+  "timestamp": "2021-07-20T19:42:28Z",
+  "version": 3,
+  "changeset": 108336998,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1366801230,
+  "lat": 46.0700088,
+  "lon": 11.1278610,
+  "timestamp": "2019-05-16T12:06:42Z",
+  "version": 2,
+  "changeset": 70315872,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1366801235,
+  "lat": 46.0700879,
+  "lon": 11.1279260,
+  "timestamp": "2019-05-16T12:06:42Z",
+  "version": 2,
+  "changeset": 70315872,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "12",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1366801259,
+  "lat": 46.0704828,
+  "lon": 11.1267200,
+  "timestamp": "2022-08-22T06:07:44Z",
+  "version": 3,
+  "changeset": 125208945,
+  "user": "AlceAttrezzata",
+  "uid": 16790774,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1366801289,
+  "lat": 46.0715939,
+  "lon": 11.1275476,
+  "timestamp": "2022-12-01T10:44:13Z",
+  "version": 3,
+  "changeset": 129597332,
+  "user": "KrakenWagen",
+  "uid": 17829013,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-05",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 1368281402,
+  "lat": 46.1222002,
+  "lon": 11.1187041,
+  "timestamp": "2011-07-20T19:58:12Z",
+  "version": 1,
+  "changeset": 8782421,
+  "user": "bizi",
+  "uid": 155703,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1368300341,
+  "lat": 46.0671202,
+  "lon": 11.1261820,
+  "timestamp": "2022-08-27T08:18:12Z",
+  "version": 2,
+  "changeset": 125433195,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1369533465,
+  "lat": 46.0677482,
+  "lon": 11.1246869,
+  "timestamp": "2021-05-27T16:43:29Z",
+  "version": 5,
+  "changeset": 105438334,
+  "user": "Andrea Feletto",
+  "uid": 11723459,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1371177409,
+  "lat": 46.0506788,
+  "lon": 11.0726456,
+  "timestamp": "2011-07-23T14:39:51Z",
+  "version": 1,
+  "changeset": 8806903,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 1371177459,
+  "lat": 46.0510534,
+  "lon": 11.0732063,
+  "timestamp": "2011-07-23T14:39:52Z",
+  "version": 1,
+  "changeset": 8806903,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 1371177507,
+  "lat": 46.0513952,
+  "lon": 11.0724731,
+  "timestamp": "2011-07-23T14:39:54Z",
+  "version": 1,
+  "changeset": 8806903,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 1374604239,
+  "lat": 46.0509507,
+  "lon": 11.1245335,
+  "timestamp": "2021-08-16T13:31:18Z",
+  "version": 2,
+  "changeset": 109752372,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-16"
+  }
+},
+{
+  "type": "node",
+  "id": 1377043432,
+  "lat": 46.0744547,
+  "lon": 11.1230512,
+  "timestamp": "2022-09-18T08:54:57Z",
+  "version": 3,
+  "changeset": 126322575,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1381930183,
+  "lat": 46.1079660,
+  "lon": 11.1046329,
+  "timestamp": "2011-08-01T16:43:22Z",
+  "version": 1,
+  "changeset": 8892575,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 1388563908,
+  "lat": 46.0574042,
+  "lon": 11.1126197,
+  "timestamp": "2019-09-22T18:39:35Z",
+  "version": 2,
+  "changeset": 74778889,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "24",
+    "name": "C'entro in bici / Parcheggio Monte Baldo",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 1388563912,
+  "lat": 46.0574593,
+  "lon": 11.1126197,
+  "timestamp": "2018-11-03T19:34:50Z",
+  "version": 3,
+  "changeset": 64149804,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1404110944,
+  "lat": 46.0974629,
+  "lon": 11.1190411,
+  "timestamp": "2023-01-02T15:07:10Z",
+  "version": 5,
+  "changeset": 130791691,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1408558463,
+  "lat": 46.0841624,
+  "lon": 11.1198612,
+  "timestamp": "2022-11-19T10:45:47Z",
+  "version": 4,
+  "changeset": 129118286,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1435760422,
+  "lat": 46.0575789,
+  "lon": 11.1252404,
+  "timestamp": "2011-09-17T19:12:56Z",
+  "version": 1,
+  "changeset": 9326812,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1435760439,
+  "lat": 46.0584067,
+  "lon": 11.1262006,
+  "timestamp": "2022-12-13T17:03:49Z",
+  "version": 3,
+  "changeset": 130043775,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-06-28",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 1454246763,
+  "lat": 46.0929210,
+  "lon": 11.1197147,
+  "timestamp": "2011-10-03T20:19:56Z",
+  "version": 1,
+  "changeset": 9464291,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1454246907,
+  "lat": 46.1029676,
+  "lon": 11.1163174,
+  "timestamp": "2011-10-03T20:20:00Z",
+  "version": 1,
+  "changeset": 9464291,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1454332051,
+  "lat": 46.1004784,
+  "lon": 11.1014834,
+  "timestamp": "2011-10-03T21:33:26Z",
+  "version": 1,
+  "changeset": 9465060,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1454332354,
+  "lat": 46.1020685,
+  "lon": 11.1002374,
+  "timestamp": "2011-10-03T21:33:30Z",
+  "version": 1,
+  "changeset": 9465060,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1459378521,
+  "lat": 46.0668194,
+  "lon": 11.1290887,
+  "timestamp": "2011-10-08T22:59:39Z",
+  "version": 1,
+  "changeset": 9507706,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1461587546,
+  "lat": 46.0669131,
+  "lon": 11.1230212,
+  "timestamp": "2020-02-21T12:47:36Z",
+  "version": 2,
+  "changeset": 81317926,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "56"
+  }
+},
+{
+  "type": "node",
+  "id": 1468134112,
+  "lat": 46.0720476,
+  "lon": 11.1204982,
+  "timestamp": "2021-08-20T06:07:24Z",
+  "version": 2,
+  "changeset": 109965967,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-20"
+  }
+},
+{
+  "type": "node",
+  "id": 1468139217,
+  "lat": 46.0939137,
+  "lon": 11.1202022,
+  "timestamp": "2011-10-15T12:54:53Z",
+  "version": 1,
+  "changeset": 9563265,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1474641643,
+  "lat": 46.0813655,
+  "lon": 11.1159746,
+  "timestamp": "2019-06-03T14:14:12Z",
+  "version": 3,
+  "changeset": 70888008,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "addr:housenumber": "103",
+    "addr:postcode": "38121",
+    "addr:street": "Via Ezio Maccani",
+    "name": "Simone90",
+    "shop": "bicycle",
+    "source": "local_knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 1474641648,
+  "lat": 46.0652357,
+  "lon": 11.1225282,
+  "timestamp": "2022-08-25T21:24:25Z",
+  "version": 3,
+  "changeset": 125380350,
+  "user": "rriemann",
+  "uid": 2066198,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1474641664,
+  "lat": 46.0681010,
+  "lon": 11.1170341,
+  "timestamp": "2011-10-20T22:04:05Z",
+  "version": 1,
+  "changeset": 9612875,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "15"
+  }
+},
+{
+  "type": "node",
+  "id": 1485147231,
+  "lat": 46.0656218,
+  "lon": 11.1321555,
+  "timestamp": "2020-06-28T17:22:15Z",
+  "version": 3,
+  "changeset": 87256465,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 1492729109,
+  "lat": 46.0718538,
+  "lon": 11.1240331,
+  "timestamp": "2011-11-05T20:08:48Z",
+  "version": 1,
+  "changeset": 9749994,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1492802176,
+  "lat": 46.0730113,
+  "lon": 11.1248725,
+  "timestamp": "2021-07-27T05:43:58Z",
+  "version": 4,
+  "changeset": 108659214,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1508604565,
+  "lat": 46.0637126,
+  "lon": 11.1222828,
+  "timestamp": "2022-06-22T06:15:11Z",
+  "version": 2,
+  "changeset": 122694253,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1508604579,
+  "lat": 46.0675620,
+  "lon": 11.1282176,
+  "timestamp": "2021-07-09T05:19:39Z",
+  "version": 7,
+  "changeset": 107674079,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1508604580,
+  "lat": 46.0676152,
+  "lon": 11.1282640,
+  "timestamp": "2021-07-09T05:19:47Z",
+  "version": 5,
+  "changeset": 107674079,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1580347482,
+  "lat": 46.0882112,
+  "lon": 11.1204385,
+  "timestamp": "2012-01-07T00:49:17Z",
+  "version": 1,
+  "changeset": 10317766,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 1580347503,
+  "lat": 46.0883541,
+  "lon": 11.1202182,
+  "timestamp": "2012-01-07T00:49:17Z",
+  "version": 1,
+  "changeset": 10317766,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 1580874462,
+  "lat": 46.0861594,
+  "lon": 11.1193775,
+  "timestamp": "2012-01-07T13:06:03Z",
+  "version": 1,
+  "changeset": 10320816,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1588386490,
+  "lat": 46.0044698,
+  "lon": 11.1319079,
+  "timestamp": "2020-07-12T10:49:57Z",
+  "version": 4,
+  "changeset": 87873853,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1608972200,
+  "lat": 46.0365411,
+  "lon": 11.1105059,
+  "timestamp": "2012-01-28T16:33:53Z",
+  "version": 1,
+  "changeset": 10522521,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1608972371,
+  "lat": 46.0375891,
+  "lon": 11.1099611,
+  "timestamp": "2012-01-28T16:34:01Z",
+  "version": 1,
+  "changeset": 10522521,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1615600784,
+  "lat": 46.1055537,
+  "lon": 11.1076912,
+  "timestamp": "2023-01-15T21:12:58Z",
+  "version": 3,
+  "changeset": 131314613,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 1618076282,
+  "lat": 46.0769966,
+  "lon": 11.1220765,
+  "timestamp": "2012-02-04T19:37:29Z",
+  "version": 1,
+  "changeset": 10587844,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1620451950,
+  "lat": 46.0659999,
+  "lon": 11.1545351,
+  "timestamp": "2021-07-19T10:37:48Z",
+  "version": 4,
+  "changeset": 108243582,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1633007356,
+  "lat": 46.0706864,
+  "lon": 11.1239482,
+  "timestamp": "2018-10-24T22:05:48Z",
+  "version": 3,
+  "changeset": 63848445,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "64",
+    "addr:postcode": "38122",
+    "addr:street": "Vicolo del Vò",
+    "name": "Cicli Bazzanella",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 1633007373,
+  "lat": 46.0701031,
+  "lon": 11.1230970,
+  "timestamp": "2022-06-08T07:59:57Z",
+  "version": 4,
+  "changeset": 122104384,
+  "user": "Mandux",
+  "uid": 3776588,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1638162310,
+  "lat": 46.0701500,
+  "lon": 11.1230963,
+  "timestamp": "2022-06-08T07:59:57Z",
+  "version": 3,
+  "changeset": 122104384,
+  "user": "Mandux",
+  "uid": 3776588,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1639755629,
+  "lat": 46.0743565,
+  "lon": 11.1250125,
+  "timestamp": "2021-01-01T07:47:39Z",
+  "version": 5,
+  "changeset": 96760256,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1662768771,
+  "lat": 46.0710310,
+  "lon": 11.1230808,
+  "timestamp": "2012-03-06T17:57:56Z",
+  "version": 1,
+  "changeset": 10892662,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "13",
+    "parking": "surface"
+  }
+},
+{
+  "type": "node",
+  "id": 1662768806,
+  "lat": 46.0723188,
+  "lon": 11.1224115,
+  "timestamp": "2021-09-14T05:45:21Z",
+  "version": 3,
+  "changeset": 111175573,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1685067701,
+  "lat": 46.0073026,
+  "lon": 11.1279306,
+  "timestamp": "2019-11-24T12:05:54Z",
+  "version": 3,
+  "changeset": 77480357,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1687770954,
+  "lat": 46.0637307,
+  "lon": 11.1210301,
+  "timestamp": "2012-03-23T22:09:19Z",
+  "version": 1,
+  "changeset": 11079123,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "15"
+  }
+},
+{
+  "type": "node",
+  "id": 1725588315,
+  "lat": 46.0626191,
+  "lon": 11.1820444,
+  "timestamp": "2012-04-21T16:51:49Z",
+  "version": 1,
+  "changeset": 11375718,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1739200633,
+  "lat": 46.0641573,
+  "lon": 11.1289192,
+  "timestamp": "2023-03-02T08:43:56Z",
+  "version": 4,
+  "changeset": 133201940,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1741244239,
+  "lat": 46.0324637,
+  "lon": 11.1410349,
+  "timestamp": "2012-05-07T22:37:15Z",
+  "version": 2,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1744777098,
+  "lat": 46.0299171,
+  "lon": 11.1407869,
+  "timestamp": "2012-05-07T22:36:58Z",
+  "version": 1,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1744777167,
+  "lat": 46.0312441,
+  "lon": 11.1408972,
+  "timestamp": "2012-05-07T22:37:00Z",
+  "version": 1,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1744777283,
+  "lat": 46.0370878,
+  "lon": 11.1460223,
+  "timestamp": "2012-05-07T22:37:04Z",
+  "version": 1,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1744777296,
+  "lat": 46.0375918,
+  "lon": 11.1457803,
+  "timestamp": "2012-05-07T22:37:05Z",
+  "version": 1,
+  "changeset": 11534587,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1747311248,
+  "lat": 46.0400698,
+  "lon": 11.1368616,
+  "timestamp": "2012-05-10T06:01:25Z",
+  "version": 1,
+  "changeset": 11555517,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1747311253,
+  "lat": 46.0404603,
+  "lon": 11.1375595,
+  "timestamp": "2012-05-10T06:01:25Z",
+  "version": 1,
+  "changeset": 11555517,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1749737833,
+  "lat": 46.0769729,
+  "lon": 11.1191508,
+  "timestamp": "2022-09-05T07:01:41Z",
+  "version": 3,
+  "changeset": 125799219,
+  "user": "RaelZero",
+  "uid": 2701091,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1749882594,
+  "lat": 46.0410725,
+  "lon": 11.1369060,
+  "timestamp": "2012-05-12T16:59:05Z",
+  "version": 1,
+  "changeset": 11578544,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1749925797,
+  "lat": 46.0417513,
+  "lon": 11.1380480,
+  "timestamp": "2012-05-12T17:24:31Z",
+  "version": 1,
+  "changeset": 11578796,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1756296207,
+  "lat": 46.1011602,
+  "lon": 11.1181691,
+  "timestamp": "2022-08-03T10:15:18Z",
+  "version": 2,
+  "changeset": 124428833,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 1773068114,
+  "lat": 46.0648674,
+  "lon": 11.1244426,
+  "timestamp": "2018-12-21T15:54:45Z",
+  "version": 3,
+  "changeset": 65672721,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1773068126,
+  "lat": 46.0648965,
+  "lon": 11.1238775,
+  "timestamp": "2018-12-21T15:54:48Z",
+  "version": 3,
+  "changeset": 65672721,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1775942908,
+  "lat": 46.0988395,
+  "lon": 11.1097201,
+  "timestamp": "2018-12-24T16:25:51Z",
+  "version": 2,
+  "changeset": 65745298,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1807792427,
+  "lat": 46.0781571,
+  "lon": 11.1343347,
+  "timestamp": "2012-06-30T17:41:30Z",
+  "version": 1,
+  "changeset": 12068229,
+  "user": "gomatteo",
+  "uid": 47802,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1812273875,
+  "lat": 46.0939290,
+  "lon": 11.1149890,
+  "timestamp": "2012-07-04T09:27:20Z",
+  "version": 1,
+  "changeset": 12108278,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1869952904,
+  "lat": 46.0855689,
+  "lon": 11.1589231,
+  "timestamp": "2012-08-17T10:34:05Z",
+  "version": 1,
+  "changeset": 12760804,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1869953023,
+  "lat": 46.0865428,
+  "lon": 11.1598249,
+  "timestamp": "2012-08-17T10:34:09Z",
+  "version": 1,
+  "changeset": 12760804,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1889737934,
+  "lat": 46.0390154,
+  "lon": 11.0576839,
+  "timestamp": "2012-08-30T12:04:14Z",
+  "version": 1,
+  "changeset": 12917087,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1937993532,
+  "lat": 46.0669121,
+  "lon": 11.1371701,
+  "timestamp": "2021-09-19T13:11:45Z",
+  "version": 4,
+  "changeset": 111408539,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "28",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1962487942,
+  "lat": 46.0687261,
+  "lon": 11.1246609,
+  "timestamp": "2012-10-13T12:37:04Z",
+  "version": 1,
+  "changeset": 13478469,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 1962487950,
+  "lat": 46.0691811,
+  "lon": 11.1245599,
+  "timestamp": "2019-01-02T14:31:24Z",
+  "version": 2,
+  "changeset": 65959490,
+  "user": "Mzzntn",
+  "uid": 6817530,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 1962487951,
+  "lat": 46.0691813,
+  "lon": 11.1244596,
+  "timestamp": "2019-06-09T17:37:31Z",
+  "version": 4,
+  "changeset": 71077061,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1985026432,
+  "lat": 46.0649043,
+  "lon": 11.1357138,
+  "timestamp": "2020-07-09T16:59:57Z",
+  "version": 2,
+  "changeset": 87776541,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 1999373981,
+  "lat": 46.0675486,
+  "lon": 11.1604067,
+  "timestamp": "2012-11-05T22:30:51Z",
+  "version": 1,
+  "changeset": 13767166,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2012427751,
+  "lat": 46.0699321,
+  "lon": 11.1176736,
+  "timestamp": "2022-10-08T18:33:14Z",
+  "version": 3,
+  "changeset": 127216191,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "16",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2022158762,
+  "lat": 46.0578396,
+  "lon": 11.1190045,
+  "timestamp": "2023-03-07T20:46:25Z",
+  "version": 6,
+  "changeset": 133418625,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housename": "Casoni Itea",
+    "addr:housenumber": "21",
+    "addr:postcode": "38122",
+    "addr:street": "Via Vittorio Veneto",
+    "name": "Pedalando",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2022158768,
+  "lat": 46.0578782,
+  "lon": 11.1175109,
+  "timestamp": "2012-11-19T21:39:12Z",
+  "version": 1,
+  "changeset": 13938240,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2022158805,
+  "lat": 46.0586982,
+  "lon": 11.1183403,
+  "timestamp": "2012-11-19T21:39:13Z",
+  "version": 1,
+  "changeset": 13938240,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water",
+    "fixme": "position"
+  }
+},
+{
+  "type": "node",
+  "id": 2052784371,
+  "lat": 46.0606683,
+  "lon": 11.1233553,
+  "timestamp": "2021-08-27T21:23:03Z",
+  "version": 2,
+  "changeset": 110359614,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 2052784374,
+  "lat": 46.0606841,
+  "lon": 11.1234425,
+  "timestamp": "2021-08-27T21:23:03Z",
+  "version": 2,
+  "changeset": 110359614,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 2060457723,
+  "lat": 46.0942318,
+  "lon": 11.1199167,
+  "timestamp": "2012-12-10T19:39:51Z",
+  "version": 1,
+  "changeset": 14230213,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "6"
+  }
+},
+{
+  "type": "node",
+  "id": 2060457728,
+  "lat": 46.0942768,
+  "lon": 11.1207635,
+  "timestamp": "2012-12-10T19:39:51Z",
+  "version": 1,
+  "changeset": 14230213,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 2062493026,
+  "lat": 46.0747570,
+  "lon": 11.1187415,
+  "timestamp": "2022-09-19T17:00:54Z",
+  "version": 3,
+  "changeset": 126387168,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2062493030,
+  "lat": 46.0749300,
+  "lon": 11.1188231,
+  "timestamp": "2022-09-05T07:03:11Z",
+  "version": 3,
+  "changeset": 125799219,
+  "user": "RaelZero",
+  "uid": 2701091,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2074585041,
+  "lat": 46.0672060,
+  "lon": 11.1234870,
+  "timestamp": "2012-12-19T14:05:42Z",
+  "version": 1,
+  "changeset": 14331570,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2074585048,
+  "lat": 46.0672526,
+  "lon": 11.1233899,
+  "timestamp": "2012-12-19T14:05:42Z",
+  "version": 1,
+  "changeset": 14331570,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2096805947,
+  "lat": 46.0923316,
+  "lon": 11.1174266,
+  "timestamp": "2013-01-05T19:28:10Z",
+  "version": 1,
+  "changeset": 14540825,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops"
+  }
+},
+{
+  "type": "node",
+  "id": 2104774741,
+  "lat": 46.0534626,
+  "lon": 11.1275230,
+  "timestamp": "2017-04-03T23:59:56Z",
+  "version": 6,
+  "changeset": 47427813,
+  "user": "braniii",
+  "uid": 5610498,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:postcode": "38123",
+    "addr:street": "Via Antonio Gramsci",
+    "email": "cicli.miori@email.it",
+    "name": "Cicli Miori",
+    "opening_hours": "Sa 15:00-18:00; Mo-Sa 09:00-12:00; Tu-Fr 15:00-19:00",
+    "phone": "+39 0461 925233",
+    "ref:vatin": "IT00804560225",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2185765263,
+  "lat": 46.0562426,
+  "lon": 11.1308541,
+  "timestamp": "2021-09-11T09:52:14Z",
+  "version": 3,
+  "changeset": 111055419,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "6"
+  }
+},
+{
+  "type": "node",
+  "id": 2314952984,
+  "lat": 46.0559205,
+  "lon": 11.1210157,
+  "timestamp": "2013-05-21T19:07:47Z",
+  "version": 1,
+  "changeset": 16228624,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2316167378,
+  "lat": 46.0765295,
+  "lon": 11.1249716,
+  "timestamp": "2021-07-13T05:45:43Z",
+  "version": 4,
+  "changeset": 107877685,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2327372553,
+  "lat": 46.0747410,
+  "lon": 11.1251970,
+  "timestamp": "2021-07-05T10:04:28Z",
+  "version": 3,
+  "changeset": 107431560,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2327372558,
+  "lat": 46.0746806,
+  "lon": 11.1252109,
+  "timestamp": "2021-07-05T10:04:28Z",
+  "version": 3,
+  "changeset": 107431560,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2344153488,
+  "lat": 46.0726073,
+  "lon": 11.1218076,
+  "timestamp": "2023-02-03T14:11:04Z",
+  "version": 5,
+  "changeset": 132044135,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "8",
+    "covered": "no",
+    "name": "e.motion / Vannetti",
+    "network": "E.Motion",
+    "operator": "Provincia Autonoma di Trento",
+    "website": "https://www.provincia.tn.it/Servizi/Accesso-al-servizio-di-Bike-sharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2383256017,
+  "lat": 46.0767320,
+  "lon": 11.1191155,
+  "timestamp": "2022-03-30T11:51:55Z",
+  "version": 7,
+  "changeset": 119113072,
+  "user": "Timmy Hoppe",
+  "uid": 15331742,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "34",
+    "addr:postcode": "38122",
+    "addr:street": "Via Felice e Gregorio Fontana",
+    "contact:email": "f.luca999@gmail.com",
+    "contact:facebook": "https://www.facebook.com/freewheelsbike",
+    "contact:mobile": "+39 338 744 9563",
+    "contact:phone": "+39 0461 090303",
+    "contact:website": "https://www.freewheelsbike.it/",
+    "name": "FreeWheels",
+    "phone": "+39 339 7626264",
+    "service:bicycle:rental": "yes",
+    "shop": "bicycle",
+    "website": "https://www.freewheelsbike.it/"
+  }
+},
+{
+  "type": "node",
+  "id": 2383256102,
+  "lat": 46.0917012,
+  "lon": 11.1161278,
+  "timestamp": "2013-07-13T13:53:03Z",
+  "version": 1,
+  "changeset": 16937209,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 2387805119,
+  "lat": 46.0866497,
+  "lon": 11.0646111,
+  "timestamp": "2013-07-17T19:32:05Z",
+  "version": 1,
+  "changeset": 16991046,
+  "user": "ahappyboy",
+  "uid": 1653021,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2390868407,
+  "lat": 46.0875565,
+  "lon": 11.0655767,
+  "timestamp": "2013-07-20T20:08:15Z",
+  "version": 1,
+  "changeset": 17026545,
+  "user": "ahappyboy",
+  "uid": 1653021,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2397156978,
+  "lat": 46.0622986,
+  "lon": 11.1145440,
+  "timestamp": "2021-11-15T14:39:08Z",
+  "version": 5,
+  "changeset": 113808553,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2397156981,
+  "lat": 46.0623040,
+  "lon": 11.1146181,
+  "timestamp": "2018-06-12T22:00:03Z",
+  "version": 4,
+  "changeset": 59792335,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "10"
+  }
+},
+{
+  "type": "node",
+  "id": 2401283333,
+  "lat": 46.0600595,
+  "lon": 11.1146072,
+  "timestamp": "2021-11-15T06:49:37Z",
+  "version": 6,
+  "changeset": 113789891,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2401283339,
+  "lat": 46.0601399,
+  "lon": 11.1143083,
+  "timestamp": "2022-01-19T14:22:26Z",
+  "version": 4,
+  "changeset": 116344857,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2401283345,
+  "lat": 46.0605863,
+  "lon": 11.1142042,
+  "timestamp": "2022-10-28T04:52:48Z",
+  "version": 4,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-11-15",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 2401283350,
+  "lat": 46.0607345,
+  "lon": 11.1143817,
+  "timestamp": "2021-11-27T07:43:58Z",
+  "version": 4,
+  "changeset": 114285756,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "15",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2402897226,
+  "lat": 46.0763233,
+  "lon": 11.1414612,
+  "timestamp": "2022-08-10T16:49:56Z",
+  "version": 2,
+  "changeset": 124740493,
+  "user": "AlceAttrezzata",
+  "uid": 16790774,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2022-08-10"
+  }
+},
+{
+  "type": "node",
+  "id": 2407332591,
+  "lat": 46.0694326,
+  "lon": 11.1264767,
+  "timestamp": "2023-01-31T13:01:51Z",
+  "version": 3,
+  "changeset": 131921246,
+  "user": "luci21",
+  "uid": 13359138,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2410418909,
+  "lat": 46.0597113,
+  "lon": 11.1146397,
+  "timestamp": "2019-05-26T17:44:23Z",
+  "version": 2,
+  "changeset": 70637909,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 2410418930,
+  "lat": 46.0625299,
+  "lon": 11.1154979,
+  "timestamp": "2022-12-17T14:24:26Z",
+  "version": 4,
+  "changeset": 130187448,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "10",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2411035064,
+  "lat": 46.0594963,
+  "lon": 11.1121862,
+  "timestamp": "2021-11-13T13:06:26Z",
+  "version": 2,
+  "changeset": 113729959,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-11-13"
+  }
+},
+{
+  "type": "node",
+  "id": 2411330547,
+  "lat": 46.0635265,
+  "lon": 11.1180106,
+  "timestamp": "2019-05-31T17:23:27Z",
+  "version": 2,
+  "changeset": 70816719,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "9"
+  }
+},
+{
+  "type": "node",
+  "id": 2415909810,
+  "lat": 46.0404952,
+  "lon": 11.1375539,
+  "timestamp": "2021-07-22T13:07:23Z",
+  "version": 3,
+  "changeset": 108430901,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2430260439,
+  "lat": 46.0623070,
+  "lon": 11.1527005,
+  "timestamp": "2023-01-20T22:54:59Z",
+  "version": 4,
+  "changeset": 131525799,
+  "user": "Lyreplus",
+  "uid": 17831198,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 2433541785,
+  "lat": 46.0673141,
+  "lon": 11.1171326,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 2,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 2460815172,
+  "lat": 46.0677238,
+  "lon": 11.1170477,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 2,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 2460815177,
+  "lat": 46.0677854,
+  "lon": 11.1170315,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 2,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 2472521809,
+  "lat": 46.0572764,
+  "lon": 11.1126259,
+  "timestamp": "2022-12-17T18:14:41Z",
+  "version": 4,
+  "changeset": 130193140,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2475915051,
+  "lat": 46.0566667,
+  "lon": 11.1201363,
+  "timestamp": "2023-01-02T13:06:06Z",
+  "version": 2,
+  "changeset": 130786985,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 2475915056,
+  "lat": 46.0566434,
+  "lon": 11.1200318,
+  "timestamp": "2013-09-28T22:16:17Z",
+  "version": 1,
+  "changeset": 18084323,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 2475915089,
+  "lat": 46.0572419,
+  "lon": 11.1193191,
+  "timestamp": "2013-09-28T22:16:18Z",
+  "version": 1,
+  "changeset": 18084323,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2475944694,
+  "lat": 46.0596261,
+  "lon": 11.1122235,
+  "timestamp": "2021-11-13T13:06:22Z",
+  "version": 5,
+  "changeset": 113729953,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2510781802,
+  "lat": 46.0526045,
+  "lon": 11.1152397,
+  "timestamp": "2013-10-27T20:32:17Z",
+  "version": 1,
+  "changeset": 18573952,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2510781901,
+  "lat": 46.0532009,
+  "lon": 11.1162533,
+  "timestamp": "2013-10-27T20:32:18Z",
+  "version": 1,
+  "changeset": 18573952,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2513343048,
+  "lat": 46.0688705,
+  "lon": 11.1198196,
+  "timestamp": "2019-01-02T14:03:03Z",
+  "version": 3,
+  "changeset": 65959494,
+  "user": "Mzzntn",
+  "uid": 6817530,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2556962414,
+  "lat": 46.0786291,
+  "lon": 11.1035013,
+  "timestamp": "2013-11-29T12:27:30Z",
+  "version": 1,
+  "changeset": 19177447,
+  "user": "Maxmor",
+  "uid": 1785282,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2556962583,
+  "lat": 46.0783905,
+  "lon": 11.1035922,
+  "timestamp": "2013-11-29T12:27:43Z",
+  "version": 1,
+  "changeset": 19177451,
+  "user": "Maxmor",
+  "uid": 1785282,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2562276681,
+  "lat": 46.0560585,
+  "lon": 11.1220953,
+  "timestamp": "2013-12-02T23:48:22Z",
+  "version": 1,
+  "changeset": 19243606,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2565229358,
+  "lat": 46.0633443,
+  "lon": 11.1180439,
+  "timestamp": "2013-12-04T19:49:55Z",
+  "version": 1,
+  "changeset": 19277786,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2565229367,
+  "lat": 46.0635849,
+  "lon": 11.1180067,
+  "timestamp": "2013-12-04T19:49:55Z",
+  "version": 1,
+  "changeset": 19277786,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2569653522,
+  "lat": 46.0672748,
+  "lon": 11.1654698,
+  "timestamp": "2022-01-22T14:56:02Z",
+  "version": 4,
+  "changeset": 116468803,
+  "user": "Stypox",
+  "uid": 8643744,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2591984558,
+  "lat": 46.0704715,
+  "lon": 11.1190189,
+  "timestamp": "2022-09-20T06:54:14Z",
+  "version": 3,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2615218155,
+  "lat": 46.0689557,
+  "lon": 11.1182582,
+  "timestamp": "2014-01-08T20:15:52Z",
+  "version": 1,
+  "changeset": 19889212,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2637298789,
+  "lat": 46.0561720,
+  "lon": 11.1205338,
+  "timestamp": "2014-01-25T20:36:35Z",
+  "version": 1,
+  "changeset": 20200112,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2637298790,
+  "lat": 46.0563504,
+  "lon": 11.1203273,
+  "timestamp": "2014-01-25T20:36:35Z",
+  "version": 1,
+  "changeset": 20200112,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2673313374,
+  "lat": 46.0718430,
+  "lon": 11.1238149,
+  "timestamp": "2014-02-15T18:33:59Z",
+  "version": 1,
+  "changeset": 20582654,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2673313376,
+  "lat": 46.0719182,
+  "lon": 11.1240383,
+  "timestamp": "2014-02-15T18:33:59Z",
+  "version": 1,
+  "changeset": 20582654,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2673313378,
+  "lat": 46.0719711,
+  "lon": 11.1239246,
+  "timestamp": "2014-02-15T18:33:59Z",
+  "version": 1,
+  "changeset": 20582654,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2692593045,
+  "lat": 46.0635434,
+  "lon": 11.1198123,
+  "timestamp": "2019-05-16T13:16:56Z",
+  "version": 2,
+  "changeset": 70318666,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "destination",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2692593067,
+  "lat": 46.0636060,
+  "lon": 11.1206875,
+  "timestamp": "2019-05-16T13:16:56Z",
+  "version": 2,
+  "changeset": 70318666,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "destination",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2693303442,
+  "lat": 46.0725603,
+  "lon": 11.1211588,
+  "timestamp": "2014-02-27T20:41:12Z",
+  "version": 1,
+  "changeset": 20816731,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2700336995,
+  "lat": 46.1218840,
+  "lon": 11.0906729,
+  "timestamp": "2014-03-03T19:01:43Z",
+  "version": 1,
+  "changeset": 20894898,
+  "user": "nicholas91",
+  "uid": 1965807,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2748240053,
+  "lat": 46.0638100,
+  "lon": 11.1205641,
+  "timestamp": "2014-03-27T20:21:09Z",
+  "version": 1,
+  "changeset": 21352361,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2799567752,
+  "lat": 46.0570596,
+  "lon": 11.1222507,
+  "timestamp": "2014-04-18T19:33:36Z",
+  "version": 1,
+  "changeset": 21775447,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2840695990,
+  "lat": 46.0668600,
+  "lon": 11.1189055,
+  "timestamp": "2022-09-20T06:56:42Z",
+  "version": 4,
+  "changeset": 126407923,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2847165491,
+  "lat": 46.0738110,
+  "lon": 11.1607723,
+  "timestamp": "2014-05-10T15:26:44Z",
+  "version": 2,
+  "changeset": 22252324,
+  "user": "Francesco Pasa",
+  "uid": 407786,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2860700731,
+  "lat": 46.0367099,
+  "lon": 11.1303044,
+  "timestamp": "2021-09-20T12:02:18Z",
+  "version": 2,
+  "changeset": 111446646,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 2882547830,
+  "lat": 46.0662279,
+  "lon": 11.1163233,
+  "timestamp": "2018-11-04T06:16:56Z",
+  "version": 2,
+  "changeset": 64158022,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "access": "permissive",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no",
+    "operator": "University of Trento"
+  }
+},
+{
+  "type": "node",
+  "id": 2882547831,
+  "lat": 46.0658836,
+  "lon": 11.1159894,
+  "timestamp": "2020-07-12T19:05:46Z",
+  "version": 2,
+  "changeset": 87886647,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "permissive",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "yes",
+    "operator": "Università degli Studi di Trento"
+  }
+},
+{
+  "type": "node",
+  "id": 2888230886,
+  "lat": 46.0600278,
+  "lon": 11.1158175,
+  "timestamp": "2014-05-29T22:27:51Z",
+  "version": 1,
+  "changeset": 22628949,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "50"
+  }
+},
+{
+  "type": "node",
+  "id": 2888230887,
+  "lat": 46.0602955,
+  "lon": 11.1157721,
+  "timestamp": "2014-05-29T22:27:51Z",
+  "version": 1,
+  "changeset": 22628949,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 2888230888,
+  "lat": 46.0606250,
+  "lon": 11.1157250,
+  "timestamp": "2014-05-29T22:27:52Z",
+  "version": 1,
+  "changeset": 22628949,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 2888230891,
+  "lat": 46.0610381,
+  "lon": 11.1156464,
+  "timestamp": "2014-05-29T22:27:52Z",
+  "version": 1,
+  "changeset": 22628949,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "50"
+  }
+},
+{
+  "type": "node",
+  "id": 2907233826,
+  "lat": 46.1230679,
+  "lon": 11.1163357,
+  "timestamp": "2020-05-16T20:57:14Z",
+  "version": 2,
+  "changeset": 85317077,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2907233827,
+  "lat": 46.1252745,
+  "lon": 11.1173322,
+  "timestamp": "2020-05-16T20:57:14Z",
+  "version": 2,
+  "changeset": 85317077,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2916230868,
+  "lat": 46.0753705,
+  "lon": 11.1238783,
+  "timestamp": "2019-09-22T18:24:58Z",
+  "version": 4,
+  "changeset": 74778565,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / Piazza di Centa",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2923372716,
+  "lat": 46.0613689,
+  "lon": 11.1200700,
+  "timestamp": "2014-06-19T12:09:09Z",
+  "version": 1,
+  "changeset": 23022824,
+  "user": "MPitt",
+  "uid": 135609,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2923372724,
+  "lat": 46.0617457,
+  "lon": 11.1208730,
+  "timestamp": "2014-06-19T12:09:10Z",
+  "version": 1,
+  "changeset": 23022824,
+  "user": "MPitt",
+  "uid": 135609,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "ground_loops",
+    "capacity": "12",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2923372725,
+  "lat": 46.0615247,
+  "lon": 11.1214791,
+  "timestamp": "2014-06-19T12:09:10Z",
+  "version": 1,
+  "changeset": 23022824,
+  "user": "MPitt",
+  "uid": 135609,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "ground_loops",
+    "capacity": "20",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010839,
+  "lat": 46.0947517,
+  "lon": 11.1176534,
+  "timestamp": "2022-10-27T11:57:02Z",
+  "version": 5,
+  "changeset": 128126195,
+  "user": "zancloud",
+  "uid": 8766366,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "16",
+    "name": "e.motion / Bren Center",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "https://www.provincia.tn.it/Servizi/Accesso-al-servizio-di-Bike-sharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010840,
+  "lat": 46.0901596,
+  "lon": 11.1185085,
+  "timestamp": "2022-10-27T11:57:42Z",
+  "version": 4,
+  "changeset": 128126240,
+  "user": "zancloud",
+  "uid": 8766366,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "22",
+    "name": "e.motion / Top Center",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "https://www.provincia.tn.it/Servizi/Accesso-al-servizio-di-Bike-sharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010841,
+  "lat": 46.0675498,
+  "lon": 11.1270526,
+  "timestamp": "2022-12-20T10:02:28Z",
+  "version": 4,
+  "changeset": 130282775,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "docking_station",
+    "capacity": "21",
+    "name": "e.motion / Piazza Venezia",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010842,
+  "lat": 46.0674805,
+  "lon": 11.1271889,
+  "timestamp": "2020-01-07T14:31:57Z",
+  "version": 3,
+  "changeset": 79297793,
+  "user": "GBAB",
+  "uid": 3335899,
+  "tags": {
+    "access": "yes",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010843,
+  "lat": 46.0717639,
+  "lon": 11.1258691,
+  "timestamp": "2023-04-16T16:13:03Z",
+  "version": 5,
+  "changeset": 134981904,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "capacity": "12",
+    "disused:amenity": "bicycle_rental",
+    "fixme": "Lavori finiti ma la stazione non è stata ancora ripristinata",
+    "name": "e.motion / Piazza della Mostra",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010845,
+  "lat": 46.0662490,
+  "lon": 11.1190281,
+  "timestamp": "2023-03-16T16:57:42Z",
+  "version": 3,
+  "changeset": 133757771,
+  "user": "topongo",
+  "uid": 17833114,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "docking_station",
+    "capacity": "18",
+    "name": "e.motion / Università",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010846,
+  "lat": 46.0562586,
+  "lon": 11.1309425,
+  "timestamp": "2021-09-11T09:52:14Z",
+  "version": 5,
+  "changeset": 111055419,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / Piscina",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010847,
+  "lat": 46.0544437,
+  "lon": 11.1355363,
+  "timestamp": "2019-09-23T09:51:30Z",
+  "version": 5,
+  "changeset": 74797566,
+  "user": "tolioalessandro",
+  "uid": 3146557,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / Stazione FS - Ospedale",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2925010848,
+  "lat": 46.0443646,
+  "lon": 11.1282408,
+  "timestamp": "2019-09-22T18:24:58Z",
+  "version": 2,
+  "changeset": 74778565,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "19",
+    "name": "e.motion / Azienda Sanitaria",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 2929617023,
+  "lat": 46.0613278,
+  "lon": 11.1192968,
+  "timestamp": "2014-06-23T17:32:08Z",
+  "version": 1,
+  "changeset": 23106456,
+  "user": "MPitt",
+  "uid": 135609,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2931034130,
+  "lat": 46.0721875,
+  "lon": 11.1621755,
+  "timestamp": "2018-03-30T12:48:19Z",
+  "version": 2,
+  "changeset": 57659788,
+  "user": "matte377",
+  "uid": 2064604,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2975442705,
+  "lat": 46.0713569,
+  "lon": 11.1171054,
+  "timestamp": "2022-09-13T16:09:32Z",
+  "version": 5,
+  "changeset": 126141356,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3097106745,
+  "lat": 46.0579272,
+  "lon": 11.1203178,
+  "timestamp": "2014-09-26T12:04:00Z",
+  "version": 2,
+  "changeset": 25684371,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "12",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3097106756,
+  "lat": 46.0580588,
+  "lon": 11.1210084,
+  "timestamp": "2014-09-26T12:04:00Z",
+  "version": 2,
+  "changeset": 25684371,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "3",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3097106757,
+  "lat": 46.0580622,
+  "lon": 11.1210300,
+  "timestamp": "2014-09-26T12:04:00Z",
+  "version": 2,
+  "changeset": 25684371,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "3",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3097106760,
+  "lat": 46.0583350,
+  "lon": 11.1209624,
+  "timestamp": "2014-09-26T12:04:00Z",
+  "version": 2,
+  "changeset": 25684371,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 3097106761,
+  "lat": 46.0585200,
+  "lon": 11.1209696,
+  "timestamp": "2014-10-10T07:14:29Z",
+  "version": 3,
+  "changeset": 25976584,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 3098169820,
+  "lat": 46.0581413,
+  "lon": 11.1214375,
+  "timestamp": "2014-09-27T05:10:44Z",
+  "version": 1,
+  "changeset": 25698993,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "3",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3098169823,
+  "lat": 46.0581440,
+  "lon": 11.1214533,
+  "timestamp": "2014-09-27T05:10:44Z",
+  "version": 1,
+  "changeset": 25698993,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "3",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3098170331,
+  "lat": 46.0581654,
+  "lon": 11.1215659,
+  "timestamp": "2014-09-27T05:10:45Z",
+  "version": 1,
+  "changeset": 25698993,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3108934632,
+  "lat": 46.0413551,
+  "lon": 11.1233813,
+  "timestamp": "2019-04-28T17:35:00Z",
+  "version": 2,
+  "changeset": 69670069,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 3121823193,
+  "lat": 46.0595706,
+  "lon": 11.1210173,
+  "timestamp": "2014-10-10T08:26:17Z",
+  "version": 1,
+  "changeset": 25977705,
+  "user": "Matteo Quatrida",
+  "uid": 126598,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "18"
+  }
+},
+{
+  "type": "node",
+  "id": 3123664747,
+  "lat": 46.0587751,
+  "lon": 11.1883320,
+  "timestamp": "2014-10-11T09:51:33Z",
+  "version": 1,
+  "changeset": 26000116,
+  "user": "ChrisTN",
+  "uid": 1197269,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3134826457,
+  "lat": 46.1374086,
+  "lon": 11.1180195,
+  "timestamp": "2022-09-20T15:16:23Z",
+  "version": 2,
+  "changeset": 126427773,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3363089261,
+  "lat": 46.0669551,
+  "lon": 11.1503578,
+  "timestamp": "2022-10-16T11:35:25Z",
+  "version": 2,
+  "changeset": 127612078,
+  "user": "Stypox",
+  "uid": 8643744,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "check_date:capacity": "2022-10-16",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3365986644,
+  "lat": 46.0731347,
+  "lon": 11.1187317,
+  "timestamp": "2022-09-19T17:03:19Z",
+  "version": 3,
+  "changeset": 126387168,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3365986645,
+  "lat": 46.0739748,
+  "lon": 11.1185172,
+  "timestamp": "2022-09-19T17:02:36Z",
+  "version": 4,
+  "changeset": 126387168,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3426776154,
+  "lat": 46.0772189,
+  "lon": 11.1200054,
+  "timestamp": "2021-09-01T14:50:30Z",
+  "version": 4,
+  "changeset": 110571958,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3426776155,
+  "lat": 46.0772725,
+  "lon": 11.1200247,
+  "timestamp": "2021-09-01T14:50:22Z",
+  "version": 4,
+  "changeset": 110571958,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3519042160,
+  "lat": 46.1099437,
+  "lon": 11.1106494,
+  "timestamp": "2017-08-17T08:37:20Z",
+  "version": 3,
+  "changeset": 51197423,
+  "user": "torapa",
+  "uid": 5446055,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "16",
+    "fee": "no",
+    "surveillance": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3578379819,
+  "lat": 46.0702594,
+  "lon": 11.1163505,
+  "timestamp": "2020-04-15T13:09:51Z",
+  "version": 3,
+  "changeset": 83594445,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "name": "ENI",
+    "opening_hours": "Mo-Fr 07:30-19:00",
+    "service:bicycle:repair": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3657453254,
+  "lat": 46.0675852,
+  "lon": 11.1847009,
+  "timestamp": "2015-07-19T09:02:39Z",
+  "version": 1,
+  "changeset": 32728986,
+  "user": "FABRIZIO FRANZOI",
+  "uid": 2588600,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3728820079,
+  "lat": 46.0689206,
+  "lon": 11.1404359,
+  "timestamp": "2022-11-30T12:07:04Z",
+  "version": 3,
+  "changeset": 129559234,
+  "user": "tonidotpy",
+  "uid": 17824669,
+  "tags": {
+    "check_date": "2022-11-30",
+    "disused:amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3896328211,
+  "lat": 46.0496352,
+  "lon": 11.0848522,
+  "timestamp": "2015-12-17T10:39:04Z",
+  "version": 1,
+  "changeset": 36006287,
+  "user": "miche_tn",
+  "uid": 2587861,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3900167581,
+  "lat": 45.9934233,
+  "lon": 11.1393621,
+  "timestamp": "2022-12-30T19:10:14Z",
+  "version": 3,
+  "changeset": 130699796,
+  "user": "dieterdreist-CAI",
+  "uid": 17039122,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "no",
+    "name": "Fontanella dell'orso",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3964903914,
+  "lat": 46.0726596,
+  "lon": 11.1625055,
+  "timestamp": "2016-01-24T21:15:43Z",
+  "version": 1,
+  "changeset": 36784681,
+  "user": "matte377",
+  "uid": 2064604,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3999914984,
+  "lat": 46.0889790,
+  "lon": 11.1211719,
+  "timestamp": "2016-02-10T22:43:31Z",
+  "version": 1,
+  "changeset": 37136340,
+  "user": "Andrea1968",
+  "uid": 513011,
+  "tags": {
+    "name": "Bike World",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4179375544,
+  "lat": 46.0649897,
+  "lon": 11.1589511,
+  "timestamp": "2016-05-11T20:21:34Z",
+  "version": 1,
+  "changeset": 39252017,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4215429127,
+  "lat": 46.0658746,
+  "lon": 11.1565397,
+  "timestamp": "2016-05-30T13:19:02Z",
+  "version": 1,
+  "changeset": 39665513,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4260984424,
+  "lat": 46.0028629,
+  "lon": 11.1304714,
+  "timestamp": "2023-01-06T08:18:09Z",
+  "version": 3,
+  "changeset": 130936566,
+  "user": "enigammi",
+  "uid": 14196641,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2023-01-06",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 4264444580,
+  "lat": 46.0752837,
+  "lon": 11.1195394,
+  "timestamp": "2016-06-25T12:47:27Z",
+  "version": 1,
+  "changeset": 40281314,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4267258411,
+  "lat": 46.0595904,
+  "lon": 11.1133914,
+  "timestamp": "2018-03-21T20:45:31Z",
+  "version": 2,
+  "changeset": 57399479,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4441176950,
+  "lat": 46.0570946,
+  "lon": 11.1329538,
+  "timestamp": "2016-10-10T19:43:42Z",
+  "version": 1,
+  "changeset": 42785587,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 4441176951,
+  "lat": 46.0571359,
+  "lon": 11.1331001,
+  "timestamp": "2016-10-10T19:43:42Z",
+  "version": 1,
+  "changeset": 42785587,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 4448436002,
+  "lat": 46.0590997,
+  "lon": 11.1265205,
+  "timestamp": "2021-10-27T17:10:30Z",
+  "version": 4,
+  "changeset": 113047926,
+  "user": "enigammi",
+  "uid": 14196641,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4497467209,
+  "lat": 46.0625156,
+  "lon": 11.1228311,
+  "timestamp": "2016-11-12T21:26:44Z",
+  "version": 1,
+  "changeset": 43590441,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4497467210,
+  "lat": 46.0625082,
+  "lon": 11.1219594,
+  "timestamp": "2016-11-12T21:26:44Z",
+  "version": 1,
+  "changeset": 43590441,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4693421875,
+  "lat": 46.1239053,
+  "lon": 11.1343615,
+  "timestamp": "2017-02-19T11:40:59Z",
+  "version": 1,
+  "changeset": 46212992,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4693421887,
+  "lat": 46.1300280,
+  "lon": 11.1268428,
+  "timestamp": "2017-02-19T11:40:59Z",
+  "version": 1,
+  "changeset": 46212992,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4694175515,
+  "lat": 46.1332445,
+  "lon": 11.1335186,
+  "timestamp": "2017-02-19T20:46:38Z",
+  "version": 1,
+  "changeset": 46226661,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4745380978,
+  "lat": 46.0714086,
+  "lon": 11.1170977,
+  "timestamp": "2023-05-01T12:56:49Z",
+  "version": 6,
+  "changeset": 135572422,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "70",
+    "addr:postcode": "38122",
+    "addr:street": "Corso Michelangelo Buonarroti",
+    "name": "Prestabici",
+    "opening_hours": "Mo 15:00-19:00; Tu-Sa 09:00-12:00; PH,Su 09:00-11:00,18:00-19:00",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:rental": "yes",
+    "service:bicycle:repair": "yes",
+    "shop": "bicycle",
+    "website": "https://prestabici.cc/"
+  }
+},
+{
+  "type": "node",
+  "id": 4805247854,
+  "lat": 46.0863923,
+  "lon": 11.0622190,
+  "timestamp": "2022-04-11T13:32:29Z",
+  "version": 4,
+  "changeset": 119579936,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4815926243,
+  "lat": 46.0635267,
+  "lon": 11.1152830,
+  "timestamp": "2023-03-07T20:59:34Z",
+  "version": 3,
+  "changeset": 133419140,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4815996298,
+  "lat": 46.0613813,
+  "lon": 11.1158247,
+  "timestamp": "2021-09-25T11:19:14Z",
+  "version": 4,
+  "changeset": 111683912,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / Muse",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 4830293452,
+  "lat": 46.0076838,
+  "lon": 11.1565617,
+  "timestamp": "2019-01-16T16:33:50Z",
+  "version": 2,
+  "changeset": 66369018,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4830293466,
+  "lat": 46.0076570,
+  "lon": 11.1559542,
+  "timestamp": "2017-05-02T07:52:10Z",
+  "version": 1,
+  "changeset": 48326746,
+  "user": "tytoalba",
+  "uid": 676877,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4855265605,
+  "lat": 46.0199474,
+  "lon": 11.1271334,
+  "timestamp": "2021-07-09T15:19:03Z",
+  "version": 4,
+  "changeset": 107712689,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "8",
+    "name": "e.motion / Aeroporto",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 4862712408,
+  "lat": 46.0741926,
+  "lon": 11.1171180,
+  "timestamp": "2022-09-13T16:04:25Z",
+  "version": 4,
+  "changeset": 126141356,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4869589605,
+  "lat": 46.0202742,
+  "lon": 11.1273930,
+  "timestamp": "2018-01-21T09:56:34Z",
+  "version": 2,
+  "changeset": 55623260,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 4876524772,
+  "lat": 46.0606587,
+  "lon": 11.1141684,
+  "timestamp": "2021-11-27T07:43:11Z",
+  "version": 3,
+  "changeset": 114285756,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4923959543,
+  "lat": 46.0593199,
+  "lon": 11.1155390,
+  "timestamp": "2019-06-03T20:02:29Z",
+  "version": 2,
+  "changeset": 70899123,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "27"
+  }
+},
+{
+  "type": "node",
+  "id": 4936567173,
+  "lat": 46.0636543,
+  "lon": 11.1192551,
+  "timestamp": "2022-04-24T08:29:52Z",
+  "version": 5,
+  "changeset": 120114902,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "10",
+    "name": "e.motion / Cimitero",
+    "network": "E.Motion",
+    "operator": "Provincia Autonoma di Trento",
+    "source": "local_knowledge",
+    "website": "http://www.provincia.tn.it/bikesharing"
+  }
+},
+{
+  "type": "node",
+  "id": 4952166580,
+  "lat": 46.0618336,
+  "lon": 11.1238349,
+  "timestamp": "2017-07-05T07:55:40Z",
+  "version": 1,
+  "changeset": 50051856,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 4982773123,
+  "lat": 46.0720025,
+  "lon": 11.1173701,
+  "timestamp": "2022-10-08T07:07:35Z",
+  "version": 5,
+  "changeset": 127185023,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:country": "IT",
+    "addr:housenumber": "58/1",
+    "addr:postcode": "38122",
+    "addr:street": "Corso Michelangelo Buonarroti",
+    "name": "Cicli Conta",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:repair": "yes",
+    "shop": "bicycle",
+    "website": "https://cicliconta.business.site/"
+  }
+},
+{
+  "type": "node",
+  "id": 5069160706,
+  "lat": 46.0516692,
+  "lon": 11.1436521,
+  "timestamp": "2017-08-30T12:55:26Z",
+  "version": 1,
+  "changeset": 51577725,
+  "user": "piero64",
+  "uid": 6548063,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5137707853,
+  "lat": 46.0790507,
+  "lon": 11.1178851,
+  "timestamp": "2022-09-18T09:15:24Z",
+  "version": 6,
+  "changeset": 126323174,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946017,
+  "lat": 46.0632373,
+  "lon": 11.1152549,
+  "timestamp": "2021-11-14T21:27:04Z",
+  "version": 6,
+  "changeset": 113779673,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946166,
+  "lat": 46.0672382,
+  "lon": 11.1272004,
+  "timestamp": "2023-02-04T14:28:20Z",
+  "version": 4,
+  "changeset": 132078413,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946167,
+  "lat": 46.0672108,
+  "lon": 11.1277536,
+  "timestamp": "2022-12-20T10:02:28Z",
+  "version": 6,
+  "changeset": 130282775,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "18",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946172,
+  "lat": 46.0660709,
+  "lon": 11.1271414,
+  "timestamp": "2019-11-17T14:23:01Z",
+  "version": 2,
+  "changeset": 77190230,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946173,
+  "lat": 46.0660858,
+  "lon": 11.1270744,
+  "timestamp": "2021-08-13T20:22:13Z",
+  "version": 3,
+  "changeset": 109648001,
+  "user": "zancloud",
+  "uid": 8766366,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946184,
+  "lat": 46.0646509,
+  "lon": 11.1256059,
+  "timestamp": "2021-07-18T08:32:27Z",
+  "version": 4,
+  "changeset": 108183377,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5170946185,
+  "lat": 46.0646858,
+  "lon": 11.1254067,
+  "timestamp": "2021-07-18T08:32:31Z",
+  "version": 4,
+  "changeset": 108183377,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "17",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5268649458,
+  "lat": 46.0332528,
+  "lon": 11.1261605,
+  "timestamp": "2019-09-22T18:24:58Z",
+  "version": 3,
+  "changeset": 74778565,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / Lidorno",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento"
+  }
+},
+{
+  "type": "node",
+  "id": 5322308172,
+  "lat": 46.0921233,
+  "lon": 11.1147711,
+  "timestamp": "2021-07-07T13:06:58Z",
+  "version": 4,
+  "changeset": 107566359,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5464751724,
+  "lat": 46.1145624,
+  "lon": 11.1161884,
+  "timestamp": "2022-04-11T21:57:37Z",
+  "version": 2,
+  "changeset": 119597049,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5494719685,
+  "lat": 46.0610460,
+  "lon": 11.1133535,
+  "timestamp": "2022-10-28T04:52:48Z",
+  "version": 2,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 5494719688,
+  "lat": 46.0609725,
+  "lon": 11.1128519,
+  "timestamp": "2022-09-13T16:29:18Z",
+  "version": 3,
+  "changeset": 126141356,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5494719689,
+  "lat": 46.0608515,
+  "lon": 11.1122860,
+  "timestamp": "2019-05-16T13:07:45Z",
+  "version": 2,
+  "changeset": 70318248,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "9",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5516294592,
+  "lat": 46.0721896,
+  "lon": 11.1622177,
+  "timestamp": "2018-03-30T12:48:19Z",
+  "version": 1,
+  "changeset": 57659788,
+  "user": "matte377",
+  "uid": 2064604,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5516319516,
+  "lat": 46.0654999,
+  "lon": 11.1519793,
+  "timestamp": "2018-03-30T13:01:58Z",
+  "version": 1,
+  "changeset": 57660083,
+  "user": "matte377",
+  "uid": 2064604,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5595169609,
+  "lat": 46.0543811,
+  "lon": 11.1355740,
+  "timestamp": "2019-03-07T14:13:13Z",
+  "version": 2,
+  "changeset": 67884843,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 5613320467,
+  "lat": 46.0627885,
+  "lon": 11.1157011,
+  "timestamp": "2018-05-12T09:59:07Z",
+  "version": 1,
+  "changeset": 58898503,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5613320468,
+  "lat": 46.0628671,
+  "lon": 11.1155368,
+  "timestamp": "2022-10-28T04:52:48Z",
+  "version": 2,
+  "changeset": 128154054,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 5706098839,
+  "lat": 46.0048358,
+  "lon": 11.1305031,
+  "timestamp": "2019-01-29T18:43:09Z",
+  "version": 2,
+  "changeset": 66747558,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5706098840,
+  "lat": 46.0040808,
+  "lon": 11.1303338,
+  "timestamp": "2023-01-06T08:17:37Z",
+  "version": 3,
+  "changeset": 130936566,
+  "user": "enigammi",
+  "uid": 14196641,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 5706098841,
+  "lat": 46.0584336,
+  "lon": 11.1220552,
+  "timestamp": "2018-06-20T17:57:37Z",
+  "version": 1,
+  "changeset": 60018196,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5712367913,
+  "lat": 46.0377764,
+  "lon": 11.1064059,
+  "timestamp": "2018-06-22T21:44:56Z",
+  "version": 1,
+  "changeset": 60088487,
+  "user": "Simone Ferrari",
+  "uid": 8454821,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5775655092,
+  "lat": 46.0596504,
+  "lon": 11.1151039,
+  "timestamp": "2022-09-08T15:31:31Z",
+  "version": 5,
+  "changeset": 125948320,
+  "user": "canfe",
+  "uid": 6645382,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "24",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5841281600,
+  "lat": 46.0704283,
+  "lon": 11.1201098,
+  "timestamp": "2018-08-19T08:04:31Z",
+  "version": 1,
+  "changeset": 61786695,
+  "user": "jimmy_conway",
+  "uid": 8553447,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5962249013,
+  "lat": 46.0065008,
+  "lon": 11.1280892,
+  "timestamp": "2019-05-01T08:40:16Z",
+  "version": 3,
+  "changeset": 69760094,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6159301023,
+  "lat": 46.1087246,
+  "lon": 11.1115621,
+  "timestamp": "2023-04-10T16:07:20Z",
+  "version": 3,
+  "changeset": 134738692,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6159301791,
+  "lat": 46.0702834,
+  "lon": 11.1198625,
+  "timestamp": "2019-09-22T18:39:35Z",
+  "version": 2,
+  "changeset": 74778889,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "8",
+    "name": "C'entro in bici / Piazza Dante - via Torre Vanga",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 6159301792,
+  "lat": 46.0703180,
+  "lon": 11.1213123,
+  "timestamp": "2020-12-22T22:48:50Z",
+  "version": 3,
+  "changeset": 96283432,
+  "user": "AnisKoutsi",
+  "uid": 4705730,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6160986298,
+  "lat": 46.0771138,
+  "lon": 11.1255431,
+  "timestamp": "2021-07-13T09:13:11Z",
+  "version": 4,
+  "changeset": 107894393,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6185394867,
+  "lat": 46.0025413,
+  "lon": 11.1281535,
+  "timestamp": "2019-05-16T12:08:59Z",
+  "version": 3,
+  "changeset": 70315935,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6185394868,
+  "lat": 46.0025264,
+  "lon": 11.1279598,
+  "timestamp": "2019-01-05T08:05:48Z",
+  "version": 1,
+  "changeset": 66041397,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6185420621,
+  "lat": 46.0074323,
+  "lon": 11.1297484,
+  "timestamp": "2019-01-05T08:44:42Z",
+  "version": 1,
+  "changeset": 66041837,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6327829537,
+  "lat": 46.0617971,
+  "lon": 11.1242002,
+  "timestamp": "2019-06-04T21:26:26Z",
+  "version": 2,
+  "changeset": 70938541,
+  "user": "fgaz",
+  "uid": 2130575,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 6358696134,
+  "lat": 46.0708273,
+  "lon": 11.1136885,
+  "timestamp": "2021-03-09T18:57:21Z",
+  "version": 5,
+  "changeset": 100726977,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6358696135,
+  "lat": 46.0711222,
+  "lon": 11.1136732,
+  "timestamp": "2021-03-06T16:19:28Z",
+  "version": 5,
+  "changeset": 100543241,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6358696136,
+  "lat": 46.0711975,
+  "lon": 11.1137102,
+  "timestamp": "2020-04-14T16:54:12Z",
+  "version": 3,
+  "changeset": 83546615,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6358696137,
+  "lat": 46.0713520,
+  "lon": 11.1135825,
+  "timestamp": "2022-09-12T06:27:17Z",
+  "version": 3,
+  "changeset": 126073431,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6358696139,
+  "lat": 46.0709462,
+  "lon": 11.1130523,
+  "timestamp": "2021-03-09T18:56:49Z",
+  "version": 5,
+  "changeset": 100726977,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6368819211,
+  "lat": 46.0345307,
+  "lon": 11.1277162,
+  "timestamp": "2022-11-25T23:23:36Z",
+  "version": 4,
+  "changeset": 129385410,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "safe_loops",
+    "capacity": "18"
+  }
+},
+{
+  "type": "node",
+  "id": 6368904144,
+  "lat": 45.9993776,
+  "lon": 11.1231776,
+  "timestamp": "2021-04-15T12:32:18Z",
+  "version": 2,
+  "changeset": 102995418,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "private",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6386706678,
+  "lat": 46.0702578,
+  "lon": 11.1136080,
+  "timestamp": "2020-04-14T16:53:54Z",
+  "version": 4,
+  "changeset": 83546615,
+  "user": "banhgao",
+  "uid": 8717408,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wide_stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6386706679,
+  "lat": 46.0706356,
+  "lon": 11.1133820,
+  "timestamp": "2021-03-09T19:03:37Z",
+  "version": 4,
+  "changeset": 100726977,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6436400693,
+  "lat": 46.0064876,
+  "lon": 11.1308553,
+  "timestamp": "2019-04-29T14:43:05Z",
+  "version": 1,
+  "changeset": 69699369,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "destination",
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 6459334562,
+  "lat": 46.0621923,
+  "lon": 11.1329481,
+  "timestamp": "2022-08-14T07:37:03Z",
+  "version": 3,
+  "changeset": 124876733,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "docking_station",
+    "capacity": "4",
+    "name": "C'entro in bici / Piazza Vicenza",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 6477886179,
+  "lat": 46.0696382,
+  "lon": 11.1279813,
+  "timestamp": "2019-05-16T12:06:42Z",
+  "version": 1,
+  "changeset": 70315872,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "16",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6477911670,
+  "lat": 46.0625152,
+  "lon": 11.1154483,
+  "timestamp": "2019-05-16T12:21:58Z",
+  "version": 1,
+  "changeset": 70316352,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6477911671,
+  "lat": 46.0626259,
+  "lon": 11.1154305,
+  "timestamp": "2019-05-16T12:21:58Z",
+  "version": 1,
+  "changeset": 70316352,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6502402619,
+  "lat": 46.0596911,
+  "lon": 11.1146951,
+  "timestamp": "2019-05-26T17:44:23Z",
+  "version": 1,
+  "changeset": 70637909,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 6518903424,
+  "lat": 46.0667750,
+  "lon": 11.1217229,
+  "timestamp": "2020-12-22T22:41:36Z",
+  "version": 3,
+  "changeset": 96283432,
+  "user": "AnisKoutsi",
+  "uid": 4705730,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6518911943,
+  "lat": 46.0594030,
+  "lon": 11.1157194,
+  "timestamp": "2019-06-03T20:02:29Z",
+  "version": 1,
+  "changeset": 70899123,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "25"
+  }
+},
+{
+  "type": "node",
+  "id": 6518911944,
+  "lat": 46.0591724,
+  "lon": 11.1154553,
+  "timestamp": "2019-06-03T20:02:29Z",
+  "version": 1,
+  "changeset": 70899123,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 6518911945,
+  "lat": 46.0591642,
+  "lon": 11.1151685,
+  "timestamp": "2019-06-03T20:02:29Z",
+  "version": 1,
+  "changeset": 70899123,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 6518911946,
+  "lat": 46.0591690,
+  "lon": 11.1153368,
+  "timestamp": "2019-06-03T20:02:29Z",
+  "version": 1,
+  "changeset": 70899123,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 6521916974,
+  "lat": 46.0631882,
+  "lon": 11.1152753,
+  "timestamp": "2022-12-13T17:06:23Z",
+  "version": 2,
+  "changeset": 130043775,
+  "user": "Ski6",
+  "uid": 16316073,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "drinking"
+  }
+},
+{
+  "type": "node",
+  "id": 6524236368,
+  "lat": 46.0722713,
+  "lon": 11.1252581,
+  "timestamp": "2021-07-05T10:04:08Z",
+  "version": 4,
+  "changeset": 107431560,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "18",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6525484123,
+  "lat": 46.0516039,
+  "lon": 11.1454983,
+  "timestamp": "2019-06-05T20:23:11Z",
+  "version": 1,
+  "changeset": 70966939,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6555708844,
+  "lat": 46.0494776,
+  "lon": 11.1438877,
+  "timestamp": "2019-06-18T15:29:26Z",
+  "version": 1,
+  "changeset": 71370681,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 6565966517,
+  "lat": 46.0815326,
+  "lon": 11.1016056,
+  "timestamp": "2019-06-23T12:52:07Z",
+  "version": 1,
+  "changeset": 71531308,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 6589951276,
+  "lat": 46.0646785,
+  "lon": 11.0423380,
+  "timestamp": "2023-04-03T09:25:38Z",
+  "version": 2,
+  "changeset": 134445650,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 6589951379,
+  "lat": 46.0695242,
+  "lon": 11.0593506,
+  "timestamp": "2019-07-04T21:09:02Z",
+  "version": 1,
+  "changeset": 71910902,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6633191422,
+  "lat": 46.0709758,
+  "lon": 11.1064382,
+  "timestamp": "2023-04-10T11:36:07Z",
+  "version": 3,
+  "changeset": 134725418,
+  "user": "mnap",
+  "uid": 1736980,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 6638897081,
+  "lat": 46.0951013,
+  "lon": 11.1180782,
+  "timestamp": "2023-02-01T14:49:16Z",
+  "version": 2,
+  "changeset": 131966761,
+  "user": "marcobanal",
+  "uid": 191128,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 6687801405,
+  "lat": 46.0696032,
+  "lon": 11.1280347,
+  "timestamp": "2022-11-13T12:52:37Z",
+  "version": 4,
+  "changeset": 128845923,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "safe_loops",
+    "capacity": "12",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6687801409,
+  "lat": 46.0673130,
+  "lon": 11.1172298,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 1,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "20",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6687801410,
+  "lat": 46.0672648,
+  "lon": 11.1173295,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 1,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 6687801411,
+  "lat": 46.0674606,
+  "lon": 11.1172809,
+  "timestamp": "2019-08-06T12:09:42Z",
+  "version": 1,
+  "changeset": 73063464,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 6712640256,
+  "lat": 46.0569708,
+  "lon": 11.1179803,
+  "timestamp": "2019-08-15T18:14:58Z",
+  "version": 1,
+  "changeset": 73388023,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 6749696115,
+  "lat": 46.0688275,
+  "lon": 11.1270262,
+  "timestamp": "2019-08-27T11:29:10Z",
+  "version": 1,
+  "changeset": 73792706,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 6751898499,
+  "lat": 46.0081220,
+  "lon": 11.1542336,
+  "timestamp": "2019-08-28T06:10:15Z",
+  "version": 1,
+  "changeset": 73822790,
+  "user": "afacchinelli_Astrid_Tn",
+  "uid": 10255659,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6766311154,
+  "lat": 46.0171421,
+  "lon": 11.1324511,
+  "timestamp": "2019-09-02T12:57:14Z",
+  "version": 1,
+  "changeset": 74000016,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6796982846,
+  "lat": 46.0679176,
+  "lon": 11.1166905,
+  "timestamp": "2019-09-15T15:21:28Z",
+  "version": 1,
+  "changeset": 74499075,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "10"
+  }
+},
+{
+  "type": "node",
+  "id": 6815972380,
+  "lat": 46.1044472,
+  "lon": 11.1129604,
+  "timestamp": "2023-04-18T09:20:17Z",
+  "version": 6,
+  "changeset": 135049514,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "name": "e.motion / via IV Novembre/Piscina",
+    "network": "Trentino E.Motion",
+    "opening_hours": "24/7",
+    "operator": "Provincia Autonoma di Trento"
+  }
+},
+{
+  "type": "node",
+  "id": 6816008484,
+  "lat": 46.0751964,
+  "lon": 11.1100250,
+  "timestamp": "2019-11-11T17:39:57Z",
+  "version": 2,
+  "changeset": 76923231,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "16",
+    "name": "C'entro in bici / Bici Park Zuffo",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 6816010785,
+  "lat": 46.0750008,
+  "lon": 11.1094490,
+  "timestamp": "2019-09-22T18:49:07Z",
+  "version": 1,
+  "changeset": 74779153,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "8",
+    "name": "C'entro in bici / Parcheggio Ex Zuffo",
+    "network": "C'entro in bici",
+    "operator": "Trentino Mobilità"
+  }
+},
+{
+  "type": "node",
+  "id": 6817307868,
+  "lat": 46.0519005,
+  "lon": 11.1267003,
+  "timestamp": "2019-09-23T12:05:24Z",
+  "version": 1,
+  "changeset": 74804360,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 6817307869,
+  "lat": 46.0550950,
+  "lon": 11.1295908,
+  "timestamp": "2019-09-23T12:05:24Z",
+  "version": 1,
+  "changeset": 74804360,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 6844801879,
+  "lat": 46.0676432,
+  "lon": 11.1281947,
+  "timestamp": "2021-07-09T05:19:42Z",
+  "version": 3,
+  "changeset": 107674079,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "3",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6844801880,
+  "lat": 46.0675854,
+  "lon": 11.1281532,
+  "timestamp": "2021-07-09T05:19:50Z",
+  "version": 3,
+  "changeset": 107674079,
+  "user": "napo",
+  "uid": 20610,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "3",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6886317053,
+  "lat": 46.0984844,
+  "lon": 11.1140272,
+  "timestamp": "2023-01-10T14:09:17Z",
+  "version": 2,
+  "changeset": 131108468,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20"
+  }
+},
+{
+  "type": "node",
+  "id": 6896633896,
+  "lat": 46.0648961,
+  "lon": 11.1230646,
+  "timestamp": "2020-11-20T13:31:13Z",
+  "version": 3,
+  "changeset": 94503802,
+  "user": "paoloianes",
+  "uid": 1672779,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6896633897,
+  "lat": 46.0649967,
+  "lon": 11.1230503,
+  "timestamp": "2020-11-20T13:31:13Z",
+  "version": 3,
+  "changeset": 94503802,
+  "user": "paoloianes",
+  "uid": 1672779,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "10",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6945992272,
+  "lat": 46.0406925,
+  "lon": 11.1233665,
+  "timestamp": "2019-11-04T18:50:43Z",
+  "version": 1,
+  "changeset": 76609221,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 7004744301,
+  "lat": 46.0708287,
+  "lon": 11.1129734,
+  "timestamp": "2021-03-09T18:56:51Z",
+  "version": 3,
+  "changeset": 100726977,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7027256480,
+  "lat": 46.0701304,
+  "lon": 11.1254013,
+  "timestamp": "2021-07-15T11:02:04Z",
+  "version": 2,
+  "changeset": 108044772,
+  "user": "DCampa",
+  "uid": 8508928,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7033987279,
+  "lat": 46.0586505,
+  "lon": 11.1220648,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 3,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "customers",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 7078253917,
+  "lat": 46.1358155,
+  "lon": 11.1141807,
+  "timestamp": "2023-03-13T16:03:42Z",
+  "version": 2,
+  "changeset": 133631810,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 7085841488,
+  "lat": 46.0076074,
+  "lon": 11.1260328,
+  "timestamp": "2019-12-26T10:17:57Z",
+  "version": 1,
+  "changeset": 78875353,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 7142753040,
+  "lat": 46.0697122,
+  "lon": 11.1216133,
+  "timestamp": "2020-12-22T22:47:00Z",
+  "version": 2,
+  "changeset": 96283432,
+  "user": "AnisKoutsi",
+  "uid": 4705730,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7191949849,
+  "lat": 46.0081367,
+  "lon": 11.1425100,
+  "timestamp": "2020-02-06T21:08:33Z",
+  "version": 1,
+  "changeset": 80660851,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190367,
+  "lat": 46.0468806,
+  "lon": 11.1335980,
+  "timestamp": "2022-12-01T14:08:46Z",
+  "version": 2,
+  "changeset": 129605760,
+  "user": "Jaxxynn",
+  "uid": 8332737,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190368,
+  "lat": 46.0468206,
+  "lon": 11.1335338,
+  "timestamp": "2022-12-01T18:35:51Z",
+  "version": 2,
+  "changeset": 129615625,
+  "user": "Jaxxynn",
+  "uid": 8332737,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190369,
+  "lat": 46.0448029,
+  "lon": 11.1302984,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190370,
+  "lat": 46.0443646,
+  "lon": 11.1290713,
+  "timestamp": "2021-11-18T21:17:36Z",
+  "version": 2,
+  "changeset": 113963894,
+  "user": "giocomai",
+  "uid": 6269039,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "16",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190372,
+  "lat": 46.0448177,
+  "lon": 11.1286191,
+  "timestamp": "2022-11-01T19:27:16Z",
+  "version": 2,
+  "changeset": 128360829,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "12"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190373,
+  "lat": 46.0562882,
+  "lon": 11.1283692,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190374,
+  "lat": 46.0561395,
+  "lon": 11.1305279,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190375,
+  "lat": 46.0562037,
+  "lon": 11.1309138,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190376,
+  "lat": 46.0326843,
+  "lon": 11.1250754,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "30"
+  }
+},
+{
+  "type": "node",
+  "id": 7231190377,
+  "lat": 46.0586641,
+  "lon": 11.1223413,
+  "timestamp": "2020-02-20T18:33:46Z",
+  "version": 1,
+  "changeset": 81286828,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "access": "private",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 7231229869,
+  "lat": 46.0478942,
+  "lon": 11.1291678,
+  "timestamp": "2020-02-20T18:56:50Z",
+  "version": 1,
+  "changeset": 81287560,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 7312025820,
+  "lat": 46.0576310,
+  "lon": 11.1326183,
+  "timestamp": "2021-09-26T12:49:59Z",
+  "version": 2,
+  "changeset": 111720629,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 7645648109,
+  "lat": 46.0692112,
+  "lon": 11.1133887,
+  "timestamp": "2020-06-23T08:42:06Z",
+  "version": 1,
+  "changeset": 87021949,
+  "user": "japs",
+  "uid": 298934,
+  "tags": {
+    "amenity": "bicycle_repair_station",
+    "fee": "no",
+    "opening_hours": "Sa 16:00-19:30",
+    "operator": "Ciclostile - ciclofficina popolare del Centro Sociale Bruno",
+    "service:bicycle:chain_tool": "yes",
+    "service:bicycle:diy": "yes",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:tools": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7687458610,
+  "lat": 46.0680588,
+  "lon": 11.1265451,
+  "timestamp": "2020-07-06T11:04:57Z",
+  "version": 1,
+  "changeset": 87597025,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 7704585208,
+  "lat": 46.0662377,
+  "lon": 11.1168992,
+  "timestamp": "2020-07-11T09:24:44Z",
+  "version": 1,
+  "changeset": 87848031,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "16"
+  }
+},
+{
+  "type": "node",
+  "id": 7704585209,
+  "lat": 46.0662611,
+  "lon": 11.1169155,
+  "timestamp": "2020-07-11T09:24:44Z",
+  "version": 1,
+  "changeset": 87848031,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 7704693881,
+  "lat": 46.0631311,
+  "lon": 11.1276503,
+  "timestamp": "2020-07-11T10:08:03Z",
+  "version": 1,
+  "changeset": 87849117,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "20"
+  }
+},
+{
+  "type": "node",
+  "id": 7920675178,
+  "lat": 46.0388923,
+  "lon": 11.1285795,
+  "timestamp": "2023-03-25T12:06:41Z",
+  "version": 5,
+  "changeset": 134101453,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 8412526644,
+  "lat": 46.0474898,
+  "lon": 11.1283867,
+  "timestamp": "2021-02-10T17:44:27Z",
+  "version": 1,
+  "changeset": 99057503,
+  "user": "Xelius",
+  "uid": 8671108,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5"
+  }
+},
+{
+  "type": "node",
+  "id": 8495268230,
+  "lat": 46.0711598,
+  "lon": 11.1100360,
+  "timestamp": "2021-03-09T18:08:51Z",
+  "version": 3,
+  "changeset": 100726977,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8497355062,
+  "lat": 46.0729707,
+  "lon": 11.1057889,
+  "timestamp": "2021-03-08T15:24:55Z",
+  "version": 1,
+  "changeset": 100647431,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 8595582311,
+  "lat": 46.0406615,
+  "lon": 11.1547878,
+  "timestamp": "2021-04-05T14:39:09Z",
+  "version": 1,
+  "changeset": 102341593,
+  "user": "paoloianes",
+  "uid": 1672779,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 8751113378,
+  "lat": 46.1106082,
+  "lon": 11.1100732,
+  "timestamp": "2022-11-24T15:16:21Z",
+  "version": 2,
+  "changeset": 129331207,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "addr:city": "Trento",
+    "addr:housenumber": "42",
+    "addr:postcode": "38121",
+    "addr:street": "Via Sant'Anna",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8809682476,
+  "lat": 46.0644559,
+  "lon": 11.1165834,
+  "timestamp": "2021-06-06T19:21:34Z",
+  "version": 1,
+  "changeset": 105930144,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 8809682477,
+  "lat": 46.0644765,
+  "lon": 11.1163881,
+  "timestamp": "2021-06-06T19:21:34Z",
+  "version": 1,
+  "changeset": 105930144,
+  "user": "pikappa79",
+  "uid": 330007,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 8818809683,
+  "lat": 46.1004485,
+  "lon": 11.1170259,
+  "timestamp": "2022-05-28T14:24:21Z",
+  "version": 3,
+  "changeset": 121619493,
+  "user": "paganella31",
+  "uid": 3277757,
+  "tags": {
+    "access": "yes",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "covered": "no",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8850281692,
+  "lat": 46.0693015,
+  "lon": 11.1135784,
+  "timestamp": "2021-06-28T03:59:03Z",
+  "version": 2,
+  "changeset": 107057612,
+  "user": "CCCGGG",
+  "uid": 6098724,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8906789583,
+  "lat": 46.0430682,
+  "lon": 11.1317472,
+  "timestamp": "2021-07-09T09:44:08Z",
+  "version": 1,
+  "changeset": 107691773,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8906850163,
+  "lat": 46.0556317,
+  "lon": 11.1322034,
+  "timestamp": "2021-07-09T10:12:46Z",
+  "version": 1,
+  "changeset": 107693770,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack",
+    "capacity": "6"
+  }
+},
+{
+  "type": "node",
+  "id": 8911659199,
+  "lat": 46.0069931,
+  "lon": 11.1284155,
+  "timestamp": "2021-07-11T14:44:16Z",
+  "version": 1,
+  "changeset": 107785610,
+  "user": "JuaFritz",
+  "uid": 8445331,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "name": "e.motion / Mattarello",
+    "network": "E.Motion",
+    "operator": "Provincia di Trento"
+  }
+},
+{
+  "type": "node",
+  "id": 8914174165,
+  "lat": 46.0858823,
+  "lon": 11.1205741,
+  "timestamp": "2023-05-02T15:26:47Z",
+  "version": 3,
+  "changeset": 135621743,
+  "user": "lucadelu",
+  "uid": 13591,
+  "tags": {
+    "access": "permissive",
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

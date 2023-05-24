@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 234540388, "tags": {"highway": "residential", "maxspeed": "30", "name": "Via Nazionale", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1284794, 46.0093883], [11.1288228, 46.0093257], [11.1288724, 46.0093167]]}}

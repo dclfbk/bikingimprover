@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 394382905, "tags": {"bicycle": "yes", "highway": "pedestrian", "lit": "yes", "name": "Piazza Lodron", "smoothness": "good", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1229741, 46.0679498], [11.1230007, 46.0678154]]}}

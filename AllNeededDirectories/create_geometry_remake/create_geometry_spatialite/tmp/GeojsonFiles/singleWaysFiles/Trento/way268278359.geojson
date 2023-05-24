@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 268278359, "tags": {"highway": "service", "motorcar": "yes", "motorhome": "yes", "surface": "asphalt", "vehicle": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1107179, 46.0766414], [11.110731, 46.0764965], [11.1107108, 46.0763967], [11.1106542, 46.0762163]]}}

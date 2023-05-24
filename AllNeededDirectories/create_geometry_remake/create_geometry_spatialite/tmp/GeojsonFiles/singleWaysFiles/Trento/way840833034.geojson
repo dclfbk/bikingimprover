@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 840833034, "tags": {"highway": "residential", "lit": "no", "name": "Via del Travai", "oneway": "yes", "parking:lane:both": "no", "smoothness": "excellent", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1231757, 46.064839], [11.1232868, 46.0648481]]}}

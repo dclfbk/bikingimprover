@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 238939337, "tags": {"highway": "service", "maxspeed": "50", "service": "parking_aisle"}}, "geometry": {"type": "LineString", "coordinates": [[11.1135082, 46.0575151], [11.1135233, 46.0573966], [11.1135555, 46.0571371]]}}

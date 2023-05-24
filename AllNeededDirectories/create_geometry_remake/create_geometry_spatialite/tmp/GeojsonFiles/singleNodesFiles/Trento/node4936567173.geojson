@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "node", "id": 4936567173, "tags": {"amenity": "bicycle_rental", "capacity": "10", "name": "e.motion / Cimitero", "network": "E.Motion", "operator": "Provincia Autonoma di Trento", "source": "local_knowledge", "website": "http://www.provincia.tn.it/bikesharing"}}, "geometry": {"type": "Point", "coordinates": [11.1192551, 46.0636543]}}

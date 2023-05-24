@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 290344823, "tags": {"access": "yes", "foot": "yes", "highway": "footway", "horse": "no", "motor_vehicle": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1413111, 46.0402353], [11.1412758, 46.0402966], [11.1411863, 46.0403122]]}}

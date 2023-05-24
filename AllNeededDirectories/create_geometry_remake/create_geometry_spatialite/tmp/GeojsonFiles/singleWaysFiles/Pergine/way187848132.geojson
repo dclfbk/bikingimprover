@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 187848132, "tags": {"bridge": "yes", "bus": "no", "hgv": "no", "highway": "tertiary", "lane_markings": "no", "layer": "1", "loc_ref": "SP12", "name": "Strada Provinciale 12 di Vignola e Panarotta", "ref": "SP12"}}, "geometry": {"type": "LineString", "coordinates": [[11.2622124, 46.0463177], [11.2622781, 46.0464082]]}}

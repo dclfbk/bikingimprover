@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 230225007, "tags": {"bicycle": "yes", "foot": "yes", "highway": "residential", "name": "Via del Dos di Sant'Elena"}}, "geometry": {"type": "LineString", "coordinates": [[11.0649201, 46.0867287], [11.0650543, 46.0866027], [11.0652029, 46.0864723], [11.0652575, 46.0864256]]}}

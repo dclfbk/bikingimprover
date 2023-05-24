@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 97111253, "tags": {"cycleway:right": "no", "highway": "tertiary", "lanes": "2", "lanes:psv": "1", "maxspeed": "50", "name": "Via Francesco Ambrosi", "oneway": "yes", "source:maxspeed": "sign", "surface": "paved"}}, "geometry": {"type": "LineString", "coordinates": [[11.1228263, 46.0760234], [11.1226719, 46.0758141]]}}

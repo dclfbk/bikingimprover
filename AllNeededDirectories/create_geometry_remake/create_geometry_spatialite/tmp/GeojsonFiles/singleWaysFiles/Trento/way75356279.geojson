@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 75356279, "tags": {"highway": "unclassified", "name": "Piazza Silvio Pellico", "oneway": "yes", "parking:condition:both": "ticket", "parking:lane:both": "marked", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.123989, 46.0717449], [11.1243025, 46.0716139], [11.1244401, 46.0715558]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 366074403, "tags": {"access": "permissive", "foot": "yes", "highway": "track", "surface": "grass", "tracktype": "grade5"}}, "geometry": {"type": "LineString", "coordinates": [[11.040905, 46.0205105], [11.0409468, 46.0203627], [11.0409718, 46.0202165], [11.0409935, 46.0200984], [11.0410152, 46.0199669]]}}

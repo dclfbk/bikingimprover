@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 248004555, "tags": {"highway": "residential", "lit": "yes", "maxspeed:type": "IT:urban", "name": "Via Tegazzo", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2433508, 46.0616748], [11.2433791, 46.0615966]]}}

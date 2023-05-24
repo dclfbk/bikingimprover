@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 97111248, "tags": {"highway": "secondary", "lanes": "2", "name": "Via Felice e Gregorio Fontana", "short_name": "Via Fratelli Fontana", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1170263, 46.0773454], [11.1166598, 46.077426], [11.1161504, 46.0775429], [11.116099, 46.0775547]]}}

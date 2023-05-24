@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 102189362, "tags": {"highway": "secondary", "lanes": "2", "layer": "-1", "maxspeed": "50", "name": "Via Asiago", "old_ref": "SS349", "oneway": "no", "source:maxspeed": "IT:urban", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1393387, 46.0454709], [11.1388543, 46.045768]]}}

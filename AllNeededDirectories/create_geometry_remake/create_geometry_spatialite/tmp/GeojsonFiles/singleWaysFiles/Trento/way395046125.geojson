@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 395046125, "tags": {"highway": "service", "lit": "yes", "name": "Via cardinale Giovanni Gerolamo Morone", "service": "parking_aisle", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.118276, 46.0776078], [11.1182089, 46.0776213], [11.1181454, 46.077634], [11.1180311, 46.0773591]]}}

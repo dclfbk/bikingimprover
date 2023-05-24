@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 132454862, "tags": {"highway": "tertiary", "lane_markings": "no", "name": "Viale Verona", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1315272, 46.0425571], [11.1315107, 46.0426279], [11.1314735, 46.0428967], [11.1314411, 46.0429602], [11.131369, 46.0430128]]}}

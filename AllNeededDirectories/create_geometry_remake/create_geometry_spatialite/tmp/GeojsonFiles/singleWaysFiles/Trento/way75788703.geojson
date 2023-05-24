@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 75788703, "tags": {"highway": "trunk_link", "lanes": "2", "name": "Strada dell'Interporto", "oneway": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0945158, 46.1013218], [11.0948629, 46.1014139], [11.0949758, 46.1014391]]}}

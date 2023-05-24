@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 936412749, "tags": {"highway": "secondary", "lanes": "2", "lit": "yes", "maxspeed": "50", "name": "Via Gian Domenico Romagnosi", "oneway": "yes", "source:maxspeed": "sign", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1242063, 46.0723915], [11.1244211, 46.0722531]]}}

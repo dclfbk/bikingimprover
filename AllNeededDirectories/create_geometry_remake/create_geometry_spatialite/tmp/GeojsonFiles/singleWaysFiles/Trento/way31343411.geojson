@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 31343411, "tags": {"cycleway:both": "no", "highway": "tertiary", "lanes": "2", "layer": "-1", "name": "Via Mesiano", "ref": "SP204", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1427206, 46.0648189], [11.1428376, 46.0647963]]}}

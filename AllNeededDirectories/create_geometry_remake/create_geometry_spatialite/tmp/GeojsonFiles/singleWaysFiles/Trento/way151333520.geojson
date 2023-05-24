@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 151333520, "tags": {"highway": "footway", "lit": "yes", "name": "Vicolo dei Birri", "oneway:bicycle": "no", "surface": "unhewn_cobblestone"}}, "geometry": {"type": "LineString", "coordinates": [[11.1207156, 46.0670637], [11.1209979, 46.0670731], [11.1210395, 46.0670655]]}}

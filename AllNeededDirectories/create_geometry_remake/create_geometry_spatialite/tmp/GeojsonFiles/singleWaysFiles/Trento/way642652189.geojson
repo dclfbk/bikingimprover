@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 642652189, "tags": {"bridge": "yes", "highway": "track", "layer": "1", "name": "Via di Malebis", "surface": "paved", "tracktype": "grade1"}}, "geometry": {"type": "LineString", "coordinates": [[11.1113182, 46.0035385], [11.1113693, 46.0034626]]}}

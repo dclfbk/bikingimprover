@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25340166, "tags": {"highway": "tertiary", "maxspeed": "50", "name": "Via alle Sette Fontane", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.104831, 46.0123634], [11.1050277, 46.012315], [11.1051811, 46.0122369]]}}

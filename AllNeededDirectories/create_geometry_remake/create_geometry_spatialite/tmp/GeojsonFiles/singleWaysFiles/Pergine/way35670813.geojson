@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 35670813, "tags": {"access": "no", "bicycle": "yes", "foot": "yes", "highway": "pedestrian", "lit": "yes", "name": "Piazza Giovanni Serra", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.2390349, 46.0603907], [11.2391019, 46.0604207], [11.2391607, 46.0605357], [11.2391757, 46.0605494]]}}

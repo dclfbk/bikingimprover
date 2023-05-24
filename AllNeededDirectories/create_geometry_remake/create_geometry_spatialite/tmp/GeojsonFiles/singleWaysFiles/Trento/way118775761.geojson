@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 118775761, "tags": {"highway": "secondary", "lanes": "2", "maxspeed": "50", "name": "Viale Verona", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.131369, 46.0430128], [11.1313335, 46.0433922], [11.1312561, 46.0439492], [11.1311865, 46.0442009]]}}

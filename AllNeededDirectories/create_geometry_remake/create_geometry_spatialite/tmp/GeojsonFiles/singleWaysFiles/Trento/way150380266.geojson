@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 150380266, "tags": {"highway": "footway", "name": "Vicolo dell'Adige", "oneway:bicycle": "no", "surface": "cobblestone", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1235267, 46.070242], [11.1235205, 46.0702886]]}}

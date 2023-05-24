@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 34942224, "tags": {"highway": "unclassified", "lanes": "1", "layer": "-1", "maxheight": "2.40 m", "maxspeed": "50", "name": "Via delle Bettine", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1012348, 46.0928075], [11.1014469, 46.0931619]]}}

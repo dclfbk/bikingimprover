@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 215425625, "tags": {"access": "private", "highway": "service", "name": "Via Bolzano", "oneway": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1104275, 46.1000443], [11.1105161, 46.0998155], [11.1108149, 46.0998108], [11.1110265, 46.0998075], [11.1111, 46.099441]]}}

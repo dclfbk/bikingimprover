@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 23951162, "tags": {"access": "destination", "highway": "residential", "lit": "yes", "maxspeed": "50", "name": "Via Dietro Le Mura B", "oneway": "yes", "surface": "cubes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1263186, 46.0675748], [11.1263359, 46.0675929], [11.126348, 46.0676062]]}}

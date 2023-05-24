@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 116455320, "tags": {"highway": "residential", "layer": "-1", "lit": "yes", "maxheight": "3.30", "maxspeed": "30", "name": "Via D\u00f2s Trento", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1122454, 46.0747415], [11.1126133, 46.0746871]]}}

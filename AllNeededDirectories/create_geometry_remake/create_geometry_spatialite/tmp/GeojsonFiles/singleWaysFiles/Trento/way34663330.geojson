@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 34663330, "tags": {"highway": "pedestrian", "name": "Via Andrea Maffei", "oneway": "yes", "oneway:bicycle": "no", "short_name": "Via Maffei", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1201923, 46.0667748], [11.1203589, 46.0660309]]}}

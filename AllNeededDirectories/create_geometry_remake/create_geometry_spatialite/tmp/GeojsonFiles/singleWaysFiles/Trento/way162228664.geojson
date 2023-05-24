@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 162228664, "tags": {"bicycle": "yes", "highway": "unclassified", "name": "Via al Torrione", "oneway:bicycle": "no", "surface": "cobblestone"}}, "geometry": {"type": "LineString", "coordinates": [[11.1212196, 46.0654688], [11.1211474, 46.065462]]}}

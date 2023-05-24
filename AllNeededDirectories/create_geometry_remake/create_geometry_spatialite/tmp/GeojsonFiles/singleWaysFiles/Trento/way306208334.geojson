@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 306208334, "tags": {"highway": "tertiary", "maxspeed": "50", "name": "Via Hubert Jedin", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.111741, 46.0513665], [11.1119715, 46.0513819], [11.1120615, 46.0514023]]}}

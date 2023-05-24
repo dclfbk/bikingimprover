@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 692620750, "tags": {"bicycle": "designated", "foot": "designated", "highway": "service", "motor_vehicle": "no", "name": "Via della Stazione", "oneway": "yes", "service": "alley", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1271046, 46.0069009], [11.1273734, 46.0067834]]}}

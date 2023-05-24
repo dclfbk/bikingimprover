@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 809934473, "tags": {"highway": "unclassified", "maxspeed": "30", "name": "Via Ponte Alto", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1444023, 46.0747706], [11.1443115, 46.0748674], [11.1442342, 46.0749725], [11.1440247, 46.0751773], [11.1439572, 46.0752432]]}}

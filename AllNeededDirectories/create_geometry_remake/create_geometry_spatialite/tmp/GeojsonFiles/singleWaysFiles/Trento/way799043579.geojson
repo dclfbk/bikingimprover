@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 799043579, "tags": {"access": "no", "bicycle": "private", "foot": "private", "highway": "service", "horse": "no", "maxspeed": "10", "motor_vehicle": "private", "name": "Strada interna Residenza Angela"}}, "geometry": {"type": "LineString", "coordinates": [[11.1451555, 46.0754859], [11.145694, 46.0755861]]}}

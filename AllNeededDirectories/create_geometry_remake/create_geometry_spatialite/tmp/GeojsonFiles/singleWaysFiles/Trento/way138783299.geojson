@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 138783299, "tags": {"highway": "pedestrian", "name": "Vicolo Terlago", "oneway:bicycle": "no", "surface": "paving_stones", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1204977, 46.0671281], [11.1205068, 46.0670559]]}}

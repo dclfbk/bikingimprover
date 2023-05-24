@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37856535, "tags": {"highway": "residential", "lit": "yes", "maxspeed": "40", "name": "Via dei Caduti di Sardagna", "surface": "asphalt", "traffic_calming": "bump"}}, "geometry": {"type": "LineString", "coordinates": [[11.0975092, 46.0649082], [11.0975427, 46.0647409], [11.0976627, 46.0635827]]}}

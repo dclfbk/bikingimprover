@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 307004715, "tags": {"cycleway:right": "no", "highway": "tertiary", "name": "Via San Pio X", "name:etymology:wikidata": "Q43739", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1197597, 46.0524452], [11.1198083, 46.0524054], [11.1198667, 46.0523664], [11.1200039, 46.0523426]]}}

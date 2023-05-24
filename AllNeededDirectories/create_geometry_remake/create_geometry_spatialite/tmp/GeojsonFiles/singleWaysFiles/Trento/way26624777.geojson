@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 26624777, "tags": {"highway": "residential", "maxspeed": "30", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.143188, 46.0765209], [11.1435719, 46.0765254], [11.143898, 46.0765254]]}}

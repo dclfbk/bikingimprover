@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 940588659, "tags": {"highway": "service", "maxspeed": "20", "service": "drive-through", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1118192, 46.0893564], [11.1126266, 46.0896892], [11.1123874, 46.0899748]]}}

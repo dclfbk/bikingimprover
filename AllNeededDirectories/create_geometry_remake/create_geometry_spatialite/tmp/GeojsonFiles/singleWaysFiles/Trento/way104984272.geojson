@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 104984272, "tags": {"highway": "unclassified", "lanes": "1", "lit": "yes", "maxspeed": "50", "name": "Via Innsbruck", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0902223, 46.1141853], [11.0902294, 46.1140998], [11.0902133, 46.1140282], [11.0901761, 46.1139397]]}}

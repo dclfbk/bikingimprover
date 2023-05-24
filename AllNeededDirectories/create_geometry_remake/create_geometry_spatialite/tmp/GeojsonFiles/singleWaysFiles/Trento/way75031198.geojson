@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 75031198, "tags": {"highway": "footway", "lit": "yes", "name": "Vicolo del Teatro", "surface": "paving_stones", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234219, 46.0692249], [11.1232866, 46.0692283]]}}

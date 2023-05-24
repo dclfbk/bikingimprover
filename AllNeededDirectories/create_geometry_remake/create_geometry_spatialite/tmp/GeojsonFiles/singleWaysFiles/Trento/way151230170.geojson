@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 151230170, "tags": {"access": "private", "foot": "permissive", "highway": "service", "maxheight": "below_default", "surface": "asphalt", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1233768, 46.0781689], [11.1233532, 46.0781619], [11.1232299, 46.0781251]]}}

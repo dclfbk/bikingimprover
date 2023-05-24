@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 32060017, "tags": {"highway": "tertiary", "layer": "-1", "maxheight": "5", "name": "Via Enrico Conci", "name:etymology:wikidata": "Q3725699", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1368034, 46.039654], [11.1364145, 46.0395557]]}}

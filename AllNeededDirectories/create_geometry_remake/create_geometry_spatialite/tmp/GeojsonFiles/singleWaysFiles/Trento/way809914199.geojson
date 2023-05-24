@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 809914199, "tags": {"highway": "residential", "lit": "yes", "maxspeed": "30", "name": "Via Verruca", "surface": "asphalt", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1120581, 46.0700036], [11.1116404, 46.0699006]]}}

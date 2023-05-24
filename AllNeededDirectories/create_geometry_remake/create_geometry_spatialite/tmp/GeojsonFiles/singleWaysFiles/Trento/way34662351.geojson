@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 34662351, "tags": {"bicycle": "yes", "highway": "pedestrian", "lit": "yes", "name": "Via Oriola", "oneway": "yes", "oneway:bicycle": "no", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234891, 46.0682565], [11.1238337, 46.0682805], [11.1238602, 46.0682827]]}}

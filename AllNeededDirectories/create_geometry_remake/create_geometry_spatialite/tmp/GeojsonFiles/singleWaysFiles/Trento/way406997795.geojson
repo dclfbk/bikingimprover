@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 406997795, "tags": {"cutting": "yes", "highway": "residential", "maxheight": "2.2", "name": "Via ai Casoti", "oneway": "no", "surface": "asphalt", "tracktype": "grade1", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1539626, 46.0555742], [11.1539084, 46.0555743]]}}

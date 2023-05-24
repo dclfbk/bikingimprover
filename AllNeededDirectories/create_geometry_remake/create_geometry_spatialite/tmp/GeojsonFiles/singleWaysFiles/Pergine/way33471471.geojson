@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 33471471, "tags": {"highway": "secondary", "lanes": "1", "motor_vehicle": "yes", "name": "Via Margherita Hack", "oneway": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2345398, 46.0519811], [11.2344078, 46.0517044]]}}

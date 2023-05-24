@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 164920615, "tags": {"highway": "footway", "surface": "asphalt", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234644, 46.0636495], [11.1232899, 46.0636385]]}}

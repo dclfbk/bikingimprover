@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 85334596, "tags": {"highway": "tertiary", "name": "Via Enrico Tambosi", "oneway": "yes", "ref": "SP204", "short_name": "Via Tambosi", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1440933, 46.0497753], [11.1440773, 46.0496979], [11.1440247, 46.0495623]]}}

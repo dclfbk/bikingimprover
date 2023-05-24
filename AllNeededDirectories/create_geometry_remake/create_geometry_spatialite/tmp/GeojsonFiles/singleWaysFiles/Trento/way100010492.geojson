@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 100010492, "tags": {"highway": "service", "name": "Via di San Vincenzo", "service": "driveway", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.132924, 46.0249881], [11.1328678, 46.0249802], [11.132536, 46.024775], [11.1321312, 46.0242423]]}}

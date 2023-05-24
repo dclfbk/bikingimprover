@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 40484484, "tags": {"bicycle": "yes", "foot": "yes", "highway": "track", "name": "Via al Riparo Gaban", "tracktype": "grade2"}}, "geometry": {"type": "LineString", "coordinates": [[11.1238573, 46.0925292], [11.1239219, 46.092572], [11.1240948, 46.0926587], [11.1243072, 46.0927476]]}}

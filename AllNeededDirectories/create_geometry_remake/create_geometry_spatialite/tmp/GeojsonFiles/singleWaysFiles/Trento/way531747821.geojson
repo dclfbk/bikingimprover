@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 531747821, "tags": {"highway": "footway", "note:it": "Traccia creata seguendo shapefile SAT, da controllare caratteristiche e geometria.", "source": "www.sat.tn.it"}}, "geometry": {"type": "LineString", "coordinates": [[11.0964676, 46.0633457], [11.0965479, 46.0635912]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 755263200, "tags": {"bridge": "yes", "foot": "yes", "highway": "secondary", "layer": "1", "name": "Viale Verona", "name:etymology:wikidata": "Q2028", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1270341, 46.0588554], [11.1271976, 46.0587204]]}}

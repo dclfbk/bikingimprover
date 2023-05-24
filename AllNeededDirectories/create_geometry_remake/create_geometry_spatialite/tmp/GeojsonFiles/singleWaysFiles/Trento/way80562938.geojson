@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 80562938, "tags": {"highway": "pedestrian", "layer": "-1", "lit": "yes", "name": "Passaggio Giovanni Peterlongo", "short_name": "Passaggio Peterlongo", "surface": "asphalt", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1201294, 46.0695879], [11.1201069, 46.069708]]}}

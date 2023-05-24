@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 472096773, "tags": {"highway": "secondary", "maxspeed": "50", "name": "Via al Lago", "oneway": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.234451, 46.0500515], [11.2344732, 46.0499777], [11.2344894, 46.0499135], [11.2345068, 46.049812]]}}

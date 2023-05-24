@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 132574778, "tags": {"cycleway:both": "no", "highway": "unclassified", "maxheight": "3.15", "name": "Via Fersina", "name:etymology:wikidata": "Q280529", "priority": "backward", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1254018, 46.0468022], [11.1252067, 46.046705]]}}

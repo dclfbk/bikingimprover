@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 725033421, "tags": {"bicycle": "designated", "foot": "designated", "highway": "cycleway", "layer": "-1", "name": "Ciclabile Pergine - San Cristoforo", "segregated": "no", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.2394433, 46.0399551], [11.2395187, 46.0401228]]}}

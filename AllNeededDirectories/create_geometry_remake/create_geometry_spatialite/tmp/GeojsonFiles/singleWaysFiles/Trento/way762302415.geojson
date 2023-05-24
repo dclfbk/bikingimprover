@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 762302415, "tags": {"access": "private", "bicycle": "yes", "foot": "yes", "highway": "residential", "name": "Via Giovanni Falcone", "name:etymology:wikidata": "Q207073", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1284967, 46.0460582], [11.1284883, 46.0460774], [11.1283934, 46.0472226]]}}

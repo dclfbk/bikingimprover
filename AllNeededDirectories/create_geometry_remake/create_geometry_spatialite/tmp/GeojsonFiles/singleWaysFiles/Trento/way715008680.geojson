@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 715008680, "tags": {"cycleway:right": "no", "highway": "unclassified", "lane_markings": "no", "name": "Via Ernesta Bittanti", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1063741, 46.1052806], [11.1065242, 46.1052463], [11.1066023, 46.1052265]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 122270332, "tags": {"cycleway:both": "no", "highway": "unclassified", "lane_markings": "no", "name": "Via della Spalliera", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1267203, 46.077414], [11.126724, 46.0775139], [11.1264405, 46.0778111]]}}

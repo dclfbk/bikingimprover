@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 483221930, "tags": {"highway": "residential", "maxspeed": "30", "name": "Via Giacomo Bresadola", "oneway": "yes", "surface": "asphalt", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1164786, 46.0782391], [11.1163914, 46.0782584]]}}

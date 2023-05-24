@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24744097, "tags": {"highway": "unclassified", "lane_markings": "no", "name": "Via Mario Cavalieri", "source:width": "ARCore", "surface": "asphalt", "width": "5.5"}}, "geometry": {"type": "LineString", "coordinates": [[11.138923, 46.0710366], [11.1388746, 46.0710065], [11.138811, 46.0709156]]}}

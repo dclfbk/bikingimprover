@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 829951746, "tags": {"highway": "secondary", "lanes": "1", "name": "Via Venezia", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1282563, 46.0697425], [11.1283944, 46.0697155], [11.1285222, 46.0696505]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25039012, "tags": {"created_by": "fixbot_csv", "highway": "track", "surface": "paved", "tracktype": "grade1"}}, "geometry": {"type": "LineString", "coordinates": [[11.120727, 46.0048038], [11.1181094, 46.0062675]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 310056433, "tags": {"highway": "service", "name": "Via Praga", "service": "driveway", "source": "local_knowledge", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0971462, 46.123427], [11.0971138, 46.1234671], [11.0965348, 46.1241835], [11.095296, 46.1237264]]}}

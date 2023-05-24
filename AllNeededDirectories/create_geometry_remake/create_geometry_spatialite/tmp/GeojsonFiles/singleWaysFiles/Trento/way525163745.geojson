@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 525163745, "tags": {"access": "private", "bridge": "yes", "covered": "yes", "highway": "pedestrian", "layer": "1", "level": "1", "noname": "yes", "oneway": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1499113, 46.0673721], [11.1499195, 46.0676412]]}}

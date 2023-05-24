@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 687017026, "tags": {"highway": "unclassified", "lanes": "1", "lit": "yes", "maxspeed": "30", "name": "Via D\u00f2s Trento", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1082794, 46.07489], [11.1084447, 46.074893], [11.1086846, 46.0748708]]}}

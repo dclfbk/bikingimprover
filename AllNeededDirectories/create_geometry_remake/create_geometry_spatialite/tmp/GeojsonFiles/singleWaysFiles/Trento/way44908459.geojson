@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 44908459, "tags": {"highway": "residential", "lanes": "1", "lit": "yes", "maxspeed": "50", "name": "Via della Malvasia", "oneway": "yes", "short_name": "Via Malvasia", "source:maxspeed": "sign", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1249523, 46.0762101], [11.1249474, 46.0760702]]}}

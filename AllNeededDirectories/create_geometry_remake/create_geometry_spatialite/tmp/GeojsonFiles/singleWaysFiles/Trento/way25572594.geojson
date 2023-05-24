@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25572594, "tags": {"cycleway:both": "no", "highway": "tertiary", "name": "Via di Melta", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1193536, 46.0984955], [11.1193455, 46.0985328], [11.1193355, 46.0985632], [11.1190754, 46.099312], [11.1190664, 46.0994047]]}}

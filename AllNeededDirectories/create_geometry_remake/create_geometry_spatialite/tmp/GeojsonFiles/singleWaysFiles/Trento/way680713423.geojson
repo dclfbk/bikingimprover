@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 680713423, "tags": {"highway": "service", "lanes": "1", "maxspeed": "30", "name": "Via del Lav\u00e0chel", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0727301, 46.0574537], [11.0726228, 46.0574287], [11.0725263, 46.0573282], [11.0724083, 46.0572668], [11.0722312, 46.0572593]]}}

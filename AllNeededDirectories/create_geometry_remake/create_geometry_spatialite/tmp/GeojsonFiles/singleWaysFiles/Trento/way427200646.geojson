@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 427200646, "tags": {"highway": "service", "layer": "-1", "maxheight": "below_default", "service": "driveway", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1180472, 46.0751217], [11.1179956, 46.0750198]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 227756256, "tags": {"highway": "unclassified", "lanes": "2", "maxspeed": "50", "name": "Via Clementino Vannetti", "oneway": "yes", "source:maxspeed": "sign", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1235984, 46.0750824], [11.1236665, 46.0751869]]}}

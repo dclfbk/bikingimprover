@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 81424830, "tags": {"highway": "pedestrian", "name": "Galleria dei Legionari Trentini", "oneway:bicycle": "no", "surface": "cobblestone", "tunnel": "building_passage", "wikidata": "Q88758918"}}, "geometry": {"type": "LineString", "coordinates": [[11.1243363, 46.0693036], [11.1239659, 46.0693059], [11.1239397, 46.069306]]}}

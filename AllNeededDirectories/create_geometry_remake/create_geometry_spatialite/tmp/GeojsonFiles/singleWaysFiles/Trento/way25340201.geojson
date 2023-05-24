@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25340201, "tags": {"highway": "tertiary", "maxspeed": "50", "name": "Via delle Ischie", "oneway": "yes", "ref": "SP131/5\u00b0Tr", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1056984, 46.0121782], [11.1058654, 46.0123124], [11.105982, 46.0123565], [11.1061056, 46.0123833]]}}

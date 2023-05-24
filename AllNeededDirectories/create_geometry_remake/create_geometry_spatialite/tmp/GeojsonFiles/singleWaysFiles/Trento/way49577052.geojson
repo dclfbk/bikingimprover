@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 49577052, "tags": {"highway": "secondary", "lanes": "1", "name": "Via Francesco Ambrosi", "oneway": "yes", "parking:lane:both": "no_parking", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.123611, 46.0772635], [11.1235871, 46.0772178], [11.1235341, 46.077116], [11.1235097, 46.0770797]]}}

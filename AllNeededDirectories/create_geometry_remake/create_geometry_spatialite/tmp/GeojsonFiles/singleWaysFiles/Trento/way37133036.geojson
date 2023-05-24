@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37133036, "tags": {"highway": "residential", "maxspeed": "50", "name": "Via Vittorio Veneto", "name:etymology:wikidata": "Q662961", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1245214, 46.0588207], [11.1245782, 46.0588068], [11.1249528, 46.0588566]]}}

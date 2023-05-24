@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 122103281, "tags": {"highway": "tertiary", "maxspeed": "30", "name": "Via delle Masere", "surface": "cobblestone", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.107918, 46.0377294], [11.1080324, 46.0377601]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 574537083, "tags": {"access": "destination", "bicycle": "yes", "foot": "yes", "highway": "residential", "name": "Via Santa Maria Maddalena", "oneway:bicycle": "no", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1259038, 46.0689309], [11.1259214, 46.068792]]}}

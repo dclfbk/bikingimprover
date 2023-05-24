@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 227756252, "tags": {"cycleway": "separate", "highway": "unclassified", "lane_markings": "no", "maxspeed:type": "IT:urban", "name": "Via Clementino Vannetti", "oneway": "yes", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1229763, 46.0741923], [11.1230689, 46.0742975]]}}

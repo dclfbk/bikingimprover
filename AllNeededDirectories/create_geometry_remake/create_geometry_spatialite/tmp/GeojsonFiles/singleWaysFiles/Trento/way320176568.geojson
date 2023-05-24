@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 320176568, "tags": {"highway": "unclassified", "lit": "yes", "maxspeed": "40", "maxweight": "18", "name": "Via Znojmo", "sidewalk": "right", "surface": "asphalt", "traffic_calming": "bump"}}, "geometry": {"type": "LineString", "coordinates": [[11.1491581, 46.0511819], [11.1490981, 46.0511219], [11.1490759, 46.0510561]]}}

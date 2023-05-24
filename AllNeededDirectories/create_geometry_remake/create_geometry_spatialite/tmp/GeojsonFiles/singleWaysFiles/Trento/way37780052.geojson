@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37780052, "tags": {"cycleway:both": "no", "highway": "unclassified", "lane_markings": "no", "name": "Via Martino Aichner", "sidewalk": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1034669, 46.1017633], [11.1035566, 46.1016486], [11.1037023, 46.1014623]]}}

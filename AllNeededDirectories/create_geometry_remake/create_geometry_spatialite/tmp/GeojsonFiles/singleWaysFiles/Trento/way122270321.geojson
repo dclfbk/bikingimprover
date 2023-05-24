@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 122270321, "tags": {"highway": "pedestrian", "lit": "no", "name": "Via della Mostra", "oneway": "yes", "oneway:bicycle": "no", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1260753, 46.0704021], [11.1260668, 46.0704251], [11.1259825, 46.0706554], [11.1259603, 46.070826]]}}

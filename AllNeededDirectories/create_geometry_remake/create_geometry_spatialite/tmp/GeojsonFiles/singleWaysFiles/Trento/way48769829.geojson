@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 48769829, "tags": {"bicycle": "yes", "highway": "pedestrian", "lit": "yes", "name": "Via del Simonino", "oneway": "yes", "oneway:bicycle": "no", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1238337, 46.0682805], [11.1237325, 46.0688864], [11.1237112, 46.0690525]]}}

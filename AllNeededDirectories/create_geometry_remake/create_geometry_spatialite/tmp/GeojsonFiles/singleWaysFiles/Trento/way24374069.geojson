@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24374069, "tags": {"cycleway:both": "no", "highway": "residential", "lit": "no", "maxspeed:type": "IT:urban", "name": "Via di Pietrastretta", "sidewalk": "none", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1256074, 46.0753545], [11.1254565, 46.076143]]}}

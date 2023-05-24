@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 198343645, "tags": {"highway": "residential", "lit": "yes", "name": "Via Nuova", "oneway": "yes", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.0448809, 46.0821757], [11.0450126, 46.0820487]]}}

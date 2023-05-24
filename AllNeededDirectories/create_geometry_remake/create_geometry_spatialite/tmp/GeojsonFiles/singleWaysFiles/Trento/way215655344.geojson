@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 215655344, "tags": {"bridge": "yes", "highway": "unclassified", "layer": "1", "maxspeed": "30", "name": "Via Santi Cosma e Damiano", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1017293, 46.0825256], [11.1018111, 46.082467]]}}

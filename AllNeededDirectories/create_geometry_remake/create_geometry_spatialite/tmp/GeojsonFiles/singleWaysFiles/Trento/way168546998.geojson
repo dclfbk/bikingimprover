@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 168546998, "tags": {"cycleway:both": "no", "highway": "tertiary", "lanes": "2", "lit": "yes", "maxspeed": "40", "maxspeed:type": "sign", "name": "Lungadige Giacomo Leopardi", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1163828, 46.0709016], [11.1161716, 46.0704644]]}}

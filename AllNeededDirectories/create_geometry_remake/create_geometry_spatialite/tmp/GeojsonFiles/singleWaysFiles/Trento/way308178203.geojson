@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 308178203, "tags": {"cycleway:both": "no", "highway": "tertiary", "lanes": "2", "lit": "yes", "maxspeed": "50", "name": "Via della Cervara", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1280032, 46.0700827], [11.1279812, 46.0699935], [11.1279639, 46.0699423]]}}

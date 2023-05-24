@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 284395953, "tags": {"access": "private", "highway": "residential", "horse": "no", "maxspeed": "20", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1355107, 46.0751179], [11.1356153, 46.0751217], [11.1357682, 46.0751235], [11.1359184, 46.0750547], [11.1364575, 46.0747458]]}}

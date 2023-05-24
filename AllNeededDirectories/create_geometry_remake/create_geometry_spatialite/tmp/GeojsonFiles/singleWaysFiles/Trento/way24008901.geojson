@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24008901, "tags": {"highway": "unclassified", "lane_markings": "no", "maxspeed": "30", "name": "Via alle R\u00f2ste", "oneway": "alternating", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0970455, 46.1266559], [11.0971051, 46.1266911], [11.0987002, 46.1276339], [11.0987965, 46.1276894]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 278036469, "tags": {"highway": "secondary", "maxspeed": "50", "name": "Via di San Vincenzo", "old_ref": "SS12", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1317373, 46.0140362], [11.1317551, 46.0140976], [11.1318815, 46.0143645]]}}

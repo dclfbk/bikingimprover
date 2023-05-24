@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 483221987, "tags": {"cycleway:right": "no", "foot": "no", "highway": "tertiary", "name": "Via Caduti di Nassirya", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1146727, 46.0841842], [11.1146424, 46.0841794], [11.1145433, 46.0841696]]}}

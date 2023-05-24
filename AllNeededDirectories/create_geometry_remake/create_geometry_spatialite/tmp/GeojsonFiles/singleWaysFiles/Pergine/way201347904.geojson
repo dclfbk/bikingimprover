@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 201347904, "tags": {"highway": "service", "lanes": "1", "level": "0", "oneway": "yes", "service": "parking_aisle", "surface": "paved"}}, "geometry": {"type": "LineString", "coordinates": [[11.222239, 46.0678095], [11.2221552, 46.0677575], [11.2220843, 46.0677099], [11.2223904, 46.0674755], [11.2225377, 46.0675709]]}}

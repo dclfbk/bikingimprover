@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 80375822, "tags": {"cycleway:right": "no", "highway": "secondary", "lanes": "2", "maxspeed": "50", "name": "Via del Brennero", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1142955, 46.0936246], [11.1138146, 46.0944433], [11.1137126, 46.0946241]]}}

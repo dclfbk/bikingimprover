@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 75118983, "tags": {"cycleway:right": "no", "highway": "unclassified", "name": "Via 4 Novembre (1918)", "oneway": "yes", "short_name": "Via 4 Novembre", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1139154, 46.096418], [11.1139133, 46.0964798], [11.1139568, 46.0966369]]}}

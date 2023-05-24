@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25703453, "tags": {"cycleway:both": "no", "highway": "residential", "maxspeed:type": "IT:urban", "name": "Via Ravenna", "sidewalk": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1352734, 46.0606667], [11.135307, 46.0606682], [11.1353489, 46.0606685], [11.1368309, 46.0606568]]}}

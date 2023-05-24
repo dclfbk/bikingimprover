@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 574537079, "tags": {"bicycle": "yes", "highway": "pedestrian", "lit": "yes", "name": "Via degli Orbi", "oneway:bicycle": "no", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1247791, 46.0683737], [11.1247826, 46.0683518]]}}

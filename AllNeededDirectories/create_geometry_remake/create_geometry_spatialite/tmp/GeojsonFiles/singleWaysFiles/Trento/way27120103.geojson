@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 27120103, "tags": {"highway": "residential", "lit": "yes", "name": "Via Giuseppe Verdi", "parking:lane:both": "no_parking", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1154948, 46.0663317], [11.1145588, 46.0662443], [11.114379, 46.0662275]]}}

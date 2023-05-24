@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 78461182, "tags": {"highway": "tertiary", "maxspeed": "50", "name": "Via Ergisto Bezzi", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.119327, 46.0578329], [11.1193788, 46.0578523], [11.1194144, 46.057893], [11.1194141, 46.0579751]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 387147793, "tags": {"foot": "yes", "highway": "track", "horse": "yes", "name": "Via dei Salesadi", "tracktype": "grade1"}}, "geometry": {"type": "LineString", "coordinates": [[11.2525195, 46.0758412], [11.2523388, 46.0758966], [11.2519108, 46.0759023], [11.251845, 46.0759236], [11.2518214, 46.0759625]]}}

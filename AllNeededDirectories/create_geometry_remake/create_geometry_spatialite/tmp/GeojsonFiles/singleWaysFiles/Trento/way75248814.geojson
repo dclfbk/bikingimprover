@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 75248814, "tags": {"highway": "tertiary", "maxspeed": "30", "name": "Via Gocciadoro", "oneway": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1361049, 46.0536763], [11.1362003, 46.0536958], [11.1363339, 46.0536954], [11.1364894, 46.0536879]]}}

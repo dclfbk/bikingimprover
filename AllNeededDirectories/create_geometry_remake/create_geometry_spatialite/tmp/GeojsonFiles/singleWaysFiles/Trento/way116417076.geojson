@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 116417076, "tags": {"highway": "service", "parking:lane:both": "no_parking", "service": "driveway"}}, "geometry": {"type": "LineString", "coordinates": [[11.1195479, 46.0705531], [11.119458, 46.0705576], [11.1194097, 46.070553], [11.1192108, 46.0705023]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24845005, "tags": {"bridge": "yes", "highway": "secondary", "layer": "1", "name": "Via Pinetana", "ref": "SP83", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2121631, 46.1015452], [11.2120837, 46.1017197], [11.2118761, 46.1018968], [11.2117653, 46.1019657]]}}

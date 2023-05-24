@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 983864859, "tags": {"bicycle": "yes", "highway": "trunk_link", "maxspeed": "50", "oneway": "yes", "source:maxspeed": "IT:urban"}}, "geometry": {"type": "LineString", "coordinates": [[11.2350824, 46.0502889], [11.2350768, 46.0503708], [11.2350686, 46.0504899], [11.2350066, 46.051375], [11.2350012, 46.0514527]]}}

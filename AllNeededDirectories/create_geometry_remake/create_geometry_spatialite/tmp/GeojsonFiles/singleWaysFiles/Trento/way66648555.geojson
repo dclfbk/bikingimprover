@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 66648555, "tags": {"handrail": "no", "highway": "steps", "incline": "up", "lit": "yes", "ramp": "no", "step_count": "11", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1254911, 46.0634979], [11.1256223, 46.0635187]]}}

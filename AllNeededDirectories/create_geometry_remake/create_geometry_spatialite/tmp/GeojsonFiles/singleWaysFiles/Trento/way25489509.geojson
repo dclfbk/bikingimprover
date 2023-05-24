@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25489509, "tags": {"bridge": "yes", "highway": "tertiary", "layer": "1", "name": "Via Alcide De Gasperi", "name:etymology:wikidata": "Q153832", "short_name": "Via Degasperi", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1207456, 46.052775], [11.1209947, 46.0527799]]}}

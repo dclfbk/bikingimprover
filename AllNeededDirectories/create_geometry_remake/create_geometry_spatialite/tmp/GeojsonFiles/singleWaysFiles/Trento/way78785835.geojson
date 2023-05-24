@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 78785835, "tags": {"highway": "residential", "lanes": "1", "maxheight": "default", "name": "Via San Giovanni", "oneway": "yes", "oneway:bicycle": "no", "surface": "cobblestone", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1191438, 46.0687869], [11.1191393, 46.0688371]]}}

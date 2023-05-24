@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24443833, "tags": {"access": "yes", "bicycle": "yes", "foot": "yes", "highway": "residential", "name": "Via Cauriol", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1218071, 46.0548991], [11.1216316, 46.0548833], [11.1211337, 46.0548384], [11.1205118, 46.0547926], [11.1204256, 46.0547863]]}}

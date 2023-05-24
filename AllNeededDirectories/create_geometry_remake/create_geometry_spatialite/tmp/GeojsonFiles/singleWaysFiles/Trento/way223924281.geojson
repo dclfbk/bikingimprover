@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 223924281, "tags": {"highway": "unclassified", "lane_markings": "no", "name": "Via del Brennero", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1195215, 46.0843255], [11.1195675, 46.0842776], [11.119621, 46.0842462], [11.1196725, 46.0842384], [11.1197809, 46.0842526]]}}

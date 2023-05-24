@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 80563059, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Galleria Giuseppe Garbari", "oneway:bicycle": "no", "smoothness": "excellent", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1233766, 46.0698326], [11.1233763, 46.0698524]]}}

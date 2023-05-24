@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 22327493, "tags": {"highway": "secondary", "maxspeed": "50", "name": "Via Nazionale", "old_ref": "SS12", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.131308, 46.0134075], [11.1314927, 46.0136392], [11.1315994, 46.0138022], [11.1316586, 46.0138848]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37681576, "tags": {"highway": "residential", "name": "Via Alcide De Gasperi", "name:etymology:wikidata": "Q153832", "oneway": "yes", "short_name": "Via Degasperi", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1250867, 46.050133], [11.1244619, 46.050088], [11.1243452, 46.0500701]]}}

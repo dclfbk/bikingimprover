@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 260532242, "tags": {"highway": "secondary", "lanes": "2", "name": "Via Francesco Barbacovi", "name:etymology:wikidata": "Q3750797", "oneway": "yes", "surface": "asphalt", "turn:lanes": "left|right"}}, "geometry": {"type": "LineString", "coordinates": [[11.1310352, 46.0642556], [11.1311699, 46.0642586]]}}

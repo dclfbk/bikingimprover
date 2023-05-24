@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25722333, "tags": {"cycleway:right": "no", "highway": "secondary", "lane_markings": "no", "name": "Via al Pasiel", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0693406, 46.0856338], [11.0694349, 46.0856255], [11.069517, 46.0855981]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 789024281, "tags": {"access": "private", "highway": "service", "service": "driveway", "surface": "gravel"}}, "geometry": {"type": "LineString", "coordinates": [[11.1691241, 46.0781025], [11.1691911, 46.0781167], [11.1692514, 46.0781102], [11.1693024, 46.0780833], [11.1693594, 46.078046], [11.1693909, 46.0780074]]}}

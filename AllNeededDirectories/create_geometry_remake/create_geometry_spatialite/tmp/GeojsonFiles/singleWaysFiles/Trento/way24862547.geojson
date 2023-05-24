@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24862547, "tags": {"foot": "yes", "highway": "pedestrian", "lit": "yes", "name": "Ponte Lodovico", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1401675, 46.0690754], [11.14025, 46.0690425], [11.1403238, 46.0689971]]}}

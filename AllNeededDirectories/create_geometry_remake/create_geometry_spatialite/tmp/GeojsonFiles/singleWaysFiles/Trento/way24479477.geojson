@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 24479477, "tags": {"highway": "secondary", "lanes": "2", "lit": "yes", "maxspeed": "50", "name": "Via Francesco Petrarca", "oneway": "yes", "source:maxspeed": "sign", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234231, 46.0753436], [11.1236098, 46.0752223], [11.1236665, 46.0751869]]}}

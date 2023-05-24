@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 122270346, "tags": {"bicycle": "dismount", "handrail": "no", "highway": "steps", "incline": "up", "lit": "yes", "ramp": "no", "step_count": "9", "surface": "paving_stones", "width": "2.5"}}, "geometry": {"type": "LineString", "coordinates": [[11.1309533, 46.0715335], [11.1310003, 46.0715423]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 140246153, "tags": {"access": "private", "highway": "residential", "maxspeed": "20", "name": "Via Antonio Tambosi", "oneway": "no", "short_name": "Via Tambosi"}}, "geometry": {"type": "LineString", "coordinates": [[11.1422637, 46.04591], [11.1421805, 46.0457145]]}}

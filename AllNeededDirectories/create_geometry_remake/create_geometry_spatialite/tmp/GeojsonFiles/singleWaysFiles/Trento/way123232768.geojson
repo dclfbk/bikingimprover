@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 123232768, "tags": {"access": "private", "highway": "residential", "name": "Via Antonio Tambosi"}}, "geometry": {"type": "LineString", "coordinates": [[11.1414508, 46.0456723], [11.1414662, 46.0457217], [11.1414918, 46.0457641]]}}

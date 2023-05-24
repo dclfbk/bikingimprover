@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 23762742, "tags": {"access": "destination", "bicycle": "yes", "foot": "yes", "highway": "residential", "lanes": "1", "name": "Largo Giosu\u00e8 Carducci", "oneway": "yes", "oneway:bicycle": "no", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1252392, 46.0683737], [11.1247826, 46.0683518]]}}

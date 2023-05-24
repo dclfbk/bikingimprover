@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 818053468, "tags": {"highway": "residential", "lanes": "1", "maxspeed": "20", "name": "Via della Cervara", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1280282, 46.0751899], [11.1278491, 46.0754518], [11.1277337, 46.0756162], [11.1274289, 46.0759699]]}}

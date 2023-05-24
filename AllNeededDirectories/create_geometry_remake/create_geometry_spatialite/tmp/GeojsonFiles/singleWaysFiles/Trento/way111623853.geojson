@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 111623853, "tags": {"highway": "tertiary", "oneway": "yes", "parking:lane:both": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1154854, 46.0466653], [11.1154042, 46.0465858], [11.1153215, 46.0465382], [11.1151682, 46.0464777]]}}

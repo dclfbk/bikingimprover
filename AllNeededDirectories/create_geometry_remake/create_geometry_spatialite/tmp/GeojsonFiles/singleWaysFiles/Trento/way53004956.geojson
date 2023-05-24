@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 53004956, "tags": {"cycleway:right": "no", "highway": "tertiary", "junction": "roundabout", "lane_markings": "no", "name": "Via di Spini", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0971461, 46.1188502], [11.0970649, 46.1188281], [11.096978, 46.1187604], [11.0969556, 46.1186849]]}}

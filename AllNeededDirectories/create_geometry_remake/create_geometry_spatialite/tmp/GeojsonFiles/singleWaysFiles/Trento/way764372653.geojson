@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 764372653, "tags": {"access": "permissive", "highway": "service", "maxspeed": "10", "motor_vehicle": "private", "service": "driveway"}}, "geometry": {"type": "LineString", "coordinates": [[11.1308898, 46.0105696], [11.1304965, 46.0097295]]}}

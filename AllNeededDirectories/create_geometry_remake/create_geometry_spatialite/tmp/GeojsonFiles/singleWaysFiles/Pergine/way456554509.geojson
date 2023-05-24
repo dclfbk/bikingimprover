@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 456554509, "tags": {"highway": "service", "oneway": "yes", "service": "driveway"}}, "geometry": {"type": "LineString", "coordinates": [[11.2372445, 46.0568616], [11.2371355, 46.0568581], [11.2370462, 46.056855]]}}

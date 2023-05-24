@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 960756545, "tags": {"access": "no", "hgv": "no", "highway": "service", "maxspeed": "40", "name": "Strada dei Crozi", "oneway": "yes", "surface": "asphalt", "trailer": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1758177, 46.0824096], [11.1760814, 46.0825402], [11.1781851, 46.0829847]]}}

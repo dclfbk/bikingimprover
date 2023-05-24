@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 307004701, "tags": {"highway": "tertiary", "name": "Via Alcide De Gasperi", "oneway": "yes", "short_name": "Via Degasperi", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1193932, 46.052634], [11.1195698, 46.0526507], [11.1197858, 46.0526704], [11.119968, 46.0526881]]}}

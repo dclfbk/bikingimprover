@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 45771981, "tags": {"highway": "residential", "layer": "-1", "name": "Via Dante Sartori", "short_name": "Via Sartori", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1400683, 46.0543987], [11.1402559, 46.0543174]]}}

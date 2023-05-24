@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 331285665, "tags": {"highway": "secondary", "lane_markings": "no", "maxspeed": "50", "oneway": "yes", "ref": "SP8", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2486655, 46.0654118], [11.2488662, 46.0653432]]}}

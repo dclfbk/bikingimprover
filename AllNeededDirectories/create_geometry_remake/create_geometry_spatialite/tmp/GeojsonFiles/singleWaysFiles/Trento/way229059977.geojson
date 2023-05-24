@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 229059977, "tags": {"cycleway:right": "no", "highway": "tertiary", "lane_markings": "no", "name": "Strada di Cadine", "old_ref": "SS45bis", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0689898, 46.0859756], [11.0690197, 46.0858774], [11.0690257, 46.0857829]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 109372515, "tags": {"foot": "yes", "highway": "secondary", "name": "Via Benedetto Giovanelli", "oneway": "yes", "segregated": "no", "short_name": "Via Giovannelli", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1317155, 46.0652976], [11.1317282, 46.0653171]]}}

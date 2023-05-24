@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37673565, "tags": {"highway": "residential", "maxspeed": "30", "name": "Via Guglielmo Ranzi", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1342052, 46.0574286], [11.1342209, 46.057506], [11.1345826, 46.0583823], [11.1346079, 46.0584467]]}}

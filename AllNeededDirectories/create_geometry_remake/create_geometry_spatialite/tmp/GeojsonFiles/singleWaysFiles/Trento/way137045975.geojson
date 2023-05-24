@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 137045975, "tags": {"highway": "pedestrian", "name": "Vicolo Lodovico Niccolini", "short_name": "Vicolo Niccolini", "surface": "sett", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1245189, 46.0668743], [11.1245074, 46.06691]]}}

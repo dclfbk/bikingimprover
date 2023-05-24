@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 151330865, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Vicolo Galasso", "oneway:bicycle": "no", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1224352, 46.0701178], [11.1223761, 46.0702919], [11.1222828, 46.0704265], [11.1222553, 46.0704658]]}}

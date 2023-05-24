@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 221904290, "tags": {"bridge": "yes", "cycleway:both": "no", "highway": "secondary", "lanes": "2", "layer": "1", "maxweight:signed": "no", "name": "Strada per Calceranica", "ref": "SP1", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2295543, 46.0296063], [11.2295531, 46.0298205]]}}

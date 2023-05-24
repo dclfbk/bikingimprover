@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 706378905, "tags": {"departures_board": "realtime", "highway": "footway", "public_transport": "platform", "railway": "platform", "ref": "2;3"}}, "geometry": {"type": "LineString", "coordinates": [[11.1205351, 46.0740832], [11.1212498, 46.0751341]]}}

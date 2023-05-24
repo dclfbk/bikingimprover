@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 775625760, "tags": {"highway": "tertiary", "lanes": "1", "lit": "yes", "maxspeed": "40", "name": "Lungadige San Nicol\u00f2", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1140424, 46.0703197], [11.1140687, 46.0702124], [11.11407, 46.0701874], [11.1140767, 46.0700677]]}}

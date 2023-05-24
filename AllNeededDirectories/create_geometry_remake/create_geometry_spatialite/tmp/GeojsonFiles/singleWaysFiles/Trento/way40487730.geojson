@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 40487730, "tags": {"cycleway:right": "no", "highway": "unclassified", "lane_markings": "no", "name": "Via dei Giardini", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1366195, 46.0736938], [11.1366945, 46.074007], [11.1366833, 46.0740433]]}}

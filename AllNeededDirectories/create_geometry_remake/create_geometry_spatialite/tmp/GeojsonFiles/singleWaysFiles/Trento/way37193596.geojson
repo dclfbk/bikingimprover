@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 37193596, "tags": {"highway": "residential", "layer": "-1", "maxheight": "1.85", "maxspeed": "10", "maxwidth": "2.5", "name": "Via Aeroporto", "priority": "backward", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.1089157, 46.1080632], [11.1086626, 46.108041]]}}

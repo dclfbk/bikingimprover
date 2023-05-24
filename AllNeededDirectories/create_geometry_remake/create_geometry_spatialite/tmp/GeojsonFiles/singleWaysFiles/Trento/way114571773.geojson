@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 114571773, "tags": {"cycleway:both": "no", "highway": "unclassified", "lane_markings": "no", "name": "Via Soprasasso", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1082867, 46.1077081], [11.1082968, 46.1076806], [11.1085381, 46.1070254], [11.1088453, 46.1061478], [11.1088594, 46.1061056]]}}

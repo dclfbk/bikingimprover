@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 42028965, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Via Roma", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2394116, 46.0595798], [11.239705, 46.0599177], [11.2400399, 46.0602601], [11.2401168, 46.060335]]}}

@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 69895397, "tags": {"access": "no", "bicycle": "yes", "foot": "yes", "highway": "residential", "name": "Via dei pescatori"}}, "geometry": {"type": "LineString", "coordinates": [[11.2349379, 46.0365536], [11.2346718, 46.0365264], [11.2344845, 46.0365373], [11.2342968, 46.036623], [11.2341369, 46.0367117]]}}

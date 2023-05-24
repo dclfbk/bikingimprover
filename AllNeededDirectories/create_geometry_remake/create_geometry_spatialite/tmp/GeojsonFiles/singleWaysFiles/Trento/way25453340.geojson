@@ -1,0 +1,1 @@
+{"type": "Feature", "properties": {"type": "way", "id": 25453340, "tags": {"highway": "residential", "name": "Via Giulio Catoni", "old_name": "Via Garibaldi", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1272679, 46.0053558], [11.127277, 46.0054413], [11.1273164, 46.0056821]]}}
