@@ -1,6 +1,7 @@
 ```
 cd docker
 cp example.env .env
+cp web/auth0-conf.example.js web/auth0-conf.js
 
 docker compose --profile setup build
 # solo la prima volta
