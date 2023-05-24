@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 307263047, "tags": {"highway": "tertiary", "lanes": "1", "maxspeed": "50", "name": "Via Vittorio Veneto", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.119327, 46.0578329], [11.119394, 46.0578197], [11.1194503, 46.0577998]]}}

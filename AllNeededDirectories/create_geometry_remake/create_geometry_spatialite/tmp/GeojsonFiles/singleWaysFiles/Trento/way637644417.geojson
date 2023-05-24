@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 637644417, "tags": {"access": "private", "highway": "service", "maxheight": "below_default", "maxweightrating:hgv": "5", "service": "alley", "smoothness": "good", "surface": "asphalt", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1192188, 46.0762169], [11.1190974, 46.0762444]]}}

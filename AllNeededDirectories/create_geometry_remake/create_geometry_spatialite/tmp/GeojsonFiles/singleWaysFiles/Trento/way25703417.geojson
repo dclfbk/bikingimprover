@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 25703417, "tags": {"highway": "residential", "lit": "yes", "maxspeed:type": "IT:urban", "name": "Via Padova", "sidewalk": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1368275, 46.0611533], [11.1353505, 46.0611513], [11.1353225, 46.0611519], [11.1352937, 46.0611511]]}}

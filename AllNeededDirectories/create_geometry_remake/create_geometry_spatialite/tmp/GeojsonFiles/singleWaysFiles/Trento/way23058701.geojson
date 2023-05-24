@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 23058701, "tags": {"alt_name": "Via Filippo Manci", "highway": "residential", "lit": "yes", "maxspeed": "50", "maxspeed:type": "sign", "name": "Salita Filippo Manci", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1356027, 46.0652385], [11.1354971, 46.0651792], [11.1354434, 46.0651338]]}}

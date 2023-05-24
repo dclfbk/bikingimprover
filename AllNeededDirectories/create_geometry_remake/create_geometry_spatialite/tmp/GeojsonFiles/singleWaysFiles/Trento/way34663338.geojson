@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 34663338, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Via Giuseppe Verdi", "oneway": "yes", "oneway:bicycle": "no", "smoothness": "intermediate", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1210492, 46.0668711], [11.1206081, 46.0668286], [11.1201923, 46.0667748]]}}

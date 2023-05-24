@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 97004470, "tags": {"highway": "unclassified", "lane_markings": "no", "lit": "yes", "maxspeed": "40", "maxspeed:type": "IT:urban", "name": "Via Sommarive", "surface": "asphalt", "width": "7"}}, "geometry": {"type": "LineString", "coordinates": [[11.1504578, 46.0664484], [11.1504632, 46.0665992], [11.1504815, 46.0671207]]}}

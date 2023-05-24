@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 83054225, "tags": {"bicycle": "yes", "foot": "yes", "highway": "pedestrian", "motorcar": "no", "name": "Galleria Adria", "smoothness": "good", "surface": "paving_stones", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1229244, 46.0681832], [11.1229741, 46.0679498]]}}

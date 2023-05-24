@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 439875522, "tags": {"highway": "secondary", "maxspeed:type": "IT:urban", "name": "Viale Europa", "ref": "SP1"}}, "geometry": {"type": "LineString", "coordinates": [[11.2319737, 46.0378994], [11.23211, 46.0379878], [11.2337999, 46.0389167], [11.2338889, 46.0389656], [11.2347304, 46.0394433]]}}

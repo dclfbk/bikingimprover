@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 615468080, "tags": {"cycleway:both": "no", "highway": "tertiary", "lanes": "1", "lit": "yes", "maxspeed": "50", "name": "Via dell'Angi", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2322043, 46.0443917], [11.2322442, 46.044488]]}}

@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 369142209, "tags": {"cycleway:right": "separate", "highway": "secondary", "lanes": "1", "name": "Via dei Carpenedi", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1072621, 46.1145512], [11.1070623, 46.1144693], [11.1069311, 46.1144202]]}}

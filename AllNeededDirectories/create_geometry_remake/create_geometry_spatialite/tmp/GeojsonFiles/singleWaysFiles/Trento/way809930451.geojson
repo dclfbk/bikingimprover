@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 809930451, "tags": {"highway": "service", "maxspeed": "30", "name": "Via Guido Polo", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1031032, 46.0996755], [11.1029578, 46.0996946], [11.1030297, 46.1001813]]}}

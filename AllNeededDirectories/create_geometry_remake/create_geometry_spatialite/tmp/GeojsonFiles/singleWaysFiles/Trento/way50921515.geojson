@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 50921515, "tags": {"highway": "tertiary", "lanes": "2", "lit": "yes", "maxspeed": "50", "name": "Via di Spini", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0892905, 46.1158421], [11.0893534, 46.115866], [11.0903616, 46.1162491]]}}

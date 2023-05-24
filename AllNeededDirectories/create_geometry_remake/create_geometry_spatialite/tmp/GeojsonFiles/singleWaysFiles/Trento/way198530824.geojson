@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 198530824, "tags": {"highway": "tertiary", "lanes": "2", "name": "Piazza Dante", "oneway": "yes", "parking:lane:both": "no_parking", "sidewalk:both": "separate", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1196289, 46.0706473], [11.1196538, 46.0705516]]}}

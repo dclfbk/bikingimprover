@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24479775, "tags": {"cycleway:right": "no", "highway": "tertiary", "name": "Via Ezio Maccani", "oneway": "yes", "short_name": "Via Maccani", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1133661, 46.0846432], [11.1134435, 46.0844274], [11.1134564, 46.0842999], [11.1134189, 46.0841648]]}}

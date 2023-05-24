@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 77356695, "tags": {"handrail": "yes", "highway": "steps", "incline": "down", "lit": "yes", "name": "Salita Giangrisostomo Tovazzi", "ramp": "yes", "ramp:wheelchair": "yes", "step_count": "5", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1362363, 46.0662916], [11.1362447, 46.0663071]]}}

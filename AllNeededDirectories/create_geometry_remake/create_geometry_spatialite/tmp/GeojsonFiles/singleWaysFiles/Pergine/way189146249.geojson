@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 189146249, "tags": {"highway": "service", "lanes": "1", "maxspeed": "20", "maxspeed:advisory": "20", "oneway": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.2402166, 46.0669212], [11.2412579, 46.067449], [11.2415206, 46.0675933], [11.2419201, 46.0679901], [11.2421911, 46.0681838], [11.2421829, 46.0683072]]}}

@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 50921513, "tags": {"highway": "tertiary", "lanes": "2", "layer": "-1", "lit": "yes", "maxheight": "default", "maxspeed": "50", "name": "Via di Spini", "shoulder": "no", "surface": "asphalt", "tunnel": "yes"}}, "geometry": {"type": "LineString", "coordinates": [[11.0903616, 46.1162491], [11.091053, 46.1165117]]}}

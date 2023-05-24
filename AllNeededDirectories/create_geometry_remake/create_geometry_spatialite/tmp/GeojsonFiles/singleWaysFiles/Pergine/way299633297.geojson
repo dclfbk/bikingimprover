@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 299633297, "tags": {"highway": "residential", "incline": "up", "mtb:scale": "0", "mtb:scale:uphill": "3", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.2472217, 46.0358977], [11.2475505, 46.0358641], [11.2477651, 46.0355737], [11.2483337, 46.0351268]]}}

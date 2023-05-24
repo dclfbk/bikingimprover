@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 276295116, "tags": {"bridge": "yes", "cycleway:both": "no", "highway": "tertiary", "layer": "1", "maxweight": "18", "name": "Via della Gotarda", "oneway": "no", "ref": "SP21", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1222535, 46.0096022], [11.1235385, 46.0095927]]}}

@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 559255065, "tags": {"bicycle": "designated", "highway": "residential", "lit": "yes", "maxheight": "2.6", "maxwidth": "4", "name": "Via di Mezzo Lago", "sidewalk": "none", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2307122, 46.0265293], [11.2306948, 46.0265523], [11.2305144, 46.0266924]]}}

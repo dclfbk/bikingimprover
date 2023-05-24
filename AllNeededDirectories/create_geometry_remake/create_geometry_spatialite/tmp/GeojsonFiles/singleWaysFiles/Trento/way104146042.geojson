@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 104146042, "tags": {"handrail": "yes", "highway": "steps", "incline": "up", "name": "Salita Sodegerio da Tito", "ramp": "no", "step_count": "14", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1277738, 46.0723644], [11.1279287, 46.0724356], [11.1280155, 46.0724701]]}}

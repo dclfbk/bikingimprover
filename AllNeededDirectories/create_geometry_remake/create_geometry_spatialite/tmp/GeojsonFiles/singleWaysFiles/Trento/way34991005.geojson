@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 34991005, "tags": {"access": "permissive", "bicycle": "yes", "bridge": "yes", "foot": "yes", "highway": "service", "layer": "1", "maxweight": "12", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.0915253, 46.1008507], [11.0924469, 46.101194]]}}

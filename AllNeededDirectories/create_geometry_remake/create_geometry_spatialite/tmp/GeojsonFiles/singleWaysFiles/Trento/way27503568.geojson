@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 27503568, "tags": {"highway": "secondary", "lanes": "2", "maxspeed": "50", "name": "Piazza Centa", "oneway": "yes", "source:maxspeed": "sign", "surface": "paved"}}, "geometry": {"type": "LineString", "coordinates": [[11.123859, 46.0754451], [11.1239321, 46.075552], [11.1240326, 46.0757173]]}}

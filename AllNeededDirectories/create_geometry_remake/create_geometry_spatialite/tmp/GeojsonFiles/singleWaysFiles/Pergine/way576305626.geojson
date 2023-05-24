@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 576305626, "tags": {"cycleway:both": "no", "highway": "secondary", "maxspeed:type": "IT:urban", "name": "Viale Dante", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.2278723, 46.0661109], [11.2277786, 46.0661708], [11.2269596, 46.0667285], [11.2266754, 46.066922]]}}

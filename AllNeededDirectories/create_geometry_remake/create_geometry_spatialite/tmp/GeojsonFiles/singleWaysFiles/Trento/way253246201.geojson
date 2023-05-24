@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 253246201, "tags": {"highway": "tertiary", "lane_markings": "no", "maxspeed": "50", "name": "Via Roberto da Sanseverino", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1129292, 46.0625987], [11.1128698, 46.0624835], [11.1128368, 46.0623764], [11.1128048, 46.0623039]]}}

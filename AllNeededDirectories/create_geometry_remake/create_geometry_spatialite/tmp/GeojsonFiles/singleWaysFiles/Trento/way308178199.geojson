@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 308178199, "tags": {"cycleway:both": "no", "highway": "tertiary", "lanes": "2", "lit": "yes", "maxspeed": "50", "name": "Piazza Venezia", "sidewalk": "both", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1279639, 46.0699423], [11.1279528, 46.0699096], [11.1279172, 46.0698332]]}}

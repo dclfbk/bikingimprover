@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 308178210, "tags": {"bench": "yes", "bin": "yes", "highway": "platform", "lit": "yes", "public_transport": "platform", "shelter": "yes", "surface": "sett", "tactile_paving": "no"}}, "geometry": {"type": "LineString", "coordinates": [[11.1279584, 46.0695764], [11.1279044, 46.0694831], [11.1278542, 46.0693964]]}}

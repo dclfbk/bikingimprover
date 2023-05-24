@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24915721, "tags": {"highway": "residential", "lanes": "2", "lit": "yes", "maxspeed": "30", "name": "Via Marsala", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1243945, 46.0558502], [11.1241068, 46.0555166], [11.1238593, 46.0552476], [11.123477, 46.0548328]]}}

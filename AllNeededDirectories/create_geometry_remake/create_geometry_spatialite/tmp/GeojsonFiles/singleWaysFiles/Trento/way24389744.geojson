@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24389744, "tags": {"highway": "secondary", "lanes": "2", "lit": "yes", "maxspeed:type": "IT:urban", "name": "Piazza Vicenza", "old_ref": "SS349", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1334447, 46.0617879], [11.1332358, 46.0619225]]}}

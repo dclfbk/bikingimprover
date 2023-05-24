@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 25459180, "tags": {"cycleway:right": "no", "highway": "unclassified", "maxspeed": "30", "name": "Via Giovanni Oberziner", "oneway": "yes", "zone:maxspeed": "IT:30"}}, "geometry": {"type": "LineString", "coordinates": [[11.1179101, 46.0792401], [11.1178033, 46.0790113]]}}

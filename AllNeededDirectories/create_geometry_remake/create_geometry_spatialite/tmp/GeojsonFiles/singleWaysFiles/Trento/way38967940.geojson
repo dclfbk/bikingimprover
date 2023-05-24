@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 38967940, "tags": {"highway": "unclassified", "maxheight": "1.9", "maxspeed": "30", "maxwidth": "2.3", "name": "Via alla Cascata", "oneway": "no", "priority": "forward", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1518722, 46.0735772], [11.1517746, 46.0736034]]}}

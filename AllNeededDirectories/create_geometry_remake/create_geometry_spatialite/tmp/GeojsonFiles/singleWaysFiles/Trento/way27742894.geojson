@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 27742894, "tags": {"highway": "residential", "lit": "yes", "maxspeed:type": "IT:urban", "name": "Via Antonio Gazzoletti", "oneway": "yes", "smoothness": "good", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.121522, 46.0720253], [11.1216036, 46.0719997], [11.122157, 46.0718194]]}}

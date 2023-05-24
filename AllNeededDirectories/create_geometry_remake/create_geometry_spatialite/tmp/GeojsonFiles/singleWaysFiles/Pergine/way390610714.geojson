@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 390610714, "tags": {"highway": "track", "mtb:scale": "2", "name": "10 giro del valar", "sac_scale": "mountain_hiking", "surface": "unpaved", "trail_visibility": "good", "width": "1"}}, "geometry": {"type": "LineString", "coordinates": [[11.2531689, 46.0620604], [11.2527073, 46.0621188], [11.2525608, 46.0621327]]}}

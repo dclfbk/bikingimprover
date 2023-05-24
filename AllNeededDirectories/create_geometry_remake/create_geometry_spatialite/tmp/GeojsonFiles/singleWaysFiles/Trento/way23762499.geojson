@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 23762499, "tags": {"bicycle": "yes", "highway": "pedestrian", "name": "Vicolo dei Dall'Armi", "oneway:bicycle": "no", "smoothness": "good", "surface": "paving_stones", "tunnel": "building_passage"}}, "geometry": {"type": "LineString", "coordinates": [[11.1222368, 46.0679122], [11.1222311, 46.0679766]]}}

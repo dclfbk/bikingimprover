@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 382958545, "tags": {"cycleway:both": "no", "highway": "residential", "maxspeed": "50", "name": "Via Sommarive", "source:maxspeed": "sign", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1505783, 46.0682774], [11.1504747, 46.0686009], [11.1502868, 46.0686584], [11.1502278, 46.0686882]]}}

@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24094901, "tags": {"bicycle": "yes", "highway": "pedestrian", "name": "Via San Vigilio", "oneway:bicycle": "no", "smoothness": "good", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1222948, 46.066779], [11.1223044, 46.066752]]}}

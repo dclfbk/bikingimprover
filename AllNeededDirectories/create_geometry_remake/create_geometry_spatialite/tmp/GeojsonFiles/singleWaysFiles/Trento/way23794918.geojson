@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 23794918, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Via Armando Diaz", "oneway": "yes", "smoothness": "good", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234339, 46.0690579], [11.1233576, 46.0690627]]}}

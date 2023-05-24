@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24771364, "tags": {"highway": "pedestrian", "lit": "yes", "name": "Piazza Cesare Battisti", "smoothness": "good", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1234228, 46.0694909], [11.1233818, 46.0694905], [11.1233815, 46.0695082], [11.1233813, 46.069525]]}}

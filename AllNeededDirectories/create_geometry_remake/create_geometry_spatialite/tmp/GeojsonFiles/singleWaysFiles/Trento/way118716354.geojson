@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 118716354, "tags": {"cycleway:right": "no", "highway": "tertiary", "lane_markings": "no", "name": "Via Vittorio de Riccabona", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1415769, 46.0420416], [11.1416796, 46.0420444], [11.1418054, 46.0420478]]}}

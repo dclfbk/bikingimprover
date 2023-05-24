@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 312760682, "tags": {"highway": "secondary_link", "lanes": "3", "lanes:backward": "1", "lanes:forward": "2", "maxspeed": "40", "oneway": "no", "turn:lanes:forward": "left|right"}}, "geometry": {"type": "LineString", "coordinates": [[11.1268426, 46.0807855], [11.1267752, 46.0808662], [11.1267307, 46.0808995]]}}

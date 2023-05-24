@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 215030168, "tags": {"foot": "no", "highway": "unclassified", "lane_markings": "no", "maxspeed:type": "IT:urban", "name": "Via Jacopo Aconcio", "oneway": "yes", "sidewalk": "no", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1230689, 46.0742975], [11.1231533, 46.0742723]]}}

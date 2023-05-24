@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 24479805, "tags": {"highway": "unclassified", "layer": "1", "maxspeed": "15", "maxspeed:type": "sign", "name": "Viale Trieste", "narrow": "yes", "oneway": "yes", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1357256, 46.0649644], [11.1357846, 46.0649292], [11.1358081, 46.0649149]]}}

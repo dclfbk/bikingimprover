@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 239981367, "tags": {"bicycle": "yes", "highway": "pedestrian", "lit": "yes", "motorcar": "yes", "name": "Via Rodolfo Belenzani", "smoothness": "intermediate", "surface": "paving_stones"}}, "geometry": {"type": "LineString", "coordinates": [[11.1211836, 46.0695158], [11.121237, 46.0695156], [11.1212758, 46.0695155]]}}

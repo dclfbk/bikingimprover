@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 23764020, "tags": {"bicycle": "yes", "foot": "yes", "highway": "pedestrian", "lit": "yes", "name": "Vicolo del Capitolo", "surface": "sett"}}, "geometry": {"type": "LineString", "coordinates": [[11.1224055, 46.0665144], [11.1221149, 46.0664798], [11.1220838, 46.066554], [11.1220404, 46.0665465]]}}

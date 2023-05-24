@@ -1,1 +1,0 @@
-{"type": "Feature", "properties": {"type": "way", "id": 43942188, "tags": {"highway": "tertiary", "lanes": "1", "name": "Via Brescia", "old_ref": "SS45bis", "oneway": "yes", "smoothness": "excellent", "surface": "asphalt"}}, "geometry": {"type": "LineString", "coordinates": [[11.1141614, 46.0705083], [11.1139855, 46.0705348], [11.1138293, 46.0705618]]}}
