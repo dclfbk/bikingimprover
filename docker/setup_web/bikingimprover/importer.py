@@ -5,6 +5,7 @@ import click
 import pandas as pd
 import sqlite3
 import os
+import shutil
 
 from bikingimprover.utils import createSingleGeojson, insertFieldCity, createTextFile
 
@@ -35,7 +36,7 @@ class BaseImporter:
       self.pbf_files = self.base_dir / 'pbfFiles'
       self.db_path = str(self.databases / 'applicationValid.db')
 
-      self.layer_names = self.pbf_files / "LayerNames"
+      self.layer_names = self.pbf_files / "LayersNames"
       self.pbf_center = self.pbf_files / "CenterGeojson"
       self.pbf_nodes = self.pbf_files / 'allNodesPbf'
       self.pbf_ways = self.pbf_files / 'allWaysPbf'
@@ -112,13 +113,13 @@ class BaseImporter:
         fileName = i.split('.',1)[0]
         insertFieldCity(fileName, str(self.center_way_points))
         fileName = fileName + "Center"
-        os.rename(str(self.center_way_points / i), str(self.center_gjson_path / (fileName + ".geojson")))
+        shutil.move(str(self.center_way_points / i), str(self.pbf_center / (fileName + ".geojson")))
 
-      cmd = f"geojson-merge {str(self.center_gjson_path)}/*.geojson > {str(self.pbf_center)}/allCenterPoints.geojson"
+      cmd = f"geojson-merge {str(self.pbf_center)}/*.geojson > {str(self.pbf_files)}/allCenterPoints.geojson"
       os.system(cmd)
 
-      # cmd = f"geojson-merge {str(self.out_node_path)}/*.geojson > {str(self.base_dir)}/allNodesGeojson.geojson"
-      # os.system(cmd)
+      cmd = f"geojson-merge {str(self.out_node_path)}/*.geojson > {str(self.pbf_files)}/allNodesGeojson.geojson"
+      os.system(cmd)
 
       #Create a pbf containing all the data of the ways and one containing all the data of the nodes
       cmd = f"tippecanoe -z20 -e {str(self.pbf_ways)} --drop-densest-as-needed --no-tile-compression {str(self.out_way_path)}/*.geojson"
