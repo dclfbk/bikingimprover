@@ -1,5 +1,10 @@
 FROM node:14
 
+RUN apt-get update && apt-get install --no-install-recommends -y \
+  sqlite3 libsqlite3-mod-spatialite libsqlite3-dev \
+  && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
+  && rm -rf /var/lib/apt/lists/*
+
 COPY AllNeededDirectories/bicycle-osm-app/package*.json ./
 
 # install project dependencies
@@ -9,7 +14,7 @@ WORKDIR /app
 
 # copy the entire app
 # TODO: specify which directories are actually needed
-COPY AllNeededDirectories/bicycle-osm-app/ ./
+COPY --chown=node:node AllNeededDirectories/bicycle-osm-app/ ./
 
 
 # build app for production with minification
@@ -17,8 +22,10 @@ COPY AllNeededDirectories/bicycle-osm-app/ ./
 #       at the moment frontend dependecies are installed also when using only the backend
 RUN npm run build
 
-COPY docker/web/entrypoint.sh /entrypoint
+COPY --chown=node:node docker/web/entrypoint.sh /entrypoint
 RUN chmod +x /entrypoint
+
+USER node
 
 EXPOSE 8080
 
