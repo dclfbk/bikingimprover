@@ -7,7 +7,7 @@ import pathlib
 
 if __name__ == '__main__':
   print('running setup of the gamification engine...')
-  HOST = os.environ.get('GAMIFICATION_URL')
+  HOST = os.environ.get('GAMIFICATION_LINK')
   USER = os.environ.get('ID_GAME_USER')
   PASS = os.environ.get('PW_GAME_ENGINE')
   BASIC = HTTPBasicAuth(USER, PASS)
