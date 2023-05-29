@@ -20,6 +20,7 @@ COPY --chown=node:node AllNeededDirectories/bicycle-osm-app/ ./
 # build app for production with minification
 # TODO: split frontend and backend to lighten the image sizes
 #       at the moment frontend dependecies are installed also when using only the backend
+RUN npm install
 RUN npm run build
 
 COPY --chown=node:node docker/web/entrypoint.sh /entrypoint

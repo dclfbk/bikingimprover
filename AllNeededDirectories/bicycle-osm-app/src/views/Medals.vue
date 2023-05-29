@@ -43,7 +43,7 @@ export default{
       if(this.$userData==null||this.$userData==undefined){
           console.log("NOT CREATED...");
           Vue.prototype.$userData = new UserData();
-          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url)).then(async items=>{
+          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi())).then(async items=>{
             console.log(items)
             await(this.updatePage(this.$userData)).then(items=>{
               items = this.sortByColor(items);
@@ -100,9 +100,10 @@ export default{
           //get all the badges with their description from the db.
           try{
             var my_url = this.$api_url + "/badgesTable/retrieve"
+            const jwtToken = await this.$auth.getTokenApi();
             const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
+            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
             body: JSON.stringify(my_body)
             };
             //console.log(requestSpatialite);
