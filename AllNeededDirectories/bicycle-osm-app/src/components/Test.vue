@@ -482,11 +482,12 @@ export default {
         "points" : my_score
       }
       console.log(my_body)
+      const jwtToken = await this.$auth.getTokenApi();
       try{
         const my_url = this.$api_url + "/missions/givePoint"
         const requestSpatialite = {
           method:"post",
-          headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
+          headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
           body: JSON.stringify(my_body),
         };
         //console.log(requestSpatialite);
@@ -533,11 +534,12 @@ export default {
       var my_body = {
         "tableName" : userName,
       }
+      const jwtToken = await this.$auth.getTokenApi();
       try{
         const my_url = this.$api_url + "/managePowerUps/retrieveAll"
         const requestSpatialite = {
           method:"post",
-          headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
+          headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
           body: JSON.stringify(my_body),
         };
         //console.log(requestSpatialite);

@@ -32,7 +32,7 @@ export default class UserData{
 
     //create the userData and update it with the data of the gamification engine
     //add the power up in the database
-    async createUser(userName,api_url){
+    async createUser(userName,api_url, token){
         this.userName = userName;
         var my_user = userName;
         //var my_user = "anothertrycomeone";
@@ -53,7 +53,7 @@ export default class UserData{
                     //this.createNewUser(my_user,api_url) 
                     console.log(new_response_data)
                     this.isNew = true;
-                    await (this.checkPowerUps(userName,api_url)).then(items=>{
+                    await (this.checkPowerUps(userName,api_url, token)).then(items=>{
                         console.log(items);
                         this.powerUps = items;
                     })
@@ -63,7 +63,7 @@ export default class UserData{
                     this.updateUserInfo(new_response_data)
                     console.log(new_response_data)
                     this.isNew = false;
-                    await (this.checkPowerUps(userName,api_url)).then(items=>{
+                    await (this.checkPowerUps(userName,api_url, token)).then(items=>{
                         console.log(items);
                         this.powerUps = items;
                     })
@@ -152,7 +152,7 @@ export default class UserData{
     }
 
     //get the power up of the userData with a call to the database
-    async checkPowerUps(userName,api_url){
+    async checkPowerUps(userName,api_url, token){
         console.log("USER SENT"+userName)
         var my_body = {
             "tableName" : userName,
@@ -161,7 +161,7 @@ export default class UserData{
             const my_url = api_url + "/managePowerUps/retrieveAll"
             const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
+            headers:{"Content-Type":"application/json", 'pw_token':token.access_token},
             body: JSON.stringify(my_body),
             };
             //console.log(requestSpatialite);
