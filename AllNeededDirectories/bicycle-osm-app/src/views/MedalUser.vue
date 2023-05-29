@@ -48,7 +48,7 @@ export default{
         this.showName = this.$route.params.showName
         if(this.$userInfo==null||this.$userInfo==undefined){
             //console.log("NOT CREATED...");
-            await(userStats.createUser(nickname,this.$api_url, this.$auth.getTokenApi()));
+            await(userStats.createUser(nickname,this.$api_url));
             await this.updatePage(userStats).then(items=>{
               console.log(items);
               this.my_badges = items
@@ -64,7 +64,7 @@ export default{
             }else{
                 //console.log("Not the same");
                 //console.log("nickname: " + nickname + "name: " + this.$userInfo.userName)
-                await(userStats.createUser(nickname,this.$api_url, this.$auth.getTokenApi()));
+                await(userStats.createUser(nickname,this.$api_url));
                 await this.updatePage(userStats).then(items=>{
                   items = this.sortByColor(items);
                   this.my_badges = items;
@@ -113,10 +113,9 @@ export default{
           //get all the badges with their description from the db
           try{
             var my_url = this.$api_url + "/badgesTable/retrieve"
-            const jwtToken = await this.$auth.getTokenApi()
             const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body: JSON.stringify(my_body)
             };
             //console.log(requestSpatialite);

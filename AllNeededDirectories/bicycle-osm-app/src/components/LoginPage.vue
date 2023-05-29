@@ -26,7 +26,7 @@ export default{
         if(this.$auth.isAuthenticated && (this.$userData==null||this.$userData==undefined)){
             console.log("CREO LO USER SU LOGIN PAGE");
             Vue.prototype.$userData = new UserData();
-            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi());
+            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url);
         }
     },
 
@@ -34,7 +34,7 @@ export default{
         if(this.$auth.isAuthenticated && (this.$userData==null||this.$userData==undefined) && this.$auth.user.nickname!=undefined){
             //console.log("UPDATING..." + this.$auth.user.nickname);
             Vue.prototype.$userData = new UserData();
-            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi());
+            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url);
         }
     },
     /* eslint-disable */

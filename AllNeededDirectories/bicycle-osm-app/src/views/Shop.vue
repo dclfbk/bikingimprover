@@ -135,7 +135,7 @@ export default{
     async mounted(){
        if(this.$userData==null||this.$userData==undefined){
           Vue.prototype.$userData = new UserData();
-          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi())).then(items=>{
+          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url)).then(items=>{
             this.my_money = this.$userData.gold;
             console.log(items)
           });
@@ -320,10 +320,9 @@ export default{
         }
         try{
           const my_url = this.$api_url + "/managePowerUps/buyPowerEngine"
-          const jwtToken = await this.$auth.getTokenApi()
           const requestSpatialite = {
             method: "post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body:JSON.stringify(my_body),
           }
           const fetchdata = await fetch(my_url, requestSpatialite)
@@ -348,10 +347,9 @@ export default{
         }
         try{
           const my_url = this.$api_url + "/managePowerUps/addFieldTable"
-          const jwtToken = await this.$auth.getTokenApi()
           const requestSpatialite = {
             method: "post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body:JSON.stringify(my_body),
           }
           const fetchdata = await fetch(my_url, requestSpatialite)

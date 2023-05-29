@@ -41,7 +41,7 @@
       if(this.$userData==null||this.$userData==undefined){
         //console.log("NOT CREATED...");
         Vue.prototype.$userData = new UserData();
-        await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi())).then(async items=>{
+        await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url)).then(async items=>{
           this.my_points = this.$userData.points;
           this.getRanking();
           console.log(items)
@@ -108,12 +108,11 @@
         var my_body = {
           "userName": userName
         }
-        const jwtToken = await this.$auth.getTokenApi();
         try{
           const my_url = this.$api_url + "/managePowerUps/createUserTable"
           const requestSpatialite = {
             method: "post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body: JSON.stringify(my_body)
           }
           const fetchdata = await fetch(my_url, requestSpatialite)
@@ -174,12 +173,11 @@
         "points" : full
         }
         console.log(my_body)
-        const jwtToken = await this.$auth.getTokenApi();
         try{
           const my_url = this.$api_url + "/missions/givePoint"
           const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':process.env.VUE_APP_REST_PASSWORD},
             body: JSON.stringify(my_body),
           };
           const fetchdata = await fetch(my_url, requestSpatialite)

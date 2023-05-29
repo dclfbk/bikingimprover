@@ -31,6 +31,6 @@ RUN mv datavolume/nodeLayers.txt /pbfFiles/LayersNames/nodeLayers.txt
 
 RUN rm -r datavolume 
 # build app for production with minification
-RUN 
+RUN npm run build
 EXPOSE 8080
 CMD ["npm", "start"]
