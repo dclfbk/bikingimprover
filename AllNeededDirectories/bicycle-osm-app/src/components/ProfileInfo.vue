@@ -181,7 +181,7 @@ export default{
         if(this.$userData==null||this.$userData==undefined){
             console.log("NOT CREATED...");
             Vue.prototype.$userData = new UserData();
-            await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url));
+            await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi()));
             this.updatePage(this.$userData);
         }else{
             this.updatePage(this.$userData);

@@ -7,7 +7,7 @@ services:
   mongo:
     image: mongo:3.6.2-jessie
     ports:
-      - 27017:27017
+      - 27015:27015
     volumes:
       - mongo-data:/data/db
 
