@@ -1,0 +1,100 @@
+name: CI
+
+on: push
+
+jobs:
+  build-webapp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - name: Set output
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT        
+      - name: 'Build Backend Image'
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          DOCKER_BUILDKIT=1 docker build . -f ./docker/web/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:latest
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:$GITHUB_SHA
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:$RELEASE_VERSION
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover:latest
+
+  build-webapp-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - name: Set output
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT        
+      - name: 'Build Backend Image'
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          docker build . -f ./docker/setup_web/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:latest
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:$GITHUB_SHA
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:$RELEASE_VERSION
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bikingimprover-setup:latest
+
+  build-gamification-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - name: Set output
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT        
+      - name: 'Build Backend Image'
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          DOCKER_BUILDKIT=1 docker build . -f ./docker/engine/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:latest
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:$GITHUB_SHA
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:$RELEASE_VERSION
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine:latest
+
+  build-gamification-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - name: Set output
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT        
+      - name: 'Build Backend Image'
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          docker build . -f ./docker/setup_web/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:latest
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$GITHUB_SHA
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$RELEASE_VERSION
+          docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:latest
