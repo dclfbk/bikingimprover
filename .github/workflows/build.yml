@@ -94,7 +94,7 @@ jobs:
         env:
           RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
         run: |
-          docker build . -f ./docker/setup_web/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:latest
+          docker build . -f ./docker/setup_gamification_engine/Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$GITHUB_SHA --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$RELEASE_VERSION --tag ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:latest
           docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$GITHUB_SHA
           docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:$RELEASE_VERSION
           docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gamification-engine-setup:latest
