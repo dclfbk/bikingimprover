@@ -8,6 +8,7 @@ import geopandas as gpd
 import sqlite3
 import pandas as pd
 import shutil
+import os
 
 from bikingimprover.importer import BaseImporter
 from bikingimprover.utils import (
@@ -380,38 +381,87 @@ class OSMImporter(BaseImporter):
   def create_database(self):
     click.echo(f'creating a database at {self.db_path}')
 
+    if(os.path.exists(self.db_path)):
+        databaseAlreadyExists = True
+    else:
+        databaseAlreadyExists = False
+
     for i in self.input_names:
-      my_data = pd.read_csv(f"{self.paths[i]['questions']}/wayQuestsNotSorted.csv", index_col=False, delimiter='|')
-      my_data = my_data.rename(columns={'NODE OR WAY':'TYPE'})#########
-      my_data.drop(my_data.columns.difference(['TYPE','QUESTION','ID','SCORE','VALIDATING','ANSWERS','ICON']), axis=1, inplace=True)
-      my_data["ANSWER"] = ""
-      my_data["USERANSWERED"] = ""
-      my_data["NUMBEROFVALIDATIONS"] = 0
-      my_data["USERSWHOVALIDATED"] = ""
+        my_data = pd.read_csv(f"{self.paths[i]['questions']}/wayQuestsNotSorted.csv", index_col=False, delimiter='|')
+        my_data = my_data.rename(columns={'NODE OR WAY':'TYPE'})#########
+        columns_to_drop = my_data.columns.difference(['TYPE','QUESTION','ID','SCORE','VALIDATING','ANSWERS','ICON', 'TAGANSWER'])
+        my_data.drop(columns_to_drop, axis=1, inplace=True)
+        my_data["ANSWER"] = ""
+        my_data["USERANSWERED"] = ""
+        my_data["NUMBEROFVALIDATIONS"] = 0
+        my_data["USERSWHOVALIDATED"] = ""
+        print(my_data.head())
 
-      with sqlite3.connect(self.db_path) as conn: 
-        my_data.to_sql('question_table', conn, if_exists='append', index = False)
+        with sqlite3.connect(self.db_path) as conn: 
+            df_sql = my_data.to_sql('question_table_tmp', conn, if_exists='append', index = False)
 
-    for j, i in enumerate(self.input_names):
-      point_df = getAllScores(i, f'{self.paths[i]["questions"]}/wayQuests.csv')
-      completed_data = self.completed_data[j]
-      completed_data = completed_data.drop(['shape'], axis = 1)
-      completed_data["completed"] = "no"
+    if(databaseAlreadyExists):
+        query= """
+            SELECT TYPE, QUESTION, ID FROM question_table_tmp 
+            EXCEPT 
+            SELECT TYPE, QUESTION, ID FROM question_table;
+        """
+    else:
+        query= """
+            SELECT TYPE, QUESTION, ID, SCORE, VALIDATING, ANSWERS, ICON, TAGANSWER, ANSWER, USERANSWERED, NUMBEROFVALIDATIONS, USERSWHOVALIDATED  FROM question_table_tmp 
+        """
 
-      completed_node = self.completed_node[j]
-      completed_node = completed_node.drop(['shape'], axis=1)
-      completed_node["completed"] = "no"
-      completed_node._append(completed_data)
-      completed_data = gpd.GeoDataFrame( pd.concat( [completed_node,completed_data]) )
-      point_df["id"]=point_df["id"].astype(int)
-      completed_data = pd.merge(completed_data,point_df, on="id")
-      with sqlite3.connect(self.db_path) as conn:
-        completed_data.to_sql('completed_table',conn,if_exists="append", index = False)
+    with sqlite3.connect(self.db_path) as conn: 
+        new_entries = pd.read_sql(query, conn)
+
+    with sqlite3.connect(self.db_path) as conn: 
+        df_sql = new_entries.to_sql('question_table', conn, if_exists='append', index = False)
+
 
     with sqlite3.connect(self.db_path) as conn:
-      conn.enable_load_extension(True)
-      conn.load_extension("mod_spatialite")
-      conn.execute("SELECT InitSpatialMetaData(1);")
+        conn.enable_load_extension(True)
+        conn.load_extension("mod_spatialite")
+        conn.execute("SELECT InitSpatialMetaData(1);")
+        conn.execute("""SELECT ID FROM question_table ORDER BY ID""")
+        conn.execute("""DROP TABLE IF EXISTS question_table_tmp """)
+    
+    query="""SELECT ID, TYPE FROM question_table""" #if you want to get the total score too then you can add the column SCORE there
+
+    with sqlite3.connect(self.db_path) as conn: 
+        idsScoresTypes = pd.read_sql(query, conn)
+
+
+    #create dataframe holding the sum of all the scores
+    sumDF = pd.DataFrame(idsScoresTypes)
+
+    sumDF = sumDF.groupby(['ID', "TYPE"]).sum()
+
+    sumDF.reset_index(inplace=True)
+
+    sumDF["ID"].astype(int)
+
+    sumDF["completed"] = "no"
+    sumDF.rename(columns = {'ID':'id', "TYPE":"type"}, inplace = True)
+    sumDF['type'] = sumDF['type'].apply(str.lower)
+
+    #If the database already exists then I have to update it, otherwise just create a new one.
+    if(databaseAlreadyExists):
+        #If all the questions about a way or node have 5 validations then they are completed, else set completed to false.
+        query = """SELECT ID FROM question_table WHERE ID IN (select ID from question_table group by ID having NUMBEROFVALIDATIONS=5)"""
+        with sqlite3.connect(self.db_path) as conn:
+            allCompletedDF = pd.read_sql(query, conn)
+        
+        allCompletedDF["completed"] = "yes"
+        allCompletedDF.rename(columns = {'ID':'id'}, inplace = True)
+        sumDF.loc[sumDF['id'].isin(allCompletedDF['id']), 'completed'] = allCompletedDF['completed']
+
+        with sqlite3.connect(self.db_path) as conn:
+            df_completed = sumDF.to_sql('completed_table',conn,if_exists="replace", index = False)
+    else:
+        with sqlite3.connect(self.db_path) as conn:
+            df_completed = sumDF.to_sql('completed_table',conn,if_exists="replace", index = False)
+
+    click.echo(f'Finished Creating database.')
 
 
   def cleanup(self):
