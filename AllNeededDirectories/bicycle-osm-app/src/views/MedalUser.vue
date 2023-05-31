@@ -116,7 +116,11 @@ export default{
             const jwtToken = await this.$auth.getTokenApi();
             const requestSpatialite = {
             method:"post",
+<<<<<<< HEAD
             headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
+=======
+            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+>>>>>>> 3741c5739a2d2daa0bf19faf2132ceb8de4f3799
             body: JSON.stringify(my_body)
             };
             //console.log(requestSpatialite);

@@ -48,7 +48,7 @@ Vue.use(Auth0Plugin, {
   }
 });
 
-Vue.prototype.$api_url = "http://localhost:8080";
+Vue.prototype.$api_url = window.API_URL;
 Vue.prototype.$currentLanguage = "English"
 
 Vue.use(VueMaterial)

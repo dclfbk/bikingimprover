@@ -5,12 +5,12 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
+WORKDIR /app
+
 COPY AllNeededDirectories/bicycle-osm-app/package*.json ./
 
 # install project dependencies
 RUN npm install
-
-WORKDIR /app
 
 # copy the entire app
 # TODO: specify which directories are actually needed
