@@ -14,8 +14,8 @@ export const getInstance = () => instance;
 
 /** Creates an instance of the Auth0 SDK. If one has already been created, it returns that instance */
 export const useAuth0 = ({
-  onRedirectCallback = "http://localhost:8080/callback",
-  redirectUri = "http://localhost:8080/myTiles",
+  onRedirectCallback = window.AUTH0_CALLBACK,
+  redirectUri = window.AUTH0_REDIRECT,
   ...options
 }) => {
   if (instance) return instance;
