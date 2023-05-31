@@ -487,7 +487,7 @@ export default {
         const my_url = this.$api_url + "/missions/givePoint"
         const requestSpatialite = {
           method:"post",
-          headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+          headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
           body: JSON.stringify(my_body),
         };
         //console.log(requestSpatialite);
@@ -539,7 +539,7 @@ export default {
         const my_url = this.$api_url + "/managePowerUps/retrieveAll"
         const requestSpatialite = {
           method:"post",
-          headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+          headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
           body: JSON.stringify(my_body),
         };
         //console.log(requestSpatialite);

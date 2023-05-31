@@ -1,9 +1,11 @@
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
 const jwksClient = require('jwks-rsa');
+const auth_config = require("../auth_config.js")
+const app_url = auth_config.app_url;
 
 const client = jwksClient({
-  jwksUri: 'https://prova-osm.eu.auth0.com/.well-known/jwks.json'
+  jwksUri: app_url+".well-known/jwks.json" /*'https://prova-osm.eu.auth0.com/.well-known/jwks.json'*/
 });
 
 /*

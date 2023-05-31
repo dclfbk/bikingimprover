@@ -135,7 +135,7 @@ export default{
     async mounted(){
        if(this.$userData==null||this.$userData==undefined){
           Vue.prototype.$userData = new UserData();
-          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url,this.$auth.getTokenApi())).then(items=>{
+          await(this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url,await this.$auth.getTokenApi())).then(items=>{
             this.my_money = this.$userData.gold;
             console.log(items)
           });
@@ -323,7 +323,7 @@ export default{
           const jwtToken = await this.$auth.getTokenApi();
           const requestSpatialite = {
             method: "post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
             body:JSON.stringify(my_body),
           }
           const fetchdata = await fetch(my_url, requestSpatialite)
@@ -351,7 +351,7 @@ export default{
           const jwtToken = await this.$auth.getTokenApi();
           const requestSpatialite = {
             method: "post",
-            headers:{"Content-Type":"application/json", 'pw_token':jwtToken},
+            headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
             body:JSON.stringify(my_body),
           }
           const fetchdata = await fetch(my_url, requestSpatialite)
