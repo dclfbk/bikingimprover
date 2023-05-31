@@ -88,7 +88,7 @@ export default{
         var userStats = new UserData();
         if(this.$userInfo==null||this.$userInfo==undefined){
             //console.log("NOT CREATED...");
-            await(userStats.createUser(nickname,this.$api_url, this.$auth.getTokenApi()));
+            await(userStats.createUser(nickname,this.$api_url, await this.$auth.getTokenApi()));
             this.updatePage(userStats);
             Vue.prototype.$userInfo = userStats;
         }else{
@@ -98,7 +98,7 @@ export default{
             }else{
                 //console.log("Not the same");
                 //console.log("nickname: " + nickname + "name: " + this.$userInfo.userName)
-                await(userStats.createUser(nickname,this.$api_url, this.$auth.getTokenApi()));
+                await(userStats.createUser(nickname,this.$api_url, await this.$auth.getTokenApi()));
                 this.updatePage(userStats);
                 Vue.prototype.$userInfo = userStats;
             }

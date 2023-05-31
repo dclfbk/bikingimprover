@@ -153,7 +153,7 @@ export default class UserData{
 
     //get the power up of the userData with a call to the database
     async checkPowerUps(userName,api_url, token){
-        console.log("USER SENT"+userName)
+        //console.log("USER SENT"+userName)
         var my_body = {
             "tableName" : userName,
         }
@@ -161,7 +161,7 @@ export default class UserData{
             const my_url = api_url + "/managePowerUps/retrieveAll"
             const requestSpatialite = {
             method:"post",
-            headers:{"Content-Type":"application/json", 'pw_token':token.access_token},
+            headers:{"Content-Type":"application/json", "pw_token":token.access_token},
             body: JSON.stringify(my_body),
             };
             //console.log(requestSpatialite);

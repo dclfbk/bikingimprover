@@ -19,22 +19,22 @@ import Vue from 'vue'
 export default{
     name: "LoginPage",
 
-    mounted:function(){
+    mounted:async function(){
         console.log(this.$userData);
         console.log(this.$api_url);
         console.log(this.$auth.isAuthenticated);
         if(this.$auth.isAuthenticated && (this.$userData==null||this.$userData==undefined)){
             console.log("CREO LO USER SU LOGIN PAGE");
             Vue.prototype.$userData = new UserData();
-            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi());
+            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, await this.$auth.getTokenApi());
         }
     },
 
-    updated(){
+    async updated(){
         if(this.$auth.isAuthenticated && (this.$userData==null||this.$userData==undefined) && this.$auth.user.nickname!=undefined){
             //console.log("UPDATING..." + this.$auth.user.nickname);
             Vue.prototype.$userData = new UserData();
-            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, this.$auth.getTokenApi());
+            this.$userData.createUser(this.$auth.user.myUserIDsignUpName, this.$api_url, await this.$auth.getTokenApi());
         }
     },
     /* eslint-disable */
