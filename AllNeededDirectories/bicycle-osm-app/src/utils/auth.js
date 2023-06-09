@@ -27,6 +27,8 @@ export const useAuth0 = ({
         loading: true,
         isAuthenticated: false,
         user: {},
+        OSMToken: null,
+        authToken: null,
         auth0Client: null,
         popupOpen: false,
         error: null
@@ -98,20 +100,59 @@ export const useAuth0 = ({
       ////////////////
       //Retrieve the token for the api calling
       async getTokenApi(){
-        var my_request = {
-          method: "get",
-          headers: {"Content-Type":"application/json"},
+        if(this.authToken!=null){
+          //console.log("THIS IS MY AUTHTOKEN:" + this.authToken.access_token);
+          //Check expiration, if expired then set it to null and recall this function. Else return the token
+          return this.authToken;
+        }else{
+          var my_request = {
+            method: "get",
+            headers: {"Content-Type":"application/json"},
+          }
+          var my_url = this.$api_url + "/posts/user/getTokenApi"
+          try{
+            const fetchdata = await fetch(my_url,my_request)
+            .then(response => response.json())
+            .then((new_response_data)=>{
+              this.authToken = new_response_data
+              return new_response_data;
+            }).catch((err)=>console.log(err))
+            this.authToken = fetchdata
+            return fetchdata
+          }catch(e){
+            console.log(e)
+          }
         }
-        var my_url = this.$api_url + "/posts/user/getTokenApi"
-        try{
-          const fetchdata = await fetch(my_url,my_request)
-          .then(response => response.json())
-          .then((new_response_data)=>{
-            return new_response_data;
-          }).catch((err)=>console.log(err))
-          return fetchdata
-        }catch(e){
-          console.log(e)
+      },
+
+      async getOSMTokenApi(user_id, token_to_use){
+        if(this.OSMToken!=null){
+          //console.log("THIS IS MY OSMTOKEN:" + this.OSMToken);
+          //Check expiration, if expired then set it to null and recall this function. Else return the token
+          return this.OSMToken;
+        }else{
+          var my_body = {
+            "user_id": user_id
+          }
+          try{
+            var my_url = this.$api_url + "/posts/get-osm-token";
+            const myRequest = {
+              method:"post",
+              headers:{ "Content-Type":"application/json", "token": token_to_use},
+              body:JSON.stringify(my_body)
+            };
+            const fetchdata = await fetch(my_url,myRequest)
+              .then(response => response.json())
+              .then((new_response_data)=>{
+                this.OSMToken = new_response_data;
+                return new_response_data;
+              }).catch((err)=>console.log(err)) 
+              //console.log(fetchdata)
+              this.OSMToken = fetchdata;
+              return fetchdata
+          }catch(e){
+            console.log(e)
+          }
         }
       }
       ///////////////

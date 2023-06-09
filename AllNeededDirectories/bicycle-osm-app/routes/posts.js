@@ -2,6 +2,7 @@ require('dotenv').config()
 const auth_config = require("../auth_config.js")
 const clientId = auth_config.client_id_api
 const client_secret = auth_config.client_secret
+const domain = auth_config.domain
 const audience = auth_config.audience
 const grant_type = auth_config.grant_type
 const app_url = auth_config.app_url;
@@ -538,6 +539,42 @@ router.post("/getAllPoints",(req,res) =>{
         res.status(200).send(allPoints);
     });
     
+})
+
+router.post("/get-osm-token",(req,res) => {
+    var request = require("request");
+    const token = req.get("token");
+    var user_id = req.body.user_id;
+
+    //console.log(token)
+    try {
+        // Make a request to the OSM API to obtain the access token
+        const osmAuthTokenUrl = "https://" + domain + "/api/v2/users/" + user_id;
+        //console.log(osmAuthTokenUrl)
+
+        const options = {
+            method: 'GET',
+            uri: osmAuthTokenUrl,
+            headers: { "Authorization" : token},
+            json: true
+        };
+        
+        request(options, (error, response, body) => {
+            if (error) {
+              console.error('Error retrieving OSM access token:', error);
+              res.status(500).json({ error: 'Failed to retrieve OSM access token' });
+            } else {
+              // Extract the OSM access token from the response
+              //console.log("this is body: ")
+              //console.log(body);
+              const osmToken = body.identities[0].access_token;
+              res.status(200).json({ osmToken });
+            }
+        });
+    } catch (error) {
+        console.error('Error retrieving OSM access token:', error);
+        throw new Error('Failed to retrieve OSM access token');
+    }
 })
 
 module.exports = router;

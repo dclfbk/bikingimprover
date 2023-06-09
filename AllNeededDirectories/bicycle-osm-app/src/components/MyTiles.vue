@@ -107,6 +107,38 @@ export default {
   },
 
   mounted: async function(){
+
+    ///
+    //console.log(this.$auth);
+    //console.log(this.$auth.OSMToken)
+    /*console.log(this.$auth)
+    const provaToken = await this.$auth.getTokenApi();
+    var token_to_use = "Bearer " + provaToken.access_token;
+    console.log(token_to_use)
+    var user_id = this.$auth.user.sub;
+    var my_body = {
+      "user_id": user_id
+    }
+    //console.log(provaToken);
+    try{
+      var my_url = this.$api_url + "/posts/get-osm-token";
+      const myRequest = {
+        method:"post",
+        headers:{ "Content-Type":"application/json", "token": token_to_use},
+        body:JSON.stringify(my_body)
+      };
+      const fetchdata = await fetch(my_url,myRequest)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          console.log(new_response_data);
+        }).catch((err)=>console.log(err)) 
+        console.log(fetchdata)
+    }catch(e){
+      console.log(e)
+    }*/
+    /////
+
+
     const ref=this 
     //the data url used to create the sources and layers
     var way_url = this.public_path + "pbfFiles/allWaysPbf/{z}/{x}/{y}.pbf"
