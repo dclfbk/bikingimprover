@@ -22,7 +22,8 @@ when
   not AlreadyLevelUp()
 then
   Map solutionMap = ((Map)$solution);
-  String  punti = (String)solutionMap.get("points"); 
+  String punti = (String)solutionMap.get("points"); 
+  String numberAnswers = (String)solutionMap.get("numberAnswers");
 
   Double puntiDouble = Double.parseDouble(punti);
   // update the counter
@@ -31,7 +32,7 @@ then
  
   $customData.put("level_up_points", punti);
   $customData.put("level", "1");
-  $customData.put("answer_completed","1");
+  $customData.put("answer_completed", numberAnswers);
   $customData.put("validation_completed", "0");
   $customData.put("full_negative_validation","0");
   $customData.put("full_positive_validation","0");
@@ -61,6 +62,8 @@ then
   Map solutionMap = ((Map)$solution);
   String myPoints = (String)solutionMap.get("points"); 
   Double punti = Double.parseDouble(myPoints); 
+  String numberAnswers = (String)solutionMap.get("numberAnswers");
+  Integer answersToAdd = Integer.parseInt(numberAnswers); 
 
 
  // update the counter
@@ -90,7 +93,8 @@ then
   //i = Integer.parseInt(actualLevel);
   String actualAnswers = (String)$customData.get("answer_completed");
   Integer ac = Integer.parseInt(actualAnswers);
-  ac = ac +1;
+
+  ac = ac + answersToAdd;
   String newAnswers = String.valueOf(ac);
   $customData.put("answer_completed", newAnswers);
 
@@ -102,6 +106,7 @@ then
   insert(new AlreadyLevelUp());
 
 end
+
 
 
 //ALL THE VALIDATIONS WITH ALREADY OBTAINED BADGE
@@ -493,7 +498,7 @@ end
 rule "beginner_level"
     salience -1000
     when
-      $customData : CustomData(this["level"] ==5)
+      $customData : CustomData(this["level"] >=5)
 	 $bc : BadgeCollectionConcept(name == "beginner badge", badgeEarned not contains '1-badge-earned')
 	 Game( $gameId: id)
 	Player( $playerId : id)
@@ -507,7 +512,7 @@ end
 rule "expert_level"
     salience -1000
     when
-        $customData : CustomData(this["level"] ==10)
+        $customData : CustomData(this["level"] >=10)
         $bc : BadgeCollectionConcept(name == "expert badge", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
@@ -521,7 +526,7 @@ end
 rule "professional_level"
     salience -1000
     when
-        $customData : CustomData(this["level"] ==20)
+        $customData : CustomData(this["level"] >=20)
 	$bc : BadgeCollectionConcept(name == "professional badge", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
@@ -535,7 +540,7 @@ end
 rule "expert_validator"
     salience -1000
     when
-        $customData : CustomData(this["validation_completed"] ==20)
+        $customData : CustomData(this["validation_completed"] >=20)
 	$bc : BadgeCollectionConcept(name == "expert validator badge", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
@@ -549,7 +554,7 @@ end
 rule "expert_contributor"
     salience -1000
     when
-        $customData : CustomData(this["points_inserted"] ==20)
+        $customData : CustomData(this["points_inserted"] >=20)
 	$bc : BadgeCollectionConcept(name == "expert contributor", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
@@ -563,7 +568,7 @@ end
 rule "cyclist"
     salience -1000
     when
-        $customData : CustomData(this["answer_completed"] ==20)
+        $customData : CustomData(this["answer_completed"] >=20)
 	$bc : BadgeCollectionConcept(name == "cyclist", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
@@ -577,7 +582,7 @@ end
 rule "professional_cyclist"
     salience -1000
     when
-        $customData : CustomData(this["answer_completed"] ==50)
+        $customData : CustomData(this["answer_completed"] >=50)
 	$bc : BadgeCollectionConcept(name == "professional cyclist", badgeEarned not contains '1-badge-earned')
 	Game( $gameId: id)
 	Player( $playerId : id)
