@@ -8,6 +8,7 @@ const grant_type = auth_config.grant_type
 const app_url = auth_config.app_url;
 
 const express = require('express');
+const verify = require('./verifyPasswordCall');
 
 const router = express.Router();
 const databaseToUse = "./databases/applicationValid.db"
@@ -576,5 +577,25 @@ router.post("/get-osm-token",(req,res) => {
         throw new Error('Failed to retrieve OSM access token');
     }
 })
+
+router.get('/checkTokenValidity', (req, res) => {
+    console.log("CHECKING TOKEN POSTS CALL IS IT WRKING PLEASE DO")
+    try {
+      // Invoke the middleware
+      verify(req, res, (err) => {
+        if (err) {
+          // Middleware returned an error
+          res.status(403).send({ error: 'Invalid token' });
+        } else {
+          // Middleware succeeded
+          console.log("WORKEDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
+          res.status(200).send({ valid: true });
+        }
+      });
+    } catch (error) {
+      // Error occurred while invoking the middleware
+      res.status(500).send({ error: 'Internal server error' });
+    }
+});
 
 module.exports = router;

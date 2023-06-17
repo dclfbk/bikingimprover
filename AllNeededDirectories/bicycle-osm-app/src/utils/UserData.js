@@ -322,18 +322,18 @@ export default class UserData{
         //increment by 1
         var my_answers = parseInt(this.answer_completed);
         my_answers = my_answers + 1;
-        if(my_answers == 1){
+        if(my_answers >= 1 && !this.badges.includes("first steps")){
             my_array.push("first steps");
             console.log("Congratulations on your first answer! FIRST STEPS MEDAL");
             this.badges.push("first steps");
         }
-        if(my_answers == 20){
+        if(my_answers >= 20 && !this.badges.includes("cyclist")){
             //get the validator badge
             my_array.push("cyclist");
             console.log("Congratulation 20 Answers")
             this.badges.push("cyclist");
         }
-        if(my_answers == 50){
+        if(my_answers >= 50 && !this.badges.includes("professional cyclist")){
             //get the expert validator badge
             my_array.push("professional cyclist");
             console.log("Congratulation 50 Answers")

@@ -12,6 +12,62 @@ router.get('/', verify, (req,res)=>{
     res.send("ah")
 });
 
+//ADD THE ANSWER To AN OPEN QUESTION TO THE ELEMENT WITH A CERTAIN ID AND QUESTION, ID ANSWER TYPE AND QUESTION ARE REQUESTED IN THE BODY
+router.post('/addOpenAnswer',(req,res)=>{
+    const allAnswers = req.body.answers;
+    const userName = req.body.userName;
+
+    console.log("ASJDIPIOSDJSPAD");
+    console.log(allAnswers);
+    //res.status(200).send("success");
+
+    const queries = []
+    for(var i=0; i < allAnswers.length; i++){
+        var query = "UPDATE question_table SET ANSWER = \"" + allAnswers[i].answer +"\", USERANSWERED = \"" + userName + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].question + "\"" + "AND TYPE = '" + allAnswers[i].type +"' AND ANSWER = \"\"" + ";" 
+        queries.push(query);
+    }
+    console.log(queries);
+
+    var sqlite = require('spatialite');
+    var db = new sqlite.Database(databaseToUse);
+    db.spatialite(function(err) {
+        if (err) {
+          console.log("THERE'S AN ERROR!" + err);
+          res.status(400).send(err);
+          return;
+        }
+      
+        db.serialize(function() {
+            db.run('BEGIN TRANSACTION;');
+            var completedQueries = 0;
+        
+            queries.forEach(function(query) {
+                db.run(query, function(err) {
+                    if (err) {
+                        console.log("THERE'S AN ERROR!" + err);
+                        res.status(400).send(err);
+                        return;
+                    }
+            
+                    completedQueries++;
+                    if (completedQueries === queries.length) {
+                        db.run('COMMIT;', function(err) {
+                            db.close();
+                            if (err) {
+                                console.log("THERE'S AN ERROR!" + err);
+                                res.status(400).send(err);
+                            } else {
+                                console.log("Working...");
+                                res.status(200).send("Success");
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    });
+})
+
 //ADD THE ANSWER TO THE ELEMENT WITH A CERTAIN ID AND QUESTION, ID ANSWER TYPE AND QUESTION ARE REQUESTED IN THE BODY
 router.post('/addAnswer',(req,res)=>{
     const answer= req.body.answer;
@@ -114,6 +170,7 @@ router.post('/givePoint',verify,(req,res)=>{
     let playerId = req.body.playerId;
     let typeMission = req.body.typeMission;
     let points = req.body.points;
+    let numberAnswers = req.body.listLength;
     let my_action_id = ""
     console.log(playerId);
     console.log(typeMission);
@@ -152,7 +209,7 @@ router.post('/givePoint',verify,(req,res)=>{
             "data":{
                 "gameID": game_id,
                 "playerID": playerId,
-                "solution":{"points":points}
+                "solution":{"points":points, "numberAnswers": numberAnswers}
             },
             "executionMoment": nowIso,
             "gameId": game_id,

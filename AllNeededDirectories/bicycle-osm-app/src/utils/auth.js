@@ -97,13 +97,52 @@ export const useAuth0 = ({
         return this.auth0Client.logout(o);
       },
 
+      async checkValidity(token){
+        console.log("Checking validity.......");
+        var my_request = {
+          method: "get",
+          headers: {"Content-Type":"application/json", "pw_token": token},
+        }
+        var my_url = this.$api_url + "/posts/checkTokenValidity"
+        try {
+          return fetch(my_url, my_request)
+            .then(response => {
+              if (response.ok) {
+                return response.json().then(data => {
+                  console.log(data);
+                  return true;
+                });
+              } else {
+                console.log("Response status:", response.status);
+                return false;
+              }
+            })
+            .catch(error => {
+              console.log(error);
+              return false;
+            });
+        } catch (error) {
+          console.log(error);
+          return false;
+        }
+      },
+
       ////////////////
       //Retrieve the token for the api calling
       async getTokenApi(){
         if(this.authToken!=null){
           //console.log("THIS IS MY AUTHTOKEN:" + this.authToken.access_token);
           //Check expiration, if expired then set it to null and recall this function. Else return the token
-          return this.authToken;
+          if(await this.checkValidity(this.authToken.access_token)){
+            console.log("VALID");
+            return this.authToken;
+          }else{
+            //refresh token
+            console.log("INVALID");
+            this.authToken = null;
+            //refresh the token
+            return await this.getTokenApi();
+          }
         }else{
           var my_request = {
             method: "get",

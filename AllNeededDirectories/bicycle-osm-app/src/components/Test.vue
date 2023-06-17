@@ -110,7 +110,7 @@ export default {
     async onSubmit(e){
       e.preventDefault();
       var shouldAddPoint = 0; 
-      //this.distanza=1; //JUST FOR TESTING
+      this.distanza=1; //JUST FOR TESTING
       if(this.location == false){
         console.log("SORRY YOU HAVE TO GIVE LOCATION PERMISSION TO ANSWER QUESTIONS");
         this.$refs.no_location_alert.second=true;
@@ -146,37 +146,51 @@ export default {
           var alreadyGenerated=false;
           var stillValid = true; //if it doesn't have 5 negative validation
           //var usersWhoValidated = [];
+          var answerList = [];
+          var scoreToSend = 0;
+
           var cancella=true; //serve per sapere se eliminare completamente la strada
           if(this.$refs.openquests!=undefined){
-          this.$refs.openquests.forEach(async i=>{
-            answer=i.answer;
-            question=i.item;
-            id=i.id;
-            type=i.type
-            score = i.score + shouldAddPoint;
-            console.log(score);
-            //check that the answer isn't empty, if it isn't then send the answer
-            if(i.answer!=""){
+            this.$refs.openquests.forEach(async i=>{
+              answer=i.answer;
+              question=i.item;
+              id=i.id;
+              type=i.type
+              score = i.score + shouldAddPoint;
+              //console.log(score);
+              //check that the answer isn't empty, if it isn't then send the answer
+              if(i.answer!=""){
+                answerList.push({
+                    answer,
+                    id,
+                    question,
+                    type,
+                    score,
+                  });
+                scoreToSend = scoreToSend + score;
+              }else{
+                //otherwise set cancella=false in order to not delete the geometry.
+                console.log("setto cancella a false perchè openquestion non ha tutte le domande con risposta...");
+                cancella=false
+              }
+            })
+            if(answerList.length > 0){
               //send the answer
               close_popup=true
               //create the loading popup (maybe right now is too fast?)
               this.loading = true;
               console.log("SETTO CANCELLA A FALSE")
               cancella=false;
-              await this.sendAnswer(answer,id,question,type).then(async items=>{
+              await this.sendOpenAnswer(answerList).then(async items=>{
                 console.log(items)
                 //call the game engine to get the score
-                await this.sendAnswerEngine("normal", this.$auth.user.myUserIDsignUpName, score)
+                await this.sendAnswerEngine("normal", this.$auth.user.myUserIDsignUpName, scoreToSend, answerList.length)
+                console.log("LOADING A FALSE");
                 this.loading = false;
                 //set cancella=false because this becomes a validation question.
                 cancella=false;
               })
-            }else{
-              //otherwise set cancella=false in order to not delete the geometry.
-              console.log("setto cancella a false perchè openquestion non ha tutte le domande con risposta...");
-              cancella=false
             }
-          })
           }
 
           //The same goes forr the validation questions
@@ -200,7 +214,7 @@ export default {
                   await this.sendAnswer(answer_to_send,id,question,type).then(async items=>{
                     console.log(items)
                     //call game engine in order to gain the score
-                    await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, score)
+                    await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, score, 1)
                   })
                 }else{
                   //set cancella=false because some validation question doesn't have an answer
@@ -252,7 +266,7 @@ export default {
                       //console.log("Ma cancella qua poitrebbe e forse dovfrebbe essere true: " + cancella)
                       //cancella=true;
                       //close_popup = true;
-                      await this.sendAnswerEngine("trust", userAnswered, score)
+                      await this.sendAnswerEngine("trust", userAnswered, score,1)
                     }
                   }else{
                     answer_to_send = "no"
@@ -268,9 +282,9 @@ export default {
                       close_popup = true
                       await this.deletePreviousUserAnswer(id,type,realQuestion).then(async items=>{
                         console.log(items)
-                        await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName,1.0)
+                        await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName,1.0, 1)
                       })
-                      await this.sendAnswerEngine("remove",userAnswered,score)//remove the points to the user that answered previously
+                      await this.sendAnswerEngine("remove",userAnswered,score, 1)//remove the points to the user that answered previously
                     }
                   }
                   //I give the points to the user that gave the validation
@@ -280,7 +294,7 @@ export default {
                       console.log(items)
                       console.log("workedval?")
                       //call the game engine to get the score
-                      await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, 1.0)
+                      await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, 1.0, 1)
                     })
                   }else{
                     console.log("setto cancella a false perchè non c'è una risposta");
@@ -461,13 +475,39 @@ export default {
       }
     },
 
+    //the user answered to a question of a way, the function modifies the database
+    async sendOpenAnswer(listOfAnswers){
+      var my_body = {
+        "answers": listOfAnswers,
+        "userName": this.$auth.user.myUserIDsignUpName,//Needed layer for another validation system
+      }
+      console.log(my_body)
+      try{
+        const my_url = this.$api_url + "/missions/addOpenAnswer"
+        const requestSpatialite = {
+          method:"post",
+          headers:{ "Content-Type":"application/json"},
+          body: JSON.stringify(my_body),
+        };
+        const fetchdata = await fetch(my_url,requestSpatialite)
+          .then(response => response.text())
+          .then((new_response_data)=>{
+            return new_response_data;
+          }).catch((err)=>console.log(err)) 
+          return fetchdata
+      }catch(e){
+        alert("Error init");
+      }
+    },
+
     //sends the answer to the gamification engine in order to update the user data
-    async sendAnswerEngine(type,nickname,score){
+    async sendAnswerEngine(type,nickname,score, listLength){
       //console.log("WHY IS IT NOT WORKING?")
       console.log("TYPE SENT"+type)
       console.log(nickname)
       console.log(score)
       var my_score = score.toString();
+      var my_list = listLength.toString();
       //Only 1 point for the validation answers
       if(type=="validation"){
         my_score="1";
@@ -479,7 +519,8 @@ export default {
       var my_body = {
         "playerId" : nickname,
         "typeMission" : type,
-        "points" : my_score
+        "points" : my_score,
+        "listLength": my_list
       }
       console.log(my_body)
       const jwtToken = await this.$auth.getTokenApi();
