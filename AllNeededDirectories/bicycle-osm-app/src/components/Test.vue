@@ -184,7 +184,7 @@ export default {
               this.loading = true;
               console.log("SETTO CANCELLA A FALSE")
               cancella=false;
-              await this.getOSMElement(id, type).then(async osmItems =>{
+              //await this.getOSMElement(id, type).then(async osmItems =>{
                 await this.sendOpenAnswer(answerList).then(async items=>{
                   console.log(items)
                   //call the game engine to get the score
@@ -194,7 +194,7 @@ export default {
                   //set cancella=false because this becomes a validation question.
                   cancella=false;
                 })
-              })
+              //})
             }
           }
 

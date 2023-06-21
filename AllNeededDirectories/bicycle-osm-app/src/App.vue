@@ -20,6 +20,7 @@
   import {getTheme} from "./utils/GlobalFunctions.js"
   import {getLanguage} from "./utils/GlobalFunctions.js"
   import Vue from 'vue'
+  import SocketioService from './utils/socketio.service.js';
   
   export default{
     components:{
