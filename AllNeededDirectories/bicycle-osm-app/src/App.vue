@@ -26,6 +26,18 @@
       //SideBarNav,
         //BottomNav// register component
     },
+
+    created(){
+      SocketioService.setupSocketConnection();
+      SocketioService.socket.on('validated', (data) => {
+        // Handle the 'validated' event here
+        const validatedValue = data.value;
+        console.log(this.$auth.user.myUserIDsignUpName)
+        console.log(`'validated' event with value: ${validatedValue}`);
+        // Perform the desired action for the validated event on the client side
+      });
+    },
+
     mounted(){
       console.log("main component has been mounted.....");
       console.log(Vue.version);

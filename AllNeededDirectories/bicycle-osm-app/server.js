@@ -9,6 +9,15 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors());
 
+//SOCKET
+const http = require('http').createServer(app);
+const io = require('socket.io')(http,{
+	cors: {
+	  origins: ['http://localhost:8080']
+	}
+});
+//
+
 //AGGIUNGO LE COSE DELL?ALtro sito
 const postsRoute = require('./routes/posts');
 const missionsRoute = require('./routes/missions');
@@ -28,7 +37,30 @@ app.use('/manageShop', manageShopRoute);
 //here we are configuring dist to serve app files
 app.use('/', serveStatic(path.join(__dirname, '/dist')))
 
-//ROBA MIA A CASO
+//SOCKET
+io.on('connection', (socket) => {
+	console.log('A client connected.');
+	socket.userSignedUpName = ""
+  
+	socket.on('disconnect', () => {
+	  console.log('A client disconnected.');
+	});
+
+	socket.on('setAuthenticatedUsername', (username) => {
+		console.log("USERNAMEEEEEEE");
+		console.log(username);
+		socket.userSignedUpName = username
+	});
+
+	socket.on('checkUserOnline', (userId, callback) => {
+		const isUserOnline = io.sockets.sockets.has(userId);
+		callback(isUserOnline);
+	});
+});
+
+app.set('io', io);
+//
+
 
 var geom_files = path.join(__dirname,'/pbfFiles');
 app.use('/pbfFiles',express.static(geom_files));
@@ -42,12 +74,12 @@ app.use(express.static('public'));
 app.get('/we', function(req, res) {
 	res.send('hello world');
 });
-//ANCORA MA PIù NUOVO
+
 const indexPath = __dirname + '/dist/';
 app.get('/', function (req,res) {
 	res.sendFile(indexPath + "index.html");
 });
-//FIN QUA
+
 
  //this * route is to serve project on different page routes except root `/`
 app.get(/.*/, function (req, res) {
@@ -55,5 +87,6 @@ app.get(/.*/, function (req, res) {
 })
 
 const port = process.env.PORT || 8080
-app.listen(port)
+//app.listen(port)
+http.listen(port)
 console.log(`app is listening on port: ${port}`)

@@ -15,11 +15,11 @@
         </div>
         <div>
           <QuestionForm v-if="open[index].ANSWER==''" :id="open[index].ID" :item="open[index].QUESTION" :type="open[index].TYPE" :score="open[index].SCORE" :possibilities="open[index].ANSWERS" 
-          :question_to_show=$gettext(open[index].QUESTION) ref="openquests" />
+          :question_to_show=$gettext(open[index].QUESTION) :tagAnswer="open[index].TAGANSWER" ref="openquests" />
           <ValidationForm v-else 
             :id="open[index].ID" :item="$gettext('checkTrueMsg') + $gettext(open[index].QUESTION) + $gettext('checkEndMsg') + $gettext(open[index].ANSWER) + '?'" 
             :type="open[index].TYPE" :score="open[index].SCORE" :userAnswered="open[index].USERANSWERED" :validationNumber="open[index].NUMBEROFVALIDATIONS"
-            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" ref="validateOtherQuests"
+            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" :tagAnswer="open[index].TAGANSWER" ref="validateOtherQuests"
           />
         </div>
       </li>
@@ -136,6 +136,7 @@ export default {
           var userWhoValidated = ""; //get the names of the users who validated the question
           var usersValidateArray = []
           var answer =""; //the answer 
+          var tagAnswer = ""; //the tag associated 
           var question = ""; //the question written
           var numberOfValidations = ""; // the number of validation that the mission received
           var realQuestion = "" // the open question that became a validation question
@@ -157,6 +158,7 @@ export default {
               id=i.id;
               type=i.type
               score = i.score + shouldAddPoint;
+              tagAnswer = i.tagAnswer;
               //console.log(score);
               //check that the answer isn't empty, if it isn't then send the answer
               if(i.answer!=""){
@@ -166,6 +168,7 @@ export default {
                     question,
                     type,
                     score,
+                    tagAnswer
                   });
                 scoreToSend = scoreToSend + score;
               }else{
@@ -181,14 +184,16 @@ export default {
               this.loading = true;
               console.log("SETTO CANCELLA A FALSE")
               cancella=false;
-              await this.sendOpenAnswer(answerList).then(async items=>{
-                console.log(items)
-                //call the game engine to get the score
-                await this.sendAnswerEngine("normal", this.$auth.user.myUserIDsignUpName, scoreToSend, answerList.length)
-                console.log("LOADING A FALSE");
-                this.loading = false;
-                //set cancella=false because this becomes a validation question.
-                cancella=false;
+              await this.getOSMElement(id, type).then(async osmItems =>{
+                await this.sendOpenAnswer(answerList).then(async items=>{
+                  console.log(items)
+                  //call the game engine to get the score
+                  await this.sendAnswerEngine("normal", this.$auth.user.myUserIDsignUpName, scoreToSend, answerList.length)
+                  console.log("LOADING A FALSE");
+                  this.loading = false;
+                  //set cancella=false because this becomes a validation question.
+                  cancella=false;
+                })
               })
             }
           }
@@ -412,6 +417,26 @@ export default {
       this.$refs.generalPopupTutorial.title = title;
       this.$refs.generalPopupTutorial.text = text;
       this.$refs.generalPopupTutorial.second = true;
+    },
+
+    async getOSMElement(id, type){
+      var osmUrlApi = "https://api.openstreetmap.org/api/0.6/";
+      const text = type.toLowerCase();
+      osmUrlApi = osmUrlApi + text + "/" + id;
+      try{
+        const osmRequest = {
+          method: "get",
+          headers:{"Content-Type":"application/json"}
+        }
+        const fetchdata = await fetch(osmUrlApi, osmRequest)
+          .then(response => response.text())
+          .then((new_response_data)=>{
+            return new_response_data;
+          }).catch((err) => console.log(err))
+          return fetchdata
+      }catch(e){
+        alert("error init");
+      }
     },
 
     //the user validated the answer of another user

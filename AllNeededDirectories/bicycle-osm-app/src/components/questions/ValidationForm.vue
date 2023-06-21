@@ -18,7 +18,7 @@
 
 export default{
     name:"ValidationForm",
-    props:['item','id','type','score','validationNumber','realQuestion', 'userAnswered', 'userWhoValidated'],
+    props:['item','id','type','score','validationNumber','realQuestion', 'userAnswered', 'userWhoValidated', 'tagAnswer'],
     data(){
         return{
             answer:"",
