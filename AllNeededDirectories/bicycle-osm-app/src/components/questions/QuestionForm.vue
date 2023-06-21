@@ -24,7 +24,7 @@
 import {translate} from 'vue-gettext';
 export default{
     name: "QuestionForm",
-    props: ['item','id','type','score','possibilities','question_to_show'],
+    props: ['item','id','type','score','possibilities','question_to_show', 'tagAnswer'],
     data(){
         return{
             answer:"", //The answer given by the user

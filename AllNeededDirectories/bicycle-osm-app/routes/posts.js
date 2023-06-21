@@ -598,4 +598,41 @@ router.get('/checkTokenValidity', (req, res) => {
     }
 });
 
+router.post("/validated/sendToOsm", (req,res) =>{
+    const io = req.app.get('io');
+    const validated = 2; // Replace with your logic
+  
+    let userFound = false;
+  
+    console.log(io.sockets.sockets);
+    // Iterate through all connected sockets
+    io.sockets.sockets.forEach((socket, socketId) => {
+      // Get the authenticated user name from the socket request
+      console.log("FORLOOP");
+      const authenticatedUserName = socket.userSignedUpName;
+      console.log(authenticatedUserName);
+  
+      // Fetch the name value from the database
+      //const dbNameValue = "getDbNameValue()"; // Replace with your database query
+      const dbNameValue = "userunoosmbicycle";
+  
+      if (authenticatedUserName === dbNameValue) {
+        // Perform the desired action for the user with a matching name
+        socket.emit('validated', { value: validated });
+        userFound = true;
+      }else{
+          console.log("DIFFERENT USER ECCOCI QUA")
+      }
+    });
+  
+    if (!userFound) {
+      // Perform the desired action when no user with a matching name is found
+      // Replace the following code with your actual implementation
+      console.log('No connected user with the matching name found. Perform the desired action.');
+    }
+  
+    res.status(200).json({ message: 'Value updated successfully' });
+  
+});
+
 module.exports = router;
