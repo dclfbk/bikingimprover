@@ -17,7 +17,6 @@ router.post('/addOpenAnswer',(req,res)=>{
     const allAnswers = req.body.answers;
     const userName = req.body.userName;
 
-    console.log("ASJDIPIOSDJSPAD");
     console.log(allAnswers);
     //res.status(200).send("success");
 
