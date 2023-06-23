@@ -9,6 +9,7 @@ const app_url = auth_config.app_url;
 
 const express = require('express');
 const verify = require('./verifyPasswordCall');
+const { Console } = require('console')
 
 const router = express.Router();
 const databaseToUse = "./databases/applicationValid.db"
@@ -61,7 +62,7 @@ router.get('/:geomid&:type',(req,res)=>{
     const my_id = req.params.geomid;
     var sqlite = require('spatialite');
     var db = new sqlite.Database(databaseToUse);
-    var query = "SELECT * FROM 'question_table' WHERE ID IS '" + my_id +"' AND TYPE IS '" + type + "' AND NUMBEROFVALIDATIONS IS NOT " + '"5"'+";";
+    var query = "SELECT * FROM 'question_table' WHERE ID IS '" + my_id +"' AND TYPE IS '" + type + "' AND NUMBEROFVALIDATIONS < " + '"1"'+";"; //TODO HERE SHOULD BE 2. JUST USING 1 TO TEST.
     console.log(query)
     const my_array = [];
     db.spatialite(function(err){
@@ -566,10 +567,23 @@ router.post("/get-osm-token",(req,res) => {
               res.status(500).json({ error: 'Failed to retrieve OSM access token' });
             } else {
               // Extract the OSM access token from the response
-              //console.log("this is body: ")
-              //console.log(body);
-              const osmToken = body.identities[0].access_token;
-              res.status(200).json({ osmToken });
+              console.log("this is body: ")
+              console.log(body);
+              var osmToken = ""
+              for(var i=0; i<body.identities.length; i++){
+                  if(body.identities[i].connection == "OpenStreetMap"){
+                      console.log("connected via OSM")
+                      osmToken = body.identities[i].access_token;
+                  }
+              }
+              if(osmToken == ""){
+                  console.log("OSM Token not found");
+                  res.status(404).json({error: "OSM token not found in this user"})
+              }else{
+                res.status(200).json({ osmToken });
+              }
+              //const osmToken = body.identities[0].access_token;
+              //res.status(200).json({ osmToken });
             }
         });
     } catch (error) {
@@ -579,7 +593,6 @@ router.post("/get-osm-token",(req,res) => {
 })
 
 router.get('/checkTokenValidity', (req, res) => {
-    console.log("CHECKING TOKEN POSTS CALL IS IT WRKING PLEASE DO")
     try {
       // Invoke the middleware
       verify(req, res, (err) => {
@@ -588,7 +601,6 @@ router.get('/checkTokenValidity', (req, res) => {
           res.status(403).send({ error: 'Invalid token' });
         } else {
           // Middleware succeeded
-          console.log("WORKEDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
           res.status(200).send({ valid: true });
         }
       });
@@ -598,11 +610,266 @@ router.get('/checkTokenValidity', (req, res) => {
     }
 });
 
-router.post("/validated/sendToOsm", (req,res) =>{
+router.get("/getOSMElement/:type&:id", (req,res)=>{
+    const id = req.params.id;
+    const type = req.params.type;
+    const request = require("request");
+    //GET OSM ELEMENT
+    try{   
+        var osmUrlApi = "https://api.openstreetmap.org/api/0.6/";
+        osmUrlApi = osmUrlApi + type + "/" + id;
+        //console.log(osmUrlApi)
+
+        const options = {
+            method: 'GET',
+            uri: osmUrlApi,
+            headers: { "Content-Type":"application/json"},
+            json: true
+        };
+        
+        request(options, function(error, response, body){
+            if (error) {
+                console.error('Error retrieving OSM element:', error);
+                res.status(500).json({ error: 'Failed to retrieve OSM element' });
+            } else {
+                //console.log("was able to retrieve OSM element")
+                //console.log(body);
+                res.status(200).send(body)
+            }
+        });
+
+    } catch (error) {
+        console.error('Error getting element:', error);
+        throw new Error('Failed to retrieve OSM element');
+    }
+})
+
+router.post("/sendOSM", (req,res)=>{
+    const data = req.body.data;
+    const token = req.get("osm_token");
+    const id = data[0].id
+    const type = data[0].type.toLowerCase();
+    const request = require("request");
+    
+    const fullUrl = req.protocol + '://' + req.get('host') + "/posts/";
+    console.log(fullUrl);
+
+    console.log(req.body);
+    console.log(token);
+
+    //GET OSM ELEMENT
+    try{   
+        //const osmUrlApi = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
+        const osmUrlApi = fullUrl + "getOSMElement" + "/" + type + "&" + id;
+        //console.log(osmUrlApi);
+
+        const options = {
+            method: 'GET',
+            uri: osmUrlApi,
+            headers: { "Content-Type":"application/json"},
+            json: true
+        };
+        
+        request(options, function(error, response, body){
+            if (error) {
+                console.error('Error retrieving OSM element:', error);
+                res.status(500).json({ error: 'Failed to retrieve OSM element' });
+            } else {
+                console.log("was able to retrieve OSM element")
+                console.log(body);
+                const old_element = body;
+
+                //CREATE CHANGESETS AND UPDATE ELEMENT IN OSM
+                const importUrl = fullUrl + "importOSM";   
+                console.log(importUrl);
+                const my_body = {
+                    "new_element": data,
+                    "old_element": old_element
+                }
+                const importOptions = {
+                    method: 'POST',
+                    uri: importUrl,
+                    headers: { "Content-Type":"application/json", "osm_token": token},
+                    body: my_body,
+                    json: true
+                };
+                
+                request(importOptions, function(error,reponse,body){
+                    if (error) {
+                        console.error('Error retrieving OSM element:', error);
+                        res.status(500).json({ error: 'Failed to retrieve OSM element' });
+                    } else {
+                        console.log("seems everythign went ok")
+                        res.status(200);
+                    }
+                })
+                //res.status(200).json({ok: "ok"});
+            }
+        });
+
+    } catch (error) {
+        console.error('Error retrieving OSM access token:', error);
+        throw new Error('Failed to retrieve OSM access token');
+    }
+
+});
+
+router.post("/importOSM",async (req,res) =>{
+    const fetch = require("node-fetch");
+    try {
+        const oldElement = req.body.old_element;
+        const newElement = req.body.new_element;
+        const osmPw = "Basic cGFyYTpwYXJhcGFyYQ==";
+
+        console.log(oldElement);
+        console.log(newElement[0]);
+
+        //Get all the tags needed from the oldElement.
+        //const id = newElement[0].id;
+        const id = "1"; //TO REMOVE
+        const type = newElement[0].type.toLowerCase();
+        var tagsKeys = [];
+        var tagsAnswers = [];
+        var newTagsXML = "";
+
+        for(var i = 0; i < newElement.length; i++){
+            tagsKeys.push(newElement[i].tagAnswer)
+            tagsAnswers.push(newElement[i].openAnswer)
+            newTagsXML = newTagsXML + '<tag k="' + newElement[i].tagAnswer + '" v="' + newElement[i].openAnswer + '" />' +'\n'
+        }
+
+        console.log(newTagsXML)
+
+        //TODO Check that the elements don't have same tags, if they do then don't add that certain tag.
+
+        //
+
+
+        //const newTagElements = "<tag k=" + tag.getAttribute("k")}" v="${tag.getAttribute("v")}" />"
+    
+        // Step 1: Create a Changeset
+        const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" //'https://api.openstreetmap.org/api/0.6/changeset/create';
+        const createChangesetBody = `<osm><changeset><tag k="source" v="BikingImprover" /><tag k="bot" v="yes" /></changeset></osm>`;
+
+        //SHOULD SAVE MY CHANGES SOMEWHERE SO THAT I CAN REVERT THEM HERE
+
+        //
+    
+        const createChangesetResponse = await fetch(createChangesetUrl, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'text/xml',
+            Authorization: osmPw,
+          },
+          body: createChangesetBody,
+        });
+    
+        if (!createChangesetResponse.ok) {
+          throw new Error('Failed to create Changeset');
+        }
+    
+        const changesetId = await createChangesetResponse.text();
+        console.log("this is my changeset id: " + changesetId);
+
+        const { DOMParser } = require('xmldom');
+
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(oldElement, 'application/xml');
+
+        const oldTagElements = Array.from(xmlDoc.getElementsByTagName("tag"))
+            .map(tag => `<tag k="${tag.getAttribute("k")}" v="${tag.getAttribute("v")}" />`)
+            .join('');
+
+        const wayOrNodeElement = xmlDoc.getElementsByTagName(type)[0];
+        //const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
+        wayOrNodeVersion = "9"; //TOI REMOVE
+    
+        // Step 2: Update the Element
+        //const updateElementUrl = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
+        const updateElementUrl = "http://localhost:3000/api/0.6/" + type + "/" + id;
+        const updateElementBody = `<osm version="0.6">
+                                    <changeset>
+                                        <tag k="source" v="BikingImprover"/>
+                                        <tag k="comment" v="Updating the element with tags"/>
+                                    </changeset>
+                                        <${type} id="${id}" changeset="${changesetId}" version="${wayOrNodeVersion}">
+                                            ${oldTagElements}
+                                            ${newTagsXML}
+                                        </${type}>
+                                    </osm>`;
+
+        console.log(updateElementBody);
+        console.log(updateElementUrl);
+
+        const updateElementResponse = await fetch(updateElementUrl, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'text/xml',
+            Authorization: osmPw,
+          },
+          body: updateElementBody,
+        });
+    
+        if (!updateElementResponse.ok) {
+            console.log(updateElementResponse);
+          throw new Error('Failed to update Element');
+        }
+    
+        // Step 3: Close the Changeset
+        const closeChangesetUrl = "http://localhost:3000/api/0.6/changeset/" + changesetId + "/close"//`https://api.openstreetmap.org/api/0.6/changeset/${changesetId}/close`;
+    
+        const closeChangesetResponse = await fetch(closeChangesetUrl, {
+          method: 'PUT',
+          headers: {
+            Authorization: osmPw,
+          },
+        });
+    
+        if (!closeChangesetResponse.ok) {
+          console.log(closeChangesetResponse);
+          throw new Error('Failed to close Changeset');
+        }
+    
+        res.status(200).send('Success');
+      } catch (error) {
+        console.error(error);
+        res.status(500).send('Error');
+      }
+});
+
+router.post("/validated/sendToOsm"/*,verify*/, (req,res) =>{
     const io = req.app.get('io');
+    const elements = req.body.completed;
+
+    console.log("VALIDATED WORKING NOW SENDING THE ITEM TO OSM. THE ITEM IS:")
+    console.log(elements);
+
+    //Separate the answers based on the userAnswered variable.
+    const lists = [];
+
+    elements.forEach(item =>{
+        const userAnswered = item.userAnswered;
+        console.log(userAnswered)
+
+        //Check if the list for that user already exists, if it does not then create it
+        if(!lists[userAnswered]){
+            lists[userAnswered] = [];
+        }
+        
+        //push the item in the user list
+        lists[userAnswered].push(item);
+    })
+    
     const validated = 2; // Replace with your logic
+    //console.log(lists);
   
     let userFound = false;
+    let userListFound = [];
+    //let userListNotFound = [];
+            
+    //Get the lists elements.
+    const listArray = Object.values(lists);
+    //console.log(listArray.length)
   
     console.log(io.sockets.sockets);
     // Iterate through all connected sockets
@@ -611,25 +878,62 @@ router.post("/validated/sendToOsm", (req,res) =>{
       console.log("FORLOOP");
       const authenticatedUserName = socket.userSignedUpName;
       console.log(authenticatedUserName);
-  
-      // Fetch the name value from the database
-      //const dbNameValue = "getDbNameValue()"; // Replace with your database query
-      const dbNameValue = "userunoosmbicycle";
-  
-      if (authenticatedUserName === dbNameValue) {
-        // Perform the desired action for the user with a matching name
-        socket.emit('validated', { value: validated });
-        userFound = true;
-      }else{
-          console.log("DIFFERENT USER ECCOCI QUA")
+
+      //cycle through my elements based on the users, and then emit to the socket of the user the action. The value to pass is listArray[i].The user is listArray[i][0].userAnswered
+      for(var i=0; i<listArray.length;i++){
+          console.log("cycling user lists of elements")
+          console.log(listArray[i][0].userAnswered);
+          if(authenticatedUserName == listArray[i][0].userAnswered){
+            socket.emit('validated', { value: listArray[i] }); //Send the data to the user so that he can send it via OSM Token
+            userFound = true;
+            userListFound.push(i); //so that I know which elements have the user online. So this elements will be sent by that user
+          }else{
+            //userListNotFound.push(i)
+            console.log("Different user");
+          }
       }
     });
+
+    let sendToOSMList = [];
+
+    if(userListFound.length !=0){
+        for(var i=0; i<listArray.length; i++){
+            for(var j=0; j<userListFound.length; j++){
+                if(i == userListFound[j]){
+                    //DO NOTHING
+                }else{
+                    //SEND DATA VIA MY OWN ACCOUNT SINCE THE USER IS NOT ONLINE AND I CANNOT SEND THE DATA WITH THEIR ACCOUNT
+                    sendToOSMList.push(listArray[i]);
+                }
+            }
+        }
+    }else{
+        sendToOSMList = listArray;
+    }
+
+
+    console.log("SHOULD SEND THIS WITH MY OSM ACCOUNT");
+    console.log(sendToOSMList);
+
+    //CALL FUNCTION TO SEND THESE DATA WITH MY ACCOUNT
+
+    //if some users weren't found then send the data via our account, //Combine all missing user osm answers to a single one to send with our account
+    /*if(userListNotFound.length != 0){
+
+        console.log("Missing user");
+        const sendToOSMList = [];
+        for(var i=0; i<userListNotFound.length; i++){
+            sendToOSMList.push(listArray[i]);
+        }
+        console.log("SHOULD SEND THIS WITH MY OSM ACCOUNT");
+        console.log(sendToOSMList);
+    }*/
   
-    if (!userFound) {
+    /*if (!userFound) {
       // Perform the desired action when no user with a matching name is found
       // Replace the following code with your actual implementation
       console.log('No connected user with the matching name found. Perform the desired action.');
-    }
+    }*/
   
     res.status(200).json({ message: 'Value updated successfully' });
   

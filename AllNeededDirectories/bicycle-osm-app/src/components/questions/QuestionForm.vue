@@ -51,6 +51,7 @@ export default{
         if(this.answer=="cancel"){
           this.answer="";
         }
+        console.log("questions: " + this.tagAnswer)
       },
 
       updateAnswers(){

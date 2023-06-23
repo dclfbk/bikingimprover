@@ -181,7 +181,12 @@ export const useAuth0 = ({
               body:JSON.stringify(my_body)
             };
             const fetchdata = await fetch(my_url,myRequest)
-              .then(response => response.json())
+              .then(response => {
+                if(response.status == 404){
+                  throw new Error("user didn't log via OSM")
+                }
+                return response.json()
+              })
               .then((new_response_data)=>{
                 this.OSMToken = new_response_data;
                 return new_response_data;

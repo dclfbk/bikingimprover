@@ -240,7 +240,6 @@ export default{
               console.log(items);
               if(items.status==200){
                 //comprato
-                //TODO call game engine and remove the money (and maybe also the points) from the user.
                 await this.buyPowerUpEngine(user,price).then(items=>{
                   console.log(items);
                   console.log(this.$userData);

@@ -1,3 +1,5 @@
+import SocketioService from "./socketio.service.js";
+
 export default class UserData{
     userName;
     points;
@@ -57,9 +59,11 @@ export default class UserData{
                         console.log(items);
                         this.powerUps = items;
                     })
+                    this.setSocketId(userName)
                 }else{
                     //if it does exist then update its data
                     console.log("GIOCATORE ESISTE Già")
+                    this.setSocketId(userName)
                     this.updateUserInfo(new_response_data)
                     console.log(new_response_data)
                     this.isNew = false;
@@ -73,6 +77,13 @@ export default class UserData{
         }catch(e){
             console.log(e)
         }
+    }
+
+    setSocketId(userName){
+        console.log("SETTING SOCKET ID");
+        // When the client connects and authenticates, send the authenticated username to the server
+        const authenticatedUsername = userName; // Modify this to match the correct property for the username in your Auth0 implementation
+        SocketioService.socket.emit('setAuthenticatedUsername', authenticatedUsername);
     }
 
     //update the userData with the data received from the gamification engine
@@ -238,7 +249,7 @@ export default class UserData{
     }
 
     //Method used to update the user score inside the userData when a mission gets completed
-    missionComplete(type,score){
+    missionComplete(type,score, listLength){
         var medalArray = [];
         console.log("this is missionComplete:" + type + score);
         this.points = this.points + score;
@@ -263,9 +274,9 @@ export default class UserData{
             //alert("YOU LEVELED UP!");
         }
         if(type=="validation"){
-            medalArray = this.checkValidationMedals(medalArray);
+            medalArray = this.checkValidationMedals(medalArray, listLength);
         }else{
-            medalArray = this.checkOpenMedals(medalArray);
+            medalArray = this.checkOpenMedals(medalArray, listLength);
         }
         return medalArray;
     }
@@ -295,18 +306,18 @@ export default class UserData{
     }
 
     //Method used to assign the validation medals
-    checkValidationMedals(my_array){
+    checkValidationMedals(my_array, listLength){
         console.log("EnteredCheckValidationMedals")
         //increment by one
         var my_validations = parseInt(this.validation_completed);
-        my_validations = my_validations + 1;
-        if(my_validations == 1){
+        my_validations = my_validations + listLength;
+        if(my_validations >= 1 && my_validations<20 && !this.badges.includes("validator badge")){
             //get the validator badge
             my_array.push("validator badge");
             console.log("Congratulation First Validation")
             this.badges.push("validator badge");
         }
-        if(my_validations == 20){
+        if(my_validations >= 20 && !this.badges.includes("expert validator badge")){
             //get the expert validator badge
             my_array.push("expert validator badge");
             console.log("Congratulation 20 Validation")
@@ -317,11 +328,11 @@ export default class UserData{
     }
 
     //method used to assign the questions badges
-    checkOpenMedals(my_array){
+    checkOpenMedals(my_array, listLength){
         console.log("EnteredCheckOpenMedals")
         //increment by 1
         var my_answers = parseInt(this.answer_completed);
-        my_answers = my_answers + 1;
+        my_answers = my_answers + listLength;
         if(my_answers >= 1 && !this.badges.includes("first steps")){
             my_array.push("first steps");
             console.log("Congratulations on your first answer! FIRST STEPS MEDAL");

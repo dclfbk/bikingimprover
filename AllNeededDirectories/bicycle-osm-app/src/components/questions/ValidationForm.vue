@@ -18,7 +18,7 @@
 
 export default{
     name:"ValidationForm",
-    props:['item','id','type','score','validationNumber','realQuestion', 'userAnswered', 'userWhoValidated', 'tagAnswer'],
+    props:['item','id','type','score','validationNumber','realQuestion', 'userAnswered', 'userWhoValidated', 'tagAnswer', 'openAnswer'],
     data(){
         return{
             answer:"",
@@ -26,6 +26,7 @@ export default{
     },
     mounted:function(){
         console.log("QUESTI SONO GLI USER CHE HANNO VALIDATO LA RISPOSTA: " + this.userWhoValidated);
+        console.log(this.tagAnswer);
     }
 }
 </script>
