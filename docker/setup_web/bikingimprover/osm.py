@@ -386,6 +386,8 @@ class OSMImporter(BaseImporter):
     else:
         databaseAlreadyExists = False
 
+    #databaseAlreadyExists=False;
+    
     for i in self.input_names:
         my_data = pd.read_csv(f"{self.paths[i]['questions']}/wayQuestsNotSorted.csv", index_col=False, delimiter='|')
         my_data = my_data.rename(columns={'NODE OR WAY':'TYPE'})#########
@@ -447,7 +449,7 @@ class OSMImporter(BaseImporter):
     #If the database already exists then I have to update it, otherwise just create a new one.
     if(databaseAlreadyExists):
         #If all the questions about a way or node have 5 validations then they are completed, else set completed to false.
-        query = """SELECT ID FROM question_table WHERE ID IN (select ID from question_table group by ID having NUMBEROFVALIDATIONS=5)"""
+        query = """SELECT ID FROM question_table WHERE ID IN (select ID from question_table group by ID having NUMBEROFVALIDATIONS=2)"""
         with sqlite3.connect(self.db_path) as conn:
             allCompletedDF = pd.read_sql(query, conn)
         

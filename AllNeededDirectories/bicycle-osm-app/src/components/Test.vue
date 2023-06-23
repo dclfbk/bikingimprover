@@ -19,7 +19,7 @@
           <ValidationForm v-else 
             :id="open[index].ID" :item="$gettext('checkTrueMsg') + $gettext(open[index].QUESTION) + $gettext('checkEndMsg') + $gettext(open[index].ANSWER) + '?'" 
             :type="open[index].TYPE" :score="open[index].SCORE" :userAnswered="open[index].USERANSWERED" :validationNumber="open[index].NUMBEROFVALIDATIONS"
-            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" :tagAnswer="open[index].TAGANSWER" ref="validateOtherQuests"
+            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" :tagAnswer="open[index].TAGANSWER" :openAnswer="open[index].ANSWER" ref="validateOtherQuests"
           />
         </div>
       </li>
@@ -143,12 +143,14 @@ export default {
           var id =""; // way or node id
           var type=""; // is it a way or a node?
           var score = null; //score to be given to the user if he answers
+          var openAnswer = ""; //the answer that was given by a user to the open question that became a validation question
           var close_popup=false; //variable to keep track whether or not the popup should close
           var alreadyGenerated=false;
           var stillValid = true; //if it doesn't have 5 negative validation
           //var usersWhoValidated = [];
           var answerList = [];
           var scoreToSend = 0;
+          var maxValidationsOSM = []
 
           var cancella=true; //serve per sapere se eliminare completamente la strada
           if(this.$refs.openquests!=undefined){
@@ -251,6 +253,7 @@ export default {
                   cancella = false
                 }
                 else{
+                  openAnswer = i.openAnswer;
                   answer = i.answer;
                   question=i.item;
                   id=i.id;
@@ -258,24 +261,36 @@ export default {
                   realQuestion = i.realQuestion;
                   numberOfValidations = i.validationNumber;
                   score = i.score;
+                  tagAnswer = i.tagAnswer;
                   console.log("THIS IS THE NUMBER OF VALIDATION WHEN SENDIN: " + i.numberOfValidations);
                   //numberOfValidations = numberOfValidations.toString();
                   close_popup=true;
                   if(answer == true || answer == "true"){
                     //console.log("answer is true")
                     answer_to_send = "si"
-                    if(numberOfValidations != "4" || numberOfValidations != 4){
+                    if(numberOfValidations < 0){ //TODO SHOULD BE 1 NOT 0!!!! 1 because the number of validations gets updated later.
                       //Set cancella=false because there are not enough validations
+                      console.log("numero di validazioni minore di 0")
                       cancella=false
                     }else{
                       //console.log("Ma cancella qua poitrebbe e forse dovfrebbe essere true: " + cancella)
                       //cancella=true;
                       //close_popup = true;
+                      console.log("numero di validazioni maggiore di 0")
+                      maxValidationsOSM.push({
+                        openAnswer,
+                        userAnswered,
+                        id,
+                        question,
+                        type,
+                        score,
+                        tagAnswer
+                      })
                       await this.sendAnswerEngine("trust", userAnswered, score,1)
                     }
                   }else{
                     answer_to_send = "no"
-                    if(numberOfValidations!="-4" || numberOfValidations!= -4){
+                    if(numberOfValidations > -1){ //-1 perchè viene updatato dopo 
                       //console.log("setto cancella a false");
                       cancella = false;
                     }else{
@@ -315,6 +330,13 @@ export default {
               cancella=false
             }
           }
+
+          if(maxValidationsOSM.length > 0){
+            //send data to OSM
+            console.log("HERE I SHOULD SEND THE DATA TO OSM, GETING THE ELEMENT AND THEN SEND THE DATA");
+            console.log(maxValidationsOSM);
+            this.sendCallSocketForOSM(maxValidationsOSM);
+          }
           
           //Maybe here I can make a form to get a loaded image. I get the image of the form and make a post call in order to save it in a database
           /////////
@@ -344,7 +366,6 @@ export default {
             //this.$parent.my_items=null;
             popup_prova[0].style.display="none";
             this.$parent.closePopupOfTest();
-            //TODO maybe I'll add a popup saying thanks for the answer or something
           }
           console.log("MY VARIABLE CLOSE POPUP IS " + close_popup);
         }
@@ -439,6 +460,29 @@ export default {
       }
     },
 
+    async sendCallSocketForOSM(maxValidationsOSM){
+      var socketApiOSM = this.$api_url + "/posts/validated/sendToOsm";
+      var my_body = {
+        "completed" : maxValidationsOSM
+      }
+      const jwtToken = await this.$auth.getTokenApi();
+      try{
+        const socketRequest = {
+          method: "post",
+          headers:{"Content-Type":"application/json", 'pw_token':jwtToken.access_token},
+          body: JSON.stringify(my_body),
+        }
+        const fetchdata = await fetch(socketApiOSM, socketRequest)
+          .then(response => response.text())
+          .then((new_response_data)=>{
+            return new_response_data;
+          }).catch((err) => console.log(err))
+          return fetchdata
+      }catch(e){
+        alert("error init");
+      }
+    },
+
     //the user validated the answer of another user
     async sendAnswerValidateOther(answer,id,question,type, numberOfValidations, realQuestion, usersValidators){
       var my_body = {
@@ -466,7 +510,7 @@ export default {
           }).catch((err) => console.log(err))
           return fetchdata
       }catch(e){
-        alert("error init");
+        alert("error, invalid token");
       }
     },
 
@@ -560,7 +604,7 @@ export default {
         const fetchdata = await fetch(my_url, requestSpatialite)
           .then(response => response.json())
           .then((new_response_data)=>{
-            this.updateUserInfo(type,score);
+            this.updateUserInfo(type,score, listLength);
             return new_response_data;
           }).catch((err)=>console.log(err))
           return fetchdata
@@ -570,11 +614,11 @@ export default {
     },
 
     //update the user state
-    updateUserInfo(type,score){
+    updateUserInfo(type, score, listLength){
       var medalArray = [];
       console.log("ENTERED UPDATE");
       console.log(this.$userData)
-      medalArray = this.$userData.missionComplete(type,score);
+      medalArray = this.$userData.missionComplete(type,score, listLength);
       if(this.$userData.just_leveled_up == true){
         console.log("LEVELUP");
         console.log(this.$refs)

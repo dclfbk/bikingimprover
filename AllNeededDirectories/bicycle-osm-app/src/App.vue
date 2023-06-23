@@ -30,13 +30,30 @@
 
     created(){
       SocketioService.setupSocketConnection();
-      SocketioService.socket.on('validated', (data) => {
-        // Handle the 'validated' event here
-        const validatedValue = data.value;
-        console.log(this.$auth.user.myUserIDsignUpName)
-        console.log(`'validated' event with value: ${validatedValue}`);
-        // Perform the desired action for the validated event on the client side
+
+      SocketioService.socket.on('validated', async (data) => {
+        //data is a list containing the tagAnswer and id of the way/node that we have to send to OSM.
+        console.log("My user now is" + this.$auth.user.myUserIDsignUpName)
+        console.log("Data is:");
+        console.log(data);
+
+        //Get the OSM Token
+        const authToken = await this.$auth.getTokenApi();
+        var token_to_use = "Bearer " + authToken.access_token;
+        var user_id = this.$auth.user.sub;
+        const osmToken = await this.$auth.getOSMTokenApi(user_id, token_to_use);
+        
+        if(osmToken!=undefined){
+          //Send data to osm logic using the authenticated user
+          console.log(osmToken.osmToken);
+          this.sendDataToOSMViaUser(osmToken, data.value);
+        }else{
+          //Send data to OSM using our OSM account
+          this.sendDataToOSM(data.value);
+        }
+
       });
+
     },
 
     mounted(){
@@ -48,6 +65,35 @@
       Vue.config.language = getLanguage();
     },
     methods:{
+
+      async sendDataToOSMViaUser(osmToken, data){
+        var my_body = {
+          "data": data,
+        }
+        try{
+          const my_url = this.$api_url + "/posts/sendOSM"
+          const requestSpatialite = {
+            method:"post", 
+            headers:{ "Content-Type":"application/json", "osm_token": osmToken},
+            body: JSON.stringify(my_body)
+          };
+          const fetchdata = await fetch(my_url,requestSpatialite)
+            .then(response => response.json())
+            .then((new_response_data)=>{
+              return new_response_data;
+            }).catch((err)=>console.log(err))
+            return fetchdata
+        }catch(e){
+          alert("Error sending data to OSM")
+        }
+      },
+
+      async sendDataToOSM(data){
+        console.log("sending via my account");
+        console.log(data);
+        return;
+      }
+
     }
   }
 
