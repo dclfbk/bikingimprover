@@ -19,15 +19,15 @@
           <ValidationForm v-else 
             :id="open[index].ID" :item="$gettext('checkTrueMsg') + $gettext(open[index].QUESTION) + $gettext('checkEndMsg') + $gettext(open[index].ANSWER) + '?'" 
             :type="open[index].TYPE" :score="open[index].SCORE" :userAnswered="open[index].USERANSWERED" :validationNumber="open[index].NUMBEROFVALIDATIONS"
-            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" :tagAnswer="open[index].TAGANSWER" :openAnswer="open[index].ANSWER" ref="validateOtherQuests"
+            :userWhoValidated="open[index].USERSWHOVALIDATED" :realQuestion="open[index].QUESTION" :tagAnswer="open[index].TAGANSWER" :openAnswer="open[index].ANSWER" :uniqueID=index ref="validateOtherQuests"
           />
         </div>
       </li>
       <li v-for="(value,index) in this.validate" v-bind:key="'V'+index" style="list-style:none">
-        <div style="margin-left:-30px">
+        <div style="margin-left:-30px" v-if="validate[index].ANSWER==''">
           <md-icon style="float:left; position:relative; padding-top:10px;">{{validate[index].ICON}}</md-icon>
         </div>
-        <ValidationForm  :id="validate[index].ID" :item="validate[index].QUESTION" :type="validate[index].TYPE" :score="validate[index].SCORE" ref="validatequests"/>
+        <ValidationForm v-if="validate[index].ANSWER==''" :id="validate[index].ID" :item="validate[index].QUESTION" :type="validate[index].TYPE" :score="validate[index].SCORE" ref="validatequests"/>
       </li>
     </ul>
     <!--<PicForRev/>-->
@@ -155,13 +155,13 @@ export default {
           var cancella=true; //serve per sapere se eliminare completamente la strada
           if(this.$refs.openquests!=undefined){
             this.$refs.openquests.forEach(async i=>{
-              answer=i.answer;
+              answer=this.$gettext(i.answer,"English");
               question=i.item;
               id=i.id;
               type=i.type
               score = i.score + shouldAddPoint;
               tagAnswer = i.tagAnswer;
-              //console.log(score);
+              //answer = answer.toLowerCase();
               //check that the answer isn't empty, if it isn't then send the answer
               if(i.answer!=""){
                 answerList.push({
@@ -172,6 +172,8 @@ export default {
                     score,
                     tagAnswer
                   });
+                //console.log("THE ANSWER THAT YOU ARE SENDING IS:")
+                //console.log(answer);
                 scoreToSend = scoreToSend + score;
               }else{
                 //otherwise set cancella=false in order to not delete the geometry.
@@ -207,7 +209,7 @@ export default {
           }else{
             if(this.$refs.validatequests!=undefined){
               this.$refs.validatequests.forEach(async i=>{
-                answer = i.answer;
+                answer=this.$gettext(i.answer,"English");
                 question=i.item;
                 id=i.id;
                 type=i.type;
@@ -254,7 +256,7 @@ export default {
                 }
                 else{
                   openAnswer = i.openAnswer;
-                  answer = i.answer;
+                  answer = answer=this.$gettext(i.answer,"English");
                   question=i.item;
                   id=i.id;
                   type=i.type;

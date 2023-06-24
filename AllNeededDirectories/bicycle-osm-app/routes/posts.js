@@ -616,7 +616,8 @@ router.get("/getOSMElement/:type&:id", (req,res)=>{
     const request = require("request");
     //GET OSM ELEMENT
     try{   
-        var osmUrlApi = "https://api.openstreetmap.org/api/0.6/";
+        //var osmUrlApi = "https://api.openstreetmap.org/api/0.6/";
+        var osmUrlApi = "https://master.apis.dev.openstreetmap.org/api/0.6/";
         osmUrlApi = osmUrlApi + type + "/" + id;
         //console.log(osmUrlApi)
 
@@ -624,7 +625,6 @@ router.get("/getOSMElement/:type&:id", (req,res)=>{
             method: 'GET',
             uri: osmUrlApi,
             headers: { "Content-Type":"application/json"},
-            json: true
         };
         
         request(options, function(error, response, body){
@@ -700,6 +700,7 @@ router.post("/sendOSM", (req,res)=>{
                         res.status(500).json({ error: 'Failed to retrieve OSM element' });
                     } else {
                         console.log("seems everythign went ok")
+                        console.log(body)
                         res.status(200);
                     }
                 })
@@ -716,17 +717,19 @@ router.post("/sendOSM", (req,res)=>{
 
 router.post("/importOSM",async (req,res) =>{
     const fetch = require("node-fetch");
+    const token = req.get("osm_token");
     try {
         const oldElement = req.body.old_element;
         const newElement = req.body.new_element;
-        const osmPw = "Basic cGFyYTpwYXJhcGFyYQ==";
+        //const osmPw = "Basic cGFyYTpwYXJhcGFyYQ==";
+        const osmPw = "Bearer " + token;
 
         console.log(oldElement);
         console.log(newElement[0]);
 
         //Get all the tags needed from the oldElement.
-        //const id = newElement[0].id;
-        const id = "1"; //TO REMOVE
+        const id = newElement[0].id;
+        //const id = "1"; //TO REMOVE
         const type = newElement[0].type.toLowerCase();
         var tagsKeys = [];
         var tagsAnswers = [];
@@ -735,21 +738,21 @@ router.post("/importOSM",async (req,res) =>{
         for(var i = 0; i < newElement.length; i++){
             tagsKeys.push(newElement[i].tagAnswer)
             tagsAnswers.push(newElement[i].openAnswer)
-            newTagsXML = newTagsXML + '<tag k="' + newElement[i].tagAnswer + '" v="' + newElement[i].openAnswer + '" />' +'\n'
+            newTagsXML = newTagsXML + '<tag k="' + newElement[i].tagAnswer + '" v="' + newElement[i].openAnswer.toLowerCase() + '" />' +'\n'
         }
 
         console.log(newTagsXML)
 
         //TODO Check that the elements don't have same tags, if they do then don't add that certain tag.
-
+        //CHECK NO DUPLICATE TAGS.
+        
         //
-
-
-        //const newTagElements = "<tag k=" + tag.getAttribute("k")}" v="${tag.getAttribute("v")}" />"
     
         // Step 1: Create a Changeset
-        const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" //'https://api.openstreetmap.org/api/0.6/changeset/create';
-        const createChangesetBody = `<osm><changeset><tag k="source" v="BikingImprover" /><tag k="bot" v="yes" /></changeset></osm>`;
+        //const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" //'https://api.openstreetmap.org/api/0.6/changeset/create';
+        const createChangesetUrl = " https://master.apis.dev.openstreetmap.org/api/0.6/changeset/create"
+        //const createChangesetBody = `<osm><changeset><tag k="source" v="BikingImprover" /><tag k="bot" v="yes" /></changeset></osm>`;
+        const createChangesetBody = `<osm><changeset><tag k="source" v="TESTING" /><tag k="bot" v="yes" /></changeset></osm>`;
 
         //SHOULD SAVE MY CHANGES SOMEWHERE SO THAT I CAN REVERT THEM HERE
 
@@ -781,16 +784,18 @@ router.post("/importOSM",async (req,res) =>{
             .join('');
 
         const wayOrNodeElement = xmlDoc.getElementsByTagName(type)[0];
-        //const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
-        wayOrNodeVersion = "9"; //TOI REMOVE
+        const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
+        
+        //wayOrNodeVersion = "11"; //TOI REMOVE
     
         // Step 2: Update the Element
+        const updateElementUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/" + type + "/" + id;
         //const updateElementUrl = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
-        const updateElementUrl = "http://localhost:3000/api/0.6/" + type + "/" + id;
+        //const updateElementUrl = "http://localhost:3000/api/0.6/" + type + "/" + id;
         const updateElementBody = `<osm version="0.6">
                                     <changeset>
                                         <tag k="source" v="BikingImprover"/>
-                                        <tag k="comment" v="Updating the element with tags"/>
+                                        <tag k="comment" v="Testing the updatee of a way"/>
                                     </changeset>
                                         <${type} id="${id}" changeset="${changesetId}" version="${wayOrNodeVersion}">
                                             ${oldTagElements}
@@ -816,8 +821,9 @@ router.post("/importOSM",async (req,res) =>{
         }
     
         // Step 3: Close the Changeset
-        const closeChangesetUrl = "http://localhost:3000/api/0.6/changeset/" + changesetId + "/close"//`https://api.openstreetmap.org/api/0.6/changeset/${changesetId}/close`;
-    
+        //const closeChangesetUrl = "http://localhost:3000/api/0.6/changeset/" + changesetId + "/close"//`https://api.openstreetmap.org/api/0.6/changeset/${changesetId}/close`;
+        const closeChangesetUrl = `https://master.apis.dev.openstreetmap.org/api/0.6/changeset/${changesetId}/close`
+
         const closeChangesetResponse = await fetch(closeChangesetUrl, {
           method: 'PUT',
           headers: {
