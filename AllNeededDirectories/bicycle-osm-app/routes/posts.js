@@ -631,6 +631,8 @@ router.get("/getOSMElement/:type&:id", (req,res)=>{
             if (error) {
                 console.error('Error retrieving OSM element:', error);
                 res.status(500).json({ error: 'Failed to retrieve OSM element' });
+            } else if(response.statusCode!=200){
+                res.status(500).send("Error retrieving OSM element");
             } else {
                 //console.log("was able to retrieve OSM element")
                 //console.log(body);
@@ -674,6 +676,8 @@ router.post("/sendOSM", (req,res)=>{
             if (error) {
                 console.error('Error retrieving OSM element:', error);
                 res.status(500).json({ error: 'Failed to retrieve OSM element' });
+            } else if(response.statusCode!=200){
+                res.status(500).send("Error retrieving OSM ELEMENT");
             } else {
                 console.log("was able to retrieve OSM element")
                 console.log(body);
@@ -693,17 +697,24 @@ router.post("/sendOSM", (req,res)=>{
                     body: my_body,
                     json: true
                 };
-                
-                request(importOptions, function(error,reponse,body){
+
+                request(importOptions, function(error,response,body){
                     if (error) {
-                        console.error('Error retrieving OSM element:', error);
+                        console.error('Error importing OSM element:', error);
                         res.status(500).json({ error: 'Failed to retrieve OSM element' });
                     } else {
-                        console.log("seems everythign went ok")
-                        console.log(body)
-                        res.status(200);
+
+                        if(response.statusCode!=200){
+                            console.log("THERE WAS INDEED AN ERROR!")
+                            res.status(500).send(response)
+                        }else{
+                            console.log("seems everything went ok")
+                            console.log(body)
+                            res.status(200).send("OSM Element updated");
+                        }
                     }
                 })
+                
                 //res.status(200).json({ok: "ok"});
             }
         });
@@ -721,15 +732,10 @@ router.post("/importOSM",async (req,res) =>{
     try {
         const oldElement = req.body.old_element;
         const newElement = req.body.new_element;
-        //const osmPw = "Basic cGFyYTpwYXJhcGFyYQ==";
         const osmPw = "Bearer " + token;
 
-        console.log(oldElement);
-        console.log(newElement[0]);
-
-        //Get all the tags needed from the oldElement.
+        //Get all the tags needed from the newElement.
         const id = newElement[0].id;
-        //const id = "1"; //TO REMOVE
         const type = newElement[0].type.toLowerCase();
         var tagsKeys = [];
         var tagsAnswers = [];
@@ -738,26 +744,72 @@ router.post("/importOSM",async (req,res) =>{
         for(var i = 0; i < newElement.length; i++){
             tagsKeys.push(newElement[i].tagAnswer)
             tagsAnswers.push(newElement[i].openAnswer)
-            newTagsXML = newTagsXML + '<tag k="' + newElement[i].tagAnswer + '" v="' + newElement[i].openAnswer.toLowerCase() + '" />' +'\n'
+        }
+        
+        //Now get the tags from the osm element (that we are going to update)
+        const { DOMParser } = require('xmldom');
+
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(oldElement, 'application/xml');
+
+        const oldTags = xmlDoc.getElementsByTagName('tag');
+        const oldTagKeys = Array.from(oldTags).map((oldTags) => oldTags.getAttribute("k"));
+        const oldTagElements = Array.from(oldTags).map((tag) => `<tag k="${tag.getAttribute("k")}" v="${tag.getAttribute("v")}" />`).join('');
+        
+        //CHECK NO DUPLICATE TAGS. If I find a key in the osm element that is inside my updated one, I have to remove it to avoid duplicates.
+        const filteredArrayKeys = [];
+        const filteredArrayAnswers = [];
+
+        tagsKeys.forEach((element, index) => {
+            if (!oldTagKeys.includes(element)) {
+                filteredArrayKeys.push(element);
+                filteredArrayAnswers.push(tagsAnswers[index]);
+            }
+        });
+
+        for(var i = 0; i < filteredArrayKeys.length; i++){
+            newTagsXML = newTagsXML + '<tag k="' + filteredArrayKeys[i] + '" v="' + filteredArrayAnswers[i].toLowerCase() + '" />' +'\n'
         }
 
-        console.log(newTagsXML)
+        if(filteredArrayKeys.length == 0){
+            //res.status(500).send("There was nothing to update, no new tags.")
+            throw new Error('There was nothing to update, no new tags.');
+        }
 
-        //TODO Check that the elements don't have same tags, if they do then don't add that certain tag.
-        //CHECK NO DUPLICATE TAGS.
+        const stringFilteredArrayKeys = filteredArrayKeys.join(", ");
+        const stringFilteredArrayAnswers = filteredArrayAnswers.join(", ");
+        //console.log(newTagsXML)
+        //console.log(oldTagElements)
         
-        //
+        /**
+         * STEP 1: Create a Changeset
+         * */ 
+        const wayOrNodeElement = xmlDoc.getElementsByTagName(type)[0];
+        const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
+        let lat = ""
+        let lon = ""
+
+        //Get the lat and lon if it is a node
+        if(type == "node"){
+            lat = wayOrNodeElement.getAttribute("lat")
+            lon = wayOrNodeElement.getAttribute("lon")
+        }
     
-        // Step 1: Create a Changeset
         //const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" //'https://api.openstreetmap.org/api/0.6/changeset/create';
         const createChangesetUrl = " https://master.apis.dev.openstreetmap.org/api/0.6/changeset/create"
         //const createChangesetBody = `<osm><changeset><tag k="source" v="BikingImprover" /><tag k="bot" v="yes" /></changeset></osm>`;
-        const createChangesetBody = `<osm><changeset><tag k="source" v="TESTING" /><tag k="bot" v="yes" /></changeset></osm>`;
+        const createChangesetBody = 
+        `<osm>
+    <changeset>
+    <tag k="source" v="TESTING" />
+    <tag k="bot" v="yes" />
+    <tag k="comment" v="Adding tags to some OSM elements. Tags are about cyclability and were validated by users using Biking-Improver." />
+    </changeset>
+</osm>`;
 
         //SHOULD SAVE MY CHANGES SOMEWHERE SO THAT I CAN REVERT THEM HERE
 
         //
-    
         const createChangesetResponse = await fetch(createChangesetUrl, {
           method: 'PUT',
           headers: {
@@ -768,26 +820,12 @@ router.post("/importOSM",async (req,res) =>{
         });
     
         if (!createChangesetResponse.ok) {
-          throw new Error('Failed to create Changeset');
+          throw new Error("Failed to create changeset");
         }
     
         const changesetId = await createChangesetResponse.text();
         console.log("this is my changeset id: " + changesetId);
 
-        const { DOMParser } = require('xmldom');
-
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(oldElement, 'application/xml');
-
-        const oldTagElements = Array.from(xmlDoc.getElementsByTagName("tag"))
-            .map(tag => `<tag k="${tag.getAttribute("k")}" v="${tag.getAttribute("v")}" />`)
-            .join('');
-
-        const wayOrNodeElement = xmlDoc.getElementsByTagName(type)[0];
-        const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
-        
-        //wayOrNodeVersion = "11"; //TOI REMOVE
-    
         // Step 2: Update the Element
         const updateElementUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/" + type + "/" + id;
         //const updateElementUrl = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
@@ -795,17 +833,17 @@ router.post("/importOSM",async (req,res) =>{
         const updateElementBody = `<osm version="0.6">
                                     <changeset>
                                         <tag k="source" v="BikingImprover"/>
-                                        <tag k="comment" v="Testing the updatee of a way"/>
+                                        <tag k="comment" v="Testing the update of a way, adding tags ${stringFilteredArrayKeys} with values ${stringFilteredArrayAnswers}"/>
                                     </changeset>
-                                        <${type} id="${id}" changeset="${changesetId}" version="${wayOrNodeVersion}">
+                                        <${type} id="${id}" changeset="${changesetId}" version="${wayOrNodeVersion}" ${type === 'node' ? ` lat="${lat}" lon="${lon}"` : ''}>
                                             ${oldTagElements}
                                             ${newTagsXML}
                                         </${type}>
                                     </osm>`;
 
-        console.log(updateElementBody);
-        console.log(updateElementUrl);
-
+        //console.log(updateElementBody);
+        //console.log(updateElementUrl);
+        
         const updateElementResponse = await fetch(updateElementUrl, {
           method: 'PUT',
           headers: {
@@ -839,7 +877,7 @@ router.post("/importOSM",async (req,res) =>{
         res.status(200).send('Success');
       } catch (error) {
         console.error(error);
-        res.status(500).send('Error');
+        res.status(500).send(error.message);
       }
 });
 
