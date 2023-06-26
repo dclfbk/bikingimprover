@@ -120,7 +120,7 @@ router.post('/userValidatedOther',(req,res)=>{
         if(allAnswers[i].answer_to_send == "si"){
             var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = NUMBEROFVALIDATIONS + 1, USERSWHOVALIDATED = USERSWHOVALIDATED ||\"" + validators + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].realQuestion + "\" " + "AND TYPE = '" + allAnswers[i].type +"';" 
         }else{
-            var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = NUMBEROFVALIDATIONS - 1, USERSWHOVALIDATED = USERSWHOVALIDATED ||\"" + validators + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].realQuestion + "\" " + "AND TYPE = '" + allAnswers[i].type +"';" 
+            var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = CASE WHEN NUMBEROFVALIDATIONS < 2 THEN NUMBEROFVALIDATIONS - 1 ELSE NUMBEROFVALIDATIONS END, USERSWHOVALIDATED = USERSWHOVALIDATED ||\"" + validators + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].realQuestion + "\" " + "AND TYPE = '" + allAnswers[i].type +"';" 
         }
        console.log(query);
         queries.push(query);
