@@ -104,48 +104,153 @@ router.post('/addAnswer',(req,res)=>{
 })
 
 //this function is used for the validations of the answers of other users
-//it requires the chosen answer(answer), the id of the way/node(id), the type of the way or node(type), the user that has answered(userName),
-//the list of validators(validators), the number of validations received(validations) and the question of the way/node(realQuestion)
+//it updates each element, then checks if that elements has 2 positive validations. If it does then it sends the data to OSM.
 router.post('/userValidatedOther',(req,res)=>{
-    const answer= req.body.answer;
-    const id = req.body.id;
-    const question = req.body.question;
-    const type = req.body.type;
-    const userName = req.body.userName;
-    var validators = req.body.validators;
-    var validations = req.body.validations;
-    const realQuestion = req.body.realQuestion;
+    const allAnswers = req.body.answers;
+    const username = req.body.userName;
+    const token = req.get("token");
 
-    console.log(answer)
-    console.log("THIS IS THE VALIDATIONS I RECEIVED" + validations);
-    if(answer == "si"){
-        if(validations == "" || validations == null || validations == undefined){
-            console.log("undefined or nothing")
-            validations = "1";
+    console.log(allAnswers);
+    console.log(username);
+    console.log(token)
+
+    const queries = []
+    for(var i=0; i < allAnswers.length; i++){
+        validators = allAnswers[i].userWhoValidated + "," + username
+        if(allAnswers[i].answer_to_send == "si"){
+            var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = NUMBEROFVALIDATIONS + 1, USERSWHOVALIDATED = USERSWHOVALIDATED ||\"" + validators + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].realQuestion + "\" " + "AND TYPE = '" + allAnswers[i].type +"';" 
         }else{
-            console.log("Have to increment the number")
-            validations = parseInt(validations) + 1;
+            var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = NUMBEROFVALIDATIONS - 1, USERSWHOVALIDATED = USERSWHOVALIDATED ||\"" + validators + "\" WHERE ID = " +allAnswers[i].id+" AND QUESTION = \"" + allAnswers[i].realQuestion + "\" " + "AND TYPE = '" + allAnswers[i].type +"';" 
         }
-    }else{
-        if(validations == "" || validations == null || validations == undefined){
-            console.log("undefined or nothing")
-            validations = "-1";
-        }else{
-            console.log("Have to decrease the numebr")
-            validations = parseInt(validations) - 1;
-        }
+       console.log(query);
+        queries.push(query);
     }
-    validations = validations.toString();
+    console.log(queries);
+
     var sqlite = require('spatialite');
     var db = new sqlite.Database(databaseToUse);
-    console.log("this is the answer given to the validated other:" + answer)
-    console.log("This is the number of validations " + validations);
-    validators = validators + "," + userName
-    var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = \"" + validations +"\", USERSWHOVALIDATED = \"" + validators + "\" WHERE ID = " +id+" AND QUESTION = \"" + realQuestion + "\" " + "AND TYPE = '" + type +"';" 
-    console.log(query);
+
+    var elementsToSendOSM = []
+    var statusResponse = ""
+
+    db.spatialite(function(err) {
+        if (err) {
+            console.log("THERE'S AN ERROR!" + err);
+            res.status(400).send(err);
+            return;
+        }
+    
+        db.serialize(function() {
+            db.run('BEGIN DEFERRED TRANSACTION;');
+            var completedQueries = 0;
+    
+            async function executeQuery(query, callback) {
+                db.run(query, function(err) {
+                    if (err) {
+                        console.log("THERE'S AN ERROR!" + err);
+                        res.status(400).send(err);
+                        return;
+                    }
+    
+                    var getQuery = 'SELECT * FROM "question_table" WHERE ID =' + allAnswers[0].id + " AND QUESTION =\"" + allAnswers[completedQueries].realQuestion + "\";";
+                    db.each(getQuery, function(err, row) {
+                        element = row;
+                        //my_array.push(element);
+                        if (element.NUMBEROFVALIDATIONS == 2) { //TODO SHOULD BE 2
+                            console.log(getQuery);
+                            console.log(completedQueries);
+                            console.log(allAnswers[completedQueries].answer_to_send)
+                            console.log(element);
+                            if(allAnswers[completedQueries].answer_to_send == "si"){
+                                elementsToSendOSM.push(allAnswers[completedQueries])
+                                console.log("SEND TO OSM the elment");
+                            }else{
+                                console.log("DO NOT SEND TO OSM the element")
+                            }
+                        }
+                    }, async function(err, rows) {
+                        if (err) {
+                            console.log("THERE'S AN ERROR!" + err);
+                            //res.status(400).send(err);
+                        } else {
+                            console.log(elementsToSendOSM.length)
+                            console.log("completed queries: " + completedQueries)
+                            if(elementsToSendOSM.length!=0 && completedQueries == allAnswers.length - 1){
+                                console.log("now send the list to OSM");
+                                console.log(elementsToSendOSM.length);
+                                const socketApiOSM = req.protocol + '://' + req.get('host') + "/posts/validated/sendToOsm";
+                                const request = require("request");
+                                console.log(socketApiOSM);
+
+                                const my_body = {
+                                    "completed" : elementsToSendOSM
+                                }
+                                const options = {
+                                    method: 'POST',
+                                    uri: socketApiOSM,
+                                    body: my_body,
+                                    headers:{"Content-Type":"application/json", 'pw_token':token},
+                                    json: true
+                                };
+
+                                request(options, function(error, response, body){
+                                    if (error) {
+                                        //res.status(500).send("THERE WAS AN ERROR WHEN SENDING ITEMS");
+                                        statusResponse = "ERRORE";
+                                    } else {
+                                        if (response.statusCode !== 200) {
+                                            //res.status(500).send("SENT TO OSM");
+                                            statusResponse = response;
+                                        } else {
+                                            statusResponse = response;
+                                            //res.send(response.body);
+                                        }
+                                    }
+                                });
+                            }
+                            
+                            //res.status(200).send("success");
+                        }
+                        callback(); // Callback to indicate query completion
+                    });
+                });
+            }
+    
+            async function processNextQuery() {
+                if (completedQueries === queries.length) {
+                    db.run('COMMIT;', function(err) {
+                        db.close();
+                        if (err) {
+                            console.log("THERE'S AN ERROR!" + err);
+                            res.status(400).send(err);
+                        } else {
+                            console.log("Working...");
+                            res.status(200).send(statusResponse);
+                        }
+                    });
+                } else {
+                    var query = queries[completedQueries];
+                    executeQuery(query, async function() {
+                        completedQueries++;
+                        await processNextQuery(); // Recursively process the next query
+                    });
+                }
+            }
+    
+            processNextQuery(); // Start processing the first query
+        });
+    });
+
+})
+
+router.get('/getUpdate',(req,res)=>{
+    var sqlite = require('spatialite');
+    var db = new sqlite.Database(databaseToUse);
+    var query = 'SELECT * FROM "question_table" WHERE ID = 775556639'
     db.spatialite(function(err){
         db.each(query, function(err,row){
             element = row;
+            console.log(element)
             //my_array.push(element);
         },function(err,rows){
             //console.log(my_array);
@@ -160,7 +265,7 @@ router.post('/userValidatedOther',(req,res)=>{
             }
         })
     })
-})
+});
 
 //GIVE THE PLAYER THE REQUIRED POINTS FROM COMPLETING A MISSION
 //REQUIRES THE PLAYER NAME IN THE BODY, THE TYPE OF MISSION (VALIDATION OR NORMAL) AND THE POINTS ASSOCIATED

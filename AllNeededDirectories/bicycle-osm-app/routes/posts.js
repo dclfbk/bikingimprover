@@ -978,7 +978,7 @@ router.post("/validated/sendToOsm"/*,verify*/, (req,res) =>{
       // Replace the following code with your actual implementation
       console.log('No connected user with the matching name found. Perform the desired action.');
     }*/
-  
+    
     res.status(200).json({ message: 'Value updated successfully' });
   
 });

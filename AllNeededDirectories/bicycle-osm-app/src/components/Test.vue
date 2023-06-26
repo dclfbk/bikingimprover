@@ -150,12 +150,18 @@ export default {
           //var usersWhoValidated = [];
           var answerList = [];
           var scoreToSend = 0;
-          var maxValidationsOSM = []
+          //var maxValidationsOSM = []
+          var otherUserValid = []
+          var scoreValidSum = 0;
 
           var cancella=true; //serve per sapere se eliminare completamente la strada
           if(this.$refs.openquests!=undefined){
             this.$refs.openquests.forEach(async i=>{
-              answer=this.$gettext(i.answer,"English");
+              if(typeof i.answer == "string"){
+                answer=this.$gettext(i.answer,"English");
+              }else{
+                answer = i.answer;
+              }
               question=i.item;
               id=i.id;
               type=i.type
@@ -239,105 +245,109 @@ export default {
             console.log("YOU CAN't ANSWER THIS! FIRST YOU HAVE TO ANSWER AT LEAST AN OPEN QUESTION")
           }else{
             if(this.$refs.validateOtherQuests!=undefined){
-              this.$refs.validateOtherQuests.forEach(async i=>{
+              const validPromises = this.$refs.validateOtherQuests.map(async i=>{
                 userAnswered = i.userAnswered
                 userWhoValidated = i.userWhoValidated
                 usersValidateArray = this.splitTheArray(userWhoValidated)
+                openAnswer = i.openAnswer;
+                answer = i.answer;
+                question=i.item;
+                id=i.id;
+                type=i.type;
+                realQuestion = i.realQuestion;
+                numberOfValidations = i.validationNumber;
+                score = i.score;
+                tagAnswer = i.tagAnswer;
+
                 if(userAnswered == this.$auth.user.myUserIDsignUpName){
-                  //User is validating an answer that he as given
-                  this.createPopup(this.$gettext("validationErrorTitleMsg"), this.$gettext("validationErrorMsg"));
-                  alreadyGenerated=true
-                  cancella=false;
+                    //User is validating an answer that he as given
+                    this.createPopup(this.$gettext("validationErrorTitleMsg"), this.$gettext("validationErrorMsg"));
+                    alreadyGenerated=true
+                    cancella=false;
                 }else if(usersValidateArray.includes(this.$auth.user.myUserIDsignUpName)){
-                  //User has already validated this answer
-                  this.createPopup(this.$gettext("alreadyValidatedTitleMsg"), this.$gettext("alreadyValidatedMsg"));
-                  alreadyGenerated = true
-                  cancella = false
-                }
-                else{
-                  openAnswer = i.openAnswer;
-                  answer = answer=this.$gettext(i.answer,"English");
-                  question=i.item;
-                  id=i.id;
-                  type=i.type;
-                  realQuestion = i.realQuestion;
-                  numberOfValidations = i.validationNumber;
-                  score = i.score;
-                  tagAnswer = i.tagAnswer;
-                  console.log("THIS IS THE NUMBER OF VALIDATION WHEN SENDIN: " + i.numberOfValidations);
-                  //numberOfValidations = numberOfValidations.toString();
-                  close_popup=true;
-                  if(answer == true || answer == "true"){
-                    //console.log("answer is true")
-                    answer_to_send = "si"
-                    if(numberOfValidations < 0){ //TODO SHOULD BE 1 NOT 0!!!! 1 because the number of validations gets updated later.
-                      //Set cancella=false because there are not enough validations
-                      console.log("numero di validazioni minore di 0")
-                      cancella=false
+                    //User has already validated this answer
+                    this.createPopup(this.$gettext("alreadyValidatedTitleMsg"), this.$gettext("alreadyValidatedMsg"));
+                    alreadyGenerated = true
+                    cancella = false
+                }else{
+                    if(answer == true || answer == "true"){
+                        answer_to_send = "si"
                     }else{
-                      //console.log("Ma cancella qua poitrebbe e forse dovfrebbe essere true: " + cancella)
-                      //cancella=true;
-                      //close_popup = true;
-                      console.log("numero di validazioni maggiore di 0")
-                      maxValidationsOSM.push({
-                        openAnswer,
-                        userAnswered,
-                        id,
-                        question,
-                        type,
-                        score,
-                        tagAnswer
-                      })
-                      await this.sendAnswerEngine("trust", userAnswered, score,1)
+                        answer_to_send = "no"
                     }
-                  }else{
-                    answer_to_send = "no"
-                    if(numberOfValidations > -1){ //-1 perchè viene updatato dopo 
-                      //console.log("setto cancella a false");
-                      cancella = false;
-                    }else{
-                      console.log("Ma cancella qua poitrebbe e forse dovfrebbe essere true: " + cancella)
-                      stillValid = false
-                      //Remove the points that the user received through this answer
 
-                      cancella=false
-                      close_popup = true
-                      await this.deletePreviousUserAnswer(id,type,realQuestion).then(async items=>{
-                        console.log(items)
-                        await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName,1.0, 1)
-                      })
-                      await this.sendAnswerEngine("remove",userAnswered,score, 1)//remove the points to the user that answered previously
+                    close_popup=true;
+
+                    if(answer == true || answer == "true"){
+            
+                        if(numberOfValidations < 1){ //TODO SET IT TO 1
+                            cancella = false
+                        }else{
+                            await this.sendAnswerEngine("trust", userAnswered, score,1)
+                        }
+
+                    }else{
+
+                        if(numberOfValidations > -1){ //-1 perchè viene updatato dopo 
+                            cancella = false;
+                        }else{
+                            stillValid = false
+                            //Remove the points that the user received through this answer
+              
+                            cancella=false
+                            close_popup = true
+
+                            await this.deletePreviousUserAnswer(id,type,realQuestion).then(async items=>{
+                                console.log(items)
+                                await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName,1.0, 1)
+                            })
+                            await this.sendAnswerEngine("remove",userAnswered,score, 1)//remove the points to the user that answered previously
+                        }
                     }
-                  }
-                  //I give the points to the user that gave the validation
-                  if(i.answer!="" && stillValid){
-                    close_popup=true
-                    await this.sendAnswerValidateOther(answer_to_send,id,question,type,numberOfValidations,realQuestion, userWhoValidated).then(async items=>{
+
+                    console.log("proviamo ancora" + i.answer + " " + stillValid);
+                    if(i.answer!="" && stillValid){
+                        otherUserValid.push({
+                            openAnswer,
+                            userAnswered,
+                            id,
+                            question,
+                            type,
+                            score,
+                            tagAnswer,
+                            usersValidateArray,
+                            answer_to_send,
+                            realQuestion,
+                            numberOfValidations,
+                            userWhoValidated
+                        })
+                        scoreValidSum = scoreValidSum + 1.0;
+                        console.log("AGGIUNTO ELEMENTO ALLA OTHERUSERVALID")
+                    }else{
+                      cancella=false;
+                    }
+
+                }
+              })
+
+              await Promise.all(validPromises);
+              console.log("QUESTA E' USERVALID")
+              console.log(otherUserValid.length)
+              console.log(otherUserValid)
+              if(otherUserValid.length > 0){
+                  console.log("now calling the thing to validate other")
+                  close_popup=true
+
+                  await this.sendAnswerValidateOther(otherUserValid).then(async items =>{
                       console.log(items)
-                      console.log("workedval?")
-                      //call the game engine to get the score
-                      await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, 1.0, 1)
-                    })
-                  }else{
-                    console.log("setto cancella a false perchè non c'è una risposta");
-                    cancella=false
-                  }
-                }
-              })   
-            /*if(this.$refs.validateOtherQuests.length == 0 && this.$refs.openquests.length!=0){
-              cancella=false;
-            }*/
-            }else{
-              console.log("setto cancella a false perchè qualche non esiste la ref a validatektheruser");
-              cancella=false
-            }
-          }
+                      await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, scoreValidSum, otherUserValid.length);
+                  })
 
-          if(maxValidationsOSM.length > 0){
-            //send data to OSM
-            console.log("HERE I SHOULD SEND THE DATA TO OSM, GETING THE ELEMENT AND THEN SEND THE DATA");
-            console.log(maxValidationsOSM);
-            this.sendCallSocketForOSM(maxValidationsOSM);
+              }
+
+            }else{
+              cancella=false;
+            }
           }
           
           //Maybe here I can make a form to get a loaded image. I get the image of the form and make a post call in order to save it in a database
@@ -486,23 +496,18 @@ export default {
     },
 
     //the user validated the answer of another user
-    async sendAnswerValidateOther(answer,id,question,type, numberOfValidations, realQuestion, usersValidators){
+    async sendAnswerValidateOther(validList){
       var my_body = {
-        "id": id,
-        "answer": answer,
-        "question": question,
-        "type": type,
+        "answers": validList,
         "userName": this.$auth.user.myUserIDsignUpName,
-        "validations" : numberOfValidations,
-        "realQuestion" : realQuestion,
-        "validators" : usersValidators
       }
       console.log(my_body)
+      const jwtToken = await this.$auth.getTokenApi();
       try{
         const my_url = this.$api_url + "/missions/userValidatedOther"
         const requestSpatialite = {
           method: "post",
-          headers:{"Content-Type":"application/json"},
+          headers:{"Content-Type":"application/json", "token": jwtToken.access_token},
           body: JSON.stringify(my_body),
         };
         const fetchdata = await fetch(my_url, requestSpatialite)
@@ -572,6 +577,7 @@ export default {
     },
 
     //sends the answer to the gamification engine in order to update the user data
+    //TODO MAKE IT SO THAT THE GAME ENGINE HANDLES THE SCORE AND THE NUMBER OF VALIDATIONS SENT. CURRENTLY RULES ONLY HANDLE THE FACT TTHAT'S ONLY ONE VALIDATION AT A TIME.
     async sendAnswerEngine(type,nickname,score, listLength){
       //console.log("WHY IS IT NOT WORKING?")
       console.log("TYPE SENT"+type)
@@ -581,11 +587,11 @@ export default {
       var my_list = listLength.toString();
       //Only 1 point for the validation answers
       if(type=="validation"){
-        my_score="1";
+        //my_score="1";
         console.log("THIS IS MY NEW SCORE: " + my_score);
-        score=1;
+        //score=1;
       }
-      my_score = my_score + ".0";
+      //my_score = my_score + ".0";
       //console.log(my_score)
       var my_body = {
         "playerId" : nickname,
@@ -606,7 +612,9 @@ export default {
         const fetchdata = await fetch(my_url, requestSpatialite)
           .then(response => response.json())
           .then((new_response_data)=>{
-            this.updateUserInfo(type,score, listLength);
+            if(nickname == this.$auth.user.nickname){
+              this.updateUserInfo(type,score, listLength);
+            }
             return new_response_data;
           }).catch((err)=>console.log(err))
           return fetchdata
