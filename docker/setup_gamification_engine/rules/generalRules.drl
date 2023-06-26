@@ -113,6 +113,9 @@ end
 rule "validation-answer-until-level-x"
 when
   Action(id == 'ValidatePoint')
+  InputData(
+        $solution : data["solution"];
+  )
   $bc : BadgeCollectionConcept(name == "validator badge", badgeEarned contains '1-badge-earned')
   $GoldCoinsScore : PointConcept(name == "GoldCoins")
   $PointsScore : PointConcept(name == "AccumulatedPoints")
@@ -120,8 +123,13 @@ when
  
   not AlreadyLevelUp()
 then
+  Map solutionMap = ((Map)$solution);
 
-  Double  punti = 1.0;
+  String myPoints = (String)solutionMap.get("points"); 
+  Double punti = Double.parseDouble(myPoints); 
+  String numberAnswers = (String)solutionMap.get("numberAnswers");
+  Integer answersToAdd = Integer.parseInt(numberAnswers); 
+
   // update the counter
   modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
   modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
@@ -149,9 +157,10 @@ then
     utils.log("Nuovo Livello: "+newLevelString);
     update($customData);
   }
+
   String actualValidations = (String)$customData.get("validation_completed");
   Integer ac = Integer.parseInt(actualValidations);
-  ac = ac +1;
+  ac = ac + answersToAdd;
   String newValidations = String.valueOf(ac);
   $customData.put("validation_completed", newValidations);
  
@@ -169,6 +178,9 @@ end
 rule "validation-answer-until-level-x-no-badge"
 when
   Action(id == 'ValidatePoint')
+  InputData(
+        $solution : data["solution"];
+  )
   $bc : BadgeCollectionConcept(name == "validator badge", badgeEarned not contains '1-badge-earned')
   $GoldCoinsScore : PointConcept(name == "GoldCoins")
   $PointsScore : PointConcept(name == "AccumulatedPoints")
@@ -177,7 +189,13 @@ when
   not AlreadyLevelUp()
 then
 
-  Double  punti = 1.0;
+  Map solutionMap = ((Map)$solution);
+
+  String myPoints = (String)solutionMap.get("points"); 
+  Double punti = Double.parseDouble(myPoints); 
+  String numberAnswers = (String)solutionMap.get("numberAnswers");
+  Integer answersToAdd = Integer.parseInt(numberAnswers); 
+
   // update the counter
   modify($GoldCoinsScore){setScore($GoldCoinsScore.getScore() + punti);}
   modify($PointsScore) {setScore($PointsScore.getScore() + punti);}
@@ -205,9 +223,10 @@ then
     utils.log("Nuovo Livello: "+newLevelString);
     update($customData);
   }
+
   String actualValidations = (String)$customData.get("validation_completed");
   Integer ac = Integer.parseInt(actualValidations);
-  ac = ac +1;
+  ac = ac + answersToAdd;
   String newValidations = String.valueOf(ac);
   $customData.put("validation_completed", newValidations);
  
