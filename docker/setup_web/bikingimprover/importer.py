@@ -94,13 +94,13 @@ class BaseImporter:
       medals = pd.read_csv("resources/allMedals.csv")
       powerups = pd.read_csv("resources/powerUps.csv")
       pins = pd.read_csv("resources/pin.csv")
-      #changeset = pd.read_csv("resources/changeset.csv");
+      changeset = pd.read_csv("resources/changeset.csv");
 
       with sqlite3.connect(self.db_path) as conn:
         medals.to_sql('medals_table', conn, if_exists='replace', index = False)
         powerups.to_sql('powerUps_table', conn, if_exists='replace', index = False)
         pins.to_sql('pins_table', conn, if_exists='replace', index = False)
-        #changeset.to_sql('changeset_table', conn, if_exists='replace', index = False)
+        changeset.to_sql('changesetSent_table', conn, if_exists='append', index = False)
 
       click.echo('done')
 
