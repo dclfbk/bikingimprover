@@ -211,4 +211,42 @@ router.post("/updateSent",(req,res)=>{
     })
 })
 
+router.post("/saveChangeset",(req,res)=>{
+    const elements = req.body.changesetList
+    /*"Added": my_import_responses[i].tagsAdded,
+    "id": my_import_responses[i].id,
+    "type": my_import_responses[i].type
+    "changesetID": changesetID*/
+
+    console.log(elements);
+    //console.log(sendToOSMValidated)
+    var query = "INSERT INTO changeset_table (CHANGESETID, NEWDATAIMPORT, ID, TYPE) VALUES "
+    for(var i=0; i<elements.length;i++){
+        if(i!=0){
+            query = query + ", "
+        }
+        query = query + "("
+        query = query + elements[i].changesetID + ", \"" + elements.Added + "\", " + elements.id + ", \"" + elements.type + "\")"
+    }
+    query = query + ";"
+    console.log(query);
+
+    var sqlite = require('spatialite');
+    var db = new sqlite.Database(databaseToUse);
+
+    db.spatialite(function(err){
+        db.each(query, function(err,row){
+            //console.log(row)
+            element = row;
+        },function(err,rows){
+            if(err){
+                res.status(500).send(err)
+            }else{
+                db.close();
+                res.status(200).json("success");
+            }
+        })
+    })
+})
+
 module.exports = router;

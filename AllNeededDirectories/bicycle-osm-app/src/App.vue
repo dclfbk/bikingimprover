@@ -65,18 +65,28 @@
             my_import_responses.push(importElement);
           }
 
-          //TODO INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
-            
-          //
-
-          //SET DB QUESTION_TABLE TO SENT = YES
           let setToSentList = []
+          let changesetList = []
           for(i=0; i<my_import_responses.length; i++){
             if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
               console.log(my_import_responses[i].sent);
               setToSentList.push(my_import_responses[i].sent)
+              const valueToAdd = {
+                "Added": my_import_responses[i].tagsAdded,
+                "id": my_import_responses[i].id,
+                "type": my_import_responses[i].type,
+                "changesetID": changesetID
+              }
+              changesetList.push(valueToAdd)
             }
           }
+
+          //TODO INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
+          const flatChangeset = [...setToSentList.flat().map(item => item)];
+          await this.saveChangeset(flatChangeset);
+          //
+
+          //SET DB QUESTION_TABLE TO SENT = YES
           const flatArray = [...setToSentList.flat().map(item => item)];
           await this.setToSent(flatArray);
 
@@ -161,6 +171,29 @@
             return fetchdata
         }catch(e){
           alert("Error creating changeset")
+        }
+      },
+
+      async saveChangeset(changesetList){
+        var my_body = {
+          "changesetList": changesetList,
+        }
+        try{
+          const my_url = this.$api_url + "/changeset/saveChangeset"
+          const requestSpatialite = {
+            method:"POST", 
+            headers:{ "Content-Type":"application/json"},
+            body: JSON.stringify(my_body),
+            json:true
+          };
+          const fetchdata = await fetch(my_url,requestSpatialite)
+            .then(response => response.json())
+            .then((new_response_data)=>{
+              return new_response_data;
+            }).catch((err)=>console.log(err))
+            return fetchdata
+        }catch(e){
+          alert("Error saving changeset")
         }
       },
 
