@@ -397,6 +397,8 @@ class OSMImporter(BaseImporter):
         my_data["USERANSWERED"] = ""
         my_data["NUMBEROFVALIDATIONS"] = 0
         my_data["USERSWHOVALIDATED"] = ""
+        my_data["SENT"] = "no"
+        my_data["TIME"] = 0
         print(my_data.head())
 
         with sqlite3.connect(self.db_path) as conn: 
@@ -410,7 +412,7 @@ class OSMImporter(BaseImporter):
         """
     else:
         query= """
-            SELECT TYPE, QUESTION, ID, SCORE, VALIDATING, ANSWERS, ICON, TAGANSWER, ANSWER, USERANSWERED, NUMBEROFVALIDATIONS, USERSWHOVALIDATED  FROM question_table_tmp 
+            SELECT TYPE, QUESTION, ID, SCORE, VALIDATING, ANSWERS, ICON, TAGANSWER, ANSWER, USERANSWERED, NUMBEROFVALIDATIONS, USERSWHOVALIDATED, SENT, TIME  FROM question_table_tmp 
         """
 
     with sqlite3.connect(self.db_path) as conn: 

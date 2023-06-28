@@ -35,6 +35,8 @@ export default class UserData{
     //create the userData and update it with the data of the gamification engine
     //add the power up in the database
     async createUser(userName,api_url, token){
+        this.setSocketId(userName)
+        console.log("COME ON");
         this.userName = userName;
         var my_user = userName;
         //var my_user = "anothertrycomeone";

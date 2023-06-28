@@ -9,6 +9,10 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors());
 
+//FUNCTIONS CALLED AFTER CERTAIN TIME
+const {CheckCompleted, UpdateCompleted, GetCompletedQuestions, UpdateOrImport, HandleNotSentData, SendWithMyAccount, UpdateTime} = require("./changesetLogic.js")
+
+
 //SOCKET
 const http = require('http').createServer(app);
 const io = require('socket.io')(http,{
@@ -20,11 +24,13 @@ const io = require('socket.io')(http,{
 
 //AGGIUNGO LE COSE DELL?ALtro sito
 const postsRoute = require('./routes/posts');
+const changesetRoute = require('./routes/changeset');
 const missionsRoute = require('./routes/missions');
 const manageImagesRoute = require('./routes/manageImages');
 const managePowerUpsRoute = require("./routes/managePowerUps");
 const manageBadgesRoute = require("./routes/manageBadges");
 const manageShopRoute = require("./routes/manageShop");
+const osmRoute = require("./routes/osmCalls")
 
 app.use('/missions', missionsRoute);
 app.use('/posts', postsRoute);
@@ -32,6 +38,8 @@ app.use('/manageImages', manageImagesRoute)
 app.use('/managePowerUps', managePowerUpsRoute);
 app.use('/badgesTable', manageBadgesRoute);
 app.use('/manageShop', manageShopRoute);
+app.use('/changeset', changesetRoute);
+app.use('/osmCalls', osmRoute);
 
 
 //here we are configuring dist to serve app files
@@ -59,6 +67,37 @@ io.on('connection', (socket) => {
 });
 
 app.set('io', io);
+//
+
+//FUNCTIONS CALLED AFTER A CERTAIN TIME HAS PASSED
+async function handleCompleted(route){
+	const ids = await CheckCompleted(route);
+	if(ids.length!=0){
+		console.log(ids)
+		await UpdateCompleted(route, ids);
+	}
+}
+
+async function handleChangesets(route){
+	const answers = await GetCompletedQuestions(route);
+	if(answers.length!=0){
+		console.log(answers)
+		const notSent = await UpdateOrImport(route, answers);
+		if(notSent.lengh != 0){
+			console.log("NOT SENT")
+			const data = HandleNotSentData(notSent)
+			//console.log(data.toUpdate);
+			await SendWithMyAccount(route, data.sendWithMyAccount)
+			await UpdateTime(route, data.toUpdate);
+		}
+	}
+}
+
+//handleCompleted(process.env.API_URL)
+handleChangesets(process.env.API_URL)
+
+//call handleCompleted every 40 minutes
+setInterval(() =>{/*handleCompleted(process.env.API_URL);*/ handleChangesets(process.env.API_URL)}, 0.1*60*1000);
 //
 
 
@@ -90,3 +129,4 @@ const port = process.env.PORT || 8080
 //app.listen(port)
 http.listen(port)
 console.log(`app is listening on port: ${port}`)
+
