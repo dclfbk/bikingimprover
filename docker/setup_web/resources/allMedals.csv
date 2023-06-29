@@ -1,5 +1,5 @@
 MEDALNAME,COLOR,DESCRIPTION
-wrong answer,black,Ottieni la medaglia 'wrong answer' se 5 user considerano sbagliata una tua risposta! 
+wrong answer,black,Ottieni la medaglia 'wrong answer' se 2 user considerano sbagliata una tua risposta! 
 validator badge,black,Ottieni la medaglia 'validator badge' se rispondi a una domanda di validazione!
 first steps,brown,Ottieni la medaglia 'first steps' se rispondi alla tua prima domanda!
 cyclist,silver,Ottieni la medaglia 'cyclist' se rispondi ad almeno 20 domande!
@@ -7,4 +7,4 @@ expert validator badge,gold,Ottieni la medaglia 'exper validator' se validi alme
 professional badge,gold,Ottieni la medaglia 'professional badge' se raggiungi il livello 20!
 expert badge,silver,Ottieni la medaglia 'expert adge' se raggiungi il livello 10!
 beginner badge,brown,Ottieni la medaglia 'beginner badge' se raggiungi il livello 5!
-they trust you,gold,Ottieni la medaglia 'they trust you' se 5 user considerano corretta una tua risposta!
+they trust you,gold,Ottieni la medaglia 'they trust you' se 2 user considerano corretta una tua risposta!
