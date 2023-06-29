@@ -27,7 +27,7 @@
         <div style="margin-left:-30px" v-if="validate[index].ANSWER==''">
           <md-icon style="float:left; position:relative; padding-top:10px;">{{validate[index].ICON}}</md-icon>
         </div>
-        <ValidationForm v-if="validate[index].ANSWER==''" :id="validate[index].ID" :item="validate[index].QUESTION" :type="validate[index].TYPE" :score="validate[index].SCORE" ref="validatequests"/>
+        <ValidationForm :id="validate[index].ID" :item="validate[index].QUESTION" :type="validate[index].TYPE" :score="validate[index].SCORE" ref="validatequests"/>
       </li>
     </ul>
     <!--<PicForRev/>-->
@@ -110,7 +110,7 @@ export default {
     async onSubmit(e){
       e.preventDefault();
       var shouldAddPoint = 0; 
-      //this.distanza=1; //JUST FOR TESTING
+      this.distanza=1; //JUST FOR TESTING
       if(this.location == false){
         console.log("SORRY YOU HAVE TO GIVE LOCATION PERMISSION TO ANSWER QUESTIONS");
         this.$refs.no_location_alert.second=true;
@@ -226,7 +226,7 @@ export default {
                 }
                 if(i.answer!=""){
                   close_popup=true
-                  await this.sendAnswer(answer_to_send,id,question,type).then(async items=>{
+                  await this.sendValidateAnswer(answer_to_send,id,question,type).then(async items=>{
                     console.log(items)
                     //call game engine in order to gain the score
                     await this.sendAnswerEngine("validation", this.$auth.user.myUserIDsignUpName, score, 1)
@@ -259,17 +259,24 @@ export default {
                 score = i.score;
                 tagAnswer = i.tagAnswer;
 
+                //console.log("ANSWER SELECTED BY THE USER ")
+                //console.log(answer);
+                stillValid = true;
+
                 if(userAnswered == this.$auth.user.myUserIDsignUpName){
                     //User is validating an answer that he as given
                     this.createPopup(this.$gettext("validationErrorTitleMsg"), this.$gettext("validationErrorMsg"));
                     alreadyGenerated=true
+                    stillValid = false;
                     cancella=false;
                 }else if(usersValidateArray.includes(this.$auth.user.myUserIDsignUpName)){
                     //User has already validated this answer
                     this.createPopup(this.$gettext("alreadyValidatedTitleMsg"), this.$gettext("alreadyValidatedMsg"));
                     alreadyGenerated = true
+                    stillValid = false;
                     cancella = false
                 }else{
+
                     if(answer == true || answer == "true"){
                         answer_to_send = "si"
                     }else{
@@ -305,8 +312,10 @@ export default {
                         }
                     }
 
-                    console.log("proviamo ancora" + i.answer + " " + stillValid);
+                    //console.log("OH MA DAIIIIIIIIIIIIIIIIII");
+                    //console.log("proviamo ancora" + i.answer + " " + stillValid);
                     if(i.answer!="" && stillValid){
+                        console.log("Adding the answer to the list...");
                         otherUserValid.push({
                             openAnswer,
                             userAnswered,
@@ -518,6 +527,34 @@ export default {
           return fetchdata
       }catch(e){
         alert("error, invalid token");
+      }
+    },
+
+    async sendValidateAnswer(answer,id,question,type){
+      var my_body = {
+        "id": id,
+        "answer": answer,
+        "question": question,
+        "type": type,
+        "userName": this.$auth.user.myUserIDsignUpName,//Needed layer for another validation system
+      }
+      try{
+        const my_url = this.$api_url + "/missions/validateAnswer"
+        const requestSpatialite = {
+          method:"post",
+          headers:{ "Content-Type":"application/json"},
+          body: JSON.stringify(my_body),
+        };
+        const fetchdata = await fetch(my_url,requestSpatialite)
+          .then(response => response.text())
+          .then((new_response_data)=>{
+            //console.log("this is response" + new_response_data)
+            //console.log(new_response_data)
+            return new_response_data;
+          }).catch((err)=>console.log(err)) 
+          return fetchdata
+      }catch(e){
+        alert("Error init");
       }
     },
 
