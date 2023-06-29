@@ -1,6 +1,7 @@
 require('dotenv').config()
 const auth_config = require("../auth_config.js")
 const app_url = auth_config.app_url;
+const fetch = require('node-fetch');
 
 const express = require('express');
 const verify = require('./verifyPasswordCall');
@@ -16,8 +17,9 @@ router.get("/getOSMElement/:type&:id", (req,res)=>{
     const request = require("request");
     //GET OSM ELEMENT
     try{   
-        var osmUrlApi = "https://openstreetmap.org/api/0.6/";
+        //var osmUrlApi = "https://openstreetmap.org/api/0.6/";
         //var osmUrlApi = "https://master.apis.dev.openstreetmap.org/api/0.6/";
+        var osmUrlApi = process.env.OSM_API_URL;
         osmUrlApi = osmUrlApi + type + "/" + id;
         console.log(osmUrlApi)
         //console.log(osmUrlApi)
@@ -59,7 +61,7 @@ router.post("/sendOSM", (req,res)=>{
     console.log(fullUrl);
 
     console.log(req.body);
-    console.log(token);
+    //console.log(token);
 
     //GET OSM ELEMENT
     try{   
@@ -132,7 +134,7 @@ router.post("/sendOSM", (req,res)=>{
 
 router.post("/createChangeset", async (req,res)=>{
     const token = req.get("osm_token");
-    console.log(token);
+    //console.log(token);
     let osmPw;
 
     if(token == "MyOSMUser"){
@@ -147,18 +149,19 @@ router.post("/createChangeset", async (req,res)=>{
 
     var changesetId;
                 
-    //const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" //'https://api.openstreetmap.org/api/0.6/changeset/create';
-    const createChangesetUrl = " https://master.apis.dev.openstreetmap.org/api/0.6/changeset/create"
-    //const createChangesetBody = `<osm><changeset><tag k="source" v="BikingImprover" /><tag k="bot" v="yes" /></changeset></osm>`;
+    //const createChangesetUrl = "http://localhost:3000/api/0.6/changeset/create" 
+    //const createChangesetUrl = "https://api.openstreetmap.org/api/0.6/changeset/create";
+    //const createChangesetUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/changeset/create"
+    const createChangesetUrl = process.env.OSM_API_URL + "changeset/create";
     let createChangesetBody = `<osm>
                                     <changeset>
-                                    <tag k="source" v="TESTING" />
+                                    <tag k="source" v="Biking-Improver" />
                                     <tag k="bot" v="yes" />
                                     <tag k="comment" v="Adding tags to some OSM elements. Tags are about cyclability and were validated by users using Biking-Improver." />
                                     </changeset>
                                 </osm>`;
     createChangesetBody = xmlFormatter(createChangesetBody)
-    /*const createChangesetResponse = await fetch(createChangesetUrl, {
+    const createChangesetResponse = await fetch(createChangesetUrl, {
         method: 'PUT',
         headers: {
         'Content-Type': 'text/xml',
@@ -171,10 +174,10 @@ router.post("/createChangeset", async (req,res)=>{
         res.status(500).send("Failed to create changeset")
     }
 
-    const changesetId = await createChangesetResponse.text();
-    console.log("this is my changeset id: " + changesetId);*/
+    changesetId = await createChangesetResponse.text();
+    console.log("this is my changeset id: " + changesetId);
 
-    changesetId = 1;
+    //changesetId = 1;
     res.status(200).json({changesetID: changesetId})
 })
 
@@ -185,7 +188,7 @@ router.post("/importOSM",async (req,res) =>{
     const changesetID = req.body.changesetID.changesetID;
     let osmPw;
 
-    console.log(token);
+    //console.log(token);
 
     if(token == "MyOSMUser"){
         const OSMid = process.env.OSMUserID
@@ -263,13 +266,14 @@ router.post("/importOSM",async (req,res) =>{
             }
     
             // Step 2: Update the Element
-            const updateElementUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/" + type + "/" + id;
+            //const updateElementUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/" + type + "/" + id;
             //const updateElementUrl = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
             //const updateElementUrl = "http://localhost:3000/api/0.6/" + type + "/" + id;
+            const updateElementUrl = process.env.OSM_API_URL + type + "/" + id;
             let importData = `<osm version="0.6">
                                         <changeset>
                                             <tag k="source" v="BikingImprover"/>
-                                            <tag k="comment" v="Testing the update of a way, adding tags ${stringFilteredArrayKeys} with values ${stringFilteredArrayAnswers}"/>
+                                            <tag k="comment" v="Adding tags ${stringFilteredArrayKeys} with values ${stringFilteredArrayAnswers} using Biking-Improver"/>
                                         </changeset>
                                             <${type} id="${id}" changeset="${changesetID}" version="${wayOrNodeVersion}" ${type === 'node' ? ` lat="${lat}" lon="${lon}"` : ''}>
                                                 ${oldTagElements}
@@ -282,7 +286,7 @@ router.post("/importOSM",async (req,res) =>{
             //console.log(updateElementBody);
             //console.log(updateElementUrl);
             
-            /*const updateElementResponse = await fetch(updateElementUrl, {
+            const updateElementResponse = await fetch(updateElementUrl, {
               method: 'PUT',
               headers: {
                 'Content-Type': 'text/xml',
@@ -295,7 +299,7 @@ router.post("/importOSM",async (req,res) =>{
                 console.log(updateElementResponse);
               throw new Error('Failed to update Element');
             }
-            */
+            
             res.status(200).send({message:'Success', tagsAdded: newTagsXML, id:id, type: type, sent:newElement.list});
         } catch (error) {
             console.error(error);
@@ -324,8 +328,10 @@ router.post("/closeChangeset", async (req,res)=>{
 
     try{
         // Step 3: Close the Changeset
-        //const closeChangesetUrl = "http://localhost:3000/api/0.6/changeset/" + changesetId + "/close"//`https://api.openstreetmap.org/api/0.6/changeset/${changesetId}/close`;
-        const closeChangesetUrl = `https://master.apis.dev.openstreetmap.org/api/0.6/changeset/${changesetID}/close`
+        //const closeChangesetUrl = "http://localhost:3000/api/0.6/changeset/" + changesetId + "/close"
+        //const closeChangesetUrl = `https://api.openstreetmap.org/api/0.6/changeset/${changesetId}/close`;
+        //const closeChangesetUrl = `https://master.apis.dev.openstreetmap.org/api/0.6/changeset/${changesetID}/close`
+        const closeChangesetUrl = process.env.OSM_API_URL + "changeset/" + changesetID + "/close";
 
         const closeChangesetResponse = await fetch(closeChangesetUrl, {
           method: 'PUT',

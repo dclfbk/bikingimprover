@@ -110,9 +110,9 @@ router.post('/userValidatedOther',(req,res)=>{
     const username = req.body.userName;
     const token = req.get("token");
 
-    console.log(allAnswers);
-    console.log(username);
-    console.log(token)
+    //console.log(allAnswers);
+    //console.log(username);
+    //console.log(token)
 
     const queries = []
     for(var i=0; i < allAnswers.length; i++){
@@ -130,118 +130,74 @@ router.post('/userValidatedOther',(req,res)=>{
     var sqlite = require('spatialite');
     var db = new sqlite.Database(databaseToUse);
 
-    var elementsToSendOSM = []
-    var statusResponse = ""
-
     db.spatialite(function(err) {
         if (err) {
-            console.log("THERE'S AN ERROR!" + err);
-            res.status(400).send(err);
-            return;
+          console.log("THERE'S AN ERROR!" + err);
+          res.status(400).send(err);
+          return;
         }
-    
+      
         db.serialize(function() {
-            db.run('BEGIN DEFERRED TRANSACTION;');
+            db.run('BEGIN TRANSACTION;');
             var completedQueries = 0;
-    
-            async function executeQuery(query, callback) {
+        
+            queries.forEach(function(query) {
                 db.run(query, function(err) {
                     if (err) {
                         console.log("THERE'S AN ERROR!" + err);
                         res.status(400).send(err);
                         return;
                     }
-    
-                    var getQuery = 'SELECT * FROM "question_table" WHERE ID =' + allAnswers[0].id + " AND QUESTION =\"" + allAnswers[completedQueries].realQuestion + "\";";
-                    db.each(getQuery, function(err, row) {
-                        element = row;
-                        //my_array.push(element);
-                        if (element.NUMBEROFVALIDATIONS == 2) { //TODO SHOULD BE 2
-                            console.log(getQuery);
-                            console.log(completedQueries);
-                            console.log(allAnswers[completedQueries].answer_to_send)
-                            console.log(element);
-                            if(allAnswers[completedQueries].answer_to_send == "si"){
-                                elementsToSendOSM.push(allAnswers[completedQueries])
-                                console.log("SEND TO OSM the elment");
-                            }else{
-                                console.log("DO NOT SEND TO OSM the element")
+            
+                    completedQueries++;
+                    if (completedQueries === queries.length) {
+                        db.run('COMMIT;', function(err) {
+                            db.close();
+                            if (err) {
+                                console.log("THERE'S AN ERROR!" + err);
+                                res.status(400).send(err);
+                            } else {
+                                console.log("Working...");
+                                res.status(200).send("Success");
                             }
-                        }
-                    }, async function(err, rows) {
-                        if (err) {
-                            console.log("THERE'S AN ERROR!" + err);
-                            //res.status(400).send(err);
-                        } else {
-                            console.log(elementsToSendOSM.length)
-                            console.log("completed queries: " + completedQueries)
-                            if(elementsToSendOSM.length!=0 && completedQueries == allAnswers.length - 1){
-                                console.log("now send the list to OSM");
-                                console.log(elementsToSendOSM.length);
-                                const socketApiOSM = req.protocol + '://' + req.get('host') + "/posts/validated/sendToOsm";
-                                const request = require("request");
-                                console.log(socketApiOSM);
-
-                                const my_body = {
-                                    "completed" : elementsToSendOSM
-                                }
-                                const options = {
-                                    method: 'POST',
-                                    uri: socketApiOSM,
-                                    body: my_body,
-                                    headers:{"Content-Type":"application/json", 'pw_token':token},
-                                    json: true
-                                };
-
-                                request(options, function(error, response, body){
-                                    if (error) {
-                                        //res.status(500).send("THERE WAS AN ERROR WHEN SENDING ITEMS");
-                                        statusResponse = "ERRORE";
-                                    } else {
-                                        if (response.statusCode !== 200) {
-                                            //res.status(500).send("SENT TO OSM");
-                                            statusResponse = response;
-                                        } else {
-                                            statusResponse = response;
-                                            //res.send(response.body);
-                                        }
-                                    }
-                                });
-                            }
-                            
-                            //res.status(200).send("success");
-                        }
-                        callback(); // Callback to indicate query completion
-                    });
+                        });
+                    }
                 });
-            }
-    
-            async function processNextQuery() {
-                if (completedQueries === queries.length) {
-                    db.run('COMMIT;', function(err) {
-                        db.close();
-                        if (err) {
-                            console.log("THERE'S AN ERROR!" + err);
-                            res.status(400).send(err);
-                        } else {
-                            console.log("Working...");
-                            res.status(200).send(statusResponse);
-                        }
-                    });
-                } else {
-                    var query = queries[completedQueries];
-                    executeQuery(query, async function() {
-                        completedQueries++;
-                        await processNextQuery(); // Recursively process the next query
-                    });
-                }
-            }
-    
-            processNextQuery(); // Start processing the first query
+            });
         });
     });
-
 })
+
+//SET VALIDATION ISNTANTLY TO 2 BECAUSE IT WAS A SIMPLE VALIDATION QUESTION
+router.post('/validateAnswer',(req,res)=>{
+    const answer= req.body.answer;
+    const id = req.body.id;
+    const question = req.body.question;
+    const type = req.body.type;
+    const userName = req.body.userName;
+
+    var query = "UPDATE question_table SET NUMBEROFVALIDATIONS = 2, ANSWER =\"" +answer+"\", USERANSWERED = \"" + userName + "\" WHERE ID = " +id+" AND QUESTION = \"" + question + "\"" + "AND TYPE = '" + type +"' AND ANSWER = \"\"" + ";" 
+    console.log(query)
+
+    var sqlite = require('spatialite');
+    var db = new sqlite.Database(databaseToUse);
+
+    db.spatialite(function(err){
+        db.each(query, function(err,row){
+            element = row;
+        },function(err,rows){
+            db.close();
+            if(err){
+                console.log("THJERE?S AN ERROR!" + err)
+                res.status(400).send(err);
+            }else{
+                //console.log(rows)
+                console.log("working...")              
+                res.status(200).send("success");
+            }
+        })
+    })
+})  
 
 router.get('/getUpdate',(req,res)=>{
     var sqlite = require('spatialite');
