@@ -280,7 +280,7 @@ export default {
 
                     if(answer == true || answer == "true"){
             
-                        if(numberOfValidations < 1){ //TODO SET IT TO 1
+                        if(numberOfValidations < 1){
                             cancella = false
                         }else{
                             await this.sendAnswerEngine("trust", userAnswered, score,1)
@@ -577,7 +577,6 @@ export default {
     },
 
     //sends the answer to the gamification engine in order to update the user data
-    //TODO MAKE IT SO THAT THE GAME ENGINE HANDLES THE SCORE AND THE NUMBER OF VALIDATIONS SENT. CURRENTLY RULES ONLY HANDLE THE FACT TTHAT'S ONLY ONE VALIDATION AT A TIME.
     async sendAnswerEngine(type,nickname,score, listLength){
       //console.log("WHY IS IT NOT WORKING?")
       console.log("TYPE SENT"+type)
@@ -645,7 +644,6 @@ export default {
       }
       this.$parent.$parent.my_points=this.$userData.points;
       this.$parent.$parent.checkUserClass();
-      //TODO send a popup saying thanks for the answer
     },
 
     //not used for now

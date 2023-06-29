@@ -49,7 +49,6 @@
               console.log(items);            
           });*/
           if(this.$userData.isNew){
-            //TODO create database of power ups for user.
             this.$auth.getUser();
             //console.log(this.$auth.user);
             if(this.$auth.user.myUserIDsignUpName==null){
