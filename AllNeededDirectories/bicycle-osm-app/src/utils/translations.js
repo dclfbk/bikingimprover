@@ -43,7 +43,7 @@ var translations = {
         "noMedalOtherMsg": "Sorry, Currentlly This User Does Not Possess Any Medal",
         "medalName": "The medal ",
         "obtainedMsg": " is obtained when",
-        "wrong answer": "You get the medal 'wrong answer' if 5 users consider one of your answer wrong!",
+        "wrong answer": "You get the medal 'wrong answer' if 2 users consider one of your answer wrong!",
         "validator badge": "You get the 'validator badge' if you answer a validation question!",
         "first steps": "You get the 'fist steps' medal if you answer your first question!",
         "professional cyclist": "You get the medal 'professional cyclist' if you answer at least 50 questions!",
@@ -52,7 +52,7 @@ var translations = {
         "professional badge": "You get the 'professional badge' if you reach level 20!",
         "expert badge": "You get the medal 'expert badge' if you reach level 10!",
         "beginner badge": "You get the medal 'beginner badge' if you reach level 5!",
-        "they trust you": "You get the medal 'they trust you' if 5 user consider one of you answers correct!",
+        "they trust you": "You get the medal 'they trust you' if 2 user consider one of you answers correct!",
         "onlyPointsMsg": "Only Points of Interest",
         "onlyWayMsg": "Only Ways",
         "showAllMsg": "Show All",
@@ -175,9 +175,9 @@ var translations = {
         "TutEndText": "Congratulations! You finished the tutorial and you can finally start mapping!",
 
         //Validation Notification
-        "ValStartPos": "5 people positively validated ", 
+        "ValStartPos": "2 people positively validated ", 
         "ValEndPos": " of your answers! Congratulations! You received points!",
-        "ValStartNeg": "Sorry but 5 people think that you didn't answer correctly at ",
+        "ValStartNeg": "Sorry but 2 people think that you didn't answer correctly at ",
         "ValEndNeg": " questions so... You lost the points you got from those questions!",
     },
     "Italiano":{
@@ -224,7 +224,7 @@ var translations = {
         "noMedalOtherMsg": "Lo user selezionato non possiede alcuna medaglia",
         "medalName": "La medaglia ",
         "obtainedMsg": " viene ottenuta quando",
-        "wrong answer": "Ottieni la medaglia 'wrong answer' se 5 user considerano sbagliata una tua risposta!",
+        "wrong answer": "Ottieni la medaglia 'wrong answer' se 2 user considerano sbagliata una tua risposta!",
         "validator badge": "Ottieni la medaglia 'validator badge' se rispondi a una domanda di validazione!",
         "first steps": "Ottieni la medaglia 'first steps' se rispondi alla tua prima domanda!",
         "professional cyclist": "Ottieni la medaglia 'professional cyclist' se rispondi ad almeno 50 domande!",
@@ -233,7 +233,7 @@ var translations = {
         "professional badge": "Ottieni la medaglia 'professional badge' se raggiungi il livello 20!",
         "expert badge": "Ottieni la medaglia 'expert badge' se raggiungi il livello 10!",
         "beginner badge": "Ottieni la medaglia 'beginner badge' se raggiungi il livello 5!",
-        "they trust you": "Ottieni la medaglia 'they trust you' se 5 user considerano corretta una tua risposta!",
+        "they trust you": "Ottieni la medaglia 'they trust you' se 2 user considerano corretta una tua risposta!",
         "onlyPointsMsg": "Solo Punti D'Interesse",
         "onlyWayMsg": "Solo Strade",
         "showAllMsg": "Mostra tutto",
@@ -349,9 +349,9 @@ var translations = {
         "TutEndText": "Congratulazioni! Hai finito il tutorial e puoi cominciare a mappare!",
 
         //Validation Notification
-        "ValStartPos": "5 persone hanno validato ", 
+        "ValStartPos": "2 persone hanno validato ", 
         "ValEndPos": " delle tue risposte! Congratulazioni! Hai ricevuto punti!",
-        "ValStartNeg": "Mi spiace ma 5 persone non pensano tu abbia risposto correttamente a ",
+        "ValStartNeg": "Mi spiace ma 2 persone non pensano tu abbia risposto correttamente a ",
         "ValEndNeg": " domande quindi... Hai perso i punti che avevi guadagnato da quelle domande!",
     },
     "Nederlands": {
