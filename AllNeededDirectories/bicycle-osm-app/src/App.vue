@@ -41,62 +41,60 @@
         const authToken = await this.$auth.getTokenApi();
         var token_to_use = "Bearer " + authToken.access_token;
         var user_id = this.$auth.user.sub;
-        const osmToken = await this.$auth.getOSMTokenApi(user_id, token_to_use);
-        
-        if(osmToken!=undefined && osmToken!=null){
-          //Send data to osm logic using the authenticated user
-          const newDataArray = this.divideElements(data.value);
-          console.log(newDataArray);
-          let oldElementsArray = []
+        let osmToken = await this.$auth.getOSMTokenApi(user_id, token_to_use);
 
-          for(var i=0; i<newDataArray.length; i++){
-            const id = newDataArray[i].ID;
-            const type = newDataArray[i].TYPE
-            const oldElement = await this.getOSMElement(id, type)
-            oldElementsArray.push(oldElement);
-          }
-          console.log(oldElementsArray);
-
-          const changesetID = await this.createChangeset(token_to_use)
-
-          let my_import_responses = []
-          for(i=0; i<newDataArray.length; i++){
-            const importElement = await this.sendDataToOSMViaUser(osmToken, newDataArray[i], oldElementsArray[i], changesetID)
-            my_import_responses.push(importElement);
-          }
-
-          let setToSentList = []
-          let changesetList = []
-          for(i=0; i<my_import_responses.length; i++){
-            if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
-              console.log(my_import_responses[i].sent);
-              setToSentList.push(my_import_responses[i].sent)
-              const valueToAdd = {
-                "Added": my_import_responses[i].tagsAdded,
-                "id": my_import_responses[i].id,
-                "type": my_import_responses[i].type,
-                "changesetID": changesetID
-              }
-              changesetList.push(valueToAdd)
-            }
-          }
-
-          //TODO INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
-          const flatChangeset = [...setToSentList.flat().map(item => item)];
-          await this.saveChangeset(flatChangeset);
-          //
-
-          //SET DB QUESTION_TABLE TO SENT = YES
-          const flatArray = [...setToSentList.flat().map(item => item)];
-          await this.setToSent(flatArray);
-
-          //CLOSE CHANGESET
-          await this.closeChangeset(osmToken,changesetID)
-          
-        }else{
-          //Send data to OSM using our OSM account
-          this.sendDataToOSM(data.value);
+        if(osmToken == undefined || osmToken ==null){
+          osmToken = {osmToken:"MyOSMUser"}
         }
+
+        //Send data to osm logic using the authenticated user
+        const newDataArray = this.divideElements(data.value);
+        console.log(newDataArray);
+        let oldElementsArray = []
+
+        for(var i=0; i<newDataArray.length; i++){
+          const id = newDataArray[i].ID;
+          const type = newDataArray[i].TYPE
+          const oldElement = await this.getOSMElement(id, type)
+          oldElementsArray.push(oldElement);
+        }
+        console.log(oldElementsArray);
+
+        const changesetID = await this.createChangeset(osmToken)
+
+        let my_import_responses = []
+        for(i=0; i<newDataArray.length; i++){
+          const importElement = await this.sendDataToOSMViaUser(osmToken, newDataArray[i], oldElementsArray[i], changesetID)
+          my_import_responses.push(importElement);
+        }
+
+        let setToSentList = []
+        let changesetList = []
+        for(i=0; i<my_import_responses.length; i++){
+          if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
+            console.log(my_import_responses[i].sent);
+            setToSentList.push(my_import_responses[i].sent)
+            const valueToAdd = {
+              "Added": my_import_responses[i].tagsAdded,
+              "id": my_import_responses[i].id,
+              "type": my_import_responses[i].type,
+              "changesetID": changesetID
+            }
+            changesetList.push(valueToAdd)
+          }
+        }
+
+        //INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
+        const flatChangeset = [...setToSentList.flat().map(item => item)];
+        await this.saveChangeset(flatChangeset);
+        //
+
+        //SET DB QUESTION_TABLE TO SENT = YES
+        const flatArray = [...setToSentList.flat().map(item => item)];
+        await this.setToSent(flatArray);
+
+        //CLOSE CHANGESET
+        await this.closeChangeset(osmToken,changesetID)
 
       });
 
@@ -136,7 +134,7 @@
           const my_url = this.$api_url + "/osmCalls/createChangeset"
           const requestSpatialite = {
             method:"POST", 
-            headers:{ "Content-Type":"application/json", "token": token},
+            headers:{ "Content-Type":"application/json", "token": token.osmToken},
             json:true
           };
           const fetchdata = await fetch(my_url,requestSpatialite)
@@ -146,7 +144,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error creating changeset")
+          console.log("Error creating changeset")
         }
       },
 
@@ -159,7 +157,7 @@
           const my_url = this.$api_url + "/osmCalls/closeChangeset"
           const requestSpatialite = {
             method:"POST", 
-            headers:{ "Content-Type":"application/json", "token": token},
+            headers:{ "Content-Type":"application/json", "token": token.osmToken},
             body: JSON.stringify(my_body),
             json:true
           };
@@ -170,7 +168,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error creating changeset")
+          console.log("Error creating changeset")
         }
       },
 
@@ -193,7 +191,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error saving changeset")
+          console.log("Error saving changeset")
         }
       },
 
@@ -217,7 +215,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error setting to sent")
+          console.log("Error setting to sent")
         }
       },
 
@@ -239,7 +237,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error sending data to OSM")
+          console.log("Error sending data to OSM")
         }
       },
 
@@ -253,7 +251,7 @@
           const my_url = this.$api_url + "/osmCalls/importOSM"
           const requestSpatialite = {
             method:"post", 
-            headers:{ "Content-Type":"application/json", "osm_token": osmToken},
+            headers:{ "Content-Type":"application/json", "osm_token": osmToken.osmToken},
             body: JSON.stringify(my_body)
           };
           const fetchdata = await fetch(my_url,requestSpatialite)
@@ -263,7 +261,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error sending data to OSM")
+          console.log("Error sending data to OSM")
         }
       },
 
@@ -287,7 +285,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error sending data to OSM")
+          console.log("Error sending data to OSM")
         }
       },
 
@@ -310,7 +308,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error sending data to OSM")
+          console.log("Error sending data to OSM")
         }
       },
 
@@ -334,7 +332,7 @@
             }).catch((err)=>console.log(err))
             return fetchdata
         }catch(e){
-          alert("Error sending data to OSM")
+          console.log("Error sending data to OSM")
         }
       }
 
