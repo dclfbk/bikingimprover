@@ -1,5 +1,6 @@
 
 const request = require('request');
+const fetch = require('node-fetch');
 
 async function CheckCompleted(route){
     return new Promise((resolve, reject) => {
@@ -131,10 +132,62 @@ function HandleNotSentData(notSent){
 }
 
 async function SendWithMyAccount(route, listToSend){
+    const osmToken = {osmToken:"MyOSMUser"}
+    console.log("SEND WITH MY ACCOUNT FUNCTION");
     if(listToSend == null || listToSend == undefined || listToSend.length == 0){
         console.log("nothing to update");
         return;
     }
+
+    //Send data to osm logic using the authenticated user
+    const newDataArray = divideElements(listToSend);
+    console.log(newDataArray);
+    let oldElementsArray = []
+
+    for(var i=0; i<newDataArray.length; i++){
+      const id = newDataArray[i].ID;
+      const type = newDataArray[i].TYPE
+      const oldElement = await getOSMElement(route, id, type)
+      oldElementsArray.push(oldElement);
+    }
+    console.log(oldElementsArray);
+
+    const changesetID = await createChangeset(route, osmToken)
+
+    let my_import_responses = []
+    for(i=0; i<newDataArray.length; i++){
+      const importElement = await sendDataToOSM(route, osmToken, newDataArray[i], oldElementsArray[i], changesetID)
+      my_import_responses.push(importElement);
+    }
+
+    let setToSentList = []
+    let changesetList = []
+    for(i=0; i<my_import_responses.length; i++){
+      if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
+        console.log(my_import_responses[i].sent);
+        setToSentList.push(my_import_responses[i].sent)
+        const valueToAdd = {
+          "Added": my_import_responses[i].tagsAdded,
+          "id": my_import_responses[i].id,
+          "type": my_import_responses[i].type,
+          "changesetID": changesetID
+        }
+        changesetList.push(valueToAdd)
+      }
+    }
+
+    //INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
+    const flatChangeset = [...setToSentList.flat().map(item => item)];
+    await saveChangeset(route, flatChangeset);
+    //
+
+    //SET DB QUESTION_TABLE TO SENT = YES
+    const flatArray = [...setToSentList.flat().map(item => item)];
+    await setToSent(route, flatArray);
+
+    //CLOSE CHANGESET
+    await closeChangeset(route, osmToken,changesetID)
+
     /*return new Promise((resolve, reject) => {
         const elements = {
             "elements" : answers
@@ -159,6 +212,161 @@ async function SendWithMyAccount(route, listToSend){
         })
     })*/
     return;
+}
+
+function divideElements(data){
+    const dividedData = data.reduce((result, element) => {
+      const existingElement = result.find(item => item.ID === element.ID);
+
+      if (existingElement) {
+        existingElement.list.push(element);
+      } else {
+        result.push({
+          TYPE: element.TYPE,
+          ID: element.ID,
+          list: [element]
+        });
+      }
+
+      return result;
+    }, []);
+    return dividedData;
+}
+
+async function saveChangeset(route, changesetList){
+    var my_body = {
+      "changesetList": changesetList,
+    }
+    try{
+      const my_url = route + "/changeset/saveChangeset"
+      const requestSpatialite = {
+        method:"POST", 
+        headers:{ "Content-Type":"application/json"},
+        body: JSON.stringify(my_body),
+        json:true
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error saving changeset")
+    }
+}
+
+async function setToSent(route, listToSend){
+    console.log("NOW SETTING TO SENT")
+    var my_body = {
+      "elements": listToSend,
+    }
+    try{
+      const my_url = route + "/changeset/updateSent"
+      const requestSpatialite = {
+        method:"POST", 
+        headers:{ "Content-Type":"application/json",},
+        body: JSON.stringify(my_body),
+        json:true
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error setting to sent")
+    }
+}
+
+async function closeChangeset(route, token, changesetID){
+    var my_body = {
+      "osm_token": token,
+      "changesetID": changesetID
+    }
+    try{
+      const my_url = route + "/osmCalls/closeChangeset"
+      const requestSpatialite = {
+        method:"POST", 
+        headers:{ "Content-Type":"application/json", "token": token.osmToken},
+        body: JSON.stringify(my_body),
+        json:true
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error creating changeset")
+    }
+}
+
+async function sendDataToOSM(route, osmToken, newElements, oldElements, changesetID){
+    var my_body = {
+      "new_element": newElements,
+      "old_element": oldElements,
+      "changesetID": changesetID
+    }
+    try{
+      const my_url = route + "/osmCalls/importOSM"
+      const requestSpatialite = {
+        method:"post", 
+        headers:{ "Content-Type":"application/json", "osm_token": osmToken.osmToken},
+        body: JSON.stringify(my_body)
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error sending data to OSM")
+    }
+}
+
+async function getOSMElement(route,id,type){
+    console.log(id);
+    console.log(type.toLowerCase());
+    try{
+      const my_url = route + "/osmCalls/getOSMElement/" + type.toLowerCase() + "&" + id
+      console.log(my_url)
+      const requestSpatialite = {
+        method:"GET", 
+        headers:{ "Content-Type":"application/json"},
+        json:true
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.text())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error getting data from OSM" + e)
+    }
+}
+
+async function createChangeset(route, token){
+    try{
+      const my_url = route + "/osmCalls/createChangeset"
+      const requestSpatialite = {
+        method:"POST", 
+        headers:{ "Content-Type":"application/json", "token": token.osmToken},
+        json:true
+      };
+      const fetchdata = await fetch(my_url,requestSpatialite)
+        .then(response => response.json())
+        .then((new_response_data)=>{
+          return new_response_data;
+        }).catch((err)=>console.log(err))
+        return fetchdata
+    }catch(e){
+      console.log("Error creating changeset")
+    }
 }
 
 async function UpdateTime(route, listToUpdate){

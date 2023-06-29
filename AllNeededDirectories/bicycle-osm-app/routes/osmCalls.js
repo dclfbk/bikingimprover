@@ -132,7 +132,18 @@ router.post("/sendOSM", (req,res)=>{
 
 router.post("/createChangeset", async (req,res)=>{
     const token = req.get("osm_token");
-    const osmPw = "Bearer " + token;
+    console.log(token);
+    let osmPw;
+
+    if(token == "MyOSMUser"){
+        const OSMid = process.env.OSMUserID
+        const OSMpw = process.env.OSMUserPW
+        const credentials = `${OSMid}:${OSMpw}`;
+        const encodedCredentials = btoa(credentials);
+        osmPw = `Basic ${encodedCredentials}`;
+    }else{
+        osmPw = "Bearer " + token;
+    }
 
     var changesetId;
                 
@@ -171,9 +182,20 @@ router.post("/importOSM",async (req,res) =>{
     const token = req.get("osm_token");
     const oldElement = req.body.old_element;
     const newElement = req.body.new_element;
-    const changesetID = req.body.changesetID.changesetID
+    const changesetID = req.body.changesetID.changesetID;
+    let osmPw;
 
-    const osmPw = "Bearer " + token;
+    console.log(token);
+
+    if(token == "MyOSMUser"){
+        const OSMid = process.env.OSMUserID
+        const OSMpw = process.env.OSMUserPW
+        const credentials = `${OSMid}:${OSMpw}`;
+        const encodedCredentials = Buffer.from(credentials).toString("base64");
+        osmPw = `Basic ${encodedCredentials}`;
+    }else{
+        osmPw = "Bearer " + token;
+    }
 
     console.log(newElement)
 
@@ -288,7 +310,17 @@ router.post("/closeChangeset", async (req,res)=>{
 
     const token = req.get("osm_token");
     const changesetID = req.body.changesetID.changesetID
-    const osmPw = "Bearer " + token;
+    let osmPw 
+
+    if(token == "MyOSMUser"){
+        const OSMid = process.env.OSMUserID
+        const OSMpw = process.env.OSMUserPW
+        const credentials = `${OSMid}:${OSMpw}`;
+        const encodedCredentials = btoa(credentials);
+        osmPw = `Basic ${encodedCredentials}`;
+    }else{
+        osmPw = "Bearer " + token;
+    }
 
     try{
         // Step 3: Close the Changeset
