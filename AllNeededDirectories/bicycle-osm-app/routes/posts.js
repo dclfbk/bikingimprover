@@ -62,7 +62,7 @@ router.get('/:geomid&:type',(req,res)=>{
     const my_id = req.params.geomid;
     var sqlite = require('spatialite');
     var db = new sqlite.Database(databaseToUse);
-    var query = "SELECT * FROM 'question_table' WHERE ID IS '" + my_id +"' AND TYPE IS '" + type + "' AND NUMBEROFVALIDATIONS < " + '"1"'+";"; //TODO HERE SHOULD BE 2. JUST USING 1 TO TEST.
+    var query = "SELECT * FROM 'question_table' WHERE ID IS '" + my_id +"' AND TYPE IS '" + type + "' AND NUMBEROFVALIDATIONS < " + '"2"'+";";
     console.log(query)
     const my_array = [];
     db.spatialite(function(err){

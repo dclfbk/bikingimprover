@@ -93,11 +93,12 @@ async function handleChangesets(route){
 	}
 }
 
-//handleCompleted(process.env.API_URL)
+handleCompleted(process.env.API_URL)
 handleChangesets(process.env.API_URL)
 
 //call handleCompleted every 40 minutes
-setInterval(() =>{/*handleCompleted(process.env.API_URL);*/ handleChangesets(process.env.API_URL)}, 0.1*60*1000);
+setInterval(() =>{handleCompleted(process.env.API_URL); handleChangesets(process.env.API_URL)}, 40*60*1000);
+
 //
 
 
