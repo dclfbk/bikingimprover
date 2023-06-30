@@ -226,7 +226,7 @@ router.post("/saveChangeset",(req,res)=>{
             query = query + ", "
         }
         query = query + "("
-        query = query + elements[i].changesetID + ", \"" + elements.Added + "\", " + elements.id + ", \"" + elements.type + "\")"
+        query = query + elements[i].changesetID.changesetID + ", \'" + elements[i].Added + "\', " + elements[i].id + ", \"" + elements[i].type + "\")"
     }
     query = query + ";"
     console.log(query);

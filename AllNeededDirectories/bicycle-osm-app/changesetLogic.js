@@ -114,11 +114,12 @@ function HandleNotSentData(notSent){
     let toUpdate = []
 
     //if the answer wasn't sent in 6 hours then I send it with osm, otherwise update the hour field
-    for(var i=0; i<notSent[0].length; i++){
-        if(notSent[0][i].TIME >= 6){
-            sendWithMyAccount.push(notSent[0][i]);
+    for(var i=0; i<notSent.length; i++){
+      for(var j=0; j<notSent[i].length; j++)
+        if(notSent[i][j].TIME >= 6){
+            sendWithMyAccount.push(notSent[i][j]);
         }else{
-            toUpdate.push(notSent[0][i])
+            toUpdate.push(notSent[i][j])
         }
     }
     
@@ -134,6 +135,7 @@ function HandleNotSentData(notSent){
 async function SendWithMyAccount(route, listToSend){
     const osmToken = {osmToken:"MyOSMUser"}
     console.log("SEND WITH MY ACCOUNT FUNCTION");
+
     if(listToSend == null || listToSend == undefined || listToSend.length == 0){
         console.log("nothing to update");
         return;
@@ -141,7 +143,9 @@ async function SendWithMyAccount(route, listToSend){
 
     //Send data to osm logic using the authenticated user
     const newDataArray = divideElements(listToSend);
-    console.log(newDataArray);
+
+    //console.log(newDataArray);
+
     let oldElementsArray = []
 
     for(var i=0; i<newDataArray.length; i++){
@@ -152,7 +156,23 @@ async function SendWithMyAccount(route, listToSend){
     }
     console.log(oldElementsArray);
 
+    var errors = 0;
+    for(i=0; i<oldElementsArray.length; i++){
+      if(oldElementsArray[i] == "Error"){
+        errors ++;
+      }
+    }
+    
+    if(errors == oldElementsArray.length){
+      console.log("All elements were deleted...")
+      return;
+    }
+
     const changesetID = await createChangeset(route, osmToken)
+
+    if(changesetID == undefined || changesetID == null){
+      return;
+    }
 
     let my_import_responses = []
     for(i=0; i<newDataArray.length; i++){
@@ -177,7 +197,7 @@ async function SendWithMyAccount(route, listToSend){
     }
 
     //INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
-    const flatChangeset = [...setToSentList.flat().map(item => item)];
+    const flatChangeset = [...changesetList.flat().map(item => item)];
     await saveChangeset(route, flatChangeset);
     //
 
@@ -289,7 +309,7 @@ async function closeChangeset(route, token, changesetID){
       const my_url = route + "/osmCalls/closeChangeset"
       const requestSpatialite = {
         method:"POST", 
-        headers:{ "Content-Type":"application/json", "token": token.osmToken},
+        headers:{ "Content-Type":"application/json", "osm_token": token.osmToken},
         body: JSON.stringify(my_body),
         json:true
       };
@@ -355,7 +375,7 @@ async function createChangeset(route, token){
       const my_url = route + "/osmCalls/createChangeset"
       const requestSpatialite = {
         method:"POST", 
-        headers:{ "Content-Type":"application/json", "token": token.osmToken},
+        headers:{ "Content-Type":"application/json", "osm_token": token.osmToken},
         json:true
       };
       const fetchdata = await fetch(my_url,requestSpatialite)

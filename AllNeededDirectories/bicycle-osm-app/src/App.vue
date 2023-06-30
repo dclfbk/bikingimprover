@@ -58,43 +58,57 @@
           const oldElement = await this.getOSMElement(id, type)
           oldElementsArray.push(oldElement);
         }
-        console.log(oldElementsArray);
 
-        const changesetID = await this.createChangeset(osmToken)
-
-        let my_import_responses = []
-        for(i=0; i<newDataArray.length; i++){
-          const importElement = await this.sendDataToOSMViaUser(osmToken, newDataArray[i], oldElementsArray[i], changesetID)
-          my_import_responses.push(importElement);
-        }
-
-        let setToSentList = []
-        let changesetList = []
-        for(i=0; i<my_import_responses.length; i++){
-          if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
-            console.log(my_import_responses[i].sent);
-            setToSentList.push(my_import_responses[i].sent)
-            const valueToAdd = {
-              "Added": my_import_responses[i].tagsAdded,
-              "id": my_import_responses[i].id,
-              "type": my_import_responses[i].type,
-              "changesetID": changesetID
-            }
-            changesetList.push(valueToAdd)
+        var errors = 0;
+        for(i=0; i<oldElementsArray.length; i++){
+          if(oldElementsArray[i] == "Error"){
+            errors ++;
           }
         }
+        
+        if(errors == oldElementsArray.length){
+          console.log("All elements were deleted...")
+          return;
+          
+        }else{
 
-        //INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
-        const flatChangeset = [...setToSentList.flat().map(item => item)];
-        await this.saveChangeset(flatChangeset);
-        //
+          const changesetID = await this.createChangeset(osmToken)
 
-        //SET DB QUESTION_TABLE TO SENT = YES
-        const flatArray = [...setToSentList.flat().map(item => item)];
-        await this.setToSent(flatArray);
+          let my_import_responses = []
+          for(i=0; i<newDataArray.length; i++){
+            const importElement = await this.sendDataToOSMViaUser(osmToken, newDataArray[i], oldElementsArray[i], changesetID)
+            my_import_responses.push(importElement);
+          }
 
-        //CLOSE CHANGESET
-        await this.closeChangeset(osmToken,changesetID)
+          let setToSentList = []
+          let changesetList = []
+          for(i=0; i<my_import_responses.length; i++){
+            if(my_import_responses[i]!=undefined && my_import_responses[i].sent!=undefined){
+              console.log(my_import_responses[i].sent);
+              setToSentList.push(my_import_responses[i].sent)
+              const valueToAdd = {
+                "Added": my_import_responses[i].tagsAdded,
+                "id": my_import_responses[i].id,
+                "type": my_import_responses[i].type,
+                "changesetID": changesetID
+              }
+              changesetList.push(valueToAdd)
+            }
+          }
+
+          //INSERT DATA INTO CHANGESETSENT TABLE SO I KNOW THAT I SENT IT AND I KEEP TRACK OF MY IMPORTS
+          const flatChangeset = [...changesetList.flat().map(item => item)];
+          await this.saveChangeset(flatChangeset);
+          //
+
+          //SET DB QUESTION_TABLE TO SENT = YES
+          const flatArray = [...setToSentList.flat().map(item => item)];
+          await this.setToSent(flatArray);
+
+          //CLOSE CHANGESET
+          await this.closeChangeset(osmToken,changesetID)
+        
+        }
 
       });
 
