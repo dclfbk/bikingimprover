@@ -13,6 +13,7 @@ const xmlFormatter  = require('xml-formatter');
 
 router.get("/getOSMElement/:type&:id", (req,res)=>{
     const id = req.params.id;
+    //const id = 105025334
     const type = req.params.type;
     const request = require("request");
     //GET OSM ELEMENT
@@ -137,11 +138,12 @@ router.post("/createChangeset", async (req,res)=>{
     //console.log(token);
     let osmPw;
 
+
     if(token == "MyOSMUser"){
-        const OSMid = process.env.OSMUserID
-        const OSMpw = process.env.OSMUserPW
-        const credentials = `${OSMid}:${OSMpw}`;
-        const encodedCredentials = btoa(credentials);
+        const OSMId = process.env.OSMId
+        const OSMPw = process.env.OSMPw
+        const credentials = `${OSMId}:${OSMPw}`;
+        const encodedCredentials = Buffer.from(credentials).toString("base64");
         osmPw = `Basic ${encodedCredentials}`;
     }else{
         osmPw = "Bearer " + token;
@@ -191,9 +193,9 @@ router.post("/importOSM",async (req,res) =>{
     //console.log(token);
 
     if(token == "MyOSMUser"){
-        const OSMid = process.env.OSMUserID
-        const OSMpw = process.env.OSMUserPW
-        const credentials = `${OSMid}:${OSMpw}`;
+        const OSMId = process.env.OSMId
+        const OSMPw = process.env.OSMPw
+        const credentials = `${OSMId}:${OSMPw}`;
         const encodedCredentials = Buffer.from(credentials).toString("base64");
         osmPw = `Basic ${encodedCredentials}`;
     }else{
@@ -255,7 +257,7 @@ router.post("/importOSM",async (req,res) =>{
             const stringFilteredArrayAnswers = filteredArrayAnswers.join(", ");
             
             const wayOrNodeElement = xmlDoc.getElementsByTagName(type)[0];
-            const wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
+            let wayOrNodeVersion = wayOrNodeElement.getAttribute("version");
             let lat = ""
             let lon = ""
     
@@ -269,6 +271,7 @@ router.post("/importOSM",async (req,res) =>{
             //const updateElementUrl = "https://master.apis.dev.openstreetmap.org/api/0.6/" + type + "/" + id;
             //const updateElementUrl = "https://api.openstreetmap.org/api/0.6/" + type + "/" + id;
             //const updateElementUrl = "http://localhost:3000/api/0.6/" + type + "/" + id;
+
             const updateElementUrl = process.env.OSM_API_URL + type + "/" + id;
             let importData = `<osm version="0.6">
                                         <changeset>
@@ -292,7 +295,7 @@ router.post("/importOSM",async (req,res) =>{
                 'Content-Type': 'text/xml',
                 Authorization: osmPw,
               },
-              body: updateElementBody,
+              body: importData,
             });
         
             if (!updateElementResponse.ok) {
@@ -317,10 +320,10 @@ router.post("/closeChangeset", async (req,res)=>{
     let osmPw 
 
     if(token == "MyOSMUser"){
-        const OSMid = process.env.OSMUserID
-        const OSMpw = process.env.OSMUserPW
-        const credentials = `${OSMid}:${OSMpw}`;
-        const encodedCredentials = btoa(credentials);
+        const OSMId = process.env.OSMId
+        const OSMPw = process.env.OSMPw
+        const credentials = `${OSMId}:${OSMPw}`;
+        const encodedCredentials = Buffer.from(credentials).toString("base64");
         osmPw = `Basic ${encodedCredentials}`;
     }else{
         osmPw = "Bearer " + token;
