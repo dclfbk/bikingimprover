@@ -110,7 +110,7 @@ export default {
     async onSubmit(e){
       e.preventDefault();
       var shouldAddPoint = 0; 
-      this.distanza=1; //JUST FOR TESTING
+      //this.distanza=1; //JUST FOR TESTING
       if(this.location == false){
         console.log("SORRY YOU HAVE TO GIVE LOCATION PERMISSION TO ANSWER QUESTIONS");
         this.$refs.no_location_alert.second=true;
