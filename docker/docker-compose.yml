@@ -48,8 +48,6 @@ services:
       context: ../
       dockerfile: docker/web/Dockerfile
     command: node server.js
-    ports:
-      - "8080:8080"
     env_file: 
       - ./.env
     volumes:
@@ -57,6 +55,15 @@ services:
       - ./volumes/databases:/app/databases
       - ./volumes/pbfFiles:/app/pbfFiles
 
+  nginx:
+    build:
+      context: ../
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./volumes/pbfFiles:/mnt/volumes/pbfFiles
+  
   setup_web:
     profiles:
       - setup
