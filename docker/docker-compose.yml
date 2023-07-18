@@ -51,7 +51,6 @@ services:
     env_file: 
       - ./.env
     volumes:
-      - ./web/auth0-conf.js:/app/dist/auth0-conf.js
       - ./volumes/databases:/app/databases
       - ./volumes/pbfFiles:/app/pbfFiles
 
@@ -63,7 +62,7 @@ services:
       - "8080:80"
     volumes:
       - ./volumes/pbfFiles:/mnt/volumes/pbfFiles
-  
+      - ./web/auth0-conf.js:/usr/share/nginx/html/auth0-conf.js
   setup_web:
     profiles:
       - setup

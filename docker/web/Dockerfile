@@ -14,14 +14,8 @@ RUN npm install
 
 # copy the entire app
 # TODO: specify which directories are actually needed
-COPY --chown=node:node AllNeededDirectories/bicycle-osm-app/ ./
-
-
-# build app for production with minification
-# TODO: split frontend and backend to lighten the image sizes
-#       at the moment frontend dependecies are installed also when using only the backend
-RUN npm install
-RUN npm run build
+COPY --chown=node:node AllNeededDirectories/bicycle-osm-app/server.js  AllNeededDirectories/bicycle-osm-app/changesetLogic.js AllNeededDirectories/bicycle-osm-app/auth_config.js  ./
+COPY --chown=node:node AllNeededDirectories/bicycle-osm-app/routes ./routes
 
 COPY --chown=node:node docker/web/entrypoint.sh /entrypoint
 RUN chmod +x /entrypoint

@@ -17,7 +17,7 @@ const {CheckCompleted, UpdateCompleted, GetCompletedQuestions, UpdateOrImport, H
 const http = require('http').createServer(app);
 const io = require('socket.io')(http,{
 	cors: {
-	  origins: ['http://localhost:8080']
+	  origins: [process.env.CORS_ORIGIN]
 	}
 });
 //
@@ -32,18 +32,14 @@ const manageBadgesRoute = require("./routes/manageBadges");
 const manageShopRoute = require("./routes/manageShop");
 const osmRoute = require("./routes/osmCalls")
 
-app.use('/missions', missionsRoute);
-app.use('/posts', postsRoute);
-app.use('/manageImages', manageImagesRoute)
-app.use('/managePowerUps', managePowerUpsRoute);
-app.use('/badgesTable', manageBadgesRoute);
-app.use('/manageShop', manageShopRoute);
-app.use('/changeset', changesetRoute);
-app.use('/osmCalls', osmRoute);
-
-
-//here we are configuring dist to serve app files
-app.use('/', serveStatic(path.join(__dirname, '/dist')))
+app.use('/api/missions', missionsRoute);
+app.use('/api/posts', postsRoute);
+app.use('/api/manageImages', manageImagesRoute)
+app.use('/api/managePowerUps', managePowerUpsRoute);
+app.use('/api/badgesTable', manageBadgesRoute);
+app.use('/api/manageShop', manageShopRoute);
+app.use('/api/changeset', changesetRoute);
+app.use('/api/osmCalls', osmRoute);
 
 //SOCKET
 io.on('connection', (socket) => {
@@ -98,33 +94,6 @@ handleChangesets(process.env.API_URL)
 
 //call handleCompleted every 40 minutes
 setInterval(() =>{handleCompleted(process.env.API_URL); handleChangesets(process.env.API_URL)}, 40*60*1000);
-
-//
-
-
-var geom_files = path.join(__dirname,'/pbfFiles');
-app.use('/pbfFiles',express.static(geom_files));
-console.log(geom_files);
-
-//MAGARI VA
-
-//MIO
-//app.use(express.static('public'));
-app.use(express.static('public'));
-app.get('/we', function(req, res) {
-	res.send('hello world');
-});
-
-const indexPath = __dirname + '/dist/';
-app.get('/', function (req,res) {
-	res.sendFile(indexPath + "index.html");
-});
-
-
- //this * route is to serve project on different page routes except root `/`
-app.get(/.*/, function (req, res) {
-	res.sendFile(path.join(__dirname, '/dist/index.html'))
-})
 
 const port = process.env.PORT || 8080
 //app.listen(port)
