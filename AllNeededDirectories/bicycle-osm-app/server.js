@@ -79,8 +79,7 @@ async function handleChangesets(route){
 	if(answers.length!=0){
 		console.log(answers)
 		const notSent = await UpdateOrImport(route, answers);
-		if(notSent.lengh != 0){
-			console.log("NOT SENT")
+		if(notSent.length != 0){
 			const data = HandleNotSentData(notSent)
 			//console.log(data.toUpdate);
 			await SendWithMyAccount(route, data.sendWithMyAccount)
