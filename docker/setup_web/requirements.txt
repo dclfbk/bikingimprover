@@ -4,7 +4,7 @@ nbformat
 
 click>=8.1.0
 osmium
-PyYAML==5.4.1
+PyYAML
 overpy
 geopandas
 overpass
