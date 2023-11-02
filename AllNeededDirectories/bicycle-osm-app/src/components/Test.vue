@@ -117,7 +117,7 @@ export default {
         return;
       }else{
         console.log(this.location);
-        if(this.distanza>200){
+        if(this.distanza>1000){
           console.log("EEEEH TROPPO DISTANTE");
           this.$refs.distance_alert.second=true;
           return;
